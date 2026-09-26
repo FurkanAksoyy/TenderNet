@@ -1,0 +1,37 @@
+{
+  "upload_type": "software",
+  "title": "TenderNet v1.0.0: data and code for \"Unconcentrated markets, captive buyers: incumbency in Türkiye's public IT procurement\"",
+  "version": "1.0.0",
+  "license": "mit",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Aksoy, Furkan",
+      "orcid": "0009-0000-0228-8202",
+      "affiliation": "Maltepe University"
+    },
+    {
+      "name": "Şimşek, Arda",
+      "orcid": "0009-0000-7969-6351",
+      "affiliation": "Maltepe University"
+    }
+  ],
+  "keywords": [
+    "public procurement",
+    "incumbency",
+    "vendor lock-in",
+    "market concentration",
+    "Herfindahl-Hirschman index",
+    "bipartite networks",
+    "permutation null model",
+    "Article 21(b)",
+    "Law 4734",
+    "EKAP",
+    "Türkiye",
+    "IT procurement"
+  ],
+  "description": "<p>Reproducibility package (code, derived data, data dictionary, paper sources) for <em>Unconcentrated markets, captive buyers: incumbency in Türkiye's public IT procurement</em> (F. Aksoy, A. Şimşek).</p><p>The data are 9,991 awarded IT contracts (main sample; 13,024 audited records in total) published on Türkiye's e-procurement platform EKAP between 2010 and 2026, linking 2,814 firms to 2,890 public buyers. No product market is robustly concentrated (pooled supplier HHI 39 by contract count and 149 by real value; within-market count HHI below 1,000 everywhere). Buyers nevertheless return to incumbents far more often than chance: 45.2% of repeat-eligible contracts go to an incumbent supplier versus 6.2% under a permutation null that preserves each buyer's demand and each firm's wins within product market and year (1,000 permutations). Incumbency is strongest in health IT and in negotiated procedures without prior publication (Art. 21(b), Law 4734), and incumbent-won tenders attract a single bid 71% of the time versus 32% for new suppliers.</p><p>Code is released under the MIT License. The derived data (data/) are released under CC BY 4.0; the underlying records are public records published by the Public Procurement Authority (KİK) on EKAP under Law 4734. Names of natural persons are pseudonymized (KVKK, Law 6698).</p>",
+  "notes": "Derived data in data/ are licensed CC-BY-4.0 (see data/LICENSE); code is MIT. Underlying records: Kamu İhale Kurumu (KİK), EKAP, https://ekapv2.kik.gov.tr.",
+  "related_identifiers": [],
+  "language": "eng"
+}

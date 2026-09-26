@@ -1,0 +1,31 @@
+Data license: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Scope
+-----
+The CC BY 4.0 license applies to the authors' derived compilation in this folder: the selection,
+cleaning, classification (IT scope, product markets, buyer sectors, procedure codes), firm-name
+canonicalization, buyer-label splitting, pseudonymization and documentation of the records, as
+released in contracts_v3.csv, firm_name_map_v3.csv, bid_counts_sample.csv and audit/.
+
+The underlying facts (tender numbers, buyers, winners, dates, amounts, procedures, bid counts) are
+public records published by the Public Procurement Authority of Türkiye (Kamu İhale Kurumu, KİK) on
+the Electronic Public Procurement Platform EKAP (https://ekapv2.kik.gov.tr) under Public Procurement
+Law No. 4734. No rights are claimed over those facts. The CPI series (cpi_turkey*.csv) are
+compiled from TÜİK / World Bank sources listed in cpi_turkey_SOURCES.txt.
+
+Attribution
+-----------
+Please cite:
+  Aksoy, F. and Şimşek, A. (2026). TenderNet v1.0.0: data and code for "Unconcentrated markets,
+  captive buyers: incumbency in Türkiye's public IT procurement". Zenodo. (DOI: see CITATION.cff)
+and acknowledge the source of the underlying records:
+  Source of underlying records: Kamu İhale Kurumu (KİK), EKAP, https://ekapv2.kik.gov.tr
+
+Personal data
+-------------
+Names of natural persons are pseudonymized (see README.md). Do not attempt to re-identify
+pseudonymized suppliers; any re-use must comply with Turkish Law No. 6698 on the Protection of
+Personal Data (KVKK) and, where applicable, the EU GDPR.
+
+Code in this repository is licensed separately under the MIT License (../LICENSE).

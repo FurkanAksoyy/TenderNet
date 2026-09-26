@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "TenderNet: data and code for 'Unconcentrated markets, captive buyers: incumbency in Türkiye's public IT procurement'"
+version: 1.0.0
+date-released: 2026-09-26
+license: MIT
+type: software
+authors:
+  - family-names: Aksoy
+    given-names: Furkan
+    email: furkan78177@gmail.com
+    orcid: "https://orcid.org/0009-0000-0228-8202"
+    affiliation: Maltepe University
+  - family-names: Şimşek
+    given-names: Arda
+    orcid: "https://orcid.org/0009-0000-7969-6351"
+    affiliation: Maltepe University
+keywords:
+  - public procurement
+  - incumbency
+  - vendor lock-in
+  - market concentration
+  - bipartite networks
+  - Türkiye
+  - EKAP
+preferred-citation:
+  type: article
+  title: "Unconcentrated markets, captive buyers: incumbency in Türkiye's public IT procurement"
+  authors:
+    - family-names: Aksoy
+      given-names: Furkan
+      orcid: "https://orcid.org/0009-0000-0228-8202"
+    - family-names: Şimşek
+      given-names: Arda
+      orcid: "https://orcid.org/0009-0000-7969-6351"
+  status: in-preparation
+  year: 2026

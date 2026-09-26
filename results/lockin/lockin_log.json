@@ -1,0 +1,76 @@
+{
+  "descriptives": {
+    "contracts": 9991,
+    "buyers": 2890,
+    "firms": 2814,
+    "dyads": 7219,
+    "repeat_dyads": 1377,
+    "share_in_repeat": 0.4152737463717346,
+    "repeat_dyad_share": 0.19074664080897633,
+    "max_w": 18,
+    "eligible": 4913,
+    "incumbent": 2222,
+    "incumbency": 0.4522694891105231,
+    "dyad_w_dist": {
+      "1": 5842,
+      "2": 820,
+      "3": 264,
+      "4": 118,
+      "5": 70
+    },
+    "dyad_w_ge6": 105,
+    "contracts_in_same_date_buyer_market_ties": 52,
+    "ineligible_first_date_ties": 18
+  },
+  "n_cells_N1": 234,
+  "n_cells_N1w": 84,
+  "n_cells_N2": 1424,
+  "S1_buyer_kurum_n": {
+    "contracts": 9991,
+    "buyers": 2723,
+    "firms": 2814,
+    "eligible": 5147
+  },
+  "S2_firm_original_n": {
+    "contracts": 9991,
+    "buyers": 2890,
+    "firms": 3133,
+    "eligible": 4913
+  },
+  "S3_excl_MHRS_callcentre_n": {
+    "contracts": 9981,
+    "buyers": 2889,
+    "firms": 2811,
+    "eligible": 4908
+  },
+  "S4_incl_gray_n": {
+    "contracts": 11397,
+    "buyers": 3252,
+    "firms": 3421,
+    "eligible": 5623
+  },
+  "S5_cell_sector_x_year_n": {
+    "contracts": 9991,
+    "buyers": 2890,
+    "firms": 2814,
+    "eligible": 4913
+  },
+  "S6_incumbency_buyer_level_any_market_n": {
+    "contracts": 9991,
+    "buyers": 2890,
+    "firms": 2814,
+    "eligible": 7087
+  },
+  "S7_excl_21f_n": {
+    "contracts": 7034,
+    "buyers": 2205,
+    "firms": 1939,
+    "eligible": 3417
+  },
+  "S8_cell_market_x_year_x_province_n": {
+    "contracts": 9991,
+    "buyers": 2890,
+    "firms": 2814,
+    "eligible": 4913
+  }
+}

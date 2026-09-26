@@ -1,0 +1,401 @@
+﻿IKN,yil,il,ihale_adi,usul,toplam_teklif,gecerli_teklif,indiren_sayisi,year,post7144,proc,proc3,usul_v3,incumbent_win,buyer_has_history,real_value,w,single,single_valid,inc_status
+2012/90216,2012,ANKARA,"Sayıştay Başkanlığınca Microsoft Ürünleri Yazılım Lisansları, Güvenlik",Açık,1.0,1.0,2.0,2012,0,open,open,open,1.0,1,212379.49139431445,43.07142857142857,1,1,incumbent winner
+2012/157407,2012,ERZİNCAN,HBYS (Hastane Bilgi Yönetim Sistemleri),Açık,4.0,2.0,7.0,2012,0,open,open,open,,0,3773060.172983949,43.07142857142857,0,0,buyer first in market (undefined)
+2012/47141,2012,İSTANBUL,YAZILIM LİSANSI ALIMI,Pazarlık,2.0,2.0,0.0,2012,0,oth_neg,21f,negotiated_21f,0.0,1,2068391.568362019,43.07142857142857,0,0,non-incumbent winner
+2012/53991,2012,İSTANBUL,Güngören Ağız ve Diş Sağlığı Merkezi HBYS Yazılımı İçin Teknik Alt Yap,Açık,2.0,2.0,1.0,2012,0,open,open,open,,0,551463.3561690195,43.07142857142857,0,0,buyer first in market (undefined)
+2012/66247,2012,DÜZCE,Üniversitemiz birimlerinin ihtiyacı olan yazılım ve donanım alımı,Açık,3.0,2.0,3.0,2012,0,open,open,open,,0,6730152.184103655,43.07142857142857,0,0,buyer first in market (undefined)
+2012/149552,2012,GAZİANTEP,HASTANE BİLGİ YÖNETİM SİSTEMİ KULLANIM ELAMANI,Açık,1.0,1.0,6.0,2012,0,open,open,open,0.0,1,12492675.703742024,43.07142857142857,1,1,non-incumbent winner
+2012/191184,2012,GAZİANTEP,2 Personel ile Hastane Bilgi Yönetim Sistemi (HBYS) Veri Tabanı Yöneti,Pazarlık,2.0,1.0,0.0,2012,0,oth_neg,21f,negotiated_21f,,0,1269352.2065364532,43.07142857142857,0,1,buyer first in market (undefined)
+2012/151822,2012,ANKARA,"IBM WebSphere Application Server, IBM Content Manager Enterprise Editi",Pazarlık,3.0,3.0,0.0,2012,0,21b,21b,negotiated_21b,,0,10388127.296461033,43.07142857142857,0,0,buyer first in market (undefined)
+2012/133518,2012,ANKARA,Yazılım Bakım ve Teknik Destek Hizmet Alımı,Açık,4.0,3.0,2.0,2012,0,open,open,open,,0,5962785.068168633,43.07142857142857,0,0,buyer first in market (undefined)
+2012/193146,2012,ÇORUM,Bilişim Hizmeti,Pazarlık,1.0,1.0,0.0,2012,0,oth_neg,21f,negotiated_21f,1.0,1,986179.551344034,43.07142857142857,1,1,incumbent winner
+2012/62743,2012,ANKARA,Yazılım Geliştirme ve Destek Hizmeti alımı,Pazarlık,5.0,5.0,0.0,2012,0,oth_neg,21f,negotiated_21f,1.0,1,1829849.3859988397,43.07142857142857,0,0,incumbent winner
+2012/156109,2012,ANKARA,"TEDAŞ Genel Müdürlüğü Merkez Birimleri, Bağlı Şirketler ve Temsilcilik",Açık,6.0,5.0,7.0,2012,0,open,open,open,0.0,1,2806948.944594856,43.07142857142857,0,0,non-incumbent winner
+2012/136416,2012,ÇANKIRI,Hastane Bilgi Yönetim sistemi kullanıcı elamanı,Açık,3.0,3.0,9.0,2012,0,open,open,open,,0,22703837.635100562,43.07142857142857,0,0,buyer first in market (undefined)
+2012/61778,2012,KİLİS,6 KALEM BİLİŞİM MALZEMESİ,Açık,1.0,1.0,0.0,2012,0,open,open,open,,0,541490.7539644169,43.07142857142857,1,1,buyer first in market (undefined)
+2013/169921,2013,ESKİŞEHİR,01/12/2013-31/01/2014 TARİHLERİ ARASI 2 AY SÜRE İLE HBYS OTOMASYON HİZ,Pazarlık,1.0,1.0,0.0,2013,0,21b,21b,negotiated_21b,1.0,1,483734.128457698,32.40909090909091,1,1,incumbent winner
+2013/35162,2013,İSTANBUL,"2 AYLIK BİLGİSAYAR, SUNUCU, ÇEVRE BİRİMLERİ, İNTERNET, FİREWALL, WEB S",Pazarlık,2.0,1.0,0.0,2013,0,21b,21b,negotiated_21b,,0,1043271.3105383888,32.40909090909091,0,1,buyer first in market (undefined)
+2013/71669,2013,İSTANBUL,Merkezi Veri Tabanı Sistemi Donanım ve Yazılım Alımı,Açık,4.0,4.0,2.0,2013,0,open,open,open,,0,24178831.747852292,32.40909090909091,0,0,buyer first in market (undefined)
+2013/53756,2013,İSTANBUL,Kurumsal Harcama Yönetim Sistemi (Hys) İşi,Açık,2.0,2.0,1.0,2013,0,open,open,open,0.0,1,13214993.287905365,32.40909090909091,0,0,non-incumbent winner
+2013/174872,2013,KOCAELİ,Kurumsal Kaynak Planlama (ERP) Yazılımının Kurulumu Hizmeti Temini İşi,Açık,5.0,5.0,1.0,2013,0,open,open,open,,0,5727036.387352134,32.40909090909091,0,0,buyer first in market (undefined)
+2013/48526,2013,ANKARA,BİLGİSAYAR DESTEKLİ TEKNİK ÇİZİM YAZILIMI ALIMI İŞİ,Açık,3.0,2.0,1.0,2013,0,open,open,open,0.0,1,1708876.070031035,32.40909090909091,0,0,non-incumbent winner
+2013/146868,2013,BİNGÖL,2014-2015 yılları için 12 Personel ile birlikte(HBYS Web Tabanlı)yazıl,Açık,5.0,4.0,9.0,2013,0,open,open,open,,0,17426025.873161517,32.40909090909091,0,0,buyer first in market (undefined)
+2013/172606,2013,ERZURUM,İLÇE MİLLİ EĞİTİM MÜDÜRLÜĞÜNE BAĞLI KÖY OKULLARINA BİLİŞİM ARAÇLARI,Açık,1.0,1.0,2.0,2013,0,open,open,open,,0,782026.8186929339,32.40909090909091,1,1,buyer first in market (undefined)
+2013/193126,2013,ÇORUM,Yönetim Bilgi Sistemi Bakım ve Destek Hizmet Alım,Pazarlık,1.0,1.0,0.0,2013,0,oth_neg,21f,negotiated_21f,,0,296674.8024558089,32.40909090909091,1,1,buyer first in market (undefined)
+2013/65960,2013,MANİSA,AUTODESK VE PHOTOSHOP YAZILIM ALIMI,Pazarlık,1.0,1.0,0.0,2013,0,oth_neg,21f,negotiated_21f,,0,1073819.322628525,32.40909090909091,1,1,buyer first in market (undefined)
+2013/107395,2013,ZONGULDAK,BİLİŞİM MALZEMESİ,Açık,2.0,2.0,1.0,2013,0,open,open,open,,0,400964.1350694913,32.40909090909091,0,0,buyer first in market (undefined)
+2013/45867,2013,TRABZON,"Sunucu , Kabinet ve Yazılım Alımı",Açık,3.0,3.0,3.0,2013,0,open,open,open,,0,1318621.6361818018,32.40909090909091,0,0,buyer first in market (undefined)
+2013/26746,2013,ANKARA,BEBEK BİLDİRİM SİSTEMİ YAZILIMI (NEONATAL TARAMA PROGRAMI),Açık,8.0,8.0,7.0,2013,0,open,open,open,,0,2290814.5549408537,32.40909090909091,0,0,buyer first in market (undefined)
+2013/98483,2013,BALIKESİR,"BİLGİSAYAR AĞLARI, BAĞLANTI VE GÜVENLİK DONANIMI, YAZILIMI ALIMI",Açık,1.0,1.0,2.0,2013,0,open,open,open,1.0,1,19514790.584356587,32.40909090909091,1,1,incumbent winner
+2013/43281,2013,BURSA,"Sunucu Bilgisayarlar, Veri Depolama Birimi ve Yazılım Lisansları",Pazarlık,2.0,2.0,0.0,2013,0,oth_neg,21f,negotiated_21f,,0,1868445.6213736336,32.40909090909091,0,0,buyer first in market (undefined)
+2013/173553,2013,İSTANBUL,SANALLAŞTIRMA LİSANSI VE YEDEKLEME YAZILIMI,Açık,1.0,1.0,1.0,2013,0,open,open,open,,0,1202677.6413439482,32.40909090909091,1,1,buyer first in market (undefined)
+2013/191176,2013,MARDİN,6  Destek Elamanlı ve 4 Aylık Hastane Bilgi Yönetim Sistemi (HBYS) Kir,Pazarlık,2.0,1.0,0.0,2013,0,oth_neg,21f,negotiated_21f,,0,1030866.5497233841,32.40909090909091,0,1,buyer first in market (undefined)
+2013/164233,2013,VAN,üzüncü Yıl Üniversitesi Dursun Odabaş Tıp Fakültesi Hastane Bilgi Yöne,Açık,3.0,3.0,5.0,2013,0,open,open,open,,0,3264410.7407907164,32.40909090909091,0,0,buyer first in market (undefined)
+2013/15749,2013,İSTANBUL,MOBİL UYGULAMA,Açık,9.0,6.0,2.0,2013,0,open,open,open,,0,557670.1682184141,32.40909090909091,0,0,buyer first in market (undefined)
+2013/57581,2013,ANKARA,Microsoft Premier Yazılım Destek Pls245 Paketi ve Microsoft MCS Yazılı,Açık,2.0,2.0,3.0,2013,0,open,open,open,,0,14632577.969684703,32.40909090909091,0,0,buyer first in market (undefined)
+2013/119164,2013,KIRIKKALE,Web Tabanlı Hastane Bilgi Ve Yönetim Sistemi Hizmet Alımı,Pazarlık,1.0,1.0,0.0,2013,0,21b,21b,negotiated_21b,,0,1544581.7136688705,32.40909090909091,1,1,buyer first in market (undefined)
+2013/98780,2013,ANKARA,Harita sayısallaştırma ve yazılım Alım İşi,Açık,2.0,2.0,5.0,2013,0,open,open,open,0.0,1,7137102.043058516,32.40909090909091,0,0,non-incumbent winner
+2014/113136,2014,DÜZCE,36 AYLIK HASTANE BİLGİ YÖNETİM SİSTEMİ HİZMETİ,Açık,5.0,5.0,8.0,2014,0,open,open,open,0.0,1,7214305.063722006,24.25,0,0,non-incumbent winner
+2014/36583,2014,İSTANBUL,İbb Mobil Tanıtım Uygulamaları Yazılım ve İçerik Güncelleme ve Gelişti,Pazarlık,1.0,1.0,0.0,2014,0,oth_neg,21f,negotiated_21f,,0,1630941.740352037,24.25,1,1,buyer first in market (undefined)
+2014/40710,2014,ANKARA,HASTANE BİLGİ YÖNETİM SİSTEMİ HİZMET ALIMI (HBYS),Açık,9.0,8.0,12.0,2014,0,open,open,open,,0,1951487.556111065,24.25,0,0,buyer first in market (undefined)
+2014/35223,2014,İZMİR,"VERİTABANI SUNUCUSU, DONANIM VE YAZILIM ALIMI",Açık,2.0,2.0,3.0,2014,0,open,open,open,,0,6078256.81117263,24.25,0,0,buyer first in market (undefined)
+2014/134731,2014,KONYA,DEPOLAMA  BİRİMLERİ  SANALLAŞTIRMA YAZILIMLARI VE SUNUCU  REMLERİ ALIM,Açık,2.0,1.0,3.0,2014,0,open,open,open,,0,1364993.0146268902,24.25,0,1,buyer first in market (undefined)
+2014/46907,2014,İSTANBUL,"HASTANE BİLGİ YÖNETİM SİSTEMİNİN DEVAMI, GELİŞTİRİLMESİ, GÜNCELLENMESİ",Pazarlık,1.0,1.0,0.0,2014,0,21b,21b,negotiated_21b,,0,8049486.653995537,24.25,1,1,buyer first in market (undefined)
+2014/76643,2014,İSTANBUL,Genel Sekreterliğimize bağlı Esenler Kadın Doğum ve Çocuk Hastalıkları,Pazarlık,2.0,2.0,0.0,2014,0,21b,21b,negotiated_21b,1.0,1,1292258.2741095775,24.25,0,0,incumbent winner
+2014/8164,2014,İZMİR,Bilgisayar Donanım Bakım Onarım ve Teknik Destek Hizmet Alımı,Açık,1.0,1.0,2.0,2014,0,open,open,open,,0,1183748.0373522849,24.25,1,1,buyer first in market (undefined)
+2014/132817,2014,İSTANBUL,wwwsislibelediyesicom    ARA YÜZÜNÜN GÜNCEL TEKNOLOJİ VE YAZILIM TEKNİ,Pazarlık,1.0,1.0,0.0,2014,0,oth_neg,21f,negotiated_21f,,0,1808503.9459548795,24.25,1,1,buyer first in market (undefined)
+2014/87886,2014,EDİRNE,Hastane Bilgi Yönetim Sistemi Yazılım,Pazarlık,1.0,1.0,0.0,2014,0,oth_neg,21f,negotiated_21f,,0,2059721.5849929757,24.25,1,1,buyer first in market (undefined)
+2014/9192,2014,İSTANBUL,İstanbul Emniyet Müdürlüğü İstanbul Kent Güvenlik Yönetim Sistemi (Mob,Açık,4.0,3.0,5.0,2014,0,open,open,open,,0,1842267.0705313608,24.25,0,0,buyer first in market (undefined)
+2014/39111,2014,SAKARYA,KURUMSAL RAPORLAMA YAZILIM,Açık,2.0,1.0,0.0,2014,0,open,open,open,,0,2117593.711263532,24.25,0,1,buyer first in market (undefined)
+2014/140476,2014,YOZGAT,Hastane Otomasyon Sistemi Alımı,Pazarlık,2.0,2.0,0.0,2014,0,oth_neg,21f,negotiated_21f,1.0,1,1957130.0884224442,24.25,0,0,incumbent winner
+2014/111232,2014,İSTANBUL,Bahçelievler Devlet Hastanesi Bilgi Yönetim Sistemi (HBYS) Hizmet Alım,Pazarlık,1.0,1.0,0.0,2014,0,21b,21b,negotiated_21b,,0,1085102.3675729278,24.25,1,1,buyer first in market (undefined)
+2014/111204,2014,ANKARA,Atlas Uygulama Yazılımına Ek Fonksiyonların Kazandırılması Projesi Kap,Pazarlık,4.0,4.0,0.0,2014,0,oth_neg,21f,negotiated_21f,,0,1972913.3955871414,24.25,0,0,buyer first in market (undefined)
+2014/53053,2014,ANKARA,e-İhale Araştırma-Geliştirme ve Bilişim Destek Hizmeti,Açık,4.0,2.0,2.0,2014,0,open,open,open,1.0,1,206731298.3516201,24.25,0,0,incumbent winner
+2014/86059,2014,ANKARA,Veritabanı ve Uygulama Sunucusu Bakımı,Açık,3.0,2.0,1.0,2014,0,open,open,open,0.0,1,656980.160730518,24.25,0,0,non-incumbent winner
+2014/109728,2014,ÇORUM,Bilişim Hizmeti Alımı,Açık,7.0,5.0,12.0,2014,0,open,open,open,0.0,1,2489482.0991190807,24.25,0,0,non-incumbent winner
+2014/129073,2014,ANKARA,SOSYAL MEDYA YAZILIM ALIMI,Pazarlık,2.0,2.0,0.0,2014,0,oth_neg,21f,negotiated_21f,0.0,1,1775622.0560284273,24.25,0,0,non-incumbent winner
+2014/171143,2014,BURSA,Kent Bilgi Sistemi çalışmaları kapsamında veri eşleştirme işlemleri ve,Pazarlık,2.0,2.0,0.0,2014,0,21b,21b,negotiated_21b,,0,1867691.3478224939,24.25,0,0,buyer first in market (undefined)
+2014/52498,2014,İZMİR,"KAVŞAK KONTROL CİHAZI VE CİHAZLARA AİT TEMEL, TOPRAKLAMA ÇUBUĞU, YAZIL",Açık,3.0,2.0,3.0,2014,0,open,open,open,,0,6040929.289728121,24.25,0,0,buyer first in market (undefined)
+2014/72012,2014,ELAZIĞ,BELEDİYEMİZ BÜNYESİNDE KULLANILMAKTA OLAN MİCROSOFT YAZILIM ÜRÜNLERİ İ,Pazarlık,2.0,2.0,0.0,2014,0,oth_neg,21f,negotiated_21f,,0,917404.7289480207,24.25,0,0,buyer first in market (undefined)
+2014/35468,2014,KOCAELİ,Coğrafi Bilgi Sistemi Altyapısının Geliştirilmesi ve Coğrafi Veri Port,Pazarlık,2.0,2.0,0.0,2014,0,oth_neg,21f,negotiated_21f,0.0,1,1989893.6035451614,24.25,0,0,non-incumbent winner
+2014/12367,2014,RİZE,"GENEL LİSANSLI ELEKTRONİK İMZALAMA/DOĞRULAMA YAZILIMLARI 
+VE ENTEGRAS",Pazarlık,1.0,1.0,0.0,2014,0,oth_neg,21f,negotiated_21f,,0,565568.5067349805,24.25,1,1,buyer first in market (undefined)
+2014/73325,2014,BOLU,DANIŞMANLIK HİZMETİ ve YAZILIM,Pazarlık,2.0,2.0,0.0,2014,0,oth_neg,21f,negotiated_21f,,0,1078525.9895876374,24.25,0,0,buyer first in market (undefined)
+2014/167902,2014,İSTANBUL,KENT BİLGİ SİSTEMİ TEMEL UYGULAMA MODÜLLERİ YAZILIM HİZMET ALIMI İŞİ,Pazarlık,2.0,2.0,0.0,2014,0,oth_neg,21f,negotiated_21f,0.0,1,2011056.387901826,24.25,0,0,non-incumbent winner
+2014/145136,2014,İSTANBUL,"VERİ TABANI SUNUCUSU, KURULUMU, İŞLETİM SİSTEMİNİN YÜKLENMESİ, CLUSTER",Açık,1.0,1.0,2.0,2014,0,open,open,open,,0,4733019.236013552,24.25,1,1,buyer first in market (undefined)
+2014/161600,2014,NEVŞEHİR,Bilgisayar Teknik Destek Hizmet Alım İşi,Pazarlık,2.0,2.0,0.0,2014,0,oth_neg,21f,negotiated_21f,0.0,1,1366045.2351045366,24.25,0,0,non-incumbent winner
+2015/120546,2015,DENİZLİ,DENİZLİ DEVLET HASTANESİ 3 AYLIK HBYS HİZMET ALIMI (SARAYKÖY EK HİZMET,Pazarlık,1.0,1.0,0.0,2015,0,21b,21b,negotiated_21b,1.0,1,1344535.3700207232,37.833333333333336,1,1,incumbent winner
+2015/27178,2015,ANKARA,"Miras Kanunu, Pazarlama, Kooperatif, Destekleme ve Laboratuvar Modülle",Açık,1.0,1.0,4.0,2015,0,open,open,open,0.0,1,54965628.1564203,37.833333333333336,1,1,non-incumbent winner
+2015/1209,2015,ANTALYA,Yönetim Bilgi Sistemi Bilgisayar Veri Yönetimi Destek,Pazarlık&nbsp;(MD 21 F),1.0,1.0,0.0,2015,0,oth_neg,21f,negotiated_21f,,0,1331537.608412004,37.833333333333336,1,1,buyer first in market (undefined)
+2015/177240,2015,ANKARA,"ELEKTRONİK BELGE ARŞİVLEME YÖNETİM SİSTEMİ
+HİZMET ALIMI(Mevcut Arşiv ",Pazarlık,1.0,1.0,0.0,2015,0,oth_neg,21f,negotiated_21f,,0,1807959.3215135469,37.833333333333336,1,1,buyer first in market (undefined)
+2015/78012,2015,ANKARA,Avcı Avlakta Akıllı Mobil Uygulama Sistemi Hizmeti,Pazarlık,2.0,2.0,0.0,2015,0,oth_neg,21f,negotiated_21f,,0,1991198.4419372173,37.833333333333336,0,0,buyer first in market (undefined)
+2015/173447,2015,İZMİR,BİLGİSAYAR BAKIM ONARIM TEKNİK DESTEK HİZMET ALIM İŞİ,Pazarlık,1.0,1.0,0.0,2015,0,oth_neg,21f,negotiated_21f,,0,1099434.722542022,37.833333333333336,1,1,buyer first in market (undefined)
+2015/38317,2015,ANKARA,"Veteriner Bilgi Sistemi (TÜRKVET)  Yıllık Bakımı,
+Koyun Keçi Kayıt Si",Açık,1.0,1.0,2.0,2015,0,open,open,open,0.0,1,6046890.97398112,37.833333333333336,1,1,non-incumbent winner
+2015/66778,2015,İSTANBUL,"PROJEKSİYON, İNTERAKTİF DUVAR YAZI YÜZEYİ VE YAZILIMI",Pazarlık,3.0,3.0,0.0,2015,0,oth_neg,21f,negotiated_21f,,0,1649152.0838130326,37.833333333333336,0,0,buyer first in market (undefined)
+2015/28221,2015,KONYA,ÖĞRENCİ İŞLERİ OTOMASYON YAZILIMI,Pazarlık,1.0,1.0,0.0,2015,0,oth_neg,21f,negotiated_21f,,0,2015630.3246603734,37.833333333333336,1,1,buyer first in market (undefined)
+2015/16945,2015,İSTANBUL,GÜVENLİK YAZILIMLARI BAKIM GÜNCELLEME VE İSO 27001 BİLGİ GÜVENLİĞİ SER,Açık,2.0,1.0,3.0,2015,0,open,open,open,0.0,1,2931825.926778725,37.833333333333336,0,1,non-incumbent winner
+2015/8347,2015,ANKARA,Coğrafi Bilgi Sistemi (CBS) Rapor Geliştirme,Pazarlık,2.0,2.0,0.0,2015,0,oth_neg,21f,negotiated_21f,,0,1869039.028321437,37.833333333333336,0,0,buyer first in market (undefined)
+2015/57960,2015,DİYARBAKIR,Yazılım Hizmeti Alım İşi,Açık,2.0,2.0,2.0,2015,0,open,open,open,,0,7940361.885025713,37.833333333333336,0,0,buyer first in market (undefined)
+2015/122205,2015,ANKARA,"Tarım Dışı Talepler, Toprak Etütleri ve Tarımsal Potansiyeli Yüksek Ov",Açık,5.0,5.0,5.0,2015,0,open,open,open,0.0,1,102943737.85401797,37.833333333333336,0,0,non-incumbent winner
+2015/113426,2015,KOCAELİ,Bilgi İşlem ve Teknik Destek,Açık,6.0,6.0,18.0,2015,0,open,open,open,0.0,1,7037486.056730372,37.833333333333336,0,0,non-incumbent winner
+2015/47584,2015,BARTIN,"KIRTASİYE,BİLGİSAYAR VE BİLİŞİM MALZEMESİ",Açık,7.0,5.0,16.0,2015,0,open,open,open,,0,319874.42455292045,37.833333333333336,0,0,buyer first in market (undefined)
+2015/130477,2015,ANKARA,ÇEVRE VE ŞEHİRCİLİK BAKANLIĞI COĞRAFİ BİLGİ SİSTEMLERİ GENEL MÜDÜRLÜĞÜ,Açık,2.0,1.0,3.0,2015,0,open,open,open,0.0,1,8917637.193951955,37.833333333333336,0,1,non-incumbent winner
+2015/171506,2015,ZONGULDAK,WEB TABANLI YÖNETİM BİLGİ SİSTEMİ,Pazarlık,1.0,1.0,0.0,2015,0,oth_neg,21f,negotiated_21f,,0,1966766.5592140611,37.833333333333336,1,1,buyer first in market (undefined)
+2015/80499,2015,ÇANAKKALE,HBYS SUNUCU SİSTEMİ,Pazarlık,1.0,1.0,0.0,2015,0,oth_neg,21f,negotiated_21f,0.0,1,708524.5989715252,37.833333333333336,1,1,non-incumbent winner
+2016/566787,2016,BURSA,2017 YILI 3 AYLIK HBYS HİZMETİ ALIMI İHALESİ,Pazarlık,1.0,1.0,0.0,2016,0,21b,21b,negotiated_21b,0.0,1,799066.1029019048,28.208333333333332,1,1,non-incumbent winner
+2016/284411,2016,ARTVİN,EBYS (Elektronik Belge Yönetim Sistemi )Yazılım Alımı,Pazarlık,1.0,1.0,0.0,2016,0,oth_neg,21f,negotiated_21f,,0,978147.5841196367,28.208333333333332,1,1,buyer first in market (undefined)
+2016/159386,2016,ANKARA,Kütüphane elektronik materyalleri ile diğer bilgi ve belgenin Milli Kü,Pazarlık,2.0,2.0,0.0,2016,0,oth_neg,21f,negotiated_21f,1.0,1,1632135.0186932525,28.208333333333332,0,0,incumbent winner
+2016/287456,2016,AMASYA,Yazılım Lisansı Kiralama Hizmeti Alımı,Açık,2.0,2.0,4.0,2016,0,open,open,open,,0,622818.18942496,28.208333333333332,0,0,buyer first in market (undefined)
+2016/503168,2016,İSTANBUL,Adli Bilişim İhtisas Dairesine Adli Bilişim Donanım ve Yazılım,Pazarlık,2.0,2.0,0.0,2016,0,oth_neg,oth_neg,negotiated_21c,,0,147319567.04041302,28.208333333333332,0,0,buyer first in market (undefined)
+2016/131035,2016,ADANA,Bilgisayar ( server)  ve server yazılımı alımı,Açık,3.0,2.0,3.0,2016,0,open,open,open,,0,1127589.9467687376,28.208333333333332,0,0,buyer first in market (undefined)
+2016/555762,2016,İSTANBUL,"Proje Yönetim Sistemi Lisans, Danışmanlık ve Destek Hizmeti",Pazarlık,3.0,2.0,0.0,2016,0,oth_neg,21f,negotiated_21f,0.0,1,835222.4272743457,28.208333333333332,0,0,non-incumbent winner
+2016/230669,2016,İZMİR,"ÜNİVERSİTEMİZ TIP FAKÜLTESİ İÇİN 24 AYLIK (2016-2017) YAZILIM, EĞİTİM ",Açık,1.0,1.0,0.0,2016,0,open,open,open,,0,1674638.534805056,28.208333333333332,1,1,buyer first in market (undefined)
+2016/150640,2016,SAKARYA,"MONTAJ VE KURULUM DAHİL SUNUCU, YAZILIM, DONANIM ÜRÜNLERİ VE KESİNTİSİ",Açık,1.0,1.0,2.0,2016,0,open,open,open,,0,1530126.5800249241,28.208333333333332,1,1,buyer first in market (undefined)
+2016/209855,2016,İSTANBUL,YAZILIM ALIMI İŞİ,Pazarlık,2.0,2.0,0.0,2016,0,oth_neg,21f,negotiated_21f,,0,1892823.250845647,28.208333333333332,0,0,buyer first in market (undefined)
+2015/183449,2016,ANKARA,MİCROSOFT KURUMSAL LİSANS YAZILIM GÜVENCESİ,Açık,2.0,2.0,2.0,2016,0,open,open,open,0.0,1,12105001.388641622,28.208333333333332,0,0,non-incumbent winner
+2016/4994,2016,İSTANBUL,"Ağ Alt Yapısı, Sistem Odası ve Coğrafi Bilgi Sistemi Bakım",Pazarlık,2.0,2.0,0.0,2016,0,oth_neg,21f,negotiated_21f,0.0,1,1020084.3866832828,28.208333333333332,0,0,non-incumbent winner
+2016/498432,2016,ZONGULDAK,Yurt Yönetim Sistemi (KYKNET PARS) Donanım Satın,Pazarlık,3.0,2.0,0.0,2016,0,oth_neg,21f,negotiated_21f,,0,903341.3957628626,28.208333333333332,0,0,buyer first in market (undefined)
+2016/484437,2016,SİVAS,VERİ TABANI LİSANS ALIMI,Açık,1.0,1.0,1.0,2016,0,open,open,open,0.0,1,3768645.0952465725,28.208333333333332,1,1,non-incumbent winner
+2016/570676,2016,ANKARA,TEDAŞ Genel Müdürlüğünün bünyesinde mevcut database izleme ve performa,Pazarlık,2.0,1.0,0.0,2016,0,oth_neg,21f,negotiated_21f,,0,1661604.123197436,28.208333333333332,0,1,buyer first in market (undefined)
+2016/502089,2016,ERZİNCAN,Hastane Bilgi Yönetim Sistemi Hizmet Alımı,Açık,4.0,1.0,4.0,2016,0,open,open,open,0.0,1,951806.7384012818,28.208333333333332,0,1,non-incumbent winner
+2016/160400,2016,ADIYAMAN,HBYS HİZMET ALIMI (36 AYLIK),Açık,1.0,1.0,2.0,2016,0,open,open,open,1.0,1,2140953.1107708737,28.208333333333332,1,1,incumbent winner
+2016/92522,2016,İSTANBUL,Laboratuvar Bilgi Yönetim Sistemi,Pazarlık,1.0,1.0,0.0,2016,0,oth_neg,21f,negotiated_21f,1.0,1,839869.4783692362,28.208333333333332,1,1,incumbent winner
+2016/206390,2016,ANKARA,Elektronik Belge Yönetim Sistemi Bakım ve Destek Hizmetleri,Açık,2.0,1.0,3.0,2016,0,open,open,open,1.0,1,16321350.186932525,28.208333333333332,0,1,incumbent winner
+2016/547964,2016,İSTANBUL,Veritabanı ve Uygulama Yazılım Lisansları Hizmet Alımı,Pazarlık,1.0,1.0,0.0,2016,0,oth_neg,21f,negotiated_21f,0.0,1,1074749.5755385435,28.208333333333332,1,1,non-incumbent winner
+2016/131437,2016,KOCAELİ,Web tabanlı yazılım alımı,Pazarlık,3.0,3.0,0.0,2016,0,oth_neg,21f,negotiated_21f,,0,1360112.5155777105,28.208333333333332,0,0,buyer first in market (undefined)
+2016/124107,2016,SİNOP,SİNOP İL EMNİYET MÜDÜRLÜĞÜ KENT GÜVENLİK YÖNETİM SİSTEMİ 1 YILLIK BAKI,Pazarlık,1.0,1.0,0.0,2016,0,oth_neg,21f,negotiated_21f,,0,1643469.2896564,28.208333333333332,1,1,buyer first in market (undefined)
+2016/216406,2016,ANKARA,MİCROSOFT YAZILIM GELİŞTİRME TEKNİK DESTEK,Açık,1.0,1.0,2.0,2016,0,open,open,open,1.0,1,1409983.3078155597,28.208333333333332,1,1,incumbent winner
+2016/345051,2016,ANKARA,Kurumsal Kaynak Planlama Yazılımları Bakım ve Teknik Destek Alımı,Açık,3.0,1.0,4.0,2016,0,open,open,open,0.0,1,18961101.8942496,28.208333333333332,0,1,non-incumbent winner
+2016/574639,2017,ANKARA,GÜVENLİK YAZILIMI,Açık,3.0,3.0,3.0,2017,0,open,open,open,0.0,1,2542382.389312488,31.454545454545453,0,0,non-incumbent winner
+2017/303877,2017,İSTANBUL,SUNUCU İŞLETİM SİSTEMİ VE OFİS YAZILIM LİSANSI,Pazarlık&nbsp;(MD 21 F),2.0,2.0,0.0,2017,0,oth_neg,21f,negotiated_21f,,0,1194318.036009483,31.454545454545453,0,0,buyer first in market (undefined)
+2017/194501,2017,KOCAELİ,Muhtelif Bilişim Malzemeleri ve Güvenlik Kamera Sistemleri,Açık,4.0,2.0,5.0,2017,0,open,open,open,,0,992579.5345037484,31.454545454545453,0,0,buyer first in market (undefined)
+2016/609119,2017,ADANA,COĞRAFİ BİLGİ SİSTEMİ TEMEL UYGULAMASI LİSANSI HİZMETİ ALIMI,Pazarlık,2.0,2.0,0.0,2017,0,oth_neg,21f,negotiated_21f,0.0,1,1743872.3970013456,31.454545454545453,0,0,non-incumbent winner
+2017/510946,2017,İSTANBUL,"MEVCUT VERİ DEPOLAMA SİSTEMLERİNİN KAPASİTE ARTIRIMI, YENİLENMESİ, GÜV",Açık,2.0,2.0,2.0,2017,0,open,open,open,1.0,1,17183771.8651887,31.454545454545453,0,0,incumbent winner
+2017/110340,2017,DİYARBAKIR,Dicle Üniversitesi Bilgi İşlem Daire Başkanlığı Microsoft İşletim Sist,Açık,3.0,3.0,3.0,2017,0,open,open,open,,0,987174.5498814635,31.454545454545453,0,0,buyer first in market (undefined)
+2017/350724,2017,ADANA,Adana Büyükşehir Belediyesi Başkanlığına Bağlı Yazılım Lisansı Alımı İ,Açık,1.0,1.0,3.0,2017,0,open,open,open,0.0,1,2534223.921958096,31.454545454545453,1,1,non-incumbent winner
+2017/362487,2017,ANKARA,5 AYLIK HASTANE BİLGİ YÖNETİM SİSTEMİ HİZMETİ ALIMI,Pazarlık&nbsp;(MD 21 B),1.0,1.0,0.0,2017,0,21b,21b,negotiated_21b,0.0,1,1618079.02848081,31.454545454545453,1,1,non-incumbent winner
+2017/241634,2017,AMASYA,UZAKTAN EĞİTİM YÖNETİM SİSTEMİ ve SANAL SINIF SİSTEMİ YAZILIMI PROGRAM,Açık,1.0,1.0,0.0,2017,0,open,open,open,0.0,1,1615376.5361696675,31.454545454545453,1,1,non-incumbent winner
+2017/187228,2017,KOCAELİ,"6 Kalem Hastane Bilişim Ürünleri, Mefruşat ve Dayanıklı Tüketim Malzem",Açık,1.0,1.0,8.0,2017,0,open,open,open,0.0,1,182545.70705452684,31.454545454545453,1,1,non-incumbent winner
+2017/125057,2017,ANKARA,MIKHZM-270 SANAL GERÇEKLİK YAZILIM İŞİ,Pazarlık,3.0,3.0,0.0,2017,0,oth_neg,21f,negotiated_21f,0.0,1,1733674.3128083553,31.454545454545453,0,0,non-incumbent winner
+2017/457764,2017,İSTANBUL,3 AYLIK HBYS HİZMET ALIMI,Pazarlık&nbsp;(MD 21 B),1.0,1.0,0.0,2017,0,21b,21b,negotiated_21b,1.0,1,1713278.1444223747,31.454545454545453,1,1,incumbent winner
+2017/162667,2017,NEVŞEHİR,Nevşehir İl Emniyet Müdürlüğü Kent Güvenlik Yönetim Sistemi (KGYS) ve ,Pazarlık&nbsp;(MD 21 C),2.0,2.0,0.0,2017,0,oth_neg,oth_neg,negotiated_21c,1.0,1,1499118.3763695778,31.454545454545453,0,0,incumbent winner
+2017/295373,2017,ERZURUM,8 ADET MİMARİ VE GÖRSELLEŞTİRME YAZILIM PROGRAMLARI ALIM İŞİ,Açık,2.0,2.0,2.0,2017,0,open,open,open,,0,4070504.1171269305,31.454545454545453,0,0,buyer first in market (undefined)
+2017/429270,2017,KIRIKKALE,2 KALEM TIBBİ CİHAZ VE 1 KALEM TASARIM YAZILIMI,Açık,1.0,1.0,3.0,2017,0,open,open,open,0.0,1,5585062.392964696,31.454545454545453,1,1,non-incumbent winner
+2017/232219,2017,DENİZLİ,Trafik Yönetim Sistemi Malzeme Alımı,Pazarlık,1.0,1.0,0.0,2017,0,oth_neg,21f,negotiated_21f,1.0,1,1759087.9386172872,31.454545454545453,1,1,incumbent winner
+2017/340292,2017,İSTANBUL,"CAZ BÖLÜMÜ İÇİN ENSTRÜMAN, SES VE GÖRÜNTÜ SİSTEMLERİ İLE YAZILIM VE KA",Açık,3.0,2.0,3.0,2017,0,open,open,open,,0,91670.57881079004,31.454545454545453,0,0,buyer first in market (undefined)
+2017/299318,2017,SAKARYA,Arıza İhbar Yönetimi Yazılım,Pazarlık&nbsp;(MD 21 F),3.0,2.0,0.0,2017,0,oth_neg,21f,negotiated_21f,0.0,1,1346147.113474723,31.454545454545453,0,0,non-incumbent winner
+2017/489687,2017,ELAZIĞ,Web  Sitesi Tasarım ve Yazılım Alımı,Pazarlık&nbsp;(MD 21 F),1.0,1.0,0.0,2017,0,oth_neg,21f,negotiated_21f,,0,917827.5773691293,31.454545454545453,1,1,buyer first in market (undefined)
+2017/329972,2017,UŞAK,TIP FAKÜLTESİ  EĞİTİM YÖNETİM YAZILIMI,Pazarlık&nbsp;(MD 21 F),1.0,1.0,0.0,2017,0,oth_neg,21f,negotiated_21f,,0,1274760.5241237907,31.454545454545453,1,1,buyer first in market (undefined)
+2017/570122,2017,YOZGAT,36 Aylık HBYS Hizmet Alımı,Açık,2.0,1.0,6.0,2017,0,open,open,open,,0,38888354.45313001,31.454545454545453,0,1,buyer first in market (undefined)
+2017/360907,2017,BİTLİS,"Plaka Tanıma Sistemi
+Plaka Okuma özellikli kamera 1 adet, Plaka tanım",Pazarlık&nbsp;(MD 21 F),2.0,1.0,0.0,2017,0,oth_neg,21f,negotiated_21f,,0,648802.1163580446,31.454545454545453,0,1,buyer first in market (undefined)
+2018/360312,2018,SİNOP,HASTANE BİLGİ YÖNETİM SİSTEMİ ( HBYS ),Açık,5.0,1.0,6.0,2018,1,open,open,open,,0,18736006.826586254,18.90909090909091,0,1,buyer first in market (undefined)
+2018/230615,2018,İSTANBUL,Toplum ve Ruh Sağlığı Hizmetleri Yönetim Bilgi Sistemi Yazılımı  Hizme,Pazarlık (MD 21 B),1.0,1.0,0.0,2018,0,21b,21b,negotiated_21b,1.0,1,1314949.6034368803,18.90909090909091,1,1,incumbent winner
+2018/360207,2018,ANKARA,'Kod Adı 2023 Projesi Uzaktan Eğitim Videoları ve İleri Düzey Yazılım ,Pazarlık&nbsp;(MD 21 F),3.0,3.0,0.0,2018,1,oth_neg,21f,negotiated_21f,,0,1551640.5320555188,18.90909090909091,0,0,buyer first in market (undefined)
+2018/346624,2018,ANKARA,Ankara İl Emniyet Müdürlüğü Kent Güvenlik Yönetim Sistemi (KGYS) ANK-6,Pazarlık&nbsp;(MD 21 C),4.0,1.0,0.0,2018,1,oth_neg,oth_neg,negotiated_21c,,0,1972424.4051553207,18.90909090909091,0,1,buyer first in market (undefined)
+2018/396573,2018,ARTVİN,Hastane Bilgi Yönetim Sistemi,Açık,2.0,1.0,5.0,2018,1,open,open,open,0.0,1,26595661.793617815,18.90909090909091,0,1,non-incumbent winner
+2018/478857,2018,GAZİANTEP,Bilişim Malzemeleri Alım İşi,Açık,1.0,1.0,2.0,2018,1,open,open,open,,0,3774343.6783983256,18.90909090909091,1,1,buyer first in market (undefined)
+2018/275638,2018,DENİZLİ,Yazılım Lisanslarının Satın Alınması ve Kiralanması Hizmeti Alımı,Açık,3.0,3.0,4.0,2018,1,open,open,open,1.0,1,1198243.4429665124,18.90909090909091,0,0,incumbent winner
+2018/34677,2018,İSTANBUL,"BELEDİYE YÖNETİM BİLGİ SİSTEMİ TEKNİK DESTEK, GELİŞTİRME VE BAKIM HİZM",Açık,1.0,1.0,2.0,2018,0,open,open,open,1.0,1,1841806.0778805905,18.90909090909091,1,1,incumbent winner
+2018/701908,2018,İSTANBUL,HBYS HİZMET ALIMI,Pazarlık&nbsp;(MD 21 B),1.0,1.0,0.0,2018,1,21b,21b,negotiated_21b,,0,5888507.903921018,18.90909090909091,1,1,buyer first in market (undefined)
+2018/201960,2018,YOZGAT,Hastane Bilgi Yönetim Sistemi (HBYS) Alımı,Pazarlık&nbsp;(MD 21 F),1.0,1.0,0.0,2018,0,oth_neg,21f,negotiated_21f,0.0,1,1893527.4289491076,18.90909090909091,1,1,non-incumbent winner
+2018/373195,2018,AFYONKARAHİSAR,ABYS ve VERİ TABANI YILLIKBAKIM HİZMETİ,Pazarlık&nbsp;(MD 21 F),1.0,1.0,0.0,2018,1,oth_neg,21f,negotiated_21f,1.0,1,525979.8413747521,18.90909090909091,1,1,incumbent winner
+2018/34544,2018,KOCAELİ,Bilişim Ürünleri,Açık,1.0,1.0,2.0,2018,0,open,open,open,0.0,1,11624154.494382022,18.90909090909091,1,1,non-incumbent winner
+2018/477988,2018,ANKARA,Yazılım Lisansları,Pazarlık&nbsp;(MD 21 F),3.0,3.0,0.0,2018,1,oth_neg,21f,negotiated_21f,0.0,1,1762225.3278805905,18.90909090909091,0,0,non-incumbent winner
+2018/323494,2018,KARAMAN,"İl Sağlık Müdürlüğüne bağlı, Kazımkarabekir Entegre İlçe Hastanesi içi",Açık,2.0,2.0,3.0,2018,1,open,open,open,0.0,1,2542060.5733641773,18.90909090909091,0,0,non-incumbent winner
+2018/86870,2018,ANKARA,Yazılım Bakım Hizmet Alımı,Pazarlık&nbsp;(MD 21 F),1.0,1.0,0.0,2018,0,oth_neg,21f,negotiated_21f,1.0,1,1479756.6204009694,18.90909090909091,1,1,incumbent winner
+2018/393121,2018,İSTANBUL,İstanbul Büyükçekmece Mimar Sinan Devlet Hastanesi İhtiyacı Olan 4 Ayl,Pazarlık&nbsp;(MD 21 B),1.0,1.0,0.0,2018,1,21b,21b,negotiated_21b,,0,736371.777924653,18.90909090909091,1,1,buyer first in market (undefined)
+2018/547337,2018,ANKARA,Ağ Erişim Kontrol Yazılım Alımı,Pazarlık&nbsp;(MD 21 F),2.0,2.0,0.0,2018,1,oth_neg,21f,negotiated_21f,0.0,1,1705489.635657634,18.90909090909091,0,0,non-incumbent winner
+2018/669331,2018,BURDUR,3 (ÜÇ) AY SÜRE İLE SAĞLIK BİLGİ YÖNETİM SİSTEMİ HİZMETİ ALIMI,Pazarlık&nbsp;(MD 21 F),1.0,1.0,0.0,2018,1,oth_neg,21f,negotiated_21f,1.0,1,1585776.6237607403,18.90909090909091,1,1,incumbent winner
+2018/78304,2018,İZMİR,"Adres Eşleştirme, Gelir Artırıcı Çalışmalar, Veri Tabanı Lisans ve  Ya",Açık,2.0,1.0,3.0,2018,0,open,open,open,,0,2542235.8999779685,18.90909090909091,0,1,buyer first in market (undefined)
+2018/267686,2018,İSTANBUL,Esenler KDCH Hastanesi İhtiyacı Olan Hastane Bilgi Yönetim Sistemi Hiz,Açık,1.0,1.0,2.0,2018,1,open,open,open,1.0,1,1354398.091539987,18.90909090909091,1,1,incumbent winner
+2018/487293,2018,ANKARA,EÜAŞ iş zekası ileri raporlama sistemi ve veritabanı bakımı,Pazarlık&nbsp;(MD 21 F),1.0,1.0,0.0,2018,1,oth_neg,21f,negotiated_21f,0.0,1,1306533.9259748843,18.90909090909091,1,1,non-incumbent winner
+2018/194696,2018,ANKARA,2018 Yılı 6 Aylık Hastane Bilgi Yönetim Sistemi(HBYS) Hizmet Alımı,Pazarlık&nbsp;(MD 21 B),1.0,1.0,0.0,2018,0,21b,21b,negotiated_21b,1.0,1,1437871.09236616,18.90909090909091,1,1,incumbent winner
+2018/261536,2018,KIRKLARELİ,Bilgisayar Malzemesi Alımı ve Yazılım Güvenlik Duvarı alımı işi,Açık,1.0,1.0,4.0,2018,1,open,open,open,,0,584665.2532063781,18.90909090909091,1,1,buyer first in market (undefined)
+2018/653620,2018,DENİZLİ,Trafik Yönetim Sistemi Malzeme Alımı,Pazarlık&nbsp;(MD 21 F),1.0,1.0,0.0,2018,1,oth_neg,21f,negotiated_21f,1.0,1,1751837.226013439,18.90909090909091,1,1,incumbent winner
+2018/139917,2018,İSTANBUL,"Kimlik Yönetim Sistemi Lisans, Bakım ve Destek Hizmeti Alımı",Açık,3.0,3.0,1.0,2018,0,open,open,open,0.0,1,3234776.024454726,18.90909090909091,0,0,non-incumbent winner
+2018/199216,2018,İSTANBUL,2018 Yılı 4 Aylık (01Mayıs2018 -  31Ağustos2018) Hastane Bilgi Yönetim,Pazarlık&nbsp;(MD 21 B),2.0,1.0,0.0,2018,0,21b,21b,negotiated_21b,1.0,1,399744.67944481166,18.90909090909091,0,1,incumbent winner
+2018/208417,2018,İSTANBUL,Toplum ve Ruh Sağlığı Hizmetleri Yönetim Bilgi Sistemi Yazılımı ve Evd,Pazarlık (MD 21 B),1.0,1.0,0.0,2018,0,21b,21b,negotiated_21b,1.0,1,1956645.009914078,18.90909090909091,1,1,incumbent winner
+2017/624649,2018,ANKARA,2 KISIM MİCROSOFT PREMİER TEKNİK DESTEK HİZMETİ ALIMI,Açık,4.0,4.0,6.0,2018,0,open,open,open,0.0,1,18350560.032496143,18.90909090909091,0,0,non-incumbent winner
+2018/572987,2018,ANKARA,Bilişim Donanımları Parçalı Bakım ve Destek,Açık,1.0,1.0,2.0,2018,1,open,open,open,1.0,1,11738116.793346552,18.90909090909091,1,1,incumbent winner
+2018/451992,2018,AYDIN,Ağ Yönetim Bilgi Sistemi İçin Malzeme Alımı,Pazarlık&nbsp;(MD 21 F),2.0,1.0,0.0,2018,1,oth_neg,21f,negotiated_21f,0.0,1,1961896.0419971358,18.90909090909091,0,1,non-incumbent winner
+2018/267150,2018,ANKARA,Veri Depolama Sistemleri Kapasite Artırımı ve Yazılım Güncelleme,Açık,1.0,1.0,3.0,2018,1,open,open,open,,0,31269501.569729015,18.90909090909091,1,1,buyer first in market (undefined)
+2018/46362,2018,DENİZLİ,"36 AYLIK HASTANE BİLGİ YÖNETİM SİSTEMİ (PACS Dahil) BAKIM,ONARIM VE GÜ",Açık,1.0,1.0,3.0,2018,0,open,open,open,,0,5567939.49597819,18.90909090909091,1,1,buyer first in market (undefined)
+2018/377849,2018,İSTANBUL,HASTANE BİLGİ YÖNETİM SİSTEMİ (HBYS),Pazarlık&nbsp;(MD 21 B),1.0,1.0,0.0,2018,1,21b,21b,negotiated_21b,,0,810885.5887860763,18.90909090909091,1,1,buyer first in market (undefined)
+2019/437119,2019,İSTANBUL,Hastane Bilgi Yönetim Sistemi (HBYS) Hizmet Alımı,Açık,3.0,1.0,5.0,2019,1,open,open,open,,0,6411517.195868401,22.708333333333332,0,1,buyer first in market (undefined)
+2019/61298,2019,İSTANBUL,BEYLİKDÜZÜ BELEDİYESİ KÜLTÜR İŞLERİ MÜDÜRLÜĞÜ INTERNET TELEVİZYONU ONL,Açık,1.0,1.0,2.0,2019,1,open,open,open,1.0,1,8136172.699885233,22.708333333333332,1,1,incumbent winner
+2019/109591,2019,ANKARA,ÖĞRENCİ İŞLERİ OTOMASYON VE EK DERS OTOMASYON YAZILIM,Açık,1.0,1.0,2.0,2019,1,open,open,open,,0,4414387.433052793,22.708333333333332,1,1,buyer first in market (undefined)
+2019/447228,2019,GİRESUN,4 AYLIK HASTANE BİLGİ YÖNETİM SİSTEMİ (HBYS) HİZMET ALIMI,Pazarlık&nbsp;(MD 21 B),1.0,1.0,2.0,2019,1,21b,21b,negotiated_21b,,0,8671135.568668706,22.708333333333332,1,1,buyer first in market (undefined)
+2019/617530,2019,ANKARA,Karayolları Genel Müdürlüğü SharePoint 2016 ve Sharepoint 2019 üzerind,Açık,1.0,1.0,2.0,2019,1,open,open,open,1.0,1,2259557.484697781,22.708333333333332,1,1,incumbent winner
+2019/496260,2019,İZMİR,"ORACLE VERİ TABANI YAZILIMLARI GÜNCELLEME, BAKIM, DESTEK",Açık,2.0,2.0,4.0,2019,1,open,open,open,1.0,1,3668508.177123183,22.708333333333332,0,0,incumbent winner
+2019/509989,2019,İZMİR,"Bilgi Yönetim Sistemi Yazılım Güncelleme, Geliştirme ve Destek",Açık,1.0,1.0,2.0,2019,1,open,open,open,0.0,1,7123907.995409334,22.708333333333332,1,1,non-incumbent winner
+2019/111753,2019,İSTANBUL,LOGLAMA (SIEM) YAZILIM ALIMI,Pazarlık&nbsp;(MD 21 F),5.0,5.0,2.0,2019,1,oth_neg,21f,negotiated_21f,,0,1484147.4990436113,22.708333333333332,0,0,buyer first in market (undefined)
+2019/559494,2019,İZMİR,BÜYÜKŞEHİR BELEDİYE YAZILIMLARI YAZILIM GELİŞTİRME VE DESTEK,Açık,1.0,1.0,6.0,2019,1,open,open,open,1.0,1,37263518.74521805,22.708333333333332,1,1,incumbent winner
+2019/435108,2019,İZMİR,WEB SİTESİ YAZILIMLARI İNTRANET UYGULAMASI VE E-POSTA SİSTEMİ DESTEK,Açık,1.0,1.0,4.0,2019,1,open,open,open,,0,12777368.314843152,22.708333333333332,1,1,buyer first in market (undefined)
+2019/379189,2019,DİYARBAKIR,Müdürlüğümüz ve Müdürlüğümüze Bağlı Sağlık Tesislerine Ait 3 Kalem Bil,Açık,8.0,8.0,10.0,2019,1,open,open,open,,0,2672637.594252104,22.708333333333332,0,0,buyer first in market (undefined)
+2019/582749,2019,BOLU,3 Yıllık Güvenlik Duvarı Yazılım Lisansı Güncelleme Hizmeti Alımı,Açık,1.0,1.0,3.0,2019,1,open,open,open,,0,1628756.7425401683,22.708333333333332,1,1,buyer first in market (undefined)
+2019/287834,2019,İSTANBUL,"BELEDİYEMİZ BÜNYESİNDE KULLANILAN YAZILIMLARIN MEVZUATLARA UYUMLULUK, ",Pazarlık&nbsp;(MD 21 F),1.0,1.0,3.0,2019,1,oth_neg,21f,negotiated_21f,0.0,1,2054973.4602142312,22.708333333333332,1,1,non-incumbent winner
+2019/714772,2019,ANKARA,DOKÜMAN TASARIM ÜRETİM İŞLEME YAZILIMI,Pazarlık&nbsp;(MD 21 F),1.0,1.0,1.0,2019,1,oth_neg,21f,negotiated_21f,0.0,1,2016918.3961361898,22.708333333333332,1,1,non-incumbent winner
+2019/671092,2019,İZMİR,2020 Yılı 11 Aylık (01/02/2020-31/12/2020) tarihleri arası Hastane Bil,Açık,1.0,1.0,2.0,2019,1,open,open,open,0.0,1,418605.70485845447,22.708333333333332,1,1,non-incumbent winner
+2019/421714,2019,TEKİRDAĞ,GÜVENLİK KAMERASI VE BİLİŞİM MALZEMESİ ALIMI,Açık,1.0,1.0,4.0,2019,1,open,open,open,,0,607998.1477620505,22.708333333333332,1,1,buyer first in market (undefined)
+2019/549876,2019,İSTANBUL,Muhtelif Bilişim Malzeme Alımı İşi,Pazarlık&nbsp;(MD 21 F),3.0,3.0,3.0,2019,1,oth_neg,21f,negotiated_21f,1.0,1,2203053.325554705,22.708333333333332,0,0,incumbent winner
+2019/26973,2019,ANKARA,Millî Kütüphane'de kullanılan Windows sistemler üzerinde çalışmakta ol,Pazarlık&nbsp;(MD 21 F),2.0,2.0,0.0,2019,1,oth_neg,21f,negotiated_21f,0.0,1,1490236.3092960978,22.708333333333332,0,0,non-incumbent winner
+2019/622196,2019,İSTANBUL,2020 YILI 6 AYLIK (01.01.2020 -30.06.2020) HASTANE BİLGİ YÖNETİM SİSTE,Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2019,1,21b,21b,negotiated_21b,1.0,1,958987.6147666412,22.708333333333332,1,1,incumbent winner
+2019/262616,2019,İSTANBUL,Hastane Bilgi Yönetim Sistemi (HBYS) 6 Aylık Hizmet Alımı,Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2019,1,21b,21b,negotiated_21b,1.0,1,1453278.1443850421,22.708333333333332,1,1,incumbent winner
+2019/44732,2019,İSTANBUL,YAPISAL KABLOLAMA VE ALTYAPI ÇALIŞMALARI İÇİN AKTİF NETWORK DONANIMI V,Açık,1.0,1.0,3.0,2019,1,open,open,open,1.0,1,4546819.056044376,22.708333333333332,1,1,incumbent winner
+2019/652289,2019,İSTANBUL,Hastane Bilgi Yönetim Sistemi (HBYS) Hizmet Alımı,Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2019,1,21b,21b,negotiated_21b,1.0,1,1347149.2683626625,22.708333333333332,1,1,incumbent winner
+2019/134056,2019,DÜZCE,2 Kalem Yazılım Alımı,Açık,2.0,2.0,3.0,2019,1,open,open,open,,0,634476.8613475517,22.708333333333332,0,0,buyer first in market (undefined)
+2019/142039,2019,TEKİRDAĞ,"GÖRÜNTÜ ARŞİVLEME 
+VE İLETİŞİM SİSTEMİ (PACS) 
+YAZILIMI",Açık,1.0,1.0,2.0,2019,1,open,open,open,,0,2283303.844682479,22.708333333333332,1,1,buyer first in market (undefined)
+2020/76023,2020,İZMİR,Müdürlüğümüze Bağlı Selçuk Devlet Hastanesinin İhtiyacı Olan  3 Kalem ,Açık,1.0,1.0,5.0,2020,1,open,open,open,,0,643167.1509188868,24.555555555555557,1,1,buyer first in market (undefined)
+2020/146166,2020,İSTANBUL,"Sap TRM Uygulaması Lisans Güncelleme, Bakım, Destek ve Basis Teknik De",Pazarlık&nbsp;(MD 21 F),3.0,3.0,4.0,2020,1,oth_neg,21f,negotiated_21f,0.0,1,674484.9443131243,24.555555555555557,0,0,non-incumbent winner
+2020/460716,2020,ESKİŞEHİR,"Ağ Ürünleri Bakım, Onarım ve Teknik Destek Hizmet Alımı",Açık,1.0,1.0,2.0,2020,1,open,open,open,0.0,1,4338395.621712558,24.555555555555557,1,1,non-incumbent winner
+2020/678251,2020,ANKARA,"Merkezi Log Yönetim Sistemi Lisans
+Yenileme",Pazarlık&nbsp;(MD 21 B),3.0,3.0,4.0,2020,1,21b,21b,negotiated_21b,0.0,1,12188180.199748717,24.555555555555557,0,0,non-incumbent winner
+2020/118956,2020,ANKARA,Hastanemiz ihtiyacı için  36 aylık  HBYS Hizmeti Alımı işi,Açık,3.0,2.0,6.0,2020,1,open,open,open,,0,3389154.6596818506,24.555555555555557,0,0,buyer first in market (undefined)
+2020/621432,2020,İSTANBUL,Sarıyer Belediyesi Sagem Şubelerinde Kullanılmak Üzere  Bilişim Malzem,Açık,2.0,2.0,7.0,2020,1,open,open,open,0.0,1,4413117.707553398,24.555555555555557,0,0,non-incumbent winner
+2020/95275,2020,ANKARA,2020 Yılı Hastanemize Ait Mevcut Hastane Bilgi Yönetimi Sistemine (Hby,Açık,1.0,1.0,3.0,2020,1,open,open,open,0.0,1,3027007.0851593944,24.555555555555557,1,1,non-incumbent winner
+2020/54156,2020,AYDIN,"2020 YILI DOĞA TURİZMİ UYGULAMASI MOBİL YAZILIM GELİŞTİRME PROJESİ, YA",Açık,9.0,9.0,9.0,2020,1,open,open,open,,0,1627561.3192231522,24.555555555555557,0,0,buyer first in market (undefined)
+2020/723859,2020,NİĞDE,6 AYLIK HBYS HİZMET ALIMI,Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2020,1,21b,21b,negotiated_21b,,0,5434043.878489747,24.555555555555557,1,1,buyer first in market (undefined)
+2020/92317,2020,NEVŞEHİR,Kent Güvenlik Yönetim Sistemi  ve Plaka Tanıma Sistemleri Kurulum - Mo,Açık,10.0,6.0,17.0,2020,1,open,open,open,0.0,1,19360090.461892292,24.555555555555557,0,0,non-incumbent winner
+2020/611054,2020,BOLU,2021 Yılı Bilgi Yönetim Sistemi Hizmeti,Açık,1.0,1.0,2.0,2020,1,open,open,open,1.0,1,610086.8843033285,24.555555555555557,1,1,incumbent winner
+2020/540316,2020,İSTANBUL,Yazılım ve Teknoloji Geliştirme Hizmeti Alım İşi,Açık,1.0,1.0,4.0,2020,1,open,open,open,1.0,1,4013015.9500841163,24.555555555555557,1,1,incumbent winner
+2020/428320,2020,BURSA,24 Ay Süreli İhtiyaç Bilgi Yönetim Sistemi Hizmeti  Alımı,Açık,1.0,1.0,2.0,2020,1,open,open,open,,0,2521692.4551204243,24.555555555555557,1,1,buyer first in market (undefined)
+2020/211364,2020,TRABZON,"BİLGİ İŞLEM BİRİMİ İÇİN MALZEME, YAZILIM VE LİSANS ALIMI",Açık,2.0,1.0,5.0,2020,1,open,open,open,,0,1991594.7400924212,24.555555555555557,0,1,buyer first in market (undefined)
+2020/673617,2020,ELAZIĞ,2021 Yılı Hastane Bilgi Yönetim Sistemi (HBYS),Pazarlık&nbsp;(MD 21 F),1.0,1.0,1.0,2020,1,oth_neg,21f,negotiated_21f,,0,2058026.4230498946,24.555555555555557,1,1,buyer first in market (undefined)
+2020/239429,2020,ZONGULDAK,"İNTERNET AĞ ALTYAPISI VE SUNUCU DONANIM,YAZILIM ALIMI",Pazarlık&nbsp;(MD 21 F),2.0,2.0,3.0,2020,1,oth_neg,21f,negotiated_21f,,0,2020065.4613599097,24.555555555555557,0,0,buyer first in market (undefined)
+2020/284663,2020,ANKARA,"Microsoft Ürünleri Bakım, Onarım ve Teknik Destek Microsoft Ürünleri B",Pazarlık&nbsp;(MD 21 F),1.0,1.0,1.0,2020,1,oth_neg,21f,negotiated_21f,,0,1015794.6623650419,24.555555555555557,1,1,buyer first in market (undefined)
+2020/427784,2020,GÜMÜŞHANE,IŞIL SEMA DOĞAN İLKOKULUNA YAZILIM VE TASARIM ATÖLYESİ KURULUMU VE DON,Pazarlık&nbsp;(MD 21 F),1.0,1.0,2.0,2020,1,oth_neg,21f,negotiated_21f,,0,430450.19059179287,24.555555555555557,1,1,buyer first in market (undefined)
+2020/13864,2020,ANKARA,"2020 yılı için, Kütüphaneler ve Yayımlar Genel Müdürlüğü Milli Kütüpha",Pazarlık&nbsp;(MD 21 F),2.0,2.0,3.0,2020,1,oth_neg,21f,negotiated_21f,0.0,1,1660588.711642071,24.555555555555557,0,0,non-incumbent winner
+2020/652842,2020,ANTALYA,VERİ TABANI SUNUCUSU ALIMI,Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2020,1,21b,21b,negotiated_21b,,0,821380.3085670479,24.555555555555557,1,1,buyer first in market (undefined)
+2020/561066,2020,İZMİR,KÜLTÜR VE SANAT PORTAL SİTESİ VE SANAL SERGİ YÖNETİM SİSTEMİ YAZILIMI,Pazarlık&nbsp;(MD 21 F),1.0,1.0,2.0,2020,1,oth_neg,21f,negotiated_21f,0.0,1,2101410.37926702,24.555555555555557,1,1,non-incumbent winner
+2020/485609,2020,ANKARA,Yazılım ve Donanım Güvencesi Bakımı,Açık,2.0,2.0,3.0,2020,1,open,open,open,0.0,1,7232918.950573905,24.555555555555557,0,0,non-incumbent winner
+2020/662402,2020,İSTANBUL,Müdürlüğümüz ve bağlı birimlerde kullanılmak üzere 12 aylık Evde Sağlı,Açık,1.0,1.0,2.0,2020,1,open,open,open,1.0,1,1769251.9644796527,24.555555555555557,1,1,incumbent winner
+2020/404907,2020,BOLU,İYBS (İhtiyaç Yönetim Bilgi Sistemi KMBYS (Klinik Mühendislik Bilgi Si,Açık,1.0,1.0,2.0,2020,1,open,open,open,1.0,1,935466.5559317704,24.555555555555557,1,1,incumbent winner
+2020/404548,2020,ÇANAKKALE,Kurumsal Kaynak Planlama (ERP) Yazılımı Ek Modül Hizmet Alımı,Pazarlık&nbsp;(MD 21 F),2.0,2.0,2.0,2020,1,oth_neg,21f,negotiated_21f,,0,2055314.9257863243,24.555555555555557,0,0,buyer first in market (undefined)
+2020/281105,2020,İSTANBUL,6 AYLIK HASTANE BİLGİ YÖNETİM SİSTEMİ (HBYS) HİZMET ALIMI,Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2020,1,21b,21b,negotiated_21b,1.0,1,3457159.0110521945,24.555555555555557,1,1,incumbent winner
+2020/528644,2020,ANKARA,"2021 Yılı 12 Aylık  (Ocak-Aralık) (Hbys) Bakım,Destek Ve Güncelleme, V",Açık,1.0,1.0,4.0,2020,1,open,open,open,1.0,1,4391812.117804894,24.555555555555557,1,1,incumbent winner
+2021/565524,2021,ANKARA,Enver Portalı Yazılım İhalesi,Pazarlık&nbsp;(MD 21 F),3.0,3.0,3.0,2021,1,oth_neg,21f,negotiated_21f,,0,1890870.7011271166,22.8125,0,0,buyer first in market (undefined)
+2021/32316,2021,ANKARA,32 Aylık Hastane Yönetim Bilgi Sistemi (HBYS) Hizmet Alımı İşi,Açık,1.0,1.0,6.0,2021,1,open,open,open,1.0,1,2826766.734210573,22.8125,1,1,incumbent winner
+2021/639889,2021,ANKARA,ISO 9001 ve ISO 27001 Entegre Yönetim Sistemi Yazılımı Programı alımı ,Pazarlık&nbsp;(MD 21 F),2.0,2.0,4.0,2021,1,oth_neg,21f,negotiated_21f,0.0,1,1000409.7060237532,22.8125,0,0,non-incumbent winner
+2021/239060,2021,SİVAS,İhtiyaç Mali Yönetim Sistemi Hizmet Alımı,Açık,1.0,1.0,3.0,2021,1,open,open,open,1.0,1,969167.4493687791,22.8125,1,1,incumbent winner
+2020/717017,2021,İSTANBUL,"2021 yılı Sistem, Donanım, Bakım, Güncelleme ve Teknik Destek hizmet",Açık,1.0,1.0,3.0,2021,1,open,open,open,1.0,1,3631798.975267534,22.8125,1,1,incumbent winner
+2021/848654,2021,İSTANBUL,2022 Yılı 12 Ay Süreli Hastane Bilgi Yönetim Sistemi ( HBYS ),Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2021,1,21b,21b,negotiated_21b,1.0,1,2788677.480814088,22.8125,1,1,incumbent winner
+2021/719960,2021,ANKARA,24 Aylık 1 Personelle HBYS (Hastane Bilgi Yönetim Sistemi) Hizmet Alım,Açık,1.0,1.0,4.0,2021,1,open,open,open,1.0,1,2397740.2665963927,22.8125,1,1,incumbent winner
+2021/634456,2021,DÜZCE,Düzce Belediyesi Kent Bilgi Sistemi Yaygınlaştırma Projesi,Pazarlık&nbsp;(MD 21 F),2.0,2.0,3.0,2021,1,oth_neg,21f,negotiated_21f,0.0,1,2153856.5908726696,22.8125,0,0,non-incumbent winner
+2021/151673,2021,İSTANBUL,"LED EKRAN, ENDÜSTRİYEL PC VE YAZILIM LİSANSI ALIMI",Pazarlık&nbsp;(MD 21 F),3.0,3.0,3.0,2021,1,oth_neg,21f,negotiated_21f,0.0,1,2147888.1408984885,22.8125,0,0,non-incumbent winner
+2021/99864,2021,ZONGULDAK,"Yazılım / Software, Yoğun Bakım Entegrasyon Yazılımı - Klinik Bilgi ve",Pazarlık&nbsp;(MD 21 B),2.0,2.0,10.0,2021,1,21b,21b,negotiated_21b,,0,578140.453339506,22.8125,0,0,buyer first in market (undefined)
+2021/606246,2021,KONYA,Yapay Zeka Sistemi İle Öğrenciye Özel Analiz ve Online Rehberlik Hizme,Pazarlık&nbsp;(MD 21 F),2.0,2.0,3.0,2021,1,oth_neg,21f,negotiated_21f,,0,2269484.6815405707,22.8125,0,0,buyer first in market (undefined)
+2021/35516,2021,İSTANBUL,İstanbul Kent Güvenlik Yönetim Sistemi Genişleme İşi,Açık,11.0,7.0,17.0,2021,1,open,open,open,1.0,1,7024973.3124410175,22.8125,0,0,incumbent winner
+2021/838369,2021,İSTANBUL,3 Aylık Hastane Bilgi Yönetim Sistemi (HBYS) Hizmeti Alımı,Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2021,1,21b,21b,negotiated_21b,1.0,1,639865.4487989886,22.8125,1,1,incumbent winner
+2021/687067,2021,KOCAELİ,Bilişim Malzemesi Alımı,Açık,4.0,1.0,12.0,2021,1,open,open,open,0.0,1,2031523.2045547622,22.8125,0,1,non-incumbent winner
+2021/356822,2021,BURSA,"1/5000, 1/25000 Ölçekli İmar Planları ile 1/100000 Ölçekli Çevre Düzen",Pazarlık&nbsp;(MD 21 F),1.0,1.0,3.0,2021,1,oth_neg,21f,negotiated_21f,0.0,1,1915798.7571446376,22.8125,1,1,non-incumbent winner
+2021/115262,2021,BALIKESİR,Kent Yönetim Sistemi Yazılım,Pazarlık&nbsp;(MD 21 F),3.0,3.0,3.0,2021,1,oth_neg,21f,negotiated_21f,,0,1757093.534659283,22.8125,0,0,buyer first in market (undefined)
+2021/366886,2021,İSTANBUL,"Kurumsal Arşiv Birimi Hızlı Doküman Tarayıcı, Tepegöz Kitap Tarayıcı, ",Açık,1.0,1.0,3.0,2021,1,open,open,open,1.0,1,3346979.7813429246,22.8125,1,1,incumbent winner
+2021/571396,2021,İSTANBUL,İÜ-C REKTÖRLÜĞÜ VE BAĞLI BİRİMLER BİLİŞİM ALTYAPI TESİSİ,Açık,2.0,2.0,5.0,2021,1,open,open,open,,0,61895036.769288294,22.8125,0,0,buyer first in market (undefined)
+2021/72547,2021,SİVAS,25 AYLIK YOĞUN BAKIM BİLGİ YÖNETİM SİSTEMİ HİZMET ALIMI,Açık,4.0,1.0,6.0,2021,1,open,open,open,0.0,1,3478194.992076352,22.8125,0,1,non-incumbent winner
+2021/258733,2021,İSTANBUL,Online Sınav Otomasyonu Yazılım Alımı,Pazarlık&nbsp;(MD 21 F),2.0,2.0,2.0,2021,1,oth_neg,21f,negotiated_21f,0.0,1,1587052.2248535461,22.8125,0,0,non-incumbent winner
+2021/731561,2021,İZMİR,33 AY SÜREYLE ELEKTRONİK BELGE YÖNETİM SİSTEMİ YAZILIMININ BAKIM VE DE,Açık,3.0,1.0,5.0,2021,1,open,open,open,1.0,1,29927270.525809724,22.8125,0,1,incumbent winner
+2021/802098,2021,ANKARA,İş Zekâsı Uygulama Geliştirme ve Veri Görselleştirme,Pazarlık&nbsp;(MD 21 F),2.0,2.0,3.0,2021,1,oth_neg,21f,negotiated_21f,,0,2142520.5035522874,22.8125,0,0,buyer first in market (undefined)
+2021/149522,2021,ANKARA,KVKK UYUMLULUK YAZILIMI TEMİNİ,Pazarlık&nbsp;(MD 21 B),2.0,1.0,3.0,2021,1,21b,21b,negotiated_21b,0.0,1,11619489.503392033,22.8125,0,1,non-incumbent winner
+2021/253505,2021,ERZURUM,Müdürlüğümüze Bağlı Birimler için Sağlık Bilgi Yönetim Sistemi (SBYS) ,Açık,6.0,3.0,13.0,2021,1,open,open,open,0.0,1,4704362.877085522,22.8125,0,0,non-incumbent winner
+2021/747487,2021,SİVAS,HASTANE BİLGİ YÖNETİM SİSTEMİ HİZMETİ ALIMI (36 AYLIK),Açık,2.0,1.0,4.0,2021,1,open,open,open,,0,18287942.869607024,22.8125,0,1,buyer first in market (undefined)
+2021/102057,2021,İSTANBUL,SANALLAŞTIRMA YAZILIMI ve GÜVENLİK DUVARI LİSANS,Açık,1.0,1.0,2.0,2021,1,open,open,open,0.0,1,6404889.336016096,22.8125,1,1,non-incumbent winner
+2021/346989,2021,ERZURUM,Müdürlüğümüze bağlı Sağlık Tesislerine 2 Aylık HBYS Hizmet Alımı,Pazarlık&nbsp;(MD 21 B),1.0,1.0,4.0,2021,1,21b,21b,negotiated_21b,1.0,1,4420977.698206941,22.8125,1,1,incumbent winner
+2021/521802,2021,ANKARA,"Elektronik Mimari Proje Yönetim Sistemi Yazılımı Kurulum, Uyarlama, Eğ",Pazarlık&nbsp;(MD 21 F),3.0,3.0,3.0,2021,1,oth_neg,21f,negotiated_21f,,0,1417010.915047809,22.8125,0,0,buyer first in market (undefined)
+2021/288311,2021,İSTANBUL,"WEB TABANLI BELEDİYE YÖNETİM OTOMASYONU ALTYAPISININ GÜNCELLENMESİ, DE",Açık,2.0,1.0,3.0,2021,1,open,open,open,0.0,1,3281797.2792507256,22.8125,0,1,non-incumbent winner
+2021/725048,2021,YALOVA,"İzinli İletişim Veri Tabanı Oluşturma Ve Dijital Kampanya, Talep Topla",Pazarlık&nbsp;(MD 21 F),2.0,2.0,3.0,2021,1,oth_neg,21f,negotiated_21f,,0,680165.2392229483,22.8125,0,0,buyer first in market (undefined)
+2021/729180,2021,KÜTAHYA,ULAŞIM ANA PLANI İÇİN YAZILIM PAKETİ VE EĞİTİM ALIMI,Açık,1.0,1.0,2.0,2021,1,open,open,open,,0,929559.1602713626,22.8125,1,1,buyer first in market (undefined)
+2021/21744,2021,DİYARBAKIR,IP Santral Yazılım Upgrade ve Destek Paketi Alımı,Açık,2.0,1.0,3.0,2021,1,open,open,open,,0,2544951.603425865,22.8125,0,1,buyer first in market (undefined)
+2022/599247,2022,BALIKESİR,"Dijital Arşiv Yönetim Sistemi,Altyapı Koordinasyon Yönetim Sistemi ve ",Pazarlık&nbsp;(MD 21 F),2.0,2.0,4.0,2022,1,oth_neg,21f,negotiated_21f,,0,1694064.8024718147,22.967741935483872,0,0,buyer first in market (undefined)
+2022/1370208,2022,HAKKARİ,İl Müdürlüğümüz ihtiyaçları kapsamında Bilgisayar ve Bilişim Malzemesi,Pazarlık&nbsp;(MD 21 F),2.0,2.0,2.0,2022,1,oth_neg,21f,negotiated_21f,,0,1702288.4180177944,22.967741935483872,0,0,buyer first in market (undefined)
+2022/82750,2022,İSTANBUL,ÖĞRENME YÖNETİM SİSTEMİ,Açık,1.0,1.0,7.0,2022,1,open,open,open,1.0,1,2842081.5326905786,22.967741935483872,1,1,incumbent winner
+2022/741490,2022,İSTANBUL,ESPOR SİSTEMİ BİLİŞİM MALZEMELERİ ALIMI İŞİ,Açık,3.0,2.0,4.0,2022,1,open,open,open,,0,23506560.30672412,22.967741935483872,0,0,buyer first in market (undefined)
+2022/134480,2022,ANKARA,Yönetim Sistemi Yazılımı Alımı,Pazarlık&nbsp;(MD 21 F),2.0,2.0,3.0,2022,1,oth_neg,21f,negotiated_21f,0.0,1,1200647.8697130338,22.967741935483872,0,0,non-incumbent winner
+2022/365915,2022,MALATYA,SANAL FİREWALL YAZILIM HİZMET ALIM İŞİ,Açık,1.0,1.0,3.0,2022,1,open,open,open,,0,1899655.191121307,22.967741935483872,1,1,buyer first in market (undefined)
+2022/204883,2022,MUĞLA,MÜDÜRLÜĞÜMÜZE BAĞLI SAĞLIK TESİSLERİ İÇİN SBYS (SAĞLIK BİLGİ YÖNETİM S,Açık,2.0,1.0,12.0,2022,1,open,open,open,,0,61740257.51500966,22.967741935483872,0,1,buyer first in market (undefined)
+2022/835492,2022,İSTANBUL,"BEYLİKDÜZÜ BELEDİYESİ BİLGİ İŞLEM MÜDÜRLÜĞÜ SANALLAŞTIRMA YAZILIMI, Dİ",Açık,1.0,1.0,3.0,2022,1,open,open,open,1.0,1,26644514.368974175,22.967741935483872,1,1,incumbent winner
+2022/738281,2022,KOCAELİ,Özel Eğitim Sınıflarının Donanımı ve Altyapılarının Güçlendirilmesi Pr,Açık,4.0,1.0,6.0,2022,1,open,open,open,0.0,1,4002104.7416064725,22.967741935483872,0,1,non-incumbent winner
+2022/696434,2022,ANKARA,Oracle Veritabanı Lisans Güncellemesi 2022,Pazarlık&nbsp;(MD 21 F),2.0,2.0,3.0,2022,1,oth_neg,21f,negotiated_21f,0.0,1,2023009.424311002,22.967741935483872,0,0,non-incumbent winner
+2022/338459,2022,ANKARA,Genel Müdürlüğümüzün İhtiyacı Olan E-Posta Yazılım Güvencesi Hizmet Al,Pazarlık&nbsp;(MD 21 F),1.0,1.0,1.0,2022,1,oth_neg,21f,negotiated_21f,1.0,1,2357875.049343295,22.967741935483872,1,1,incumbent winner
+2022/796932,2022,ANKARA,Kent Rehberi Ve Mobil Uygulama Geliştirilmesi İle Mevcut Cbs Uygulamal,Açık,2.0,2.0,5.0,2022,1,open,open,open,1.0,1,5167720.009093633,22.967741935483872,0,0,incumbent winner
+2022/648555,2022,İZMİR,BİLGİ İŞLEM DAİRESİ BAŞKANLIĞI BİLGİ İŞLEM ŞUBE MÜDÜRLÜĞÜNE YAZICI YÖN,Açık,3.0,2.0,4.0,2022,1,open,open,open,0.0,1,1957220.4999431646,22.967741935483872,0,0,non-incumbent winner
+2022/666687,2022,KOCAELİ,Bilişim Malzemesi Alımı,Açık,4.0,3.0,9.0,2022,1,open,open,open,1.0,1,4006348.127228198,22.967741935483872,0,0,incumbent winner
+2022/371908,2022,ANKARA,Genel Müdürlüğümüzün İhtiyacı Olan Konuma Dayalı Süreç Tabanlı Kurumsa,Açık,3.0,2.0,10.0,2022,1,open,open,open,,0,16228482.918436307,22.967741935483872,0,0,buyer first in market (undefined)
+2022/456705,2022,KOCAELİ,Access Point ve Yazılım Lisansı,Pazarlık&nbsp;(MD 21 F),2.0,1.0,4.0,2022,1,oth_neg,21f,negotiated_21f,0.0,1,2263138.998253609,22.967741935483872,0,1,non-incumbent winner
+2022/774702,2022,İSTANBUL,EĞİTİM MODÜLÜ YAZILIMI VE EGZERSİZ VİDEO HİZMETİ ALIMI,Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2022,1,21b,21b,negotiated_21b,,0,1111826.2429240164,22.967741935483872,1,1,buyer first in market (undefined)
+2022/1017138,2022,İSTANBUL,İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA REKTÖRLÜĞÜ VE BAĞLI BİRİMLER BİLİŞİM ,Açık,3.0,1.0,6.0,2022,1,open,open,open,1.0,1,24539268.789203376,22.967741935483872,0,1,incumbent winner
+2022/68426,2022,İSTANBUL,İ-Taksi Mobil Yazılım Hizmet Alımı,Pazarlık&nbsp;(MD 21 F),2.0,2.0,3.0,2022,1,oth_neg,21f,negotiated_21f,1.0,1,1300120.723357204,22.967741935483872,0,0,incumbent winner
+2022/16480,2022,İSTANBUL,IP TELEFON SANTRALİNİN 2022 YILI BAKIMI TEKNİK DESTEK HİZMETLERİNİN YA,Açık,1.0,1.0,4.0,2022,1,open,open,open,1.0,1,2047239.4851556767,22.967741935483872,1,1,incumbent winner
+2022/1137308,2022,ANKARA,SALDIRI SİMÜLASYON YAZILIMI ÇÖZÜMÜ,Açık,3.0,3.0,6.0,2022,1,open,open,open,0.0,1,19345233.210362606,22.967741935483872,0,0,non-incumbent winner
+2022/139543,2022,İSTANBUL,"Mevcut CAD ve GIS Yazılımların Güncellenmesi, Yeni Yazılımların Eklenm",Açık,1.0,1.0,3.0,2022,1,open,open,open,0.0,1,8905353.2747414,22.967741935483872,1,1,non-incumbent winner
+2022/31222,2022,İSTANBUL,TOPLUM RUH SAĞLIĞI BİLGİ YÖNETİM SİSTEMİ ALIMI İŞİ,Pazarlık&nbsp;(MD 21 F),2.0,2.0,2.0,2022,1,oth_neg,21f,negotiated_21f,0.0,1,953939.4033336432,22.967741935483872,0,0,non-incumbent winner
+2022/269467,2022,ANKARA,2022 YILI 3 AYLIK HASTANE BİLGİ YÖNETİM SİSTEMİ (HBYS) HİZMETİ ALIM İŞ,Pazarlık&nbsp;(MD 21 B),1.0,1.0,2.0,2022,1,21b,21b,negotiated_21b,,0,276224.6672970208,22.967741935483872,1,1,buyer first in market (undefined)
+2022/701449,2022,İZMİR,KURUMSAL KAYNAK YÖNETİM SİSTEMİ YAZILIM HİZMETİ,Açık,1.0,1.0,2.0,2022,1,open,open,open,0.0,1,18274189.521654215,22.967741935483872,1,1,non-incumbent winner
+2022/1235716,2022,İSTANBUL,HASTANE BİLGİ YÖNETİM SİSTEMİ (HBYS) HİZMET ALIMI,Açık,1.0,1.0,4.0,2022,1,open,open,open,1.0,1,5272084.006108854,22.967741935483872,1,1,incumbent winner
+2022/1240954,2022,ANKARA,"PARÇA DAHİL BAKIM ONARIM, LİSANS GÜNCELLEŞTİRME VE TEKNİK DESTEK HİZME",Açık,3.0,3.0,8.0,2022,1,open,open,open,,0,43343322.30771615,22.967741935483872,0,0,buyer first in market (undefined)
+2022/758908,2022,ANKARA,İç Kontrol ve Risk Yönetimi Otomasyon Yazılım Programı Temini İşi,Pazarlık&nbsp;(MD 21 F),3.0,2.0,3.0,2022,1,oth_neg,21f,negotiated_21f,0.0,1,1921036.591540854,22.967741935483872,0,0,non-incumbent winner
+2022/842170,2022,ANTALYA,"AUTOCAD,3 BOYUTLU MODELLEME VE MİMARİ GÖRSELLEŞTİRME YAZILIMLARINA AİT",Açık,1.0,1.0,3.0,2022,1,open,open,open,0.0,1,7602600.994409482,22.967741935483872,1,1,non-incumbent winner
+2022/1264481,2022,İSTANBUL,Hastanemiz Karayolları Ana Bina ve FTR Ek Bina İçin 6 Aylık Hastane Bi,Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2022,1,21b,21b,negotiated_21b,1.0,1,4665434.531963294,22.967741935483872,1,1,incumbent winner
+2022/1041776,2022,BARTIN,DİŞ HEKİMLİĞİ BİLGİ YÖNETİM SİSTEMİ,Açık,4.0,4.0,6.0,2022,1,open,open,open,,0,2224718.266422792,22.967741935483872,0,0,buyer first in market (undefined)
+2023/64411,2023,ANKARA,KAMPÜS ARAÇ /YAYA GEÇİŞ -KONTROL SİSTEMİ VE KAMERA SİSTEMİ ( IP CCTV ),Pazarlık (MD 21 F),1.0,1.0,2.0,2023,1,oth_neg,21f,negotiated_21f,,0,1372570.309823965,19.4375,1,1,buyer first in market (undefined)
+2023/368901,2023,BOLU,Yazılım Alımı,Açık,4.0,3.0,6.0,2023,1,open,open,open,0.0,1,1249853.5446937692,19.4375,0,0,non-incumbent winner
+2023/795632,2023,ANKARA,"BAŞKENT KURUMSAL İLETİŞİM, YÖNETİŞİM VE ÇAĞRI MERKEZİ YÖNETİM SİSTEMİ ",Açık,1.0,1.0,3.0,2023,1,open,open,open,0.0,1,1154498.3914407182,19.4375,1,1,non-incumbent winner
+2023/1242693,2023,SAKARYA,SAKARYA İLİ 24 AYLIK 66 YATAK YOĞUN BAKIM BİLGİ YÖNETİM SİSTEMİ (YBBYS,Açık,2.0,1.0,3.0,2023,1,open,open,open,1.0,1,2052236.340625021,19.4375,0,1,incumbent winner
+2023/1290617,2023,İZMİR,BİLGİ GÜVENLİĞİ YÖNETİM SİSTEMİ (BGYS) VE TC CUMHURBAŞKANLIĞI DİJİTAL ,Açık,1.0,1.0,3.0,2023,1,open,open,open,1.0,1,1975475.0253541179,19.4375,1,1,incumbent winner
+2023/1565084,2023,İSTANBUL,Hastane Bilgi Yönetim Sistemi (HBYS) Hizmet Alımı (3 Aylık),Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2023,1,21b,21b,negotiated_21b,1.0,1,2466324.640121431,19.4375,1,1,incumbent winner
+2023/789160,2023,DENİZLİ,Yazılım Kiralanması İşi,Açık,2.0,2.0,3.0,2023,1,open,open,open,,0,1250246.9293308526,19.4375,0,0,buyer first in market (undefined)
+2023/618191,2023,ANKARA,EMLAK VE KAMULAŞTIRMA BİLGİ SİSTEMİNİN DSİ UYGULAMA GELİŞTİRME ALTYAPI,Açık,3.0,3.0,3.0,2023,1,open,open,open,1.0,1,16458015.957982684,19.4375,0,0,incumbent winner
+2023/379433,2023,İSTANBUL,Hastanemiz ve Bağlı Birimleri İçin Hastane Bilgi Yönetim Sistemi Hizme,Açık,2.0,1.0,6.0,2023,1,open,open,open,0.0,1,8899335.400581634,19.4375,0,1,non-incumbent winner
+2023/523994,2023,İZMİR,KURUMSAL ANTİVİRÜS YAZILIMI LİSANS VE DESTEK PAKETİ YENİLENMESİ HİZMET,Açık,1.0,1.0,4.0,2023,1,open,open,open,,0,2348549.042588202,19.4375,1,1,buyer first in market (undefined)
+2023/1307411,2023,İSTANBUL,Esenler Kadın Doğum ve Çocuk Hastalıkları Hastanesi İhtiyacı Olan Hast,Açık,1.0,1.0,2.0,2023,1,open,open,open,1.0,1,4115145.377490916,19.4375,1,1,incumbent winner
+2023/990153,2023,ANKARA,BİLİŞİM SİSTEMLERİNDE KULLANILMAKTA OLAN GÜVENLİK ÜRÜNLERİ LİSANS YENİ,Açık,3.0,2.0,5.0,2023,1,open,open,open,0.0,1,12357430.087983826,19.4375,0,0,non-incumbent winner
+2023/58673,2023,DENİZLİ,Trafik Yönetim Sistemi (Tys) Ve Video Mesaj Sistemi (Vms) Malzeme Alım,Açık,1.0,1.0,6.0,2023,1,open,open,open,0.0,1,3385970.6073369104,19.4375,1,1,non-incumbent winner
+2023/3004,2023,İSTANBUL,"2023 Yılı Mevcut CAD ve GIS Yazılımların Güncellenmesi, Yeni Yazılımla",Açık,1.0,1.0,4.0,2023,1,open,open,open,1.0,1,12233407.029303314,19.4375,1,1,incumbent winner
+2023/28612,2023,İZMİR,DİJİTAL DÖNÜŞÜM BİLGİ VE İLETİŞİM GÜVENLİĞİ HİZMETİ,Açık,1.0,1.0,4.0,2023,1,open,open,open,1.0,1,5344899.960373696,19.4375,1,1,incumbent winner
+2023/5971,2023,ANKARA,"Yazılım Destek Çağrı Ve Çözümleme Merkezi, Çağrı Karşılama, Raporlama,",Açık,1.0,1.0,4.0,2023,1,open,open,open,0.0,1,4143366.449281689,19.4375,1,1,non-incumbent winner
+2022/1371040,2023,KAHRAMANMARAŞ,Veri Kaybı Önleme (DLP) Güvenlik Yazılım,Açık,1.0,1.0,2.0,2023,1,open,open,open,,0,1721057.7872403301,19.4375,1,1,buyer first in market (undefined)
+2023/338625,2023,GİRESUN,Giresun Belediyesi Yedekleme Donanım ve Yazılım Alımı,Pazarlık&nbsp;(MD 21 F),1.0,1.0,2.0,2023,1,oth_neg,21f,negotiated_21f,,0,1423667.5534451376,19.4375,1,1,buyer first in market (undefined)
+2023/615950,2023,İSTANBUL,1 (BİR) AY SÜRELİ HASTANE BİLGİ YÖNETİM SİSTEMİ (HBYS) HİZMETİ ALIMI,Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2023,1,21b,21b,negotiated_21b,1.0,1,560630.5334491674,19.4375,1,1,incumbent winner
+2023/1213676,2023,SAKARYA,Entegre Yönetim Sistemi Yazılımı Alımı İhalesi,Açık,1.0,1.0,3.0,2023,1,open,open,open,0.0,1,1496571.9889046347,19.4375,1,1,non-incumbent winner
+2023/1146951,2023,HAKKARİ,ISO 27001 Bilgi Güvenliği Yönetim Sistemi ve Kişisel Verilerin Koruma ,Pazarlık (MD 21 F),2.0,1.0,3.0,2023,1,oth_neg,21f,negotiated_21f,,0,448971.59667139046,19.4375,0,1,buyer first in market (undefined)
+2023/1002683,2023,İSTANBUL,Muhtelif Bilişim Malzemeleri Alımı İşi,Açık,3.0,2.0,7.0,2023,1,open,open,open,1.0,1,14905626.109811874,19.4375,0,0,incumbent winner
+2023/1460360,2023,GÜMÜŞHANE,"İhtiyaç Mali Yönetim Sistemi ve Demirbaş, Klinik Mühendislik Bilgi Yön",Açık,1.0,1.0,3.0,2023,1,open,open,open,1.0,1,1282775.990489687,19.4375,1,1,incumbent winner
+2023/307320,2023,İSTANBUL,TEKNOFEST SAĞLIKTA YAPAY ZEKA YARIŞMASININ DÜZENLENMESİ HİZMET ALIMI,Pazarlık&nbsp;(MD 21 F),2.0,2.0,5.0,2023,1,oth_neg,21f,negotiated_21f,,0,2762992.5855155783,19.4375,0,0,buyer first in market (undefined)
+2023/463900,2023,İSTANBUL,Baskı Ve Bilişim Cihazları Bakım Destek,Açık,2.0,2.0,3.0,2023,1,open,open,open,,0,3591772.7733711237,19.4375,0,0,buyer first in market (undefined)
+2023/586275,2023,ANKARA,"Gemi İnsanları Bilgi Sistemi Yazılımının yıllık bakım, revizyon ve gün",Pazarlık&nbsp;(MD 21 F),1.0,1.0,2.0,2023,1,oth_neg,21f,negotiated_21f,0.0,1,2118718.344292133,19.4375,1,1,non-incumbent winner
+2023/1420555,2023,ANKARA,Bilişim Malzemesi Mal Alımı İşi,Pazarlık&nbsp;(MD 21 F),1.0,1.0,5.0,2023,1,oth_neg,21f,negotiated_21f,,0,2669243.0402106238,19.4375,1,1,buyer first in market (undefined)
+2023/661867,2023,MUĞLA,"Bodrum İlçesi Genelinde Adres Bilgi Sistemi Verilerinin Güncellenerek,",Açık,3.0,1.0,8.0,2023,1,open,open,open,0.0,1,28618732.347824916,19.4375,0,1,non-incumbent winner
+2023/738333,2023,RİZE,Rize Merkez Fatma Nuri Erkan Bilim ve Sanat Merkezi Yapay Zeka Atölyes,Pazarlık&nbsp;(MD 21 B),3.0,3.0,3.0,2023,1,21b,21b,negotiated_21b,,0,1193938.4082483158,19.4375,0,0,buyer first in market (undefined)
+2023/223556,2023,MARDİN,Mardin Bilişim Teknolojileri Okulu Projesi Kapsamında Ekipman ve Malze,Açık,3.0,1.0,8.0,2023,1,open,open,open,0.0,1,197346.08532530506,19.4375,0,1,non-incumbent winner
+2023/96870,2023,ANKARA,Y-ŞEY PROJESİ KAPSAMINDA BİLGİ TEKNOLOJİLERİ YAZILIMI ve DONANIMI HİZM,Pazarlık&nbsp;(MD 21 B),3.0,3.0,5.0,2023,1,21b,21b,negotiated_21b,0.0,1,8455631.737311186,19.4375,0,0,non-incumbent winner
+2023/1145891,2023,ANKARA,"ORACLE YAZILIM VE DONANIM ÜRÜNLERİ İÇİN BAKIM, DESTEK, LİSANS YENİLEME",Açık,6.0,6.0,8.0,2023,1,open,open,open,0.0,1,33054999.314935084,19.4375,0,0,non-incumbent winner
+2024/371711,2024,KAYSERİ,"ULUSAL ORMAN ENVANTERİ GÖZLEM NOKTALARINDA, ENVANTER KARNELERİNİ DÜZEN",Açık,5.0,5.0,8.0,2024,1,open,open,open,0.0,1,603592.0835752088,23.666666666666668,0,0,non-incumbent winner
+2024/1652225,2024,İSTANBUL,2025 YILI SAYFA BAŞI BASKI HİZMETİ İLE BASKI YÖNETİM YAZILIMI LİSANS Y,Açık,1.0,1.0,3.0,2024,1,open,open,open,1.0,1,2319951.6955292937,23.666666666666668,1,1,incumbent winner
+2024/1293959,2024,ADANA,Bilişim Malzemeleri ve Sarf Malzemeleri Alımı,Açık,4.0,3.0,20.0,2024,1,open,open,open,1.0,1,3350981.390914522,23.666666666666668,0,0,incumbent winner
+2024/1393314,2024,İSTANBUL,Beyoğlu App Mobil Uygulama Alımı,Pazarlık&nbsp;(MD 21 F),1.0,1.0,3.0,2024,1,oth_neg,21f,negotiated_21f,,0,1618570.9503692747,23.666666666666668,1,1,buyer first in market (undefined)
+2024/188800,2024,ANKARA,HPE SYNERGY BİLGİ İŞLEM MODÜLÜ VE SANALLAŞTIRMA YAZILIMI TEMİNİ İLE ME,Açık,2.0,2.0,6.0,2024,1,open,open,open,0.0,1,22927057.51198078,23.666666666666668,0,0,non-incumbent winner
+2024/1549568,2024,ANKARA,Veritabanı Sistemleri Teknik Destek ve Danışmanlık Hizmeti Alımı,Açık,4.0,3.0,8.0,2024,1,open,open,open,0.0,1,3641784.6383308684,23.666666666666668,0,0,non-incumbent winner
+2024/452831,2024,TOKAT,Yazıcı ve Güvenli Yazıcı Yönetim Sistemi Alımı,Açık,3.0,2.0,9.0,2024,1,open,open,open,,0,1611786.440468977,23.666666666666668,0,0,buyer first in market (undefined)
+2024/1190009,2024,İSTANBUL,Bilişim Sistemlerinde Kullanılmak Üzere Uç Nokta Güvenliği ve Proaktif,Pazarlık&nbsp;(MD 21 F),1.0,1.0,1.0,2024,1,oth_neg,21f,negotiated_21f,,0,2715152.7692444585,23.666666666666668,1,1,buyer first in market (undefined)
+2024/612749,2024,ANKARA,Mobil Harita ve Sesli Navigasyon Yazılım Geliştirme Kiti (Sdk) Lisans ,Açık,1.0,1.0,3.0,2024,1,open,open,open,,0,4730273.602454206,23.666666666666668,1,1,buyer first in market (undefined)
+2024/1797015,2024,İSTANBUL,3 AYLIK (2025 YILI)HASTANE BİLGİ YÖNETİM SİZTEMİ(HBYS)HİZMET ALIMI,Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2024,1,21b,21b,negotiated_21b,1.0,1,281226.7026266615,23.666666666666668,1,1,incumbent winner
+2024/1470968,2024,KOCAELİ,BİLGİSAYAR DESTEKLİ TASARIM PROGRAMI YAZILIM LİSANSI GÜNCELLEMESİ HİZM,Pazarlık&nbsp;(MD 21 F),2.0,2.0,2.0,2024,1,oth_neg,21f,negotiated_21f,,0,2602527.207281263,23.666666666666668,0,0,buyer first in market (undefined)
+2024/457357,2024,ANKARA,"CBS, EBYS VE DDOS Yazılımlarının Yıllık Bakım, Güncelleme ve Teknik De",Açık,3.0,3.0,8.0,2024,1,open,open,open,0.0,1,2605899.2300945325,23.666666666666668,0,0,non-incumbent winner
+2024/432613,2024,SAKARYA,Scada Sisteminin Geliştirilmesi ve Teknik Destek Bakım,Açık,1.0,1.0,1.0,2024,1,open,open,open,1.0,1,5928016.105727469,23.666666666666668,1,1,incumbent winner
+2024/696629,2024,ANKARA,"Bilişim Güvenliği Ürünleri Temini, Yenileme ve Modernizasyonu İşi",Açık,3.0,1.0,17.0,2024,1,open,open,open,0.0,1,2286231.4673966006,23.666666666666668,0,1,non-incumbent winner
+2024/1326133,2024,ANKARA,Ankara  Kent Güvenlik Yönetim Sistemi (KGYS) ve Plaka Tanıma Sistemi  ,Pazarlık&nbsp;(MD 21 C),3.0,3.0,4.0,2024,1,oth_neg,oth_neg,negotiated_21c,0.0,1,5761792.91555192,23.666666666666668,0,0,non-incumbent winner
+2024/1211581,2024,OSMANİYE,SAĞLIK BİLGİ YÖNETİM SİSTEMİ YAZILIMI VE LABORATUVAR YÖNETİM SİSTEMİ (,Açık,3.0,3.0,5.0,2024,1,open,open,open,1.0,1,55201151.84812057,23.666666666666668,0,0,incumbent winner
+2024/890003,2024,İSTANBUL,MUHTELİF BİLİŞİM MALZEMELERİ ALIMI İŞİ,Açık,5.0,4.0,13.0,2024,1,open,open,open,,0,3533131.3192417044,23.666666666666668,0,0,buyer first in market (undefined)
+2024/113499,2024,MERSİN,NEET PRO BİLİŞİM MALZEMELERİ ALIMI,Açık,3.0,1.0,6.0,2024,1,open,open,open,,0,809285.4751846374,23.666666666666668,0,1,buyer first in market (undefined)
+2024/937183,2024,İSTANBUL,5 KALEM STERİLİZASYON TAKİP DÖKÜMANTASYON YAZILIMI VE DEMİRBAŞ EKİPMAN,Açık,2.0,1.0,3.0,2024,1,open,open,open,,0,2609945.657470456,23.666666666666668,0,1,buyer first in market (undefined)
+2024/1598222,2024,İZMİR,"2025 YILI İÇİN ARVENTO İMT 14 MODEL TAŞIT TAKİP CİHAZLARININ LİSANS, Y",Açık,1.0,1.0,2.0,2024,1,open,open,open,,0,1289475.5514090923,23.666666666666668,1,1,buyer first in market (undefined)
+2024/1501499,2024,ANKARA,2025 YILI 12 AYLIK SAĞLIK BİLGİ YÖNETİM SİSTEMİ (SBYS) HİZMET ALIMI,Pazarlık (MD 21 B),1.0,1.0,2.0,2024,1,21b,21b,negotiated_21b,,0,2958941.9257890787,23.666666666666668,1,1,buyer first in market (undefined)
+2024/1435860,2024,İSTANBUL,"ÜSKÜDAR YENİLENİYOR WEB UYGULAMASI YENİLEME, GELİŞTİRME, TEKNİK DESTEK",Pazarlık (MD 21 F),2.0,2.0,3.0,2024,1,oth_neg,21f,negotiated_21f,,0,1706243.543514277,23.666666666666668,0,0,buyer first in market (undefined)
+2024/1810249,2024,ANTALYA,6 AYLIK SBYS (SAĞLIK BİLGİ YÖNETİM SİSTEMİ) HİZMET ALIMI,Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2024,1,21b,21b,negotiated_21b,,0,2612520.9657095885,23.666666666666668,1,1,buyer first in market (undefined)
+2024/1197821,2024,ANKARA,Sağlık Bilgi Yönetim Sistemi (SBYS) (2025-2026-2027),Açık,2.0,2.0,4.0,2024,1,open,open,open,1.0,1,11296325.035533106,23.666666666666668,0,0,incumbent winner
+2025/291090,2025,İSTANBUL,"KURUMSAL BİLGİ SİSTEMİ (KBS) YAZILIM, BAKIM ve DESTEK HİZMETİ",Pazarlık&nbsp;(MD 21 B),1.0,1.0,1.0,2025,1,21b,21b,negotiated_21b,1.0,1,1974000.0,26.923076923076923,1,1,incumbent winner
+2025/943135,2025,ORDU,Mobil Akıllı Yönetim Sistemi ve Raporlama Yazılımı Hizmet Alımı,Pazarlık&nbsp;(MD 21 F),2.0,2.0,2.0,2025,1,oth_neg,21f,negotiated_21f,0.0,1,2450000.0,26.923076923076923,0,0,non-incumbent winner
+2025/218352,2025,İSTANBUL,"BİLGİSAYAR, BİLİŞİM MALZEMELERİ TEMİNİ İŞİ",Açık,2.0,2.0,5.0,2025,1,open,open,open,,0,3317275.2,26.923076923076923,0,0,buyer first in market (undefined)
+2025/2138761,2025,ÇORUM,Scada Sisteminin Yazılım Güncellenmesi ve Yedekleme Sisteminin Kurulum,Pazarlık (MD 21 F),1.0,1.0,3.0,2025,1,oth_neg,21f,negotiated_21f,,0,2425000.0,26.923076923076923,1,1,buyer first in market (undefined)
+2024/1764646,2025,MANİSA,Yönetim Bilgi Sistemi Lisans Güncelleme ve Destek Hizmet Alımı,Açık,1.0,1.0,2.0,2025,1,open,open,open,1.0,1,6000000.0,26.923076923076923,1,1,incumbent winner
+2025/2030080,2025,İZMİR,BİLGİ İŞLEM DAİRESİ BAŞKANLIĞI BİLGİ İŞLEM ŞUBE MÜDÜRLÜĞÜNE ADOBE CREA,Açık,2.0,2.0,4.0,2025,1,open,open,open,,0,7177500.0,26.923076923076923,0,0,buyer first in market (undefined)
+2025/662240,2025,İSTANBUL,Hastane Bilgi Yönetim Sistemi (HBYS) Hizmet Alımı,Açık,3.0,1.0,4.0,2025,1,open,open,open,0.0,1,8242092.0,26.923076923076923,0,1,non-incumbent winner
+2025/1378219,2025,ANKARA,"MEB Öğrenci Servisi Planlama, Takip, Kontrol, Bilgilendirme e Yönetim ",Pazarlık (MD 21 B),3.0,3.0,9.0,2025,1,21b,21b,negotiated_21b,0.0,1,16100000.0,26.923076923076923,0,0,non-incumbent winner
+2025/2124635,2025,KOCAELİ,Yazılım ve Lisans Hizmeti,Açık,2.0,1.0,4.0,2025,1,open,open,open,,0,15798550.0,26.923076923076923,0,1,buyer first in market (undefined)
+2025/2139536,2025,BALIKESİR,"BİLGİSAYAR, DİZÜSTÜ BİLGİSAYAR VE BİLİŞİM ÜRÜNLERİ ALIM İŞİ",Açık,3.0,1.0,4.0,2025,1,open,open,open,0.0,1,3480750.0,26.923076923076923,0,1,non-incumbent winner
+2025/521717,2025,ANKARA,90 ADAM/GÜN JANDARMA UYGULAMA GELİŞTİRME (JUGA) DESTEK HİZMETİ,Açık,1.0,1.0,4.0,2025,1,open,open,open,1.0,1,5184000.0,26.923076923076923,1,1,incumbent winner
+2025/329279,2025,RİZE,"Ruhsat Bilgi Sistemi, İmar Bilgi Sistemi ve E-Başvuru Web Uygulamaları",Pazarlık (MD 21 F),3.0,3.0,3.0,2025,1,oth_neg,21f,negotiated_21f,,0,845000.0,26.923076923076923,0,0,buyer first in market (undefined)
+2025/917301,2025,ESKİŞEHİR,Eskişehir Teknik Üniversitesi Bilişim Sistemlerinde Kullanılan Ürünler,Açık,2.0,2.0,2.0,2025,1,open,open,open,,0,2761150.2,26.923076923076923,0,0,buyer first in market (undefined)
+2025/1816807,2025,KOCAELİ,Akıllı Atık Yönetim Sistemi ve Yapay Zeka Destekli Araç Kamera Sistemi,Pazarlık (MD 21 F),2.0,2.0,2.0,2025,1,oth_neg,21f,negotiated_21f,,0,1694000.0,26.923076923076923,0,0,buyer first in market (undefined)
+2024/1546816,2025,İSTANBUL,2025 YILI HASTANE BİLGİ YÖNETİM SİSTEMİ (HBYS) HİZMET ALIMI,Açık,1.0,1.0,4.0,2025,1,open,open,open,1.0,1,15298338.0,26.923076923076923,1,1,incumbent winner
+2025/1341572,2025,İSTANBUL,İSTON AŞ ÜRÜN DEĞERLENDİRME AMAÇLI İSTANBUL SENİN SUPER UYGULAMASI İLE,Açık,2.0,2.0,3.0,2025,1,open,open,open,1.0,1,2330000.0,26.923076923076923,0,0,incumbent winner
+2025/762336,2025,MANİSA,COĞRAFİ BİLGİ SİSTEMLERİ WEB TABANLI OTOMASYON UYGULAMASI HİZMET ALIMI,Pazarlık&nbsp;(MD 21 F),2.0,2.0,4.0,2025,1,oth_neg,21f,negotiated_21f,,0,2100000.0,26.923076923076923,0,0,buyer first in market (undefined)
+2025/945902,2025,VAN,Coğrafi Bilgi Sistemleri Harita Tabanlı Web ve Mobil Yazılım Lisans Ma,Pazarlık&nbsp;(MD 21 F),1.0,1.0,1.0,2025,1,oth_neg,21f,negotiated_21f,,0,1775000.0,26.923076923076923,1,1,buyer first in market (undefined)
+2025/1010986,2025,SİVAS,"RADYOLOJİ AD GÖRÜNTÜ ARŞİVLEME VE İLETİŞİM SİSTEMİ (PACS) 7/24 DESTEK,",Açık,1.0,1.0,3.0,2025,1,open,open,open,1.0,1,2760000.0,26.923076923076923,1,1,incumbent winner
+2025/128932,2025,İSTANBUL,Veri Tabanı Yönetimi ve Veritabanı Sunucu-Storage Alımı İşi,Açık,1.0,1.0,3.0,2025,1,open,open,open,0.0,1,31546894.0,26.923076923076923,1,1,non-incumbent winner
+2025/2016541,2025,İSTANBUL,Bilişim Malzemeleri ve Çevre Birimleri Alımı,Açık,1.0,1.0,4.0,2025,1,open,open,open,1.0,1,3418780.0,26.923076923076923,1,1,incumbent winner
+2025/940607,2025,ANKARA,Kütüphane Otomasyon Sistemi (KOHA) Bakım ve Destek Hizmet Alımı,Pazarlık&nbsp;(MD 21 F),3.0,3.0,4.0,2025,1,oth_neg,21f,negotiated_21f,0.0,1,1200000.0,26.923076923076923,0,0,non-incumbent winner
+2025/1291029,2025,TEKİRDAĞ,Plaka Tanıma ve Ücretlendirme Otomasyon Sistemi,Açık,4.0,3.0,5.0,2025,1,open,open,open,,0,1345000.0,26.923076923076923,0,0,buyer first in market (undefined)
+2025/1250440,2025,ANKARA,"İHA, YAZILIM, GNSS ALICISI, BİLGİSAYAR VE İLGİLİ EKİPMAN ALIMI",Pazarlık (MD 21 F),1.0,1.0,1.0,2025,1,oth_neg,21f,negotiated_21f,,0,2385000.0,26.923076923076923,1,1,buyer first in market (undefined)
+2025/161671,2025,ANTALYA,YOĞUN BAKIM BİLGİ YÖNETİM SİSTEMİ HİZMETİ ALIMI,Pazarlık&nbsp;(MD 21 B),1.0,1.0,3.0,2025,1,21b,21b,negotiated_21b,,0,1590000.0,26.923076923076923,1,1,buyer first in market (undefined)
+2025/2027443,2025,İZMİR,İZMİR BÜYÜKŞEHİR BELEDİYESİ WEB SİTELERİ VE MOBİL UYGULAMA GELİŞTİRME ,Açık,1.0,1.0,1.0,2025,1,open,open,open,0.0,1,24408000.0,26.923076923076923,1,1,non-incumbent winner
+2026/298845,2026,BURSA,YAZILIM KONTROLLÜ BASKI HİZMETİ ALIM İŞİ,Açık,1.0,1.0,5.0,2026,1,open,open,open,,0,1982789.6575995218,3.0277777777777777,1,1,buyer first in market (undefined)
+2025/2363607,2026,MANİSA,hiperbütünleşik sistem sanallaştırma yazılımı ( veri merkezi) ve il dı,Açık,1.0,1.0,1.0,2026,1,open,open,open,,0,2742594.6543916585,3.0277777777777777,1,1,buyer first in market (undefined)
+2026/37984,2026,İSTANBUL,2026 YILI AKADEMİ YAZILIM GELİŞTİRME VE BAKIM HİZMETİ ALIMI İŞİ,Açık,1.0,1.0,3.0,2026,1,open,open,open,,0,3677519.6337429853,3.0277777777777777,1,1,buyer first in market (undefined)
+2026/35239,2026,İSTANBUL,"BEYLİKDÜZÜ BELEDİYESİ 2026 YILI SANALLAŞTIRMA, YEDEKLEME YAZILIMI VE G",Açık,3.0,3.0,3.0,2026,1,open,open,open,,0,1805924.8201416444,3.0277777777777777,0,0,buyer first in market (undefined)
+2026/79455,2026,ANKARA,GELİR İDARESİ BAŞKANLIĞI VERGİ İLETİŞİM MERKEZİNDE KULLANILMAKTA OLAN ,Açık,1.0,1.0,3.0,2026,1,open,open,open,,0,4520760.41932691,3.0277777777777777,1,1,buyer first in market (undefined)
+2025/2166591,2026,İSTANBUL,22 Kalem Bilişim Malzemeleri Alımı,Açık,1.0,1.0,5.0,2026,1,open,open,open,,0,1148431.769681643,3.0277777777777777,1,1,buyer first in market (undefined)
+2025/2466464,2026,İSTANBUL,Kütüphane Yazılımı ve Kütüphane Bilişim Ürünleri Alımı İşi,Açık,2.0,1.0,3.0,2026,1,open,open,open,,0,2237340.1938421484,3.0277777777777777,0,1,buyer first in market (undefined)
+2025/2162537,2026,İSTANBUL,KHHB-4'e Bağlı Sağlık Tesislerinin İhtiyacı İçin 2026 Yılı  Yoğun Bakı,Açık,4.0,3.0,7.0,2026,1,open,open,open,,0,3456478.2427137904,3.0277777777777777,0,0,buyer first in market (undefined)
+2026/102015,2026,ADIYAMAN,1 Ay Süreli HBYS Hizmeti Alımı,Pazarlık (MD 21 B),1.0,1.0,1.0,2026,1,21b,21b,negotiated_21b,0.0,1,3461379.6987473764,3.0277777777777777,1,1,non-incumbent winner
+2025/2328978,2026,ANKARA,Microsoft Kurumsal Lisans Anlaşması ve Paket Yazılım Lisansları,Açık,2.0,2.0,3.0,2026,1,open,open,open,,0,20315432.035048556,3.0277777777777777,0,0,buyer first in market (undefined)
+2026/13149,2026,AMASYA,AMASYA İL SAĞLIK MÜDÜRLÜĞÜNE BAĞLI AMASYA ADSM VE MERZİFON ADSM DİŞ HE,Açık,1.0,1.0,5.0,2026,1,open,open,open,,0,1289130.5237849052,3.0277777777777777,1,1,buyer first in market (undefined)
+2026/256696,2026,İSTANBUL,CAD VE GIS UYGULAMALARI LİSANS GÜNCELLEMELERİ VE YERİNDE TEKNİK DESTEK,Açık,1.0,1.0,1.0,2026,1,open,open,open,0.0,1,3489709.7973751584,3.0277777777777777,1,1,non-incumbent winner
+2026/48985,2026,KAYSERİ,Kullanıcı Yönetim Sistemi Temini,Pazarlık (MD 21 F),2.0,1.0,4.0,2026,1,oth_neg,21f,negotiated_21f,,0,2061704.6859719828,3.0277777777777777,0,1,buyer first in market (undefined)
+2026/52835,2026,TEKİRDAĞ,"Bilişim Malzemeleri, Kamera ve Drone Alınması",Açık,7.0,7.0,12.0,2026,1,open,open,open,,0,1488266.0546769402,3.0277777777777777,0,0,buyer first in market (undefined)
+2025/2333238,2026,İSTANBUL,"GÖRSEL ARŞIV, GRAFİK VE MİMARİ DÜZENLEME YAZILIMLARI ALIMI",Açık,1.0,1.0,2.0,2026,1,open,open,open,0.0,1,1181504.701170403,3.0277777777777777,1,1,non-incumbent winner
+2026/187468,2026,İSTANBUL,Bilet Otomasyon Sistemi Yazılım Güncelleme ve Ek Modül Ekleme Hizmet A,Açık,1.0,1.0,2.0,2026,1,open,open,open,0.0,1,1546575.9329276271,3.0277777777777777,1,1,non-incumbent winner
+2026/249502,2026,ADIYAMAN,2 Ay Süreli HBYS Hizmeti Alımı,Pazarlık (MD 21 B),1.0,1.0,1.0,2026,1,21b,21b,negotiated_21b,1.0,1,6922759.397494753,3.0277777777777777,1,1,incumbent winner
+2025/2332276,2026,İSTANBUL,"Sistem, Donanım, Sunucu Bakım ve Teknik Destek Hizmet Alımı İşi",Açık,1.0,1.0,2.0,2026,1,open,open,open,1.0,1,3723678.976971902,3.0277777777777777,1,1,incumbent winner
+2025/2123764,2026,BURSA,35 Aylık DHBS Yazılım Hizmeti Alımı,Açık,1.0,1.0,2.0,2026,1,open,open,open,,0,17411993.126730286,3.0277777777777777,1,1,buyer first in market (undefined)
+2026/220882,2026,ÇANKIRI,WEB TABANLI YÖNETİM BİLGİ SİSTEMİ YAZILIMI ALIMI,Pazarlık (MD 21 B),1.0,1.0,1.0,2026,1,21b,21b,negotiated_21b,,0,5948368.972798565,3.0277777777777777,1,1,buyer first in market (undefined)
+2025/2066125,2026,VAN,9 Kalem Bilişim Malzemesi Alımı,Açık,3.0,2.0,11.0,2026,1,open,open,open,,0,12753303.077680124,3.0277777777777777,0,0,buyer first in market (undefined)
+2026/157616,2026,BARTIN,AMASRA BELEDİYESİ’NE AİT İÇME SUYU DEPOLARINA SCADA OTOMASYON SİSTEMİ ,Açık,4.0,4.0,5.0,2026,1,open,open,open,,0,5286870.687230214,3.0277777777777777,0,0,buyer first in market (undefined)
+2026/296825,2026,İSTANBUL,AĞ ALTYAPI VE BİLİŞİM SİSTEMLERİ HİZMET ALIMI İŞİ,Açık,1.0,1.0,2.0,2026,1,open,open,open,0.0,1,1163500.9710793993,3.0277777777777777,1,1,non-incumbent winner
+2026/98748,2026,İSTANBUL,"Harita  Destekli  IP  Santral,  Çağrı  Merkezi,  Talep  ve  Şikâyet  Y",Açık,2.0,1.0,3.0,2026,1,open,open,open,1.0,1,1070706.4151037417,3.0277777777777777,0,1,incumbent winner
+2025/2386070,2026,İSTANBUL,KENT İÇİ RAYLI ULAŞIM YÖNETİM SİSTEMİ DESTEK HİZMET ALIMI,Açık,2.0,2.0,4.0,2026,1,open,open,open,1.0,1,24313759.897348378,3.0277777777777777,0,0,incumbent winner
+2026/34145,2026,BURDUR,36 AY SÜRE İLE SAĞLIK BİLGİ YÖNETİM SİSTEMİ (SBYS),Açık,2.0,1.0,4.0,2026,1,open,open,open,1.0,1,50248880.20858213,3.0277777777777777,0,1,incumbent winner
+2026/44294,2026,İSTANBUL,2026 YILI YAZILIM LİSANSLARI ALIMI İŞİ,Açık,2.0,2.0,4.0,2026,1,open,open,open,,0,956854.6329643773,3.0277777777777777,0,0,buyer first in market (undefined)
+2025/2441676,2026,AYDIN,Aydın Şehir Hastanesi Bilişim Malzemeleri Alımı,Açık,1.0,1.0,4.0,2026,1,open,open,open,,0,18876157.54034745,3.0277777777777777,1,1,buyer first in market (undefined)
+2026/145144,2026,İSTANBUL,MOBİL SUPER APP UYGULAMA VE YÖNETİM YAZILIMI HİZMETLERİ ALIMI,Pazarlık (MD 21 F),2.0,2.0,3.0,2026,1,oth_neg,21f,negotiated_21f,,0,1308641.1740156845,3.0277777777777777,0,0,buyer first in market (undefined)
+2025/2198788,2026,ANKARA,KAMERALI KİŞİ SAYMA VE YÜZ TANIMA SİSTEMİ YAZILIM VE KURULUM,Açık,2.0,2.0,7.0,2026,1,open,open,open,,0,4983047.827996238,3.0277777777777777,0,0,buyer first in market (undefined)
+2026/356271,2026,İSTANBUL,Hastane Bilgi Yönetim Sistemi (HBYS) Alımı,Pazarlık (MD 21 B),1.0,1.0,1.0,2026,1,21b,21b,negotiated_21b,1.0,1,1785857.5215423906,3.0277777777777777,1,1,incumbent winner
+2026/243253,2026,MERSİN,BİLİŞİM MALZEMELERİ MAL ALIMI,Pazarlık (MD 21 F),1.0,1.0,3.0,2026,1,oth_neg,21f,negotiated_21f,,0,2681604.044523897,3.0277777777777777,1,1,buyer first in market (undefined)
+2026/135025,2026,BİNGÖL,WEB Tabanlı Süreç Yönetim Bilgi Sistemi Hizmet Alım İşi,Pazarlık (MD 21 F),1.0,1.0,1.0,2026,1,oth_neg,21f,negotiated_21f,,0,1903478.071295541,3.0277777777777777,1,1,buyer first in market (undefined)
+2025/2453833,2026,ANTALYA,YOĞUN BAKIM BİLGİ YÖNETİM SİSTEMİ HİZMETİ ALIMI ( 3 AY),Pazarlık (MD 21 B),1.0,1.0,2.0,2026,1,21b,21b,negotiated_21b,1.0,1,1253916.1794659377,3.0277777777777777,1,1,incumbent winner
+2026/206987,2026,MERSİN,UZAK MASAÜSTÜ YAZILIMI,Pazarlık (MD 21 F),1.0,1.0,3.0,2026,1,oth_neg,21f,negotiated_21f,,0,2577626.5548793785,3.0277777777777777,1,1,buyer first in market (undefined)
+2026/131018,2026,TUNCELİ,"2026-2029  OTOMASYON (DHBYS+VTYS+PACS) TEKNİK SERVİS,EĞİTİM,BAKIM,KULL",Açık,1.0,1.0,1.0,2026,1,open,open,open,,0,5397308.835245785,3.0277777777777777,1,1,buyer first in market (undefined)

@@ -1,0 +1,550 @@
+
+==========================================================================================
+INPUT: 13,024 contracts, 4,788 firm names, 3,453 buyer labels
+==========================================================================================
+
+==========================================================================================
+DATES
+==========================================================================================
+tarih_v3 coverage: 100.0000% | range 2010-10-05 -> 2026-03-18
+tarih_v3 == original 'tarih' string: 100.0000%
+yil_v3 == original 'yil': 100.0000%
+old tarih_dt: missing 8,271 (63.5%); wrong where present 4,340 (dayfirst parsing swapped month/day on ISO strings)
+NOTE: ihale_tarihi = tender (auction) date from EKAP, not contract-signature date.
+
+==========================================================================================
+PROCEDURE (usul_v3)
+==========================================================================================
+usul_v3                    negotiated_21a  negotiated_21b  negotiated_21c  negotiated_21d  negotiated_21e  negotiated_21f  open  restricted
+ihale_usulu                                                                                                                                
+Açık                                    0               0               0               0               0               0  7974           0
+Belli İstekliler Arasında               0               0               0               0               0               0     0          26
+Pazarlık (MD 21 A)                      9               0               0               0               0               0     0           0
+Pazarlık (MD 21 B)                      0            1462               0               0               0               0     0           0
+Pazarlık (MD 21 C)                      0               0             108               0               0               0     0           0
+Pazarlık (MD 21 D)                      0               0               0               1               0               0     0           0
+Pazarlık (MD 21 E)                      0               0               0               0               3               0     0           0
+Pazarlık (MD 21 F)                      0               0               0               0               0            3441     0           0
+NOTE: no untyped 'Pazarlık' and no direct procurement (Md.22) exist in this EKAP tender-search extract (cp1 contains only Açık / Belli İstekliler / Pazarlık 21a-f); categories kept for schema stability.
+
+==========================================================================================
+BUYERS (pooled labels = generic label spanning >=2 provinces, or known MoH/ASHB generic labels)
+==========================================================================================
+pooled labels: 36 | contracts under pooled labels: 1,001 | buyer nodes: kurum 3,453 -> kurum_il_split 3,663
+   535 contracts, 68 provinces | İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI
+   176 contracts, 34 provinces | Kamu Hastane Birliği SAĞLIK BAKANLIĞI TÜRKİYE KAMU HASTANELERİ KURUMU
+    58 contracts, 29 provinces | Aile ve Sosyal Hizmetler İl Müdürlüğü AİLE VE SOSYAL HİZMETLER BAKANLIĞI BAKAN YARDIMCILIKLARI
+    43 contracts, 10 provinces | Halk Sağlığı Müdürlüğü SAĞLIK BAKANLIĞI TÜRKİYE HALK SAĞLIĞI KURUMU
+    15 contracts, 11 provinces | DESTEK HİZMETLERİ MÜDÜRLÜĞÜ
+    13 contracts,  2 provinces | GENEL SEKRETERLİK
+    13 contracts,  3 provinces | DESTEK HİZMETLERİ DAİRESİ BAŞKANLIĞI
+    13 contracts,  8 provinces | DİŞ HEKİMLİĞİ FAKÜLTESİ DEKANLIĞI
+    12 contracts,  4 provinces | SAĞLIK ARAŞTIRMA VE UYGULAMA MERKEZİ MÜDÜRLÜĞÜ
+    11 contracts,  8 provinces | BİLGİ İŞLEM DAİRE BAŞKANLIĞI
+    10 contracts,  3 provinces | İdari ve Mali İşler Daire Başkanlığı YÜKSEKÖĞRETİM KURUMLARI
+    10 contracts,  7 provinces | Mesleki ve Teknik Anadolu Lisesi- MİLLİ EĞİTİM BAKANLIĞI BAKAN YARDIMCILIKLARI
+
+==========================================================================================
+BUYER SECTOR v3 -- fixes
+==========================================================================================
+  F1 Turkish-aware upper-casing (v1 used str.upper: 'i'->'I', so mixed-case labels such as 'Belediye', 'İl Özel İdaresi', 'Milli Eğitim' did not match their rules).
+  F2 Belediye/Yerel evaluated first: municipal units and municipal companies (İSKİ, İETT, İGDAŞ, İSTTELKOM, İSBAK, EGO, İZSU...) are municipal buyers even when the label contains SAĞLIK/ULAŞIM/ELEKTRİK.
+  F3 JANDARMA and SAHİL GÜVENLİK -> Savunma (v1 put 'JANDARMA' in Security before the Defense rule 'JANDARMA GEN', so the Defense rule was dead code).
+  F4 Word-boundary matching for short tokens: METRO no longer matches METROLOJİ; TIP needs a word boundary (v1 ' TIP' missed labels starting with 'Tıp Fakültesi'); DSİ, ASKİ, İSKİ, LİMAN, MSB bounded.
+  F5 'SAĞLIK KÜLTÜR (VE SPOR)' = university Health-Culture-Sports directorates -> Eğitim, not Sağlık.
+  F6 Defence before Security; MSB supply units ('TED.BLG.BŞK', 'Ted.Mrkz') and 'SAVUNMA SANAYİ' -> Savunma.
+  F7 Added missing national buyers: ÖSYM/Ölçme-Seçme -> Eğitim; DHMİ spelled out, Demiryolları, BOTAŞ, PTT, İletişim Başkanlığı -> Altyapı/Ulaşım; Gümrük, İŞKUR, Ticaret Bakanlığı, Sayıştay, banks -> Sosyal/Maliye; YİKOB -> İl Özel/Taşra; TOKİ, Şeker Fabrikaları, TİGEM, ÇAYKUR -> Tarım/Çevre; AFAD -> Güvenlik/İçişleri; airports (HAVALİMANI), TEİAŞ/EÜAŞ -> Altyapı/Ulaşım; 'ÇALIŞMA GENEL MÜDÜRLÜĞÜ' -> Sosyal/Maliye.
+  F8 v1 ' TIP' also matched prison labels 'L TİPİ / F Tipi Cezaevi' (upper-cased to 'TIPI') -> they were Sağlık; now Adalet. v1 'DİŞ HEK' never matched mixed-case 'Diş Hekimliği Fakültesi' -> now Sağlık (consistent with 'Tıp Fakültesi' -> Sağlık).
+  F9 'ULAŞTIRMA' inside 'TOPLULAŞTIRMA/KAMULAŞTIRMA' no longer triggers Altyapı; Devlet Su İşleri (spelled out) -> Altyapı/Ulaşım like 'DSİ' (v1 sent the spelled-out form to Tarım/Çevre via 'SU İŞLERİ').
+  F10 'İL ÖZEL İDARESİ' is evaluated right after Belediye so its AFAD / health units stay İl Özel/Taşra.
+
+contracts whose sector changed: 1,423 (10.9%); buyer labels changed: 224
+sektor_v3          Adalet  Altyapı/Ulaşım  Belediye/Yerel  Diğer Kamu  Eğitim  Güvenlik/İçişleri  Savunma  Sağlık  Sosyal/Maliye  Tarım/Çevre  İl Özel/Taşra    All
+sektor                                                                                                                                                             
+Adalet                 65               0               0           0       0                  0        0       0              0            0              0     65
+Altyapı/Ulaşım          0             775             111           0       0                  0        0       0              0            0              8    894
+Belediye/Yerel          0               0            2536           0       0                  0        0       0              0            0              0   2536
+Diğer Kamu              3              70             573        1542      28                 24        5       0            167           72            133   2617
+Eğitim                  0               0               0           0    1261                  0        0      97              0            0              0   1358
+Güvenlik/İçişleri       0               0               0           0       0                249       83       0              0            0              0    332
+Savunma                 0               0               0           0       0                  0      230       0              0            0              0    230
+Sağlık                 13               0               8           0       0                  0        0    3968              0            0              3   3992
+Sosyal/Maliye           0               0               0           0       4                  0        0       0            257            0              0    261
+Tarım/Çevre             0              18               3           0       0                  0        0       0              0          463              0    484
+İl Özel/Taşra           0               0               0           0       0                  0        0       0              0            0            255    255
+All                    81             863            3231        1542    1293                273      318    4065            424          535            399  13024
+
+Top moved buyer labels:
+   117         Diğer Kamu -> Belediye/Yerel    | İzmir Büyükşehir Belediyesi SATINALMA DAİRE BAŞKANLIĞI HİZMET ALIMLARI ŞUBE MÜDÜRLÜĞÜ
+   106         Diğer Kamu -> Belediye/Yerel    | Kocaeli Büyükşehir Belediyesi Destek Hizmetleri Dairesi Başkanlığı - İhale İşleri Şube Müdürlüğ
+    62  Güvenlik/İçişleri -> Savunma           | Jandarma Ted.Mrkz.K.lığı(Güvercinlik/Ankara) İÇİŞLERİ BAKANLIĞI JANDARMA GENEL KOMUTANLIĞI
+    56     Altyapı/Ulaşım -> Belediye/Yerel    | İGDAŞ İSTANBUL GAZ DAĞITIM SANAYİ VE TİCARET ANONİM ŞİRKETİ
+    52         Diğer Kamu -> Belediye/Yerel    | Ankara Büyükşehir Belediyesi Bilgi İşlem Dairesi Başkanlığı
+    51         Diğer Kamu -> Belediye/Yerel    | İ.E.T.T. İŞLETMELERİ GENEL MÜDÜRLÜGÜ
+    48         Diğer Kamu -> Sosyal/Maliye     | Bilgi Teknolojileri Genel Müdürlüğü  TİCARET BAKANLIĞI BAKAN YARDIMCILIKLARI
+    48         Diğer Kamu -> Tarım/Çevre       | Türkiye Şeker Fabrikaları A.Ş. Genel Müdürlüğü
+    28         Diğer Kamu -> Sosyal/Maliye     | T.C. Merkez Bankası İDARE MERKEZİ
+    26         Diğer Kamu -> İl Özel/Taşra     | İDARİ VE MALİ İŞLER MÜDÜRLÜĞÜ YATIRIM İZLEME VE KOORDİNASYON BAŞKANLIKLARI İSTANBUL YATIRIM İZL
+    24         Diğer Kamu -> Belediye/Yerel    | Beylikdüzü Belediye Başkanlığı
+    24         Diğer Kamu -> Belediye/Yerel    | Kartal Belediyesi Destek Hizmetleri ve İşletme İştirakler Müdürlüğü
+    23         Diğer Kamu -> Sosyal/Maliye     | İLLER BANKASI ANONİM ŞİRKETİ YATIRIM KOORDİNASYON DAİRESİ BAŞKANLIĞI
+    22         Diğer Kamu -> Sosyal/Maliye     | Türkiye İhracat Kredi Bankası A.Ş.
+    22         Diğer Kamu -> Belediye/Yerel    | Bursa Büyükşehir Belediyesi Destek Hizmetleri Dairesi Başkanlığı İhale Şube Müdürlüğü
+    20     Altyapı/Ulaşım -> Belediye/Yerel    | Adana Su ve Kanalizasyon İdaresi ASKİ Genel Müdürlüğü
+    20         Diğer Kamu -> İl Özel/Taşra     | YATIRIM İZLEME MÜDÜRLÜĞÜ YATIRIM İZLEME VE KOORDİNASYON BAŞKANLIKLARI ŞANLIURFA YATIRIM İZLEME 
+    18     Altyapı/Ulaşım -> Belediye/Yerel    | İzmir Su ve Kanalizasyon İdaresi Genel Müdürlüğü (İZSU)
+    18         Diğer Kamu -> Altyapı/Ulaşım    | BİLGİ İŞLEM DAİRESİ BAŞKANLIĞI ULAŞTIRMA VE ALTYAPI BAKANLIĞI BAKAN YARDIMCILIKLARI
+    17         Diğer Kamu -> Belediye/Yerel    | İSTTELKOM İSTANBUL ELEKTRONİK HABERLEŞME VE ALTYAPI HİZMETLERİ SANAYİ VE TİCARET ANONİM ŞİRKETİ
+    16         Diğer Kamu -> Altyapı/Ulaşım    | BORU HATLARI İLE PETROL TAŞIMA A.Ş (BOTAŞ) Tedarik ve Sözleşmeler Daire Başkanlığı
+    16         Diğer Kamu -> Belediye/Yerel    | Gaziantep Büyükşehir Belediyesi
+    16         Diğer Kamu -> Tarım/Çevre       | ÇAY İŞLETMELERİ GENEL MÜDÜRLÜĞÜ(ÇAYKUR) Satınalma Dairesi Başkanlığı
+    14         Diğer Kamu -> Sosyal/Maliye     | TÜRKİYE İŞ KURUMU DESTEK HİZMETLERİ DAİRESİ BAŞKANLIĞI
+    14         Diğer Kamu -> Belediye/Yerel    | Antalya Büyükşehir Belediyesi Bilgi İşlem Dairesi Başkanlığı
+    14         Diğer Kamu -> Belediye/Yerel    | Erzurum Büyükşehir Belediyesi MALİ HİZMETLER DAİRE BAŞKANLIĞI
+    14         Diğer Kamu -> Belediye/Yerel    | İSTON İSTANBUL BETON ELEMANL.VE HAZIR BET ON FAB.SAN.VE TİC.AŞ
+    14     Altyapı/Ulaşım -> Belediye/Yerel    | METRO İSTANBUL SANAYİ VE TİCARET A.Ş
+    13         Diğer Kamu -> Güvenlik/İçişleri | BAŞBAKANLIK AFET VE ACİL DURUM YÖNETİMİ BAŞKANLIĞI YÖNETİM HİZMETLERİ DAİRESİ BAŞKANLIĞI
+    12             Eğitim -> Sağlık            | Tıp Fakültesi YÜKSEKÖĞRETİM KURUMLARI ONDOKUZ MAYIS ÜNİVERSİTESİ
+    11             Eğitim -> Sağlık            | Diş Hekimliği Fakültesi YÜKSEKÖĞRETİM KURUMLARI EGE ÜNİVERSİTESİ
+    11         Diğer Kamu -> Eğitim            | Anadolu Üniversitesi Döner Sermaye İşletmesi
+    10         Diğer Kamu -> Altyapı/Ulaşım    | TÜRKİYE CUMHURİYETİ DEVLET DEMİRYOLLARI TAŞIMACILIK ANONİM ŞİRKETİ GENEL MÜDÜRLÜĞÜ
+    10             Eğitim -> Sağlık            | Tıp Fakültesi YÜKSEKÖĞRETİM KURUMLARI DİCLE ÜNİVERSİTESİ
+     8         Diğer Kamu -> Sosyal/Maliye     | Başkan Yardımcılığı SAYIŞTAY BAŞKAN YARDIMCILIĞI
+     8         Diğer Kamu -> İl Özel/Taşra     | YATIRIM İZLEME MÜDÜRLÜĞÜ YATIRIM İZLEME VE KOORDİNASYON BAŞKANLIKLARI ANTALYA YATIRIM İZLEME VE
+     8         Diğer Kamu -> İl Özel/Taşra     | YATIRIM İZLEME MÜDÜRLÜĞÜ YATIRIM İZLEME VE KOORDİNASYON BAŞKANLIKLARI DİYARBAKIR YATIRIM İZLEME
+     7         Diğer Kamu -> Belediye/Yerel    | Eskişehir Büyükşehir Belediyesi SATINALMA DAİRESİ BAŞKANLIĞI
+     7         Diğer Kamu -> Eğitim            | Orta Doğu Teknik Üniversitesi Döner Sermaye İşletmesi
+     7         Diğer Kamu -> Belediye/Yerel    | İSPER İSTANBUL PERSONEL YÖNETİM A.Ş.
+
+==========================================================================================
+IT SCOPE v3 (scope_v3)
+==========================================================================================
+                       contracts  share_contracts  value_bnTRY  share_value
+scope_v3                                                                   
+IT                          9981            0.766       25.645        0.565
+IT_service_callcentre         10            0.001        7.617        0.168
+gray                        1406            0.108        4.124        0.091
+nonIT                       1627            0.125        8.035        0.177
+TOTAL 13,024 contracts, 45.42 bn TRY (nominal)
+
+By rule reason:
+                                                                                      n  bnTRY
+scope_v3              scope_reason                                                            
+IT                    callcentre_software_or_equipment                               64  0.064
+                      strong_IT_term                                               9773 24.921
+                      weak_term_IT_system                                           144  0.660
+IT_service_callcentre callcentre_service                                             10  7.617
+gray                  IT_user_staffing                                              461  1.819
+                      automation_or_management_system_only                          497  1.065
+                      manual_override(was IT)                                         4  0.528
+                      mixed_bundle:building_services                                  2  0.000
+                      mixed_bundle:construction                                       5  0.003
+                      mixed_bundle:construction+fuel_goods+building_services          1  0.002
+                      mixed_bundle:events_consulting_other                           16  0.038
+                      mixed_bundle:facility_staffing                                 68  0.047
+                      mixed_bundle:facility_staffing+building_services                1  0.000
+                      mixed_bundle:fuel_goods                                        23  0.029
+                      mixed_bundle:fuel_goods+building_services                       5  0.024
+                      mixed_bundle:fuel_goods+facility_staffing                       7  0.003
+                      mixed_bundle:other                                             18  0.010
+                      mixed_bundle:vehicle_machinery                                  1  0.031
+                      mixed_bundle:vehicle_machinery+facility_staffing                2  0.004
+                      mixed_bundle:vehicle_machinery+fuel_goods+building_services     1  0.000
+                      works_contract_IT_installation                                294  0.520
+nonIT                 ISO_management_system                                          26  0.020
+                      building_services                                              73  0.210
+                      building_services(ambiguous_IT_word)                            6  0.021
+                      construction                                                   37  0.054
+                      construction+building_services                                  3  0.001
+                      construction+events_consulting_other                            8  0.009
+                      construction+facility_staffing                                  5  0.006
+                      construction+facility_staffing+building_services                1  0.005
+                      construction+fuel_goods+building_services                       1  0.000
+                      construction+vehicle_machinery                                 12  0.002
+                      events_consulting_other                                        97  0.308
+                      events_consulting_other(ambiguous_IT_word)                      2  0.031
+                      events_consulting_other+building_services                       1  0.000
+                      facility_staffing                                             198  0.772
+                      facility_staffing(with data-entry)                             47  0.148
+                      facility_staffing+building_services                             7  0.006
+                      facility_staffing+callcentre                                    1  0.001
+                      facility_staffing+events_consulting_other                       4  0.010
+                      fuel_goods                                                    114  0.342
+                      fuel_goods+building_services                                   14  0.013
+                      fuel_goods+facility_staffing                                    6  0.001
+                      fuel_goods+facility_staffing+building_services                  3  0.000
+                      manual_override(was gray)                                       1  0.089
+                      manual_override(was nonIT)                                      2  0.533
+                      no_IT_term                                                     47  0.005
+                      technical_support_staff_no_IT_term                            536  0.566
+                      vehicle_machinery                                             175  0.697
+                      vehicle_machinery(ambiguous_IT_word)                            2  0.001
+                      vehicle_machinery+building_services                             4  0.002
+                      vehicle_machinery+events_consulting_other                       3  0.002
+                      vehicle_machinery+facility_staffing                             1  0.001
+                      vehicle_machinery+fuel_goods                                    3  0.000
+                      works_contract                                                164  4.118
+                      works_contract(IT_word_in_building_name)                       23  0.061
+
+Scope by original scraping keyword (shows EKAP substring noise: 'erp' hit YavERPaşa/sERPici, 'teknik destek' hit facility staffing):
+scope_v3               IT  IT_service_callcentre  gray  nonIT    All
+kaynak_keyword                                                      
+bakım destek hizmet     8                      0     5     11     24
+bilgi sistemi         519                      0   198      1    718
+bilişim              1162                      2    92     24   1280
+bulut bilişim           1                      0     0      0      1
+dijital dönüşüm        18                      0     0      0     18
+e-belediye             10                      0     0      0     10
+e-devlet                7                      0     0      0      7
+erp                    68                      0     4    546    618
+hasta bilgi             1                      0    17      0     18
+hbys                  623                      0    51     10    684
+kurumsal kaynak         4                      0     0      0      4
+lisans alım            14                      0     0      0     14
+mobil uygulama         94                      0     1      0     95
+otomasyon sistemi     147                      0   302    127    576
+raporlama sistemi       2                      0     0      0      2
+siber güvenlik         80                      0     0      1     81
+teknik destek         299                      2    87    798   1186
+uygulama geliştirme    41                      0     0      0     41
+veri ambarı             3                      0     0      0      3
+veri tabanı           207                      0     1      0    208
+veritabanı            124                      0     0      0    124
+web tabanlı           190                      0     2      0    192
+web uygulaması         17                      0     0      0     17
+yapay zeka             44                      0     1      4     49
+yazılım              4045                      0   148      3   4196
+yönetim sistemi      2253                      6   497    102   2858
+All                  9981                     10  1406   1627  13024
+
+Ihale türü 'Yapım' (works): 484 contracts -> {'gray': 294, 'nonIT': 190}
+
+TOP-20 non-IT removals by value:
+    2368.0 mn | AYDUR İNŞAAT TAAHHÜT TİCARET VE SA | works_contract               | Osmaniye İli Merkez İlçesi Yaverpaşa Mahallesi 3. Etap 1017 Adet Konut İnşaatı ile Altyapı ve Ç
+     492.0 mn | BULUT İNŞ.İHRACAT İTHALAT SAN.TİC. | manual_override(was nonIT)   | Afşin Elbistan Linyitleri İşletmesi Müdürlüğü Çöllolar-1 Panosu 18.000.000 m³ Dekapaj, Proje Dâ
+     445.6 mn | OTOKOÇ OTOMOTİV TİCARET VE SANAYİ  | vehicle_machinery            | Damperli Kamyon, Tuz Serpici, Ön Kar Bıçakları ve Yan Kar Bıçakları İşi
+     275.6 mn | KILIÇASLAN METAL BÜRO MOBİLYALARI  | fuel_goods                   | 793 ADET BİLİŞİM TEKNOLOJİLERİ LABORATUVARI TEFRİŞATI ALIM VE KURULUM İŞİ
+     221.0 mn | ÇELİKMEN YAPI MÜHENDİSLİK İNŞAAT L | works_contract               | Balıkesir İli Balya İlçesi Enverpaşa Mahallesi 79 Adet Konut ve 4 Adet Dükkan İnşaatı ile Altya
+     205.4 mn | TARLAK YAPI İNŞAAT MADENCİLİK SANA | works_contract               | BUCAK BİLGİSAYAR BİLİŞİM FAKÜLTESİ VE ÇEVRE DÜZENLEME YAPIM İŞİ
+     152.8 mn | AET PROJE MİMARLIK MÜHENDİSLİK İNŞ | works_contract               | Denizli İli Kale İlçesi Cevherpaşa Mahallesi 71 Adet Konut ve 4 Adet Dükkân İnşaatları ile Alty
+     143.2 mn | HİGHTECHNOLOGY BİLİŞİM SİSTEMLERİ  | building_services            | Yazılım Geliştirme Merkezi ve Bağlı Toplantı Salonu Ortak Havalandırma ve Açık Ofis Malzemeleri
+     134.4 mn | DİZMANLAR GAYRİMENKUL YATIRIM LOJİ | works_contract               | Osmaniye  İli, Merkez İlçesi, Yaverpaşa Mahallesi  604  Adet  Konut  İnşaatı  ile  Altyapı  ve 
+     112.4 mn | AR YEMEK İŞGÜ.TE.GI.TE.İL.TE.OT.TA | facility_staffing            | Yardımcı Personel Ve Teknik Destek  Personeli Hizmet Alımı İşi
+     112.2 mn | TURKUAZ SOSYAL VE DESTEK HİZMETLER | facility_staffing            | Dicle Üniversitesi Hastaneleri ile bağlı birimlerin (Dekanlık, Çocuk Hastanesi, Onkoloji Hastan
+     111.8 mn | YAPITEM YAPI TEKNOLOJİLERİ MERKEZİ | works_contract               | İTÜ Ayazağa Yerleşkesi Bilgisayar ve Bilişim Fakültesi Binası Tamamlama, Onarım, Tadilat ve Yen
+     109.2 mn | TRAK MÜHENDİSLİK YAPI İNŞAAT SANAY | works_contract               | Tekirdağ İli, Çorlu İlçesi, Kazimiye Mahallesi, 1928 Ada 3 Parsel Üzerine 32 Derslikli Bedia Sü
+      88.8 mn | BÜLENT GENÇ, AHMET CEYHAN MÜHENDİS | manual_override(was gray)    | Silivri Ceza İnfaz Kurumları Kampüsü Altyapı Mekanik Tesisat Yenileme ve L Tipi Kapalı Ceza İnf
+      86.8 mn | KARAKOÇ TOPLU KONUTYAPI İNŞ.SAN.VE | works_contract               | Kocaeli İli Çayırova İlçesi Şekerpınar Mahallesi 115 Adet Konut ve 4 Adet Dükkan İnşaatı İle Al
+      84.5 mn | ASF 06 İNŞAAT KUYUMCULUK NAKLİYE H | works_contract               | Osmaniye İli Merkez İlçesi Yaverpaşa Mahallesi 10 Adet Dükkan, 1 Adet Cami ve Akyar Mahallesi 2
+      64.0 mn | MERT SUYAPI İNŞAAT MADENCİLİK SANA | works_contract               | Rize-Çayeli Beyazsu (Cano) Deresinin Şirinköy Köyü Hassadıklar ve Küçükcaferpaşa Yan Kolları 1K
+      57.5 mn | ER-SAN MİMARLIK İNŞAAT SANAYİ TİCA | works_contract               | Kumlu Akkerpiç İlkokulu 8 Derslikli Yapım İşi
+      57.0 mn | MURTAZAOĞLU HAFRİYAT İNŞAAT NAKLİY | works_contract               | Gebze İlçesi Eskihisar ve Barış Dereleri ile Çayırova İlçesi Şekerpınar Mahallesi Güzel Sokak D
+      51.1 mn | MSD TEMİZLİK BİLGİ SİSTEM MEDİKAL  | facility_staffing            | İnönü Üniversitesi Turgut Özal Tıp Merkezi ve Bağlı Birimlerin Genel Temizlik (malzemeli), Mutf
+
+Top-150 by value, hand-verified labels:
+                             n         bn
+manual_label                             
+IT                         108  10.188750
+IT-services (call centre)    1   7.539005
+mixed                       19   1.890919
+non-IT                      22   5.454286
+
+==========================================================================================
+PRODUCT MARKET (urun_pazari; rule-based on ihale_adi; nonIT rows = 'not_IT')
+==========================================================================================
+                                   contracts  value_bn  share_contracts  share_value
+urun_pazari                                                                         
+health_information_systems              2200     7.419            0.193        0.198
+ERP_management_software                 1951     3.403            0.171        0.091
+custom_software_web_mobile              1141     2.101            0.100        0.056
+software_licences                       1048     2.361            0.092        0.063
+network_datacentre_infrastructure        795     2.702            0.070        0.072
+computers_peripherals                    719     1.025            0.063        0.027
+maintenance_support_services             683     2.225            0.060        0.060
+physical_security_surveillance           604     0.899            0.053        0.024
+GIS_city_information                     562     0.977            0.049        0.026
+IT_staffing_data_entry                   453     1.803            0.040        0.048
+cybersecurity                            392     1.704            0.034        0.046
+other_IT                                 312     0.322            0.027        0.009
+smart_city_traffic_OT                    230     1.525            0.020        0.041
+education_technology                     225     1.225            0.020        0.033
+call_centre_helpdesk                      82     7.696            0.007        0.206
+coverage (in-scope rows assigned to a specific market, not other_IT): 97.3%
+
+Product market x buyer sector (in-scope, contracts):
+sektor_v3                          Adalet  Altyapı/Ulaşım  Belediye/Yerel  Diğer Kamu  Eğitim  Güvenlik/İçişleri  Savunma  Sağlık  Sosyal/Maliye  Tarım/Çevre  İl Özel/Taşra
+urun_pazari                                                                                                                                                                 
+ERP_management_software                16             200             644         343     175                 30       46     300            100           80             17
+GIS_city_information                    0              34             354          44      12                  4        3       6              3           49             53
+IT_staffing_data_entry                  0              13              20           4       6                  1        0     399              6            4              0
+call_centre_helpdesk                    0               5              40          10       8                  1        0       5             10            1              2
+computers_peripherals                   5              29             288          62     107                 13        1     177              9           15             13
+custom_software_web_mobile              3              72             402         194     190                 33       34      88             50           69              6
+cybersecurity                           2              51             125          80      37                 12        9      34             24           16              2
+education_technology                    0               5              38          49     111                  4        5       4              2            1              6
+health_information_systems              0               0               7          16      19                  0        1    2157              0            0              0
+maintenance_support_services            5              71             165         153      51                 18       21      61             47           89              2
+network_datacentre_infrastructure       6              87             230         110     121                 21       34     127             22           30              7
+other_IT                                0              19              64          58      75                  6        3      54              2           31              0
+physical_security_surveillance          7              13              97         130      25                 93        3      13              1           10            212
+smart_city_traffic_OT                   7              50             126          24       3                  0        0       8              2            3              7
+software_licences                      18              90             305         170     204                 23       50      66             85           33              4
+
+==========================================================================================
+FIRM CANONICALISATION v3 (manual merges on top of v2)
+==========================================================================================
+G01 [successor] -> FONET BİLGİ TEKNOLOJİLERİ ANONİM ŞİRKETİ  (total 210)
+       199 2011-2026 | FONET BİLGİ TEKNOLOJİLERİ ANONİM ŞİRKETİ
+        11 2010-2011 | FONET BİLGİSAYAR YAZ ILIM SAN. VE TİC LTD.ŞTİ.
+G02 [spelling] -> KARDELEN BİLİŞİM TEKNOLOJİLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ  (total 5)
+         3 2025-2026 | KARDELEN BİLİŞİM TEKNOLOJİLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ
+         2 2013-2018 | KARDELEN BİLİŞİM TEKNOLOJİLERİ SANAYİ VETİCARET LİMİTED ŞİRK
+G03 [successor] -> PROBEL BİLGİSAYAR YAZILIM DONANIM SANAYİ VE TİCARET ANONİM ŞİRKETİ  (total 210)
+       139 2010-2021 | PROBEL BİLGİSAYAR YAZILIM DONANIM SANAYİ VE TİCARET ANONİM ŞİRKETİ
+        71 2021-2026 | PROBEL YAZILIM VE BİLİŞİM SİSTEMLERİ ANONİM ŞİRKETİ
+G04 [legal_form] -> AKGÜN BİLGİSAYAR PROGRAM VE HİZ.SAN.TİC.LTD.ŞİRKETİ  (total 170)
+        94 2010-2019 | AKGÜN BİLGİSAYAR PROGRAM VE HİZ.SAN.TİC.LTD.ŞİRKETİ
+        76 2020-2026 | AKGÜN BİLGİSAYAR PROGRAM VE HİZMETLERİ SANAYİ TİCARET A.Ş.
+G05 [successor] -> METASOFT BİLGİSAYAR BİLGİ İŞLEM HİZMETLERİ SANAYİ VE TİCARET LİMİTED Ş  (total 141)
+        92 2013-2023 | METASOFT BİLGİSAYAR BİLGİ İŞLEM HİZMETLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ
+        30 2024-2026 | METASOFT BİLGİ TEKNOLOJİLERİ ANONİM ŞİRKETİ
+        19 2010-2012 | METASOFT BİLGİSAYAR BİLGİ İŞLEM HİZM SAN.VE TİC.LTD.Ş
+G06 [successor] -> PANATES BİLİŞİM VE TEKNOLOJİ SAN.TİC.LTD.ŞTİ.  (total 150)
+        79 2011-2020 | PANATES BİLİŞİM VE TEKNOLOJİ SAN.TİC.LTD.ŞTİ.
+        71 2020-2024 | PANATES BİLGİ TEKNOLOJİLERİ ANONİM ŞİRKETİ
+G07 [spelling] -> C.B.K.SOFT YAZILIM DONANIM ELEKTRONİK VE BİLGİSAYAR SİSTEMLERİ SANAYİ   (total 84)
+        67 2013-2024 | C.B.K.SOFT YAZILIM DONANIM ELEKTRONİK VE BİLGİSAYAR SİSTEMLERİ SANAYİ TİCARET ANONİM ŞİRKETİ
+        17 2011-2013 | PSEUDONYM_003
+G08 [spelling] -> ALTO TEKNOLOJİ BİLİŞİM ÇÖZÜMLERİ SANAYİ VE DIŞ TİCARET LİMİTED ŞİRKETİ  (total 65)
+        64 2012-2025 | ALTO TEKNOLOJİ BİLİŞİM ÇÖZÜMLERİ SANAYİ VE DIŞ TİCARET LİMİTED ŞİRKETİ
+         1 2011-2011 | ALTO TEKNOLOJİ BİLİŞ İM ÇÖZ.SAN.VE DI Ş TİC.LTD.ŞTİ.
+G09 [successor] -> TEKNOSER BİLGİSAYARTEKNİK HİZM.SAN.VE DIŞ TİC.A.Ş.  (total 66)
+        61 2011-2022 | TEKNOSER BİLGİSAYARTEKNİK HİZM.SAN.VE DIŞ TİC.A.Ş.
+         4 2024-2026 | TEKNOSER BİLİŞİM ANONİM ŞİRKETİ
+         1 2023-2023 | TEKNOSER BİLGİSAYAR TEKNİK HİZMETLER SANAYİ VE DIŞ TİCARET ANONİM ŞİRKETİ
+G10 [spelling] -> DESTEK BİLGİSAYAR VE İLETİŞİM HİZ.TİC.A.Ş.  (total 68)
+        56 2011-2022 | DESTEK BİLGİSAYAR VE İLETİŞİM HİZ.TİC.A.Ş.
+        12 2023-2025 | DESTEK BİLGİSAYAR VE İLETİŞİM HİZMETLERİ TİCARET ANONİM ŞİRKETİ
+G11 [spelling] -> ENTEGRES BİLGİ VE İLETİŞİM TEKNOLOJİLERİ SANAYİ VE TİCARET ANONİM ŞİRK  (total 12)
+         9 2011-2012 | ENTEGRES BİLGİ VE İLETİŞİM TEKNOLOJİLERİ SANAYİ VE TİCARET ANONİM ŞİRKETİ
+         3 2010-2010 | ENTEGRES BİLGİ VE İL ETİŞİM TEKNOLOJİ SAN.VE TİC.A.Ş.
+G12 [successor] -> PROMET BİLGİ SİSTEMLERİ VE DAN.SAN.TİC.LTD.ŞTİ.  (total 56)
+        49 2011-2021 | PROMET BİLGİ SİSTEMLERİ VE DAN.SAN.TİC.LTD.ŞTİ.
+         7 2021-2025 | PROMET BİLGİ SİSTEMLERİ ANONİM ŞİRKETİ
+G13 [successor] -> PRESTİJ BİLGİ SİSTEMLERİ ARGE YAZILIM İNŞAAT MOBİLYA SANAYİ VE TİCARET  (total 76)
+        49 2013-2021 | PRESTİJ BİLGİ SİSTEMLERİ ARGE YAZILIM İNŞAAT MOBİLYA SANAYİ VE TİCARET A.Ş.
+        27 2022-2025 | PRESTİJ BİLGİ SİSTEMLERİ ARGE ANONİM ŞİRKETİ
+G14 [successor] -> FORTE BİLGİ İLETİŞİM TEKNOLOJİLERİ VE SAVUNMA SANAYİ ANONİM ŞİRKETİ  (total 87)
+        45 2019-2026 | FORTE BİLGİ İLETİŞİM TEKNOLOJİLERİ VE SAVUNMA SANAYİ ANONİM ŞİRKETİ
+        42 2010-2021 | FORTE BİLGİ VE İLETİŞİM TEKNOLOJİLERİ SAN.VE TİC.A.Ş
+G15 [legal_form] -> BARİKAT İNTERNET GÜVENLİĞİ BİLİŞİM TİCARET ANONİM ŞİRKETİ  (total 55)
+        45 2016-2025 | BARİKAT İNTERNET GÜVENLİĞİ BİLİŞİM TİCARET ANONİM ŞİRKETİ
+        10 2012-2016 | BARİKAT İNTERNET GÜVENLİĞİ BİL.TİC.LTD.ŞTİ.
+G16 [spelling] -> KOÇ SİSTEM BİLGİ VE İLETİŞİM HİZMELERİ ANONİM ŞİRKETİ  (total 65)
+        42 2011-2018 | KOÇ SİSTEM BİLGİ VE İLETİŞİM HİZMELERİ ANONİM ŞİRKETİ
+        23 2018-2025 | KOÇ SİSTEM BİLGİ VE İLETİŞİM HİZMETLERİ ANONİM ŞİRKETİ
+G17 [spelling] -> ARNİL-NET BİLGİSAYAR İLETİŞİM HİZMETLERİ YAZILIM TURİZM SANAYİ VE TİCA  (total 43)
+        40 2011-2023 | ARNİL-NET BİLGİSAYAR İLETİŞİM HİZMETLERİ YAZILIM TURİZM SANAYİ VE TİCARET LİMİTED ŞİRKETİ
+         3 2010-2011 | ARNİL-NET BİLGİSAYAR VE İLET.HİZ.TURZ SAN.VE TİC.LTD.Ş
+G18 [spelling] -> İŞ YAZILIM DONANIM ELEKT DAN TEL KI TU ME İN İT İH S V T L Ş  (total 46)
+        34 2011-2018 | İŞ YAZILIM DONANIM ELEKT DAN TEL KI TU ME İN İT İH S V T L Ş
+         8 2023-2025 | İŞ YAZILIM DONANIM ELEKTRONİK DANIŞMANLIK TELEKOMÜNİKASYON KIRTASİYE TURİZM MEDİKAL İNŞAAT İTHA
+         4 2021-2021 | İŞ YAZILIM DONANIM ELEKTRONİK DANIŞMANLIK TELEKOMİNİKASYON KIRTASİYE TURİZM MEDİKAL İNŞAAT İTHA
+G19 [spelling] -> BİLFO BİLGİSAYAR VE BİLİŞİM SİS.LTD. ŞTİ.  (total 34)
+        32 2012-2024 | BİLFO BİLGİSAYAR VE BİLİŞİM SİS.LTD. ŞTİ.
+         2 2025-2025 | BİLFO BİLGİSAYAR VE BİLİŞİM SİSTEMLERİ LİMİTED ŞİRKETİ
+G20 [spelling] -> BEYAZ BİLGİSAYAR DANIŞMANLIK HİZ.LTD.ŞTİ  (total 31)
+        29 2016-2024 | BEYAZ BİLGİSAYAR DANIŞMANLIK HİZ.LTD.ŞTİ
+         2 2025-2025 | BEYAZ BİLGİSAYAR DANIŞMANLIK HİZMETLERİ LİMİTED ŞİRKETİ
+G21 [spelling] -> EGESOFT BİLGİ TEKNOLOJİ SAN.TİC.LTD.ŞTİ.  (total 30)
+        29 2011-2025 | EGESOFT BİLGİ TEKNOLOJİ SAN.TİC.LTD.ŞTİ.
+         1 2026-2026 | EGESOFT BİLGİ TEKNOLOJİLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ
+G22 [successor] -> INNOSA BİLİŞİM TEKNOLOJİLERİ YAPI SANAYİ VE TİCARET ANONİM ŞİRKETİ  (total 50)
+        29 2012-2021 | INNOSA BİLİŞİM TEKNOLOJİLERİ YAPI SANAYİ VE TİCARET ANONİM ŞİRKETİ
+        21 2021-2025 | INNOSA YAZILIM TEKNOLOJİLERİ ANONİM ŞİRKETİ
+G23 [spelling] -> PROLİZ BİLGİSAYAR YAZILIM VE DONANIM HİZMETLERİ SANAYİ VE TİCARET LİMİ  (total 30)
+        28 2012-2024 | PROLİZ BİLGİSAYAR YAZILIM VE DONANIM HİZMETLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ
+         2 2011-2011 | PROLİZ BİLGİSAYAR YA ZILIM VE DONANIM HİZ.SAN.VE TİC.L
+G24 [successor] -> ÜNİBEL ÖZEL EĞİTİM BİLGİ TEKNOLOJİLERİ KÜLTÜR TANITIM VE YAYINCILIK SA  (total 34)
+        25 2013-2021 | ÜNİBEL ÖZEL EĞİTİM BİLGİ TEKNOLOJİLERİ KÜLTÜR TANITIM VE YAYINCILIK SANAYİ VE TİCARET ANONİM Şİ
+         6 2011-2012 | ÜNİBEL ÖZEL EĞİTİM BİLGİ TEKNOLOJİLERİ VE DİJİTAL YAYINCILIK SANAYİ VE TİCARETANONİM ŞİRKETİ
+         3 2010-2011 | ÜNİBEL ÖZEL EĞİTİM V E BİLGİ TEKNOLOJ SAN VE TİC.A.Ş.
+G25 [legal_form] -> MONAD YAZILIM BİLGİSAYAR EĞİ.DAN.SAN.VE TİC.LTD.ŞTİ.  (total 37)
+        24 2014-2021 | MONAD YAZILIM BİLGİSAYAR EĞİ.DAN.SAN.VE TİC.LTD.ŞTİ.
+        13 2021-2025 | MONAD YAZILIM BİLGİSAYAR EĞİTİM DANIŞMANLIK SANAYİ VE TİCARET ANONİM ŞİRKETİ
+G26 [spelling] -> BİLGİTÜRK BİLG.TEKN.SAN.VE TİC.A.Ş.  (total 27)
+        24 2011-2022 | BİLGİTÜRK BİLG.TEKN.SAN.VE TİC.A.Ş.
+         3 2023-2025 | BİLGİTÜRK BİLGİSAYAR TEKNOLOJİLERİ SANAYİ VE TİCARET ANONİM ŞİRKETİ
+G27 [spelling] -> BELSİS BİLGİSAYAR YAZILIM İLETİŞİM HİZM.TİC.VE SAN.LTD.ŞTİ.  (total 31)
+        24 2010-2022 | BELSİS BİLGİSAYAR YAZILIM İLETİŞİM HİZM.TİC.VE SAN.LTD.ŞTİ.
+         7 2024-2025 | BELSİS BİLGİSAYAR YAZILIM İLETİŞİM HİZMETLERİ TİCARET VE SANAYİ LİMİTED ŞİRKETİ
+G28 [successor] -> MİA TEKNOLOJİ YAZILI M TASAR.MÜH.İTH. İHR.PAZ.LTD.ŞTİ.  (total 46)
+        21 2010-2013 | MİA TEKNOLOJİ YAZILI M TASAR.MÜH.İTH. İHR.PAZ.LTD.ŞTİ.
+        14 2013-2017 | MİA TEKNOLOJİ YAZILIM TASARIM MÜHENDİSLİK İTHALAT İHRACAT PAZARLAMA LİMİTED ŞİRKETİ
+         9 2018-2025 | MİA TEKNOLOJİ ANONİM ŞİRKETİ
+         2 2013-2013 | MİA TEKNOLOJİ YAZILIM TASARIM MÜHENDİSLİK İTHALAT İHRACATZPAZARLAMA LİMİTED ŞİRKETİ
+G29 [spelling] -> ÖZKARDEŞLER ELK ELKTRONİK GIDA MADL İTHİHR.SAN TİC LTD.ŞTİ.  (total 24)
+        20 2011-2016 | ÖZKARDEŞLER ELK ELKTRONİK GIDA MADL İTHİHR.SAN TİC LTD.ŞTİ.
+         4 2018-2020 | ÖZKARDEŞLER ELKTRONİK ELEKTRİK VE GIDA MADDELERİ İTHALAT İHRACAT SANAYİ TİCARET LİMİTED ŞİRKETİ
+G30 [spelling] -> NETCOM BİLGİSAYAR YAZ.İNT.VE TELEKO.HİZ.SAN.TİC.A.Ş.  (total 20)
+        19 2011-2023 | NETCOM BİLGİSAYAR YAZ.İNT.VE TELEKO.HİZ.SAN.TİC.A.Ş.
+         1 2023-2023 | NETCOM BİLGİSAYAR YAZILIM İNTERNET VE TELEKOMİNİKASYON HİZMETLERİ SANAYİ VE TİCARET ANONİM ŞİRK
+G31 [spelling] -> BİLBEST BİLİŞİM SAĞ.EĞİT.DIŞ TİC.VESAN.LTD.ŞTİ.  (total 30)
+        18 2014-2022 | BİLBEST BİLİŞİM SAĞ.EĞİT.DIŞ TİC.VESAN.LTD.ŞTİ.
+        12 2022-2026 | BİLBEST BİLİŞİM SAĞLIK EĞİTİM DIŞ TİCARET VE SANAYİ LİMİTED ŞİRKETİ
+G32 [spelling] -> EVREN BİLGİSAYAR MEDKIR.PVC.DOĞ.İNŞ.GID.SN.T.LTD.ŞTİ  (total 19)
+        18 2011-2024 | EVREN BİLGİSAYAR MEDKIR.PVC.DOĞ.İNŞ.GID.SN.T.LTD.ŞTİ
+         1 2026-2026 | EVREN BILGISAYAR MEDIKAL KIRTASIYE PVC DOGRAMA INSAAT GIDA SANAYI VE TIC LTD STI
+G33 [spelling] -> AY ELEKTRONİK BİLGİS AYAR VE MÜH.HİZ. TİC.LTD.ŞTİ.  (total 19)
+        17 2011-2024 | AY ELEKTRONİK BİLGİS AYAR VE MÜH.HİZ. TİC.LTD.ŞTİ.
+         2 2025-2025 | AY ELEKTRONİK BİLGİSAYAR VE MÜHENDİSLİK HİZMETLERİ TİCARET LİMİTED ŞİRKETİ
+G34 [successor] -> BİMSER ÇÖZÜM YAZILIM TİCARET ANONİM ŞİRKETİ  (total 20)
+        17 2014-2026 | BİMSER ÇÖZÜM YAZILIM TİCARET ANONİM ŞİRKETİ
+         3 2012-2013 | BİMSER ÇÖZÜM DANIŞMA NLIK VE TİCARET LİMİTED ŞİRKETİ
+G35 [successor] -> İSBAK İSTANBUL BİLİŞİM VE AKILLI KENT TEKNOLOJİLERİ A.Ş.  (total 20)
+        17 2017-2024 | İSBAK İSTANBUL BİLİŞİM VE AKILLI KENT TEKNOLOJİLERİ A.Ş.
+         3 2013-2015 | İSBAK İST.ULAŞIM HABVE GÜVENLİK TEKNSAN.VE TİC.A.Ş.
+G36 [spelling] -> TEKOBEL TEKNOLOJİ HİZM.İMAL.İTH.İHRASAN.TİC.LTD.ŞTİ.  (total 17)
+        16 2013-2022 | TEKOBEL TEKNOLOJİ HİZM.İMAL.İTH.İHRASAN.TİC.LTD.ŞTİ.
+         1 2025-2025 | PSEUDONYM_699
+G37 [successor] -> APHEL BİLİŞİM HİZMETLERİ DANIŞMANLIK TİCARET LİMİTED ŞİRKETİ  (total 29)
+        16 2016-2021 | APHEL BİLİŞİM HİZMETLERİ DANIŞMANLIK TİCARET LİMİTED ŞİRKETİ
+        13 2022-2026 | APHEL YAZILIM ANONİM ŞİRKETİ
+G38 [spelling] -> SAYKOM ELEK HABERLEŞ GÜVE SİS İTH İHR SAN VE TİC LTD ŞTİ  (total 19)
+        15 2018-2024 | SAYKOM ELEK HABERLEŞ GÜVE SİS İTH İHR SAN VE TİC LTD ŞTİ
+         4 2025-2026 | SAYKOM ELEKTRONİK HABERLEŞME GÜVENLİK SİSTEMLERİ İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRK
+G39 [successor] -> İŞLEM COĞRAFİ BİLGİ SİSTEMLERİ MÜHENDİSLİK VE EĞİTİM ANONİM ŞİRKETİ  (total 27)
+        15 2015-2017 | İŞLEM COĞRAFİ BİLGİ SİSTEMLERİ MÜHENDİSLİK VE EĞİTİM ANONİM ŞİRKETİ
+        12 2011-2013 | İŞLEM COĞRAFİ BİLGİ SİST.MÜH.VE EĞT. LTD.ŞTİ.
+G40 [spelling] -> GÜLÜMSER ELEKTRİK ELEKTRONİK GÜVENLİK SİSTEMLERİ BİLGİSAYAR İNŞAAT DAN  (total 17)
+        15 2012-2021 | GÜLÜMSER ELEKTRİK ELEKTRONİK GÜVENLİK SİSTEMLERİ BİLGİSAYAR İNŞAAT DANIŞMANLIK TEKNİK HİZMETLER
+         2 2011-2012 | PSEUDONYM_110
+G41 [successor] -> MERDAN SAĞLIK BİLGİ İŞLEM ANONİM ŞİRKETİ  (total 18)
+        14 2013-2017 | MERDAN SAĞLIK BİLGİ İŞLEM ANONİM ŞİRKETİ
+         3 2011-2012 | MERDAN SAĞLIK HİZMETLERİ BİLGİ İŞLEM OTOMASYON GIDA TEMİZLİK TURİZM SANAYİ VE DIŞ TİCARET LİMİT
+         1 2010-2010 | PSEUDONYM_689
+G42 [spelling] -> MARMARA TEM.HİZM.GIDA BİLG.REKL.VE ORG.SAN.TİC.LTD.ŞTİ.  (total 16)
+        12 2012-2013 | MARMARA TEM.HİZM.GIDA BİLG.REKL.VE ORG.SAN.TİC.LTD.ŞTİ.
+         4 2010-2011 | MARMARA TEM.HİZM.GID A BİLG.REKL.VE O ORG.SAN TİC LTD
+G43 [successor] -> ENTEGRE ENFORMASYON SİSTEMLERİ EĞİTİM DANIŞMANLIK TİCARET ANONİM ŞİRKE  (total 19)
+        14 2013-2015 | ENTEGRE ENFORMASYON SİSTEMLERİ EĞİTİM DANIŞMANLIK TİCARET ANONİM ŞİRKETİ
+         5 2011-2013 | ENTEGRE ENFORMASYON SİSTEMLERİ LTD.Ş Tİ.
+G44 [spelling] -> LN BİLGİSAYAR VE DANHİZ.SAN.TİC.A.Ş.  (total 20)
+        14 2011-2018 | LN BİLGİSAYAR VE DANHİZ.SAN.TİC.A.Ş.
+         6 2019-2022 | LN BİLGİSAYAR VE DANIŞMANLIK HİZMETLERİ SANAYİ VE TİCARET ANONİM ŞİRKETİ
+G45 [spelling] -> FUJİTSU TECHNOLOGY SOLUTIONS BİLİŞİM LİMİTED ŞİRKETİ  (total 15)
+        14 2010-2018 | FUJİTSU TECHNOLOGY SOLUTIONS BİLİŞİM LİMİTED ŞİRKETİ
+         1 2011-2011 | FUJITSU TECHNOLOGY SOLITUONS BİLİŞİM LİMİTED ŞİRKETİ
+G46 [legal_form] -> NATEK BİLİŞİM BİLGİSAYAR EĞİT.DAN.YAZ.TİC.SAN.LTD.ŞTİ.  (total 19)
+        14 2011-2014 | NATEK BİLİŞİM BİLGİSAYAR EĞİT.DAN.YAZ.TİC.SAN.LTD.ŞTİ.
+         5 2014-2016 | NATEK BİLİŞİM BİLGİSAYAR EĞİTİM DANIŞMANLIK YAZILIM TİCARET SANAYİ ANONİM ŞİRKETİ
+G47 [legal_form] -> BİSOFT BİLGİ TEKNOLOJİLERİ ANONİM ŞİRKETİ  (total 21)
+        14 2016-2025 | BİSOFT BİLGİ TEKNOLOJİLERİ ANONİM ŞİRKETİ
+         7 2012-2015 | BİSOFT BİLGİ TEKNOLO JİLERİ BİLG.VE DAN.T İC.LTD.ŞTİ.
+G48 [spelling] -> BARLA BİLGİSAYAR MÜHENDİSLİK MÜŞAVİRLİK GIDA İNŞAAT MEDİKAL SANAYİ VE   (total 15)
+        13 2011-2014 | BARLA BİLGİSAYAR MÜHENDİSLİK MÜŞAVİRLİK GIDA İNŞAAT MEDİKAL SANAYİ VE TİCARET LİMİTED ŞİRKETİ
+         2 2010-2011 | BARLA BİLGİSAYAR MÜH ENDİSLİK MÜŞ.GID İNŞ.MEDİ.LTD.ŞTİ
+G49 [spelling] -> ELEKTROTEL TELEKOM ELEKTRONİK TURİZM İNŞAAT GIDA SANAYİ VE TİCARET LİM  (total 15)
+        13 2013-2017 | ELEKTROTEL TELEKOM ELEKTRONİK TURİZM İNŞAAT GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ
+         2 2011-2012 | ELEKTROTEL TELEKOM ELEKTRONİK TUR.İ NŞ.GID.SAN.TİC.L
+G50 [successor] -> VBT BİLGİ TEKNOLOJİLERİ ANONİM ŞİRKETİ  (total 21)
+        13 2015-2020 | VBT BİLGİ TEKNOLOJİLERİ ANONİM ŞİRKETİ
+         8 2011-2014 | VBT VİZYON BİLGİ TEK NOLOJİLERİ VE YA YINCILIK LTD.ŞTİ
+G51 [spelling] -> PROBİM TEKNOLOJİ GIDA SANAYİ VE TİCARET LTD.ŞTİ.  (total 14)
+        13 2016-2025 | PROBİM TEKNOLOJİ GIDA SANAYİ VE TİCARET LTD.ŞTİ.
+         1 2014-2014 | PROBİM TEKNOLOJİLERİ GIDA SAN.VE TİC.LTD. ŞTİ.
+G52 [successor] -> GENTEL TELEKOMÜNİKASYON ANONİM ŞİRKETİ  (total 22)
+        12 2017-2024 | GENTEL TELEKOMÜNİKASYON ANONİM ŞİRKETİ
+        10 2025-2026 | GENTEL BİLİŞİM TEKNOLOJİLERİ ANONİM ŞİRKETİ
+G53 [spelling] -> EMSAL BİLİŞİM MEDİKAL ELEKT.OTOMASYON SİST.SAN.TİC.LTD.ŞTİ.  (total 12)
+        11 2016-2023 | EMSAL BİLİŞİM MEDİKAL ELEKT.OTOMASYON SİST.SAN.TİC.LTD.ŞTİ.
+         1 2025-2025 | EMSAL BİLİŞİM MEDİKAL ELEKTRONİK OTOMASYON SİSTEMLERİ SANAYİ TİCARET LİMİTED ŞİRKETİ
+G54 [spelling] -> PROMETUS BİLG.SİST.SAN.VE TİC.LTD.ŞTİ.  (total 12)
+        11 2013-2022 | PROMETUS BİLG.SİST.SAN.VE TİC.LTD.ŞTİ.
+         1 2022-2022 | PROMETUS BİLGİSAYAR SİSTEMLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ
+G55 [spelling] -> YONCA BİLİŞİM TEKNOLOJİLERİ LTD.ŞTİ.  (total 13)
+        11 2015-2024 | YONCA BİLİŞİM TEKNOLOJİLERİ LTD.ŞTİ.
+         2 2012-2013 | YONCA BİLİŞİM TEKNOL OJİLERİ BİLG.YAZ.DON İŞL.İNŞ.SA.Tİ.LTD.ŞT
+G56 [successor] -> 4 S BİLGİ TEKNOLOJİLERİ ANONİM ŞİRKETİ  (total 21)
+        11 2013-2023 | 4 S BİLGİ TEKNOLOJİLERİ ANONİM ŞİRKETİ
+        10 2011-2012 | 4 S BİLGİSAYAR İTHAL AT İHRACAT YAZIL IM DAN.TİC.LTD.Ş
+G57 [successor] -> GOMAP MÜHENDİSLİK MÜŞAVİRLİK DANIŞMANLIK VE ARAŞTIRMA TİCARET LİMİTED   (total 19)
+        10 2019-2021 | GOMAP MÜHENDİSLİK MÜŞAVİRLİK DANIŞMANLIK VE ARAŞTIRMA TİCARET LİMİTED ŞİRKETİ
+         9 2017-2019 | GOMAP MÜHENDİSLİK MÜŞAVİRLİK VE ARAŞTIRMA TİCARET LİMİTED ŞİRKETİ
+G58 [spelling] -> ALPDATA BİLGİSAYAR YAZILIM DONA.SİS.VE MED.PAZ.VE TİC.LTD.ŞT  (total 14)
+        10 2012-2014 | ALPDATA BİLGİSAYAR YAZILIM DONA.SİS.VE MED.PAZ.VE TİC.LTD.ŞT
+         4 2011-2011 | ALPDATA BİLGİSAYAR Y AZILIM VE DONANI M SİS.TİC.LTD.ŞT
+G59 [spelling] -> CAMPAK TEMİZLİK BİLGİ İŞLEM OTOMASYON SAĞLIK HİZMETLERİ İNŞAAT SANAYİ   (total 14)
+        10 2014-2017 | CAMPAK TEMİZLİK BİLGİ İŞLEM OTOMASYON SAĞLIK HİZMETLERİ İNŞAAT SANAYİ VE TİCARET ANONİM ŞİRKETİ
+         4 2011-2013 | CAMPAK TEMİZLİK BİLG İ İŞL.OTO.SAĞ.HİZ.İN Ş.SAN.VE TİC.A.Ş.
+G60 [successor] -> ARTI VE ARTI TEKNOLOJİ HİZM.SAN.TİC.AŞ  (total 12)
+        10 2016-2022 | ARTI VE ARTI TEKNOLOJİ HİZM.SAN.TİC.AŞ
+         1 2025-2025 | ARTI VE ARTI BİLGİ TEKNOLOJİ HİZMETLERİ SANAYİ VE TİCARET ANONİM ŞİRKETİ
+         1 2023-2023 | ARTI VE ARTI TEKNOLOJİ HİZMETLERİ SANAYİ VE TİCARET ANONİM ŞİRKETİ
+G61 [spelling] -> ARTI BİLİŞİM TEKNOLOJİLERİ BİLGİSAYAR ELEKTRONİK VE OTOMASYON SİSTEMLE  (total 2)
+         1 2023-2023 | ARTI BİLİŞİM TEKNOLOJİLERİ BİLGİSAYAR ELEKTRONİK VE OTOMASYON SİSTEMLERİ DIŞ TİCARET PAZARLAMA 
+         1 2020-2020 | ARTI BİLİŞİM TEKN.Bİ L.ELEK.VE OTOM.S DIŞ.TİC.LTD.ŞTİ.
+G62 [spelling] -> BİLGİKENT BİLİŞİM TEKNOLOJİLERİ TİCARET LİMİTED ŞİRKETİ  (total 10)
+         9 2014-2017 | BİLGİKENT BİLİŞİM TEKNOLOJİLERİ TİCARET LİMİTED ŞİRKETİ
+         1 2013-2013 | BİLGİKENT BİLİŞİM TE KNO.EĞT.HİZ.BİL.DAN. TUR.GD.OTO.KR.SA.LTD
+G63 [successor] -> ANKAREF BİLİŞİM TEKN OLOJİLERİ MÜH İM SAN TİC LTD ŞTİ  (total 13)
+         9 2012-2017 | ANKAREF BİLİŞİM TEKN OLOJİLERİ MÜH İM SAN TİC LTD ŞTİ
+         4 2019-2025 | ANKAREF İNOVASYON VE TEKNOLOJİ ANONİM ŞİRKETİ
+G64 [spelling] -> TGAR BİLGİSAYAR ELEKTRONİK İLET.SİS.SAN.VE TİC.A.Ş.  (total 10)
+         9 2013-2024 | TGAR BİLGİSAYAR ELEKTRONİK İLET.SİS.SAN.VE TİC.A.Ş.
+         1 2025-2025 | TGAR BİLGİSAYAR ELEKTRONİK İLETİŞİM SİSTEMLERİ SANAYİ VE TİCARET ANONİM ŞİRKETİ
+G65 [spelling] -> SENEKA YAZILIM DONANIM BİLİŞİM TİCARET TAAHHÜT VE SANAYİ LİMİTED ŞİRKE  (total 17)
+         9 2017-2020 | SENEKA YAZILIM DONANIM BİLİŞİM TİCARET TAAHHÜT VE SANAYİ LİMİTED ŞİRKETİ
+         8 2011-2016 | SENEKA YIZILIM DONANIM BİLİŞİM TİCARET TAAHHÜT VE SANAYİ LİMİTED ŞİRKETİ
+G66 [spelling] -> PSEUDONYM_442  (total 12)
+         9 2011-2013 | PSEUDONYM_442
+         3 2014-2017 | İLKEM BİLGİSAYAR SİSTEMLERİ EĞİTİM İLETİŞİM TEKSTİL KIRTASİYE SANAYİ VE TİCARET LİMİTED ŞİRKETİ
+G67 [successor] -> BİLGİ BİRİKİM SİSTEMLERİ ELEKTRONİK VE BİLGİSAYAR ENDÜSTRİSİ MÜHENDİSL  (total 11)
+         8 2013-2023 | BİLGİ BİRİKİM SİSTEMLERİ ELEKTRONİK VE BİLGİSAYAR ENDÜSTRİSİ MÜHENDİSLİK HİZMETLERİ SANAYİ VE T
+         2 2024-2024 | BİLGİ BİRİKİM SİSTEMLERİ BİLİŞİM TEKNOLOJİLERİ ANONİM ŞİRKETİ
+         1 2012-2012 | BİLGİ BİRİKİM SİSTEM LERİ ELK.VE BİL.EN.M ÜH.HİZ.SAN.TİC.LTD.Ş
+G68 [spelling] -> BES TEKNOLOJİ ELEKTRİK ELEKTRONİK GÜVENLİK SİSTEMLERİ SAN.VE TİC.LTD.Ş  (total 10)
+         8 2018-2023 | BES TEKNOLOJİ ELEKTRİK ELEKTRONİK GÜVENLİK SİSTEMLERİ SAN.VE TİC.LTD.ŞTİ.
+         2 2013-2016 | BES TEKNOLOJİ ELEKTRİK ELEKTRONİK GÜVENLSİS.SAN.VE TİC.LT.ŞT
+G69 [successor] -> TRİO ENTEGRASYON BİLİŞİM TEKNOLOJİLERİ TİCARET ANONİM ŞİRKETİ.  (total 12)
+         8 2017-2022 | TRİO ENTEGRASYON BİLİŞİM TEKNOLOJİLERİ TİCARET ANONİM ŞİRKETİ.
+         4 2025-2025 | TRİO ENTEGRASYON BİLİŞİM TEKNOLOJİLERİ EĞİTİM TİCARET ANONİM ŞİRKETİ
+G70 [legal_form] -> ARMAKOM BİLİŞİM TEKNOJİLERİ ANONİM ŞİRKETİ  (total 14)
+         8 2014-2023 | ARMAKOM BİLİŞİM TEKNOJİLERİ ANONİM ŞİRKETİ
+         6 2011-2013 | ARMAKOM BİLİŞİM TEKN YAZ.İNŞ.TUR.İTH. İHR.SAN.VE T.L.Ş
+G71 [spelling] -> LST YAZILIM ELEKTRON İK VE İLETİŞİM T EK.TİC.LTD.ŞTİ.  (total 10)
+         7 2010-2012 | LST YAZILIM ELEKTRON İK VE İLETİŞİM T EK.TİC.LTD.ŞTİ.
+         3 2012-2016 | LST YAZILIM ELEKTRONİK VE İLETİŞİM TEKNOLOJİLERİ İNŞAAT TURİZM TİC LTD ŞTİ
+G72 [spelling] -> SOLVENT YAZILIM VE BİLGİSAYAR HİZMETLERİ DANIŞMANLIK İÇ VE DIŞ TİCARET  (total 11)
+         5 2014-2021 | SOLVENT YAZILIM VE BİLGİSAYAR HİZMETLERİ DANIŞMANLIK İÇ VE DIŞ TİCARET SANAYİ LİMİTED ŞİRKETİ
+         4 2010-2011 | SOLVENT YAZILIM VE B İLGİSAYAR HİZ.DA NIŞ.İ.D.T.L.Ş.
+         2 2012-2013 | SOLVENT YAZILIM VE B İLGİSAYAR HİZ.DA NIŞ.İ.D.T.L.Ş., KALE BİLİŞİM TEKNOLO JİLERİ SANAYİ Tİ C.A
+
+firm nodes: as recorded 4,788 -> v2 4,471 -> v3 4,389 (v3 merged 82 further v2 firms in 72 groups; 2,684 contracts affected)
+merge types (contracts): {'none': 10340, 'successor': 1390, 'spelling': 978, 'legal_form': 316}
+
+Top-15 firms after v3 merge (contracts):
+   210 | FONET BİLGİ TEKNOLOJİLERİ ANONİM ŞİRKETİ
+   210 | PROBEL BİLGİSAYAR YAZILIM DONANIM SANAYİ VE TİCARET ANONİM ŞİRKETİ
+   170 | AKGÜN BİLGİSAYAR PROGRAM VE HİZ.SAN.TİC.LTD.ŞİRKETİ
+   150 | PANATES BİLİŞİM VE TEKNOLOJİ SAN.TİC.LTD.ŞTİ.
+   149 | SİSOFT SAĞLIK BİLGİ SİSTEMLERİ LİMİTED ŞİRKETİ
+   148 | TRTEK TEKNOLOJİK ÜRÜNLER BİLGİSAYAR YAZILIM DONANIM SAN.VE TİC.LTD.ŞTİ.
+   144 | KARDELEN BİLGİSAYAR İNŞAAT REKLAM ORMAN ÜRÜNLERİ TEKSTİL İTHALAT VE İHRACAT SANAYİ VE TİCA
+   141 | METASOFT BİLGİSAYAR BİLGİ İŞLEM HİZMETLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ
+   118 | NETCAD YAZILIM ANONİM ŞİRKETİ
+   113 | VENTURA YAZILIM ANONİM ŞİRKETİ
+    87 | FORTE BİLGİ İLETİŞİM TEKNOLOJİLERİ VE SAVUNMA SANAYİ ANONİM ŞİRKETİ
+    84 | C.B.K.SOFT YAZILIM DONANIM ELEKTRONİK VE BİLGİSAYAR SİSTEMLERİ SANAYİ TİCARET ANONİM ŞİRKE
+    81 | SENTİM BİLİŞİM TEKNO LOJİLERİ SANAYİ VE TİC.A.Ş.
+    79 | UNİVERSAL YAZILIM ANONİM ŞİRKETİ
+    76 | PRESTİJ BİLGİ SİSTEMLERİ ARGE YAZILIM İNŞAAT MOBİLYA SANAYİ VE TİCARET A.Ş.
+
+NATURAL PERSONS (heuristic: 2-4 alphabetic tokens, no legal-form/business word): 536 of 4,389 firms (12.2%); contracts 788 (6.1%); JVs/entities containing a person: 21
+
+==========================================================================================
+WROTE master_v3.csv: 13,024 rows x 42 cols
+==========================================================================================
+  core IT                contracts  9,981 | value  25.64 bn | firms_v3 2,811 | buyers 2,722 (split 2,889)
+  main (IT+callcentre)   contracts  9,991 | value  33.26 bn | firms_v3 2,814 | buyers 2,723 (split 2,890)
+  broad (+gray)          contracts 11,397 | value  37.39 bn | firms_v3 3,421 | buyers 3,056 (split 3,252)

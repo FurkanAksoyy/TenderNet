@@ -1,0 +1,24 @@
+cpi_turkey.csv / cpi_turkey_2026_monthly.csv -- sources (retrieved 2026-09-26)
+
+1) TUIK TUFE 2003=100 monthly general index, 2010-01 .. 2025-12 (mirror of TUIK table):
+   https://www.hakedis.org/endeksler/tuketici-fiyat-genel-endeksi-ve-degisim-oranlari-2003
+   Annual average = arithmetic mean of the 12 monthly values (TUIK convention).
+
+2) Cross-check: World Bank WDI FP.CPI.TOTL (Turkiye, 2010=100), sourced from IMF IFS:
+   https://api.worldbank.org/v2/country/TUR/indicator/FP.CPI.TOTL?format=json&date=2009:2026
+   Our annual averages rebased to 2010=100 match WB to 3 decimals for every year 2010-2025
+   (column wb_fp_cpi_totl_2010eq100) -> the mirror values are TUIK-consistent.
+   FRED TURCPIALLMINMEI (OECD MEI, 2015=100) exists but ends 2025-04; not used.
+
+3) Base-year change: TUIK moved to TUFE 2025=100 (ECOICOP v2) from January 2026 data; the
+   headline 2003=100 history is unchanged (chain-linked). Announcement 30.10.2025:
+   https://www.tuik.gov.tr/media/announcements/TUFE_Duyuru30102025.pdf
+
+4) 2026 monthly (2025=100), Jan-Aug 2026: https://fiyatdefteri.com/tufe/genel-2025/ (cites TCMB EVDS).
+   Aug 2026 = 134.75, +31.51% y/y, corroborated by MESS / Alomaliye news (Aug 2026 release).
+   Linked to 2003=100 by factor 31.8323 (= 2025 annual avg of 2003=100 series / 100);
+   linked values match hakedis.org's continued 2003=100 figures for Jan-May 2026 within 0.12.
+
+Deflating contract values: real_2025TL = nominal_TL * (CPI_2025avg / CPI_year_avg), using the
+cpi_index_annual_avg column (or monthly values for finer deflation).
+Official primary alternative (needs free API key): TCMB EVDS series TP.FG.J0.

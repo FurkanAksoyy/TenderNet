@@ -1,0 +1,1 @@
+market,n_years,min_year_n,HHI_count_med,HHI_count_q1,HHI_count_q3,HHI_value_med,HHI_value_q1,HHI_value_q3,HHI_value_nomax_med,HHI_count_unb_med,yrs_value_nomax_gt1000,yrs_value_gt1800,yrs_count_gt1800

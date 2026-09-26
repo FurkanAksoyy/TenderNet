@@ -1,0 +1,14 @@
+# Tested with Python 3.13.2 (Windows 11, 64-bit). Versions below are those used to produce the results.
+numpy==2.3.2
+pandas==2.3.1
+scipy==1.16.3
+statsmodels==0.14.6
+patsy==1.0.2
+scikit-learn==1.8.0
+networkx==3.6.1
+powerlaw==2.0.0
+bicm==3.4.0
+numba==0.65.1
+llvmlite==0.47.0
+fa2_modified==0.4
+matplotlib==3.11.0

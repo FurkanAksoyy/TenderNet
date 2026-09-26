@@ -1,0 +1,73 @@
+group_id,prefix_regex,merge_type,note
+G01,^FONET ,successor,Fonet Bilgisayar Ltd (2010-11) -> Fonet Bilgi Teknolojileri A.Ş. (2011-26)
+G02,^KARDELEN BİLİŞİM TEKNOLOJİLERİ,spelling,two spellings of the same Ltd; KARDELEN BİLGİSAYAR... and KARDELEN GLOBAL kept separate (unverified relation)
+G03,^PROBEL ,successor,Probel Bilgisayar A.Ş. (2010-21) -> Probel Yazılım ve Bilişim A.Ş. (2021-26)
+G04,^AKGÜN BİLGİSAYAR PROGRAM,legal_form,Akgün Bilgisayar Ltd (2010-19) -> A.Ş. (2020-26); v2 missed (abbreviated HİZ. vs HİZMETLERİ)
+G05,^METASOFT ,successor,Metasoft Bilgisayar Ltd (two spellings 2010-23) -> Metasoft Bilgi Teknolojileri A.Ş. (2024-26)
+G06,^PANATES ,successor,Panates Bilişim Ltd (2011-20) -> Panates Bilgi Teknolojileri A.Ş. (2020-24)
+G07,^C\.B\.K\.? ?SOFT,spelling,abbreviated vs full legal name
+G08,^ALTO TEKNOLOJİ,spelling,split-word spelling
+G09,^TEKNOSER ,successor,Teknoser Bilgisayar Teknik A.Ş. (2 spellings) -> Teknoser Bilişim A.Ş. (2024-26)
+G10,^DESTEK BİLGİSAYAR VE İLETİŞİM,spelling,abbreviated vs full legal name
+G11,^ENTEGRES BİLGİ VE İL ?ETİŞİM,spelling,two spellings of the A.Ş. (ENTEGRES BİLİŞİM LTD kept separate: A.Ş.->Ltd direction)
+G12,^PROMET BİLGİ SİSTEMLERİ,successor,Ltd (2011-21) -> A.Ş. (2021-25)
+G13,^PRESTİJ BİLGİ SİSTEMLERİ AR-?GE,successor,long A.Ş. name (2013-21) -> short A.Ş. name (2022-25)
+G14,^FORTE BİLGİ (VE )?İLETİŞİM,successor,Forte Bilgi ve İletişim A.Ş. (2010-21) -> Forte ... ve Savunma Sanayi A.Ş. (2019-26)
+G15,^BARİKAT ,legal_form,Ltd (2012-16) -> A.Ş. (2016-25)
+G16,^KOÇ SİSTEM ,spelling,HİZMELERİ typo vs HİZMETLERİ
+G17,^ARNİL-NET ,spelling,abbreviated vs full legal name
+G18,^İŞ YAZILIM DONANIM,spelling,three spellings of the same Ltd
+G19,^BİLFO ,spelling,abbreviated vs full legal name
+G20,^BEYAZ BİLGİSAYAR DANIŞMANLIK,spelling,abbreviated vs full legal name
+G21,^EGESOFT ,spelling,abbreviated vs full legal name
+G22,^INNOSA ,successor,Innosa Bilişim A.Ş. (2012-21) -> Innosa Yazılım A.Ş. (2021-25)
+G23,^PROLİZ ,spelling,split-word spelling
+G24,^ÜNİBEL ,successor,three consecutive names of the same A.Ş. (2010-21)
+G25,^MONAD ,legal_form,Ltd (2014-21) -> A.Ş. (2021-25)
+G26,^BİLGİTÜRK ,spelling,abbreviated vs full legal name
+G27,^BELSİS ,spelling,abbreviated vs full legal name
+G28,^MİA TEKNOLOJİ,successor,three Ltd spellings (2010-17) -> Mia Teknoloji A.Ş. (2018-25)
+G29,^ÖZKARDEŞLER ,spelling,abbreviated vs full legal name
+G30,^NETCOM BİLGİSAYAR,spelling,abbreviated vs full legal name
+G31,^BİLBEST ,spelling,abbreviated vs full legal name
+G32,^EVREN B[İI]LG[İI]SAYAR,spelling,Turkish vs ASCII spelling
+G33,^AY ELEKTRONİK,spelling,split-word spelling
+G34,^BİMSER ,successor,Bimser Çözüm Danışmanlık Ltd (2012-13) -> Bimser Çözüm Yazılım A.Ş. (2014-26)
+G35,^İSBAK ,successor,İSBAK İst. Ulaşım Hab. ve Güvenlik A.Ş. (2013-15) -> İSBAK İstanbul Bilişim ve Akıllı Kent A.Ş. (2017-24); İBB company renamed
+G36,^TEKOBEL ,spelling,abbreviated vs full legal name
+G37,^APHEL ,successor,Aphel Bilişim Ltd (2016-21) -> Aphel Yazılım A.Ş. (2022-26)
+G38,^SAYKOM ,spelling,abbreviated vs full legal name
+G39,^İŞLEM COĞRAFİ,successor,Ltd (2011-13) -> A.Ş. (2015-17)
+G40,^GÜLÜMSER ,spelling,abbreviated vs full legal name
+G41,^MERDAN SAĞLIK,successor,Merdan Sağlık Hizmetleri... Ltd (2 spellings 2010-12) -> Merdan Sağlık Bilgi İşlem A.Ş. (2013-17)
+G42,^MARMARA TEM\.HİZM,spelling,split-word spelling
+G43,^ENTEGRE ENFORMASYON,successor,Ltd (2011-13) -> A.Ş. (2013-15)
+G44,^LN BİLGİSAYAR,spelling,abbreviated vs full legal name
+G45,^FUJ[İI]TSU TECHNOLOGY,spelling,SOLITUONS typo
+G46,^NATEK ,legal_form,Ltd (2011-14) -> A.Ş. (2014-16)
+G47,^BİSOFT ,legal_form,Ltd (2012-15) -> A.Ş. (2016-25)
+G48,^BARLA BİLGİSAYAR,spelling,split-word spelling
+G49,^ELEKTROTEL ,spelling,abbreviated vs full legal name
+G50,^VBT (VİZYON|BİLGİ),successor,VBT Vizyon Bilgi Tek. Ltd (2011-14) -> VBT Bilgi Teknolojileri A.Ş. (2015-20); VBT YAZILIM A.Ş. kept separate
+G51,^PROBİM ,spelling,abbreviated vs full legal name
+G52,^GENTEL ,successor,Gentel Telekomünikasyon A.Ş. (2017-24) -> Gentel Bilişim A.Ş. (2025-26)
+G53,^EMSAL BİLİŞİM,spelling,abbreviated vs full legal name
+G54,^PROMETUS ,spelling,abbreviated vs full legal name
+G55,^YONCA BİLİŞİM,spelling,split-word spelling
+G56,^4 S BİLG,successor,4 S Bilgisayar Ltd (2011-12) -> 4 S Bilgi Teknolojileri A.Ş. (2013-23)
+G57,^GOMAP ,successor,name extended with DANIŞMANLIK (2017-19 -> 2019-21)
+G58,^ALPDATA ,spelling,split-word spelling
+G59,^CAMPAK ,spelling,split-word spelling
+G60,^ARTI VE ARTI,successor,three names of the same A.Ş. (2016-25)
+G61,^ARTI BİLİŞİM TEKN,spelling,abbreviated vs full legal name
+G62,^BİLGİKENT ,spelling,abbreviated vs full legal name
+G63,^ANKAREF ,successor,Ankaref Bilişim Ltd (2012-17) -> Ankaref İnovasyon A.Ş. (2019-25)
+G64,^TGAR ,spelling,abbreviated vs full legal name
+G65,^SENEKA ,spelling,YIZILIM typo
+G66,^İLKEM BİLGİSAYAR,spelling,split-word spelling
+G67,^BİLGİ BİRİKİM,successor,Ltd (2 spellings 2012-23) -> A.Ş. (2024)
+G68,^BES TEKNOLOJİ,spelling,abbreviated vs full legal name
+G69,^TRİO ENTEGRASYON,successor,name extended with EĞİTİM (same A.Ş.)
+G70,^ARMAKOM ,legal_form,Ltd (2011-13) -> A.Ş. (2014-23)
+G71,^LST YAZILIM,spelling,split-word spelling
+G72,^SOLVENT YAZILIM VE B ?İLGİSAYAR,spelling,split-word spelling (Solvent Kale Bilişim kept separate)

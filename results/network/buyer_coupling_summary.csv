@@ -1,0 +1,9 @@
+projection,nodes,gc_nodes,top_buyer,top_sector,top_degree,top_share_of_gc_linked,top3_share_of_gc_covered,top_share_of_projection_linked,empty
+kurum_il_split:buyer_raw,2399.0,2279.0,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | İSTANBUL,Health,437.0,0.19183494293239683,0.4278192189556823,0.18223519599666388,
+kurum_il_split:buyer_bicm_pb_mall_fdr0.05,,,,,,,,,True
+kurum_il_split:buyer_bicm_pb_mobs_fdr0.05,2357.0,2200.0,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | KARAMAN,Health,299.0,0.13597089586175534,0.19136363636363637,0.1269100169779287,
+kurum_il_split:buyer_disparity_a0.05,1303.0,1208.0,Ankara Büyükşehir Belediyesi Bilgi İşlem Dairesi Başkanlığı,Municipal/Local,33.0,0.027340513670256836,0.076158940397351,0.02534562211981567,
+kurum:buyer_raw,2254.0,2142.0,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI,Health,958.0,0.44745446053246146,0.554154995331466,0.42521083000443854,
+kurum:buyer_bicm_pb_mall_fdr0.05,,,,,,,,,True
+kurum:buyer_bicm_pb_mobs_fdr0.05,2207.0,2044.0,SAĞLIK BAKANLIĞI - DİYARBAKIR İL SAĞLIK MÜDÜRLÜĞÜ,Health,168.0,0.08223201174743025,0.08317025440313111,0.07615593834995467,
+kurum:buyer_disparity_a0.05,1171.0,1096.0,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI,Health,135.0,0.1232876712328767,0.17791970802919707,0.11538461538461539,

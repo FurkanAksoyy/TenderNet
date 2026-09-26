@@ -1,0 +1,61 @@
+projection,rank,buyer,sector,proj_degree,share_of_projection_linked,share_of_gc_linked,in_gc,bip_degree_firms,contracts
+kurum_il_split:buyer_raw,1,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | İSTANBUL,Health,437,0.18223519599666388,0.19183494293239683,True,16,30
+kurum_il_split:buyer_raw,2,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | KARAMAN,Health,368,0.15346121768140117,0.16154521510096576,True,5,10
+kurum_il_split:buyer_raw,3,İzmir Büyükşehir Belediyesi SATINALMA DAİRE BAŞKANLIĞI HİZMET ALIMLARI ŞUBE MÜDÜRLÜĞÜ,Municipal/Local,362,0.15095913261050875,0.15891132572431957,True,29,93
+kurum_il_split:buyer_raw,4,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | AFYONKARAHİSAR,Health,337,0.14053377814845705,0.1479367866549605,True,9,13
+kurum_il_split:buyer_raw,5,Ankara Büyükşehir Belediyesi Bilgi İşlem Dairesi Başkanlığı,Municipal/Local,337,0.14053377814845705,0.1479367866549605,True,40,51
+kurum_il_split:buyer_raw,6,ATAŞEHİR BELEDİYESİ DESTEK HİZMETLERİ MÜDÜRLÜĞÜ,Municipal/Local,329,0.1371976647206005,0.14442493415276558,True,17,40
+kurum_il_split:buyer_raw,7,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | KARS,Health,291,0.1213511259382819,0.12774363476733977,True,3,6
+kurum_il_split:buyer_raw,8,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | DİYARBAKIR,Health,279,0.11634695579649708,0.12247585601404741,True,11,15
+kurum_il_split:buyer_raw,9,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | MUŞ,Health,278,0.11592994161801501,0.12203687445127305,True,5,6
+kurum_il_split:buyer_raw,10,Bilgi İşlem Daire Başkanlığı YÜKSEKÖĞRETİM KURUMLARI SİVAS CUMHURİYET ÜNİVERSİTESİ,Education,268,0.11175979983319433,0.11764705882352941,True,11,11
+kurum_il_split:buyer_bicm_pb_mobs_fdr0.05,1,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | KARAMAN,Health,299,0.1269100169779287,0.13597089586175534,True,5,10
+kurum_il_split:buyer_bicm_pb_mobs_fdr0.05,2,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | KARS,Health,274,0.11629881154499151,0.12460209185993633,True,3,6
+kurum_il_split:buyer_bicm_pb_mobs_fdr0.05,3,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | MUŞ,Health,225,0.09550084889643463,0.10231923601637108,True,5,6
+kurum_il_split:buyer_bicm_pb_mobs_fdr0.05,4,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | SİVAS,Health,209,0.08870967741935484,0.09504320145520691,True,4,14
+kurum_il_split:buyer_bicm_pb_mobs_fdr0.05,5,Samsun Kamu Hastane Birliği SAĞLIK BAKANLIĞI TÜRKİYE KAMU HASTANELERİ KURUMU,Health,208,0.08828522920203735,0.09458844929513416,True,2,2
+kurum_il_split:buyer_bicm_pb_mobs_fdr0.05,6,Devlet Hastanesi -Sivas Numune Hastanesi SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI,Health,208,0.08828522920203735,0.09458844929513416,True,2,4
+kurum_il_split:buyer_bicm_pb_mobs_fdr0.05,7,Devlet Hastanesi -Atatürk-Aydın SAĞLIK BAKANLIĞI TÜRKİYE KAMU HASTANELERİ KURUMU,Health,208,0.08828522920203735,0.09458844929513416,True,2,3
+kurum_il_split:buyer_bicm_pb_mobs_fdr0.05,8,SAĞLIK BAKANLIĞI - DİYARBAKIR İL SAĞLIK MÜDÜRLÜĞÜ,Health,202,0.08573853989813243,0.09185993633469759,True,3,3
+kurum_il_split:buyer_bicm_pb_mobs_fdr0.05,9,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | BURDUR,Health,201,0.08531409168081494,0.09140518417462483,True,3,6
+kurum_il_split:buyer_bicm_pb_mobs_fdr0.05,10,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | BİLECİK,Health,198,0.08404074702886248,0.09004092769440655,True,5,12
+kurum_il_split:buyer_disparity_a0.05,1,Ankara Büyükşehir Belediyesi Bilgi İşlem Dairesi Başkanlığı,Municipal/Local,33,0.02534562211981567,0.027340513670256836,True,40,51
+kurum_il_split:buyer_disparity_a0.05,2,"COĞRAFİ BİLGİ SİSTEMLERİ GEN. MÜD. ÇEVRE, ŞEHİRCİLİK VE İKLİM DEĞİŞİKLİĞİ BAKANLIĞI BAKAN YARDIMCILIKLARI",Agriculture/Environment,31,0.023809523809523808,0.02568351284175642,True,37,56
+kurum_il_split:buyer_disparity_a0.05,3,Kamu Hastane Birliği SAĞLIK BAKANLIĞI TÜRKİYE KAMU HASTANELERİ KURUMU | KIRIKKALE,Health,29,0.02227342549923195,0.024026512013256007,True,4,5
+kurum_il_split:buyer_disparity_a0.05,4,Kocaeli Büyükşehir Belediyesi Destek Hizmetleri Dairesi Başkanlığı - İhale İşleri Şube Müdürlüğü,Municipal/Local,28,0.021505376344086023,0.0231980115990058,True,44,89
+kurum_il_split:buyer_disparity_a0.05,5,İ.E.T.T. İŞLETMELERİ GENEL MÜDÜRLÜGÜ,Municipal/Local,26,0.019969278033794162,0.021541010770505385,True,32,43
+kurum_il_split:buyer_disparity_a0.05,6,Jandarma Ted.Mrkz.K.lığı(Güvercinlik/Ankara) İÇİŞLERİ BAKANLIĞI JANDARMA GENEL KOMUTANLIĞI,Defence,25,0.019201228878648235,0.020712510356255178,True,38,58
+kurum_il_split:buyer_disparity_a0.05,7,İzmir Büyükşehir Belediyesi SATINALMA DAİRE BAŞKANLIĞI HİZMET ALIMLARI ŞUBE MÜDÜRLÜĞÜ,Municipal/Local,25,0.019201228878648235,0.020712510356255178,True,29,93
+kurum_il_split:buyer_disparity_a0.05,8,İGDAŞ İSTANBUL GAZ DAĞITIM SANAYİ VE TİCARET ANONİM ŞİRKETİ,Municipal/Local,25,0.019201228878648235,0.020712510356255178,True,38,53
+kurum_il_split:buyer_disparity_a0.05,9,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI | AFYONKARAHİSAR,Health,23,0.017665130568356373,0.019055509527754765,True,9,13
+kurum_il_split:buyer_disparity_a0.05,10,Kamu Hastane Birliği (Bilkent) SAĞLIK BAKANLIĞI TÜRKİYE KAMU HASTANELERİ KURUMU,Health,23,0.017665130568356373,0.019055509527754765,True,3,4
+kurum:buyer_raw,1,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI,Health,958,0.42521083000443854,0.44745446053246146,True,133,441
+kurum:buyer_raw,2,Kamu Hastane Birliği SAĞLIK BAKANLIĞI TÜRKİYE KAMU HASTANELERİ KURUMU,Health,606,0.26897470039946736,0.28304530593180754,True,42,95
+kurum:buyer_raw,3,İzmir Büyükşehir Belediyesi SATINALMA DAİRE BAŞKANLIĞI HİZMET ALIMLARI ŞUBE MÜDÜRLÜĞÜ,Municipal/Local,358,0.15889924545051043,0.16721158337225595,True,29,93
+kurum:buyer_raw,4,Ankara Büyükşehir Belediyesi Bilgi İşlem Dairesi Başkanlığı,Municipal/Local,333,0.1478029294274301,0.15553479682391405,True,40,51
+kurum:buyer_raw,5,ATAŞEHİR BELEDİYESİ DESTEK HİZMETLERİ MÜDÜRLÜĞÜ,Municipal/Local,310,0.13759431868619618,0.14479215319943953,True,17,40
+kurum:buyer_raw,6,Bilgi İşlem Daire Başkanlığı YÜKSEKÖĞRETİM KURUMLARI SİVAS CUMHURİYET ÜNİVERSİTESİ,Education,267,0.118508655126498,0.12470808033629145,True,11,11
+kurum:buyer_raw,7,"COĞRAFİ BİLGİ SİSTEMLERİ GEN. MÜD. ÇEVRE, ŞEHİRCİLİK VE İKLİM DEĞİŞİKLİĞİ BAKANLIĞI BAKAN YARDIMCILIKLARI",Agriculture/Environment,248,0.11007545494895694,0.11583372255955161,True,37,56
+kurum:buyer_raw,8,ANKARA TED.BLG.BŞK (MSB) MİLLİ SAVUNMA BAKANLIĞI MSB BAĞLILARI,Defence,242,0.10741233910341766,0.11303129378794956,True,32,59
+kurum:buyer_raw,9,İSTANBUL BÜYÜKŞEHİR BELEDİYESİ BİLGİ İŞLEM MÜDÜRLÜĞÜ,Municipal/Local,223,0.0989791389258766,0.10415693601120972,True,28,35
+kurum:buyer_raw,10,KONAK BELEDİYESİ Bilgi İşlem Müdürlüğü,Municipal/Local,222,0.0985352862849534,0.10368986454927603,True,6,8
+kurum:buyer_bicm_pb_mobs_fdr0.05,1,SAĞLIK BAKANLIĞI - DİYARBAKIR İL SAĞLIK MÜDÜRLÜĞÜ,Health,168,0.07615593834995467,0.08223201174743025,True,3,3
+kurum:buyer_bicm_pb_mobs_fdr0.05,2,TIP FAKÜLTESİ HASTANESİ BAŞHEKİMLİĞİ,Health,166,0.07524932003626474,0.08125305922662751,True,3,3
+kurum:buyer_bicm_pb_mobs_fdr0.05,3,Samsun Kamu Hastane Birliği SAĞLIK BAKANLIĞI TÜRKİYE KAMU HASTANELERİ KURUMU,Health,166,0.07524932003626474,0.08125305922662751,True,2,2
+kurum:buyer_bicm_pb_mobs_fdr0.05,4,Devlet Hastanesi -Sivas Numune Hastanesi SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI,Health,166,0.07524932003626474,0.08125305922662751,True,2,4
+kurum:buyer_bicm_pb_mobs_fdr0.05,5,Devlet Hastanesi -Atatürk-Aydın SAĞLIK BAKANLIĞI TÜRKİYE KAMU HASTANELERİ KURUMU,Health,166,0.07524932003626474,0.08125305922662751,True,2,3
+kurum:buyer_bicm_pb_mobs_fdr0.05,6,BİNGÖL İL SAĞLIK MÜDÜRLÜĞÜ,Health,156,0.07071622846781506,0.0763582966226138,True,2,2
+kurum:buyer_bicm_pb_mobs_fdr0.05,7,Balıkesir Kamu Hastane Birliği SAĞLIK BAKANLIĞI TÜRKİYE KAMU HASTANELERİ KURUMU,Health,155,0.07026291931097008,0.07586882036221243,True,4,5
+kurum:buyer_bicm_pb_mobs_fdr0.05,8,Sivas Kamu Hastane Birliği SAĞLIK BAKANLIĞI TÜRKİYE KAMU HASTANELERİ KURUMU,Health,148,0.06708975521305531,0.07244248653940284,True,2,6
+kurum:buyer_bicm_pb_mobs_fdr0.05,9,Kilis Kamu Hastane Birliği SAĞLIK BAKANLIĞI TÜRKİYE KAMU HASTANELERİ KURUMU,Health,148,0.06708975521305531,0.07244248653940284,True,2,2
+kurum:buyer_bicm_pb_mobs_fdr0.05,10,Devlet Hastanesi-Mamak SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI,Health,148,0.06708975521305531,0.07244248653940284,True,2,2
+kurum:buyer_disparity_a0.05,1,İl Sağlık Müdürlüğü SAĞLIK BAKANLIĞI BAKAN YARDIMCILIKLARI,Health,135,0.11538461538461539,0.1232876712328767,True,133,441
+kurum:buyer_disparity_a0.05,2,Kamu Hastane Birliği SAĞLIK BAKANLIĞI TÜRKİYE KAMU HASTANELERİ KURUMU,Health,51,0.04358974358974359,0.04657534246575343,True,42,95
+kurum:buyer_disparity_a0.05,3,Ankara Büyükşehir Belediyesi Bilgi İşlem Dairesi Başkanlığı,Municipal/Local,31,0.026495726495726495,0.028310502283105023,True,40,51
+kurum:buyer_disparity_a0.05,4,"COĞRAFİ BİLGİ SİSTEMLERİ GEN. MÜD. ÇEVRE, ŞEHİRCİLİK VE İKLİM DEĞİŞİKLİĞİ BAKANLIĞI BAKAN YARDIMCILIKLARI",Agriculture/Environment,30,0.02564102564102564,0.0273972602739726,True,37,56
+kurum:buyer_disparity_a0.05,5,Kocaeli Büyükşehir Belediyesi Destek Hizmetleri Dairesi Başkanlığı - İhale İşleri Şube Müdürlüğü,Municipal/Local,27,0.023076923076923078,0.024657534246575342,True,44,89
+kurum:buyer_disparity_a0.05,6,Jandarma Ted.Mrkz.K.lığı(Güvercinlik/Ankara) İÇİŞLERİ BAKANLIĞI JANDARMA GENEL KOMUTANLIĞI,Defence,25,0.021367521367521368,0.0228310502283105,True,38,58
+kurum:buyer_disparity_a0.05,7,İzmir Büyükşehir Belediyesi SATINALMA DAİRE BAŞKANLIĞI HİZMET ALIMLARI ŞUBE MÜDÜRLÜĞÜ,Municipal/Local,25,0.021367521367521368,0.0228310502283105,True,29,93
+kurum:buyer_disparity_a0.05,8,İGDAŞ İSTANBUL GAZ DAĞITIM SANAYİ VE TİCARET ANONİM ŞİRKETİ,Municipal/Local,25,0.021367521367521368,0.0228310502283105,True,38,53
+kurum:buyer_disparity_a0.05,9,KONAK BELEDİYESİ Bilgi İşlem Müdürlüğü,Municipal/Local,24,0.020512820512820513,0.021917808219178082,True,6,8
+kurum:buyer_disparity_a0.05,10,İ.E.T.T. İŞLETMELERİ GENEL MÜDÜRLÜGÜ,Municipal/Local,24,0.020512820512820513,0.021917808219178082,True,32,43
