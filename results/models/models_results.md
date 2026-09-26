@@ -116,7 +116,7 @@ This design replaces the old dyad NB model, which had four problems: an offset r
 - **Over time:** the repeat-contract 21(b) share rose from 14.7% before 7144 to 22.8% after, while the first-contract share was flat (8.1% → 7.3%).
 
 ## D. Single bidding
-- **Source:** `08_REPO/data/teklif_ornek.csv` (identical to `03_SCRAPER/teklif_ornek.csv`). It holds 680 tenders drawn 40 per year (seed 42) from all completed EKAP results in cp1, including non-IT.
+- **Source:** `data/bid_counts_sample.csv` (released copy of the bid-count sample). It holds 680 tenders drawn 40 per year (seed 42) from all completed EKAP results in cp1, including non-IT.
 - **Join:** 414 are in the v3 main sample; 393 of them have bid counts.
 - **Weighting:** tenders are drawn at random within year, so the main-sample subsample is random within year. The design weight is (main contracts in year) / (sampled main tenders with bid data in year), ranging from 3.0 (2026) to 43.1 (2012).
 - **Years with no bid data:** 2010 (3 drawn, 0 with data) and 2011 (18 drawn, 0 with data), which hold 673 of the 9,991 contracts. **Estimates cover 2012–2026 only.**

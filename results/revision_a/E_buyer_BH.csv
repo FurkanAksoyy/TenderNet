@@ -1,0 +1,37 @@
+null,measure,buyers,exceed_p95,p_le_005,bh_reject_5pct,bh_share,min_p,bonferroni_reject,buyer_type
+N1,hhi,540,379.0,379.0,357,0.6611111111111111,0.0009990009990009,0.0,
+N1,hhi,142,,,97,0.6830985915492958,,,Central government / agency
+N1,hhi,57,,,53,0.9298245614035088,,,MoH hospital / dental centre
+N1,hhi,80,,,54,0.675,,,MoH provincial directorate / hospital union
+N1,hhi,126,,,69,0.5476190476190477,,,Municipality / municipal company
+N1,hhi,47,,,30,0.6382978723404256,,,Other
+N1,hhi,8,,,6,0.75,,,Other health body (central/agency)
+N1,hhi,67,,,39,0.582089552238806,,,University (non-health unit)
+N1,hhi,13,,,9,0.6923076923076923,,,University hospital / medical faculty
+N1,top,540,310.0,310.0,273,0.5055555555555555,0.0009990009990009,0.0,
+N1,top,142,,,70,0.49295774647887325,,,Central government / agency
+N1,top,57,,,50,0.8771929824561403,,,MoH hospital / dental centre
+N1,top,80,,,37,0.4625,,,MoH provincial directorate / hospital union
+N1,top,126,,,56,0.4444444444444444,,,Municipality / municipal company
+N1,top,47,,,24,0.5106382978723404,,,Other
+N1,top,8,,,4,0.5,,,Other health body (central/agency)
+N1,top,67,,,24,0.3582089552238806,,,University (non-health unit)
+N1,top,13,,,8,0.6153846153846154,,,University hospital / medical faculty
+N2,hhi,540,328.0,325.0,289,0.5351851851851852,0.0009990009990009,0.0,
+N2,hhi,142,,,70,0.49295774647887325,,,Central government / agency
+N2,hhi,57,,,52,0.9122807017543859,,,MoH hospital / dental centre
+N2,hhi,80,,,45,0.5625,,,MoH provincial directorate / hospital union
+N2,hhi,126,,,63,0.5,,,Municipality / municipal company
+N2,hhi,47,,,25,0.5319148936170213,,,Other
+N2,hhi,8,,,5,0.625,,,Other health body (central/agency)
+N2,hhi,67,,,19,0.2835820895522388,,,University (non-health unit)
+N2,hhi,13,,,10,0.7692307692307693,,,University hospital / medical faculty
+N2,top,540,255.0,252.0,212,0.3925925925925926,0.0009990009990009,0.0,
+N2,top,142,,,40,0.28169014084507044,,,Central government / agency
+N2,top,57,,,50,0.8771929824561403,,,MoH hospital / dental centre
+N2,top,80,,,34,0.425,,,MoH provincial directorate / hospital union
+N2,top,126,,,44,0.3492063492063492,,,Municipality / municipal company
+N2,top,47,,,20,0.425531914893617,,,Other
+N2,top,8,,,4,0.5,,,Other health body (central/agency)
+N2,top,67,,,12,0.1791044776119403,,,University (non-health unit)
+N2,top,13,,,8,0.6153846153846154,,,University hospital / medical faculty

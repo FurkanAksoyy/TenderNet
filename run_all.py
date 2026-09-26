@@ -1,10 +1,11 @@
 """Run the full TenderNet v3 analysis pipeline in the correct order.
 
-    python run_all.py               # everything (about 45 min on a laptop; network nulls take ~30 min)
-    python run_all.py --skip-slow   # skip the network null models; reuse the committed results/network files
+    python run_all.py               # everything (about 40 min on a laptop; network nulls take ~30 min)
+    python run_all.py --skip-slow   # skip the network null models (~30 min); reuse the committed results/network files
     python run_all.py --only lockin models   # run selected steps (see STEPS)
 
-Inputs:  data/contracts_v3.csv, data/cpi_turkey*.csv, data/bid_counts_sample.csv
+Inputs:  data/contracts_v3.csv, data/cpi_turkey*.csv, data/ppi_turkey_yiufe.csv,
+         data/bid_counts_sample.csv, data/bid_counts_cp2.csv
 Outputs: results/<topic>/, figures/, paper/si_tables/ ; per-step logs in results/logs/
 """
 import argparse
@@ -26,6 +27,8 @@ STEPS = [
     ("models", "models_analysis.py", False),             # Table 3, single-bid sample
     ("models_report", "models_report.py", False),        # results/models/models_results.md
     ("models_figures", "models_figures.py", False),      # F-R1, F-R2
+    ("revision_a", "revision_a.py", False),              # renewals, N4 nulls, conditional logit, BH, cp2 single bid; F-A1 (~6 min)
+    ("revision_b", "revision_b.py", False),              # 21(b) logit variants, event study F-B1, descriptives, PPI robustness
     ("network", "network_analysis.py", True),            # curveball nulls, Louvain stability (~30 min)
     ("network_projections", "network_projections.py", False),  # BiCM projections, brokerage (~3 min)
     ("network_figures", "network_figures.py", False),    # fig_N1_core_network

@@ -1,0 +1,37 @@
+sample,controls,test,W,df,p,estimate_pp,se_pp
+(a) all buyers,with history controls,all bins equal,63.12715884738993,13,1.4399557262506412e-08,,
+(a) all buyers,with history controls,2013–17 bins equal,6.107830168946345,4,0.19123887406868564,,
+(a) all buyers,with history controls,post bins (>=2019) equal,12.40908748808259,7,0.08788326077317327,,
+(a) all buyers,with history controls,mean post(>=2019) = mean 2013–17,8.52825669661814,1,0.003496744757358253,13.808036618778683,4.728264881903421
+(a) all buyers,with history controls,mean 2018 = mean 2013–17,32.01197929011321,1,1.5322478520008366e-08,37.31521074542289,6.595225284804791
+(a) all buyers,with history controls,mean 2010–12 = mean 2013–17,4.933823526219357,1,0.026335984401918176,23.2177277200976,10.452686089605864
+(a) all buyers,value only (no history controls),all bins equal,60.819879764808995,13,3.746545878299989e-08,,
+(a) all buyers,value only (no history controls),2013–17 bins equal,4.872013893818293,4,0.3006835425378999,,
+(a) all buyers,value only (no history controls),post bins (>=2019) equal,9.64655143155297,7,0.20950332584165368,,
+(a) all buyers,value only (no history controls),mean post(>=2019) = mean 2013–17,19.25918740044277,1,1.1411988240091681e-05,22.51842399380399,5.1312008268213045
+(a) all buyers,value only (no history controls),mean 2018 = mean 2013–17,25.989802873127235,1,3.4322546080163964e-07,34.96074562635146,6.857711233199434
+(a) all buyers,value only (no history controls),mean 2010–12 = mean 2013–17,6.289021782757952,1,0.012148808419815157,25.5013106535107,10.168829188873604
+(b) health buyers,with history controls,all bins equal,40.26756324467681,13,0.00012517246054925707,,
+(b) health buyers,with history controls,2013–17 bins equal,5.984591740000375,4,0.2003019304495198,,
+(b) health buyers,with history controls,post bins (>=2019) equal,20.74007341608798,7,0.004174517650040329,,
+(b) health buyers,with history controls,mean post(>=2019) = mean 2013–17,4.285395523676091,1,0.03844113760493452,12.309950357882318,5.9464920930705665
+(b) health buyers,with history controls,mean 2018 = mean 2013–17,18.985631388058653,1,1.317065373310718e-05,42.58934852030185,9.774363240455894
+(b) health buyers,with history controls,mean 2010–12 = mean 2013–17,4.47414884332789,1,0.03441133815219642,28.105581773118594,13.287319119082323
+(b) health buyers,value only (no history controls),all bins equal,33.42847732117036,13,0.0014688841941700806,,
+(b) health buyers,value only (no history controls),2013–17 bins equal,5.389890983005835,4,0.24957902282871236,,
+(b) health buyers,value only (no history controls),post bins (>=2019) equal,19.383097854660566,7,0.007068272531707588,,
+(b) health buyers,value only (no history controls),mean post(>=2019) = mean 2013–17,5.940444350259775,1,0.014797287637105961,15.020391100650832,6.162710617992452
+(b) health buyers,value only (no history controls),mean 2018 = mean 2013–17,16.498874827227493,1,4.8678953534623456e-05,39.74624425639896,9.785182575386075
+(b) health buyers,value only (no history controls),mean 2010–12 = mean 2013–17,4.246474660710859,1,0.03933189731536117,27.933646034838954,13.555431825952722
+"(c) health buyers, buyer FE",with history controls,all bins equal,21.449523676153152,13,0.06450027446930624,,
+"(c) health buyers, buyer FE",with history controls,2013–17 bins equal,2.4784140122023066,4,0.6485052251021952,,
+"(c) health buyers, buyer FE",with history controls,post bins (>=2019) equal,6.500074126805712,7,0.4827149592641451,,
+"(c) health buyers, buyer FE",with history controls,mean post(>=2019) = mean 2013–17,11.298323669508386,1,0.0007757710168483485,24.038898657005845,7.151671547426086
+"(c) health buyers, buyer FE",with history controls,mean 2018 = mean 2013–17,4.7090070952995395,1,0.030004976634568897,27.793523204989995,12.8079295640598
+"(c) health buyers, buyer FE",with history controls,mean 2010–12 = mean 2013–17,6.3563174401739655,1,0.011696405806074872,41.059077961811354,16.285698988839233
+"(c) health buyers, buyer FE",value only (no history controls),all bins equal,25.93574307142054,13,0.017341683833338964,,
+"(c) health buyers, buyer FE",value only (no history controls),2013–17 bins equal,3.119583111762636,4,0.5380166753702088,,
+"(c) health buyers, buyer FE",value only (no history controls),post bins (>=2019) equal,9.131584632908192,7,0.24334640774480779,,
+"(c) health buyers, buyer FE",value only (no history controls),mean post(>=2019) = mean 2013–17,11.54792500453276,1,0.0006782491050834615,25.18287053381044,7.410598008080706
+"(c) health buyers, buyer FE",value only (no history controls),mean 2018 = mean 2013–17,9.12262181490833,1,0.0025246787260832263,38.827972326203884,12.855378728863695
+"(c) health buyers, buyer FE",value only (no history controls),mean 2010–12 = mean 2013–17,8.867288478071766,1,0.0029032605773205104,53.8006612634955,18.067255858720287

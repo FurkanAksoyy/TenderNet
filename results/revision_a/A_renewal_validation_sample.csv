@@ -1,0 +1,63 @@
+﻿pair_id,band,sim,gap_days,market,title_i,title_prior
+1,"[0.35,0.45)",0.357,382,maintenance_support_services,MERKEZ HİZMET BİRİMLERİ ENVANTERİNE KAYITLI BİLİŞİM CİHAZLARI PARÇA DAHİL BAKIM ONARIM VE HİZMET ALIMI İŞİ,"2024 yılı Çevre, Şehircilik Ve İklim Değişikliği Bakanlığı Bilişim Cihazları Parça Dahil Bakım Onarım Ve Teknik Destek Hizmeti Temini İşi"
+2,"[0.35,0.45)",0.357,186,ERP_management_software,KURUMSAL KAYNAK YÖNETİM SİSTEMİ SAP LİSANSLARI YAZILIM GÜVENCESİ,GENEL MÜDÜRLÜĞÜMÜZÜN İHTİYACI OLAN KURUMSAL KAYNAK YÖNETİM SİSTEMİ (ETİ KKYS) YAZILIMLARI VE BİLEŞENLERİ DANIŞMANLIK BAKIM VE TEKNİK HİZMET ALIMI
+3,"[0.35,0.45)",0.357,290,ERP_management_software,Müdürlüğümüze Bağlı Sağlık Hizmetleri Başkanlığı Evde Sağlık Hizmetleri Kordinasyon ve Yönetim Bilgi Sistemi Yazılımı Hizmet Alımı (10 aylık),Müdürlüğümüze Bağlı Sağlık Tesisleri İçin Merkezi Klinik Mühendislik Bilgi Yönetim Sistemi (KMBYS) Hizmet Alımı ve Tedarik Talep Takip Bilgi Yönetim Sistemi Hizmet Alımı
+4,"[0.35,0.45)",0.375,253,health_information_systems,Yoğun Bakım Bilgi Yönetim Sistemi (YBBYS) (2025-2026-2027),Sağlık Bilgi Yönetim Sistemi (SBYS) (2025-2026-2027)
+5,"[0.35,0.45)",0.4,523,health_information_systems,AĞIZ VE DİŞ SAĞLIĞI MERKEZİ İÇİN 15 AYLIK HBYS,MÜDÜRLÜĞÜMÜZE BAĞLI AHİ EVRAN ÜNİVERSİTESİ EĞİTİM VE ARAŞTIRMA HASTANESİ İLE KIRŞEHİR AĞIZ VE DİŞ SAĞLIĞI MERKEZİ İÇİN 24 AYLIK HBYS
+6,"[0.35,0.45)",0.4,380,ERP_management_software,MİLLİ EMLAK BİLGİ SİSTEMİ (MEBİS) YAZILIM GELİŞTİRME HİZMETİ İŞİ,MİLLİ EMLAK OTOMASYON PROJESİ (MEOP) KAPSAMINDA YAZILIM GELİŞTİRME HİZMETİ TEMİNİ
+7,"[0.35,0.45)",0.4,296,physical_security_surveillance,Hakkari Şemdinli İlçesi Kent Güvenlik Yönetim Sistemi (KGYS) için 60 KVA KGK 12 V 26 Ah Akü Alım İşi,Hakkari Yüksekova Kent Güvenlik Yönetim Sistemi (KGYS) Video Wall Ekran Alım İşi
+8,"[0.35,0.45)",0.417,384,health_information_systems,36 AYLIK HASTANE BİLGİ YÖNETİM SİSTEMİ YAZILIMI ( HBYS ) HİZMET ALIMI,"2015 YILI 2 AYLIK (NİSAN-MAYIS) Hastane Bilgi Yönetim Sistemi Yazılımları ve PACS (Görüntü arşivleme ve iletişim Sistemi), RBS (Röntgen Bilgi Sistemi) Alımı"
+9,"[0.35,0.45)",0.429,495,health_information_systems,Yoğun Bakım Bilgi Yönetim Sistemi Hizmet Alımı,36 AYLIK HASTANE BİLGİ YÖNETİM SİSTEMİ (HBYS) HİZMETİ
+10,"[0.35,0.45)",0.429,423,physical_security_surveillance,ULAŞIM DAİRESİ BAŞKANLIĞI İZMİR ULAŞIM MERKEZİ ŞUBE MÜDÜRLÜĞÜNE KAMERA SİSTEM BİLEŞENLERİ YAZILIMLARININ GÜNCELLENME (SMA) PAKETİ ALIMI,ULAŞIM DAİRESİ BAŞKANLIĞI İZMİR ULAŞIM MERKEZİ ŞUBE MÜDÜRLÜĞÜNE GÜVENLİK KAMERASI İZLEME YAZILIMI LİSANS ALIMI
+11,"[0.35,0.45)",0.429,236,health_information_systems,YOĞUN BAKIM BİLGİ YÖNETİM SİSTEMİ HİZMET ALIMI,SAĞLIK BİLGİ YÖNETİM SİSTEMİ (SBYS) HİZMET ALIMI
+12,"[0.35,0.45)",0.429,221,health_information_systems,Sağlık Bilgi Yönetim Sistemi Hizmet Alımı,Yoğun Bakım Bilgi Yönetim Sistemi (YBBYS) Hizmet Alımı
+13,"[0.35,0.45)",0.429,370,ERP_management_software,"Abone Bilgi Yönetim Sistemi Bakım, Destek ve Güncelleme",Bilgi Yönetim Sistemi Hizmetleri
+14,"[0.35,0.45)",0.429,460,other_IT,KADIN GİRİŞİMCİLİK MERKEZİNDE (KAGİM) KULLANILMAK ÜZERE BİLİŞİM VE SARF MALZEME ALIMI,BİLİŞİM VE SARF MALZEMESİ ALIMI
+15,"[0.35,0.45)",0.444,189,physical_security_surveillance,Kent Güvenlik Yönetim Sistemi Malzeme,Kent Güvenlik Yönetim Sistemi ve Sistemin Tüm Bileşenlerinin Bakım Onarımı
+16,"[0.45,0.55)",0.455,416,cybersecurity,"BİLGİ GÜVENLİĞİ YAZILIMLARI LİSANS,BAKIM,GÜNCELLEME VE ZAFİYET ANALİZ HİZMETLERİ ALIMI",GÜVENLİK YAZILIMLARI BAKIM GÜNCELLEME VE İSO 27001 BİLGİ GÜVENLİĞİ SERTİFİKASI YENİLEME HİZMETİ ALIMI
+17,"[0.45,0.55)",0.455,325,maintenance_support_services,"VERİ TABANI BAKIMI, ANALİZ GELİŞTİRME VE YAZILIM ATÖLYESİ EĞİTİM İSTİHDAM PROGRAMI HİZMET ALIMI",VERİ ANALİZ PLATFORMU GELİŞTİRME VE VERİ TABANI BAKIMI HİZMET ALIMI
+18,"[0.45,0.55)",0.471,205,custom_software_web_mobile,YEŞİL VE DİJİTAL DÖNÜŞÜM SÜRECİNDE İŞÇİLERİN BECERİ UYUMLARININ GELİŞTİRİLMESİ PROJESİ - YAPAY ZEKA OKURYAZARLIĞI EĞİTİM PROGRAMI,“YEŞİL VE DİJİTAL DÖNÜŞÜM SÜRECİNDE İŞÇİLERİN BECERİ UYUMLARININ GELİŞTİRİLMESİ” TOPLANTI ORGANİZASYONU - ANKARA
+19,"[0.45,0.55)",0.5,422,software_licences,"ORACLE ileri düzey teknik destek hizmeti,teknik destek ve güncelleme yenileme hizmet alımı işi","Oracle lisansları teknik destek ve güncelleme hizmeti, Oracle Exedata İleriDüzey destek hizmeti"
+20,"[0.45,0.55)",0.5,365,health_information_systems,10 Teknik Destek Personeli İle 6 Aylık HBYS Hizmet Alımı,Hastanemiz HBYS Bakım ve Destek Hizmet Alımı
+21,"[0.45,0.55)",0.5,240,network_datacentre_infrastructure,Bilişim Altyapı ve Donanım Malzemeleri,Bilişim Alt Yapı ve Donanım Malzemeleri
+22,"[0.45,0.55)",0.5,226,ERP_management_software,KURUMSAL KAYNAK PLANLAMA YAZILIMI VE VERİ TABANI TEKNİK DESTEK İLE EK MODÜL TEMİNİ HİZMET ALIMI,"KURUMSAL KAYNAK PLANLAMA YAZILIMI BAKIM, GELİŞTİRME VE EK MODÜL"
+23,"[0.45,0.55)",0.5,274,maintenance_support_services,Bakanlık Yazılım Bakım Hizmet Desteği Alımı,Yazılım Bakım Hizmet Alımı
+24,"[0.45,0.55)",0.5,301,cybersecurity,Siber Güvenlik Hizmetleri İçin Operasyonel Güvenlik Hizmeti Alımı İşi,Siber Güvenlik Ürün ve Hizmet Alımı
+25,"[0.45,0.55)",0.5,421,health_information_systems,Yoğun Bakım Bilgi Yönetim Sistemi,Hastane Bilgi Yönetim Sistemi
+26,"[0.45,0.55)",0.5,393,health_information_systems,HBYS HİZMET ALIMI (3 Aylık),2012 Yılı Ekim Kasım Aralık ayları HBYS Hizmet Alımı
+27,"[0.45,0.55)",0.5,366,GIS_city_information,KENT BİLGİ SİSTEMİ ALTYAPISI E-BELEDİYE ANALİZ VE ENTEGRASYON ÇALIŞMALARININ YAPILMASI HİZMETİ,KENT BİLGİ SİSTEMİ ALTYAPISININ OLUŞTURULMASININ TEMİNİ İŞİ
+28,"[0.45,0.55)",0.5,382,maintenance_support_services,Yazılım modüllerinin bakım ve güncellenmesi,YAZILIM BAKIM HİZMET ALIMI
+29,"[0.45,0.55)",0.5,548,health_information_systems,HASTANE GENELİ 3 AYLIK HBYS HİZMET ALIMI,"2,5 AYLIK HBYS HİZMET ALIMI"
+30,"[0.45,0.55)",0.5,424,computers_peripherals,İzmit Akademi Lise – 2 Bilişim Malzemesi,"Gölcük, Derince, Karamürsel Akademi Lise Bilişim Malzemesi"
+31,"[0.55,0.70)",0.556,381,cybersecurity,VERİ SIZINTISI ENGELLEME (DLP) YAZILIM LİSANSI,"VERİ SIZINTISI ENGELLEME YAZILIM LİSANSI GÜNCELLEME, BAKIM VE DESTEK"
+32,"[0.55,0.70)",0.583,320,software_licences,"ORACLE YAZlLlM VE DONANIM URUNLERI ICiN
+LISANS YENILEME,BAKIM,GUNCELLEME ve
+TEKNiK DESTEK","ORACLE YAZILIM VE DONANIM URUNLERI ICIN BAKIM,DESTEK,LISANS YENILEME VE ILERI DUZEY TEKNIK DESTEK"
+33,"[0.55,0.70)",0.6,413,smart_city_traffic_OT,Trafik Yönetim Sistemi Elektronik Malzeme Alımı,Trafik Yönetim Sistemi
+34,"[0.55,0.70)",0.6,365,maintenance_support_services,ABYS ve VERİ TABANI YILLIK BAKIM,ABYS ve VERİ TABANI YILLIKBAKIM HİZMETİ
+35,"[0.55,0.70)",0.609,397,network_datacentre_infrastructure,"Karayolları Genel Müdürlüğü SharePoint 2016 ve Sharepoint 2019 üzerinde çalışan İnternet Portalleri, Intranet Portali, BT Portali, BGYS Portali ve Onedrive For Business Portalleri için ilave uygulama geliştirme, bakım, onarım ve işletim desteği","Karayolları Genel Müdürlüğü Bilgi Teknolojileri Dairesi Başkanlığında Share Point 2013 üzerinde çalışan internet ve intranet portalı için ilave uygulama geliştirme, bakım, onarım ve işletim desteği alınması işi"
+36,"[0.55,0.70)",0.625,288,GIS_city_information,"2015 Yılı Kent Bilgi Sistemi, E-Belediye Portalı Bakım Destek ve Yükseltme",Kent Bilgi Sistemi Uygulamaları Bakım Destek ve E-Belediye Yıllık Bakım Destek Hizmet Alımı
+37,"[0.55,0.70)",0.625,308,physical_security_surveillance,Kent Güvenlik Yönetim Sistemi Malzeme (Deprem),Kent Güvenlik Yönetim Sistemi Projesi 11 İl KGYS Malzeme
+38,"[0.55,0.70)",0.667,393,education_technology,ÖĞRENCİ İŞLERİ OTOMASYON YAZILIMI HİZMET ALIMI İHALESİ,BANDIRMA ONYEDİ EYLÜL ÜNİVERSİTESİ ÖĞRENCİ İŞLERİ OTOMASYON YAZILIMI HİZMET ALIMI İHALESİ
+39,"[0.55,0.70)",0.667,354,GIS_city_information,"2015 Yılı Kent Bilgi Sistemi Yazılımları Yıllık Bakım, Destek, Geliştirme, Güncelleme, Test Ortamı Kurulumu ve İş Süreçlerinin Geliştirilmesi","2014 Yılı Kent Bilgi Sistemi Yazılımları Yıllık Bakım, Destek, Geliştirme, Güncelleme ile Mobil Uygulamaların Geliştirilmesi ve Test Yapısının Kurulması Hizmeti İşi"
+40,"[0.55,0.70)",0.667,373,physical_security_surveillance,İstanbul Emniyet Müdürlüğü Kent Güvenlik Yönetim Sistemi (KGYS) Malzeme Alımı,İstanbul Kent Güvenlik Yönetim Sistemi Malzeme Alımı ve Sarf Malzeme Temini İşi
+41,"[0.55,0.70)",0.667,449,maintenance_support_services,Bilişim Donanımları Parçalı Bakım ve Onarım Hizmeti,Bilişim Donanımları Parçalı Bakım ve Destek
+42,"[0.55,0.70)",0.667,366,software_licences,İşletim Sistemi Ve Yazılım Lisansları Güncelleme,İşletim Sistemi Ve Yazılım Lisansları Yenileme
+43,"[0.55,0.70)",0.667,211,health_information_systems,Kırklareli Kamu Hastaneleri Birliği Genel Sekreterliği 24 Ay Süreli Hastane Bilgi Yönetim Sistemi (HBYS) ve Digital Arşiv ve Görüntü Paylaşımı (PACS) Sistemi Hizmeti Alımı,Kırklareli İli Kamu Hastaneleri Birliği Genel Sekreterliğine Bağlı Sağlık Tesisleri için Hastane Bilgi Yönetim Sistemi(HBYS) ve Görüntü Arşivleme ve İletişim Sistemi (PACS) Hizmeti Alımı
+44,"[0.55,0.70)",0.667,364,cybersecurity,"Bilişim Güvenliği Yazılımları/Donanımları  Güncelleme, Destek ve Parçalı  Bakım-Onarım",Bilişim Güvenliği Yazılımları Güncelleme ve Bakım-Onarım
+45,"[0.55,0.70)",0.692,417,software_licences,"Grafik, Web ve Video Düzenleme Araçlarının Tamamını Kapsayan Yazılım Lisanslarının Yenilenmesi","Grafik, Web ve Video Düzenleme Tasarım Araçlarının Tamamını Kapsayan Yazılım Lisanslarının Paket Halinde Alımı"
+46,"[0.70,1.00)",0.833,265,health_information_systems,HASTANEMİZ İHTİYACI HASTANE SAĞLIK BİLGİ YÖNETİM SİSTEMİ HİZMET ALIMI (HBYS),HASTANEMİZ İHTİYACI 9 AYLIK HASTANE SAĞLIK BİLGİ YÖNETİM SİSTEMİ VE HASTANE SİSTEM YÖNETİMİ HİZMET ALIMI
+47,"[0.70,1.00)",0.909,474,ERP_management_software,"Kamu Harcama ve Muhasebe Bilişim Sistemi (KBS) 2013 Yılı Merkez Sistemleri Bakım, Destek ve İşletim Hizmeti","Kamu Harcama ve Muhasebe Bilişim Sistemi KBS-(say2000i) Merkez ve Taşra Sistemleri Bakım, Destek ve İşletim Hizmeti"
+48,"[0.70,1.00)",1.0,235,health_information_systems,Hastane Bilgi Yönetim Sistemi (HBYS) Yazılım Geliştirme Hizmet Alımı,Hastane Bilgi Yönetim Sistemi (HBYS) Yazılım Geliştirme Hizmet Alımı
+49,"[0.70,1.00)",1.0,350,other_IT,Bilişim,Bilişim
+50,"[0.70,1.00)",1.0,370,software_licences,Yazılım Lisans Üyeliği,Yazılım Lisans Üyeliği Alımı İşi
+51,"[0.70,1.00)",1.0,241,other_IT,Spor Genel Müdürlüğü Hizmetlerinde Çalıştırılmak Üzere Bilişim Elemanı,Spor Genel Müdürlüğü hizmetlerinde Bilişim Elemanı Çalıştırılmasına ait hizmet alımı işi
+52,"[0.70,1.00)",1.0,428,ERP_management_software,İşletim Sistemi Ve Arşivleme Yazılımı Teknik Destek Hizmeti,İşletim Sistemi Ve Arşivleme Yazılımı Teknik Destek
+53,"[0.70,1.00)",1.0,194,health_information_systems,2022 Yılı 2 Aylık (Temmuz-Ağustos) Hastane Bilgi Yönetim Sistemi Hizmet Alımı,2022 Yılı 3 (Üç) Aylık Hastane Bilgi Yönetim Sistemi  Hizmeti Alımı
+54,"[0.70,1.00)",1.0,355,software_licences,"ORACLE VERİ TABANI YAZILIMLARI GÜNCELLEME, BAKIM, DESTEK","ORACLE VERİ TABANI YAZILIMLARI GÜNCELLEME, BAKIM, DESTEK"
+55,"[0.70,1.00)",1.0,244,maintenance_support_services,Veri Tabanı ve Sistemi Destek Hizmeti Alımı,Veri Tabanı ve Sistemi Destek Hizmeti alımı
+56,"[0.70,1.00)",1.0,399,cybersecurity,"KİMLİK DOĞRULAMA, AĞ ERİŞİM KONTROL PLATFORMU VE GÜVENLİK DUVARI YAZILIMI LİSANS GÜNCELLEMESİ ALIMI",KİMLİK DOĞRULAMA VE AĞ ERİŞİM KONTROL PLATFORMU ALIMI VE GÜVENLİK DUVARI YAZILIMI LİSANS GÜNCELLEMESİ HİZMETİ ALIMI
+57,"[0.70,1.00)",1.0,274,health_information_systems,2019 Yılı 3 Aylık Hastane Bilgi Yönetim Sistemi (HBYS) Hizmet Alımı,2019 Yılı 3 Aylık Hastane Bilgi Yönetim Sistemi(HBYS) Hizmet Alımı
+58,"[0.70,1.00)",1.0,363,health_information_systems,12 Ay süreli HBYS (Hastane Bilgi Yönetim Sistemi) Hizmet Alımı,12 Ay Süreli HBYS (Hastane Bilgi Yönetim Sistemi)
+59,"[0.70,1.00)",1.0,377,health_information_systems,2019 Yılı 6 Ay süreli HBYS (Hastane Bilgi Yönetim Sistemi) Hizmet Alımı,2018 Yılı 6 Ay süreli HBYS (Hastane Bilgi Yönetim Sistemi) Hizmet Alımı
+60,"[0.70,1.00)",1.0,502,network_datacentre_infrastructure,"İTÜ Bilgi İşlem Altyapısının Bakımı, Yazılım ve Sistem Geliştirme Hizmeti Alımı İşi","İTÜ Bilgi İşlem Altyapısının Bakımı, Yazılım ve Sistem Geliştirme Hizmeti  Alım işi"

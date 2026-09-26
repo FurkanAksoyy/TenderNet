@@ -98,28 +98,37 @@ Bajari, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Barber%
+Baltrunaite%
+, Giorgiantonio%
+, Mocetti%
+\BCBL {}\ \BBA {} Orlando%
 }{%
-Barber%
-}{%
-{\protect \APACyear {2007}}%
+Baltrunaite%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
 }]{%
-Barber2007}
+Baltrunaite2021}
 \APACinsertmetastar {%
-Barber2007}%
+Baltrunaite2021}%
 \begin{APACrefauthors}%
-Barber, M.J.%
+Baltrunaite, A.%
+, Giorgiantonio, C.%
+, Mocetti, S.%
+\BCBL {} Orlando, T.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2007}{}{}.
+\APACrefYearMonthDay{2021}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Modularity and community detection in bipartite
-  networks} {Modularity and community detection in bipartite networks}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Discretion and Supplier Selection in Public Procurement}
+  {Discretion and supplier selection in public procurement}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Physical Review E}{76}{6}{066102,}
+\APACjournalVolNumPages{The Journal of Law, Economics, and
+  Organization}{37}{1}{134--166,}
 \newblock
-\begin{APACrefDOI} \doi{10.1103/PhysRevE.76.066102} \end{APACrefDOI}
+\begin{APACrefDOI} \doi{10.1093/jleo/ewaa009} \end{APACrefDOI}
+\newblock
+\APACrefnote{Published online 15 May 2020}
 \newblock
 
 \newblock
@@ -127,32 +136,101 @@ Barber, M.J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Blondel%
-, Guillaume%
-, Lambiotte%
-\BCBL {}\ \BBA {} Lefebvre%
+Bandiera%
+, Prat%
+\BCBL {}\ \BBA {} Valletti%
 }{%
-Blondel%
+Bandiera%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2008}}%
+{\protect \APACyear {2009}}%
 }]{%
-blondel2008}
+BandieraPratValletti2009}
 \APACinsertmetastar {%
-blondel2008}%
+BandieraPratValletti2009}%
 \begin{APACrefauthors}%
-Blondel, V.D.%
-, Guillaume, J\BHBI L.%
-, Lambiotte, R.%
-\BCBL {} Lefebvre, E.%
+Bandiera, O.%
+, Prat, A.%
+\BCBL {} Valletti, T.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2008}{}{}.
+\APACrefYearMonthDay{2009}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Fast unfolding of communities in large networks} {Fast
-  unfolding of communities in large networks}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Active and Passive Waste in Government Spending:
+  Evidence from a Policy Experiment} {Active and passive waste in government
+  spending: Evidence from a policy experiment}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of Statistical Mechanics}{}{}{P10008,}
+\APACjournalVolNumPages{American Economic Review}{99}{4}{1278--1308,}
+\newblock
+\begin{APACrefDOI} \doi{10.1257/aer.99.4.1278} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Benjamini%
+\ \BBA {} Hochberg%
+}{%
+Benjamini%
+\ \BBA {} Hochberg%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+BenjaminiHochberg1995}
+\APACinsertmetastar {%
+BenjaminiHochberg1995}%
+\begin{APACrefauthors}%
+Benjamini, Y.%
+\BCBT {}\ \BBA {} Hochberg, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Controlling the false discovery rate: A practical and
+  powerful approach to multiple testing} {Controlling the false discovery rate:
+  A practical and powerful approach to multiple testing}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the Royal Statistical Society: Series B
+  (Methodological)}{57}{1}{289--300,}
+\newblock
+\begin{APACrefDOI} \doi{10.1111/j.2517-6161.1995.tb02031.x} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Borenstein%
+, MacKie-Mason%
+\BCBL {}\ \BBA {} Netz%
+}{%
+Borenstein%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2000}}%
+}]{%
+BorensteinMackieMasonNetz2000}
+\APACinsertmetastar {%
+BorensteinMackieMasonNetz2000}%
+\begin{APACrefauthors}%
+Borenstein, S.%
+, MacKie-Mason, J.K.%
+\BCBL {} Netz, J.S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Exercising Market Power in Proprietary Aftermarkets}
+  {Exercising market power in proprietary aftermarkets}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Economics \& Management
+  Strategy}{9}{2}{157--188,}
+\newblock
+\begin{APACrefDOI} \doi{10.1111/j.1430-9134.2000.00157.x} \end{APACrefDOI}
 \newblock
 
 \newblock
@@ -287,6 +365,101 @@ Coviello, D.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Decarolis%
+, Spagnolo%
+\BCBL {}\ \BBA {} Pacini%
+}{%
+Decarolis%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+DecarolisPaciniSpagnolo2016}
+\APACinsertmetastar {%
+DecarolisPaciniSpagnolo2016}%
+\begin{APACrefauthors}%
+Decarolis, F.%
+, Spagnolo, G.%
+\BCBL {} Pacini, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {Past Performance and Procurement Outcomes} {Past performance
+  and procurement outcomes}\ \APACbVolEdTR {}{NBER Working Paper\ \BNUM\
+  22814}.
+\newblock
+\APACaddressInstitution{}{National Bureau of Economic Research}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+De~Silva%
+, Dunne%
+\BCBL {}\ \BBA {} Kosmopoulou%
+}{%
+De~Silva%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+DeSilvaDunneKosmopoulou2003}
+\APACinsertmetastar {%
+DeSilvaDunneKosmopoulou2003}%
+\begin{APACrefauthors}%
+De~Silva, D.G.%
+, Dunne, T.%
+\BCBL {} Kosmopoulou, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {An Empirical Analysis of Entrant and Incumbent Bidding
+  in Road Construction Auctions} {An empirical analysis of entrant and
+  incumbent bidding in road construction auctions}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Industrial Economics}{51}{3}{295--316,}
+\newblock
+\begin{APACrefDOI} \doi{10.1111/1467-6451.00202} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{European Commission}%
+}{%
+{European Commission}%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+EC2013AgainstLockin}
+\APACinsertmetastar {%
+EC2013AgainstLockin}%
+\begin{APACrefauthors}%
+{European Commission}%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+\APACrefbtitle {Against Lock-in: Building Open {ICT} Systems by Making Better
+  Use of Standards in Public Procurement.} {Against lock-in: Building open
+  {ICT} systems by making better use of standards in public procurement.}
+\newblock
+\APAChowpublished {Communication from the Commission to the European
+  Parliament, the Council, the European Economic and Social Committee and the
+  Committee of the Regions, COM(2013) 455 final}.
+\newblock
+\begin{APACrefURL}
+  {https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52013DC0455}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Accompanied by SWD(2013) 224 final, ``Guide for the procurement of
+  standards-based ICT -- Elements of good practice''}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Farrell%
 \ \BBA {} Klemperer%
 }{%
@@ -318,6 +491,38 @@ Farrell, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Farrell%
+\ \BBA {} Shapiro%
+}{%
+Farrell%
+\ \BBA {} Shapiro%
+}{%
+{\protect \APACyear {1988}}%
+}]{%
+FarrellShapiro1988}
+\APACinsertmetastar {%
+FarrellShapiro1988}%
+\begin{APACrefauthors}%
+Farrell, J.%
+\BCBT {}\ \BBA {} Shapiro, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1988}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Dynamic Competition with Switching Costs} {Dynamic
+  competition with switching costs}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The RAND Journal of Economics}{19}{1}{123--137,}
+\newblock
+\begin{APACrefDOI} \doi{10.2307/2555402} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Fazekas%
 \ \BBA {} Kocsis%
 }{%
@@ -345,6 +550,45 @@ Fazekas, M.%
 \APACjournalVolNumPages{British Journal of Political Science}{50}{1}{155--164,}
 \newblock
 \begin{APACrefDOI} \doi{10.1017/S0007123417000461} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fazekas%
+, T{\'o}th%
+, Abdou%
+\BCBL {}\ \BBA {} Al-Shaibani%
+}{%
+Fazekas%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+Fazekas2024GlobalPP}
+\APACinsertmetastar {%
+Fazekas2024GlobalPP}%
+\begin{APACrefauthors}%
+Fazekas, M.%
+, T{\'o}th, B.%
+, Abdou, A.%
+\BCBL {} Al-Shaibani, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Global Contract-level Public Procurement Dataset}
+  {Global contract-level public procurement dataset}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Data in Brief}{54}{}{110412,}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.dib.2024.110412} \end{APACrefDOI}
+\newblock
+\APACrefnote{Defines the buyer spending concentration indicator
+  (corr\_spending\_concentration): supplier's share of a buyer's total awarded
+  amount}
 \newblock
 
 \newblock
@@ -523,6 +767,37 @@ Greenstein, S.M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Greenstein%
+}{%
+Greenstein%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+Greenstein1995}
+\APACinsertmetastar {%
+Greenstein1995}%
+\begin{APACrefauthors}%
+Greenstein, S.M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Sole-Sourcing versus Competitive Bidding: {US}
+  Government Agencies' Procedural Choices for Mainframe Computer Procurement}
+  {Sole-sourcing versus competitive bidding: {US} government agencies'
+  procedural choices for mainframe computer procurement}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Industrial Economics}{43}{2}{125--140,}
+\newblock
+\begin{APACrefDOI} \doi{10.2307/2950477} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 G{\"u}rakar%
 }{%
 G{\"u}rakar%
@@ -608,32 +883,31 @@ Hirschman, A.O.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Kang%
-\ \BBA {} Miller%
+Jofre-Bonet%
+\ \BBA {} Pesendorfer%
 }{%
-Kang%
-\ \BBA {} Miller%
+Jofre-Bonet%
+\ \BBA {} Pesendorfer%
 }{%
-{\protect \APACyear {2022}}%
+{\protect \APACyear {2003}}%
 }]{%
-KangMiller2022}
+JofreBonetPesendorfer2003}
 \APACinsertmetastar {%
-KangMiller2022}%
+JofreBonetPesendorfer2003}%
 \begin{APACrefauthors}%
-Kang, K.%
-\BCBT {}\ \BBA {} Miller, R.A.%
+Jofre-Bonet, M.%
+\BCBT {}\ \BBA {} Pesendorfer, M.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2022}{}{}.
+\APACrefYearMonthDay{2003}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Winning by Default: Why is There So Little Competition
-  in Government Procurement?} {Winning by default: Why is there so little
-  competition in government procurement?}{\BBCQ}
+{\BBOQ}\APACrefatitle {Estimation of a Dynamic Auction Game} {Estimation of a
+  dynamic auction game}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{The Review of Economic Studies}{89}{3}{1495--1556,}
+\APACjournalVolNumPages{Econometrica}{71}{5}{1443--1489,}
 \newblock
-\begin{APACrefDOI} \doi{10.1093/restud/rdab051} \end{APACrefDOI}
+\begin{APACrefDOI} \doi{10.1111/1468-0262.00455} \end{APACrefDOI}
 \newblock
 
 \newblock
@@ -645,22 +919,24 @@ Klemperer%
 }{%
 Klemperer%
 }{%
-{\protect \APACyear {1995}}%
+{\protect \APACyear {1987}}%
 }]{%
-klemperer1995}
+Klemperer1987}
 \APACinsertmetastar {%
-klemperer1995}%
+Klemperer1987}%
 \begin{APACrefauthors}%
 Klemperer, P.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{1995}{}{}.
+\APACrefYearMonthDay{1987}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Competition when consumers have switching costs}
-  {Competition when consumers have switching costs}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Markets with Consumer Switching Costs} {Markets with
+  consumer switching costs}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Review of Economic Studies}{62}{4}{515--539,}
+\APACjournalVolNumPages{The Quarterly Journal of Economics}{102}{2}{375--394,}
+\newblock
+\begin{APACrefDOI} \doi{10.2307/1885068} \end{APACrefDOI}
 \newblock
 
 \newblock
@@ -697,6 +973,128 @@ Kutlay, M.%
 \begin{APACrefDOI} \doi{10.1177/10245294241235390} \end{APACrefDOI}
 \newblock
 \APACrefnote{First published online 27 May 2024}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Li%
+\ \BBA {} Zheng%
+}{%
+Li%
+\ \BBA {} Zheng%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+LiZheng2009}
+\APACinsertmetastar {%
+LiZheng2009}%
+\begin{APACrefauthors}%
+Li, T.%
+\BCBT {}\ \BBA {} Zheng, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Entry and Competition Effects in First-Price Auctions:
+  Theory and Evidence from Procurement Auctions} {Entry and competition effects
+  in first-price auctions: Theory and evidence from procurement
+  auctions}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Review of Economic Studies}{76}{4}{1397--1429,}
+\newblock
+\begin{APACrefDOI} \doi{10.1111/j.1467-937X.2009.00558.x} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+McFadden%
+}{%
+McFadden%
+}{%
+{\protect \APACyear {1974}}%
+}]{%
+McFadden1974}
+\APACinsertmetastar {%
+McFadden1974}%
+\begin{APACrefauthors}%
+McFadden, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1974}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Conditional Logit Analysis of Qualitative Choice
+  Behavior} {Conditional logit analysis of qualitative choice behavior}.{\BBCQ}
+\newblock
+ P.~Zarembka\ (\BED), \APACrefbtitle {Frontiers in Econometrics} {Frontiers in
+  econometrics}\ (\BPGS\ 105--142).
+\newblock
+\APACaddressPublisher{New York}{Academic Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+McFadden%
+}{%
+McFadden%
+}{%
+{\protect \APACyear {1978}}%
+}]{%
+McFadden1978}
+\APACinsertmetastar {%
+McFadden1978}%
+\begin{APACrefauthors}%
+McFadden, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1978}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Modelling the Choice of Residential Location} {Modelling
+  the choice of residential location}.{\BBCQ}
+\newblock
+ A.~Karlqvist, L.~Lundqvist, F.~Snickars\BCBL {}\ \BBA {} J.W.~Weibull\
+  (\BEDS), \APACrefbtitle {Spatial Interaction Theory and Planning Models}
+  {Spatial interaction theory and planning models}\ (\BPGS\ 75--96).
+\newblock
+\APACaddressPublisher{Amsterdam}{North-Holland}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Palguta%
+\ \BBA {} Pertold%
+}{%
+Palguta%
+\ \BBA {} Pertold%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+PalgutaPertold2017}
+\APACinsertmetastar {%
+PalgutaPertold2017}%
+\begin{APACrefauthors}%
+Palguta, J.%
+\BCBT {}\ \BBA {} Pertold, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Manipulation of Procurement Contracts: Evidence from the
+  Introduction of Discretionary Thresholds} {Manipulation of procurement
+  contracts: Evidence from the introduction of discretionary
+  thresholds}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Economic Journal: Economic
+  Policy}{9}{2}{293--315,}
+\newblock
+\begin{APACrefDOI} \doi{10.1257/pol.20150511} \end{APACrefDOI}
 \newblock
 
 \newblock
@@ -825,70 +1223,30 @@ Rhoades, S.A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Saracco%
-, Di~Clemente%
-, Gabrielli%
-\BCBL {}\ \BBA {} Squartini%
+Shapiro%
 }{%
-Saracco%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2015}}%
+Shapiro%
+}{%
+{\protect \APACyear {1995}}%
 }]{%
-Saracco2015}
+Shapiro1995}
 \APACinsertmetastar {%
-Saracco2015}%
+Shapiro1995}%
 \begin{APACrefauthors}%
-Saracco, F.%
-, Di~Clemente, R.%
-, Gabrielli, A.%
-\BCBL {} Squartini, T.%
+Shapiro, C.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2015}{}{}.
+\APACrefYearMonthDay{1995}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Randomizing bipartite networks: the case of the {World
-  Trade Web}} {Randomizing bipartite networks: the case of the {World Trade
-  Web}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Aftermarkets and Consumer Welfare: Making Sense of
+  {Kodak}} {Aftermarkets and consumer welfare: Making sense of {Kodak}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Scientific Reports}{5}{}{10595,}
+\APACjournalVolNumPages{Antitrust Law Journal}{63}{2}{483--511,}
 \newblock
-\begin{APACrefDOI} \doi{10.1038/srep10595} \end{APACrefDOI}
+\begin{APACrefURL} {https://www.jstor.org/stable/40843290} \end{APACrefURL}
 \newblock
-
-\newblock
-
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Saracco%
-\ \protect \BOthers {.}}{%
-Saracco%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2017}}%
-}]{%
-Saracco2017}
-\APACinsertmetastar {%
-Saracco2017}%
-\begin{APACrefauthors}%
-Saracco, F.%
-, Straka, M.J.%
-, Di~Clemente, R.%
-, Gabrielli, A.%
-, Caldarelli, G.%
-\BCBL {} Squartini, T.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Inferring monopartite projections of bipartite networks:
-  an entropy-based approach} {Inferring monopartite projections of bipartite
-  networks: an entropy-based approach}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{New Journal of Physics}{19}{5}{053022,}
-\newblock
-\begin{APACrefDOI} \doi{10.1088/1367-2630/aa6b38} \end{APACrefDOI}
+\APACrefnote{No DOI registered; JSTOR stable URL}
 \newblock
 
 \newblock
@@ -919,6 +1277,65 @@ Shapiro, C.%
   {Information rules: A strategic guide to the network economy}.
 \newblock
 \APACaddressPublisher{Boston, MA}{Harvard Business School Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Szucs%
+}{%
+Szucs%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+Szucs2024}
+\APACinsertmetastar {%
+Szucs2024}%
+\begin{APACrefauthors}%
+Szucs, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Discretion and Favoritism in Public Procurement}
+  {Discretion and favoritism in public procurement}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the European Economic
+  Association}{22}{1}{117--160,}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/jeea/jvad017} \end{APACrefDOI}
+\newblock
+\APACrefnote{Published online 7 March 2023}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{U.S. Department of Justice and Federal Trade Commission}%
+}{%
+{U.S. Department of Justice and Federal Trade Commission}%
+}{%
+{\protect \APACyear {1992}}%
+}]{%
+HMG1992}
+\APACinsertmetastar {%
+HMG1992}%
+\begin{APACrefauthors}%
+{U.S. Department of Justice and Federal Trade Commission}%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1992}{}{}.
+\newblock
+\APACrefbtitle {Horizontal Merger Guidelines.} {Horizontal merger guidelines.}
+\newblock
+\APAChowpublished
+  {\url{https://www.justice.gov/archives/atr/1992-merger-guidelines}}.
+\newblock
+\APACrefnote{Section 1.51: HHI below 1,000 unconcentrated; 1,000--1,800
+  moderately concentrated; above 1,800 highly concentrated. Revised 1997
+  (Section 4) with thresholds unchanged}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

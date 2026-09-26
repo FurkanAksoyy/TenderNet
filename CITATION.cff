@@ -15,6 +15,11 @@ authors:
     given-names: Arda
     orcid: "https://orcid.org/0009-0000-7969-6351"
     affiliation: Maltepe University
+abstract: >-
+  Code and derived data (9,991 EKAP IT contracts, 2010-2026). Supplier HHIs are low, but 45% of
+  repeat-eligible contracts go to an incumbent versus 21% under a province-level permutation null;
+  renewals (about one third) carry most of the excess, new needs still exceed their null, and prior
+  supply multiplies a firm's odds of winning by about 24 in a conditional-logit choice model.
 keywords:
   - public procurement
   - incumbency

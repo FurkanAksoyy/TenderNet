@@ -1,0 +1,7 @@
+ppi_turkey_yiufe.csv -- source (retrieved 2026-09-26)
+
+TÜİK domestic producer price index (Yİ-ÜFE), 2003=100, monthly values 2009-01 .. 2026-08
+(mirror of the TÜİK table: https://www.hakedis.org/endeksler/yi-ufe-yurtici-uretici-fiyat-endeksi).
+Annual average = mean of the available months (2026: January-August).
+Used only in src/revision_b.py (section 6) as an alternative deflator for value-based HHI
+(robustness check against the CPI deflator in cpi_turkey.csv).

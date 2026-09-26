@@ -6,12 +6,16 @@ Data and code for
 > procurement.** Manuscript prepared for submission to the *Journal of Industrial and Business Economics* (JIBE, Springer).
 
 We study 9,991 awarded information-technology contracts published on Türkiye's e-procurement platform EKAP
-(2010–2026), linking 2,814 firms to 2,890 public buyers. No product market is robustly concentrated (pooled
-supplier HHI 39 by count, 149 by real value), yet buyers return to incumbent suppliers far more often than chance:
-45.2% of repeat-eligible contracts go to an incumbent, against 6.2% under a permutation null that preserves each
-buyer's demand and each firm's wins within product market and year. Incumbency is strongest in health IT and in
-Article 21(b) negotiated procedures (odds ratio of the 21(b) × post-2018 interaction 2.42), and incumbent-won
-tenders attract a single bid 71% of the time, against 32% for new suppliers.
+(2010–2026), linking 2,814 firms to 2,890 public buyers. Count-based supplier HHIs are below 1,000 in every product
+market, yet buyers return to incumbent suppliers far more often than market structure implies: 45.2% of
+repeat-eligible contracts go to an incumbent, against 6.2% under a permutation null within product market and year
+and 20.7% under a null that also fixes the province. About a third of these contracts (1,743 of 4,913) are annual
+re-tenders of the same service; they carry most of the excess (72.0% vs 28.8% under the province null), but new
+needs still exceed their null (30.5% vs 16.3%). In a conditional-logit supplier-choice model with firm-activity and
+home-province controls, prior supply to the buyer multiplies a firm's odds of winning by about 24 (OR 23.8,
+95% CI 20.6–27.5). Incumbency is highest in health IT and under Article 21(b) negotiated procedures, where the
+21(b)–open gap jumped by 37 percentage points in 2018 relative to 2013–17, and incumbent-won tenders attract single
+bids more often (OR 2.04).
 
 ## Repository structure
 
@@ -22,8 +26,11 @@ data/                   release dataset + data dictionary (data/README.md) + CPI
   contracts_v3.csv        13,024 contracts (9,991 in the main sample), natural persons pseudonymized
   firm_name_map_v3.csv    firm-name canonicalization map (pseudonymized)
   bid_counts_sample.csv   year-stratified sample of tenders with bid counts
+  bid_counts_cp2.csv      bid counts for 3,400 tenders (second scrape; no firm names)
   cpi_turkey*.csv         TÜİK CPI used to deflate to 2025 TRY
-  audit/                  hand review of the top-150 contracts, rule samples, build log
+  ppi_turkey_yiufe.csv    TÜİK producer price index (deflator robustness)
+  audit/                  hand review of the top-150 contracts, rule samples, classifier validation, build log
+docs/law_notes.md       notes on Law 4734 Art. 21, Law 7144 and KHK 694
 src/                    analysis scripts (read data/, write results/, figures/, paper/si_tables/)
   build/                  scripts that built the data from the raw scrape (not runnable here, see below)
 results/                machine-readable outputs (CSV/JSON) and written reports (*_results.md) per topic
@@ -36,8 +43,8 @@ paper/                  LaTeX sources, bibliography, SI tables, figures and comp
 ```bash
 python -m venv .venv && . .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-python run_all.py --skip-slow    # ~3 min: everything except the network null models
-python run_all.py                # full run, ~35 min (network_analysis.py alone takes ~30 min)
+python run_all.py --skip-slow    # ~10 min: everything except the network null models
+python run_all.py                # full run, ~40 min (network_analysis.py alone takes ~30 min)
 python run_all.py --only lockin  # a single step
 ```
 
@@ -48,38 +55,49 @@ paper and fails if any differs. All random procedures use fixed seeds (42 and se
 scripts), so results are exactly reproducible.
 
 Pipeline order: `concentration_v3.py` → `lockin_analysis.py` → `models_analysis.py` → `models_report.py` →
-`models_figures.py` → `network_analysis.py` (slow) → `network_projections.py` → `network_figures.py` →
+`models_figures.py` → `revision_a.py` → `revision_b.py` → `network_analysis.py` (slow) → `network_projections.py` → `network_figures.py` →
 `make_si_tables.py` → `check_headlines.py`. `results/network/fig_N1_hub_labels.csv` is a hand-made input (short
 hub labels for Figure 6), not an output.
 
 Paper: `cd paper && pdflatex tendernet_jibe && bibtex tendernet_jibe && pdflatex tendernet_jibe && pdflatex tendernet_jibe`
-(Springer Nature `sn-jnl` class and `sn-apacite.bst` included); the SI is `tendernet_si.tex` (pdflatex twice).
+(Springer Nature `sn-jnl` class and `sn-apacite.bst` included); the SI is `tendernet_si.tex` (pdflatex twice);
+`title_page.tex` is the separate title page and `cover_letter_JIBE.md` the cover letter.
 `paper/figures/` holds copies of the PDF figures in `figures/`. Helpers: `src/wordcount.py` (manuscript word
-count), `src/merge_bib.py` (rebuilds `paper/refs.bib` from `paper/bib_src/`).
+count), `src/abstract_count.py` (abstract word count), `src/merge_bib.py` (rebuilds `paper/refs.bib` from
+`paper/bib_src/`).
 
 ## Where each result comes from
 
 | paper item | content | script | output |
 |---|---|---|---|
-| Table 1 | main-sample descriptives | `concentration_v3.py`, `lockin_analysis.py` | `results/concentration/concentration_results.md`, `results/lockin/lockin_log.json`, `results/lockin/null_overall.csv` |
-| Table 2 | incumbency and repeat contracting vs nulls N1–N3 | `lockin_analysis.py` | `results/lockin/null_overall.csv` |
-| Table 3 | logit of an incumbent win | `models_analysis.py` | `results/models/A1_logit_incumbency.csv` |
+| Table 1 | main-sample descriptives | `concentration_v3.py`, `lockin_analysis.py` | `results/concentration/concentration_results.md`, `results/lockin/lockin_log.json` |
+| Table 2 | product markets (contracts, firms, buyers, value, procedure shares) | `revision_b.py` | `results/revision_b/B5_descriptives.csv` |
+| Table 3 | incumbency vs nulls N1–N3, N4 (home province), renewals / new needs | `lockin_analysis.py`, `revision_a.py` | `results/lockin/null_overall.csv`, `results/revision_a/B_null_overall.csv`, `B_null_by_group.csv` |
+| Table 4 | conditional logit of supplier choice | `revision_a.py` | `results/revision_a/D_clogit_results.csv` |
 | Figure 1 | supplier HHI by product market | `concentration_v3.py` | `figures/F-C1_concentration_by_market.*`, `results/concentration/supplier_hhi_by_market.csv` |
 | Figure 2 | incumbency by product market | `lockin_analysis.py` | `figures/F_L1_incumbency_by_market.*`, `results/lockin/null_by_group.csv` |
-| Figure 3 | incumbency by year | `lockin_analysis.py` | `figures/F_L2_incumbency_by_year.*`, `results/lockin/null_by_group.csv` |
-| Figure 4 | buyers' top-supplier share | `lockin_analysis.py` | `figures/F_L3_buyer_top_supplier_share.*`, `results/lockin/buyer_dependence.csv` |
+| Figure 3 | incumbency by days since previous contract, renewals vs new needs | `revision_a.py` | `figures/F-A1_incumbency_by_gap_renewal.*`, `results/revision_a/A_fig_A1_data.csv` |
+| Figure 4 | event study: 21(b)–open incumbency gap by year | `revision_b.py` | `figures/F-B1_event_study_21b.*`, `results/revision_b/B2_event_study.csv` |
 | Figure 5 | single-bid rates | `models_analysis.py`, `models_figures.py` | `figures/F-R2_single_bid.*`, `results/models/D_single_bid_rates.csv` |
-| Figure 6 | core buyer–supplier network | `network_analysis.py`, `network_figures.py` | `figures/fig_N1_core_network.*`, `results/network/nodes_main.csv` |
-| – (extra) | within-year HHI; average marginal effects | `concentration_v3.py`; `models_figures.py` | `figures/F-C2_within_year_hhi.*`; `figures/F-R1_models_AME.*` |
-| SI Table S1 (scope classes) | | `make_si_tables.py` | `paper/si_tables/scope.tex` |
-| SI concentration, within-year HHI | | `concentration_v3.py` → `make_si_tables.py` | `paper/si_tables/concentration.tex`, `within_year.tex` |
-| SI incumbency by market / sector / buyer type / procedure / year, sensitivity | | `lockin_analysis.py` → `make_si_tables.py` | `paper/si_tables/lockin_*.tex`, `sensitivity.tex` |
-| SI dyad continuation (logit, NB2 and variants) | | `models_analysis.py` → `make_si_tables.py` | `paper/si_tables/B_*.tex` |
-| SI single-bid rates | | `models_analysis.py` → `make_si_tables.py` | `paper/si_tables/single_bid.tex` |
-| SI network nulls, projections, brokerage | | `network_analysis.py`, `network_projections.py` | `results/network/*.csv`, `network_projections.json` |
+| text | 21(b) × post-2018 logit (OR 2.42) and variants | `models_analysis.py`, `revision_b.py` | `results/models/A1_logit_incumbency.csv`, `results/revision_b/B1_controls_clustering.csv` |
+| text | single bids in the larger cp2 sample (OR 2.04) | `revision_a.py` | `results/revision_a/F_single_bid_logit.csv`, `F_single_bid_rates.csv` |
+| text | buyer-level tests with Benjamini–Hochberg | `revision_a.py` | `results/revision_a/E_buyer_BH.csv` |
+| SI: scope classes | | `make_si_tables.py` | `paper/si_tables/scope.tex` |
+| SI: buyer sectors | | `revision_b.py` | `results/revision_b/B5_descriptives.csv` |
+| SI: concentration, within-year HHI, PPI deflator | | `concentration_v3.py`, `revision_b.py` → `make_si_tables.py` | `paper/si_tables/concentration.tex`, `within_year.tex`, `results/revision_b/B6_hhi_cpi_vs_ppi.csv` |
+| SI: incumbency by market / sector / buyer type / procedure / year, sensitivity; figures incumbency by year and buyers' top-supplier share | | `lockin_analysis.py` → `make_si_tables.py` | `paper/si_tables/lockin_*.tex`, `sensitivity.tex`, `figures/F_L2_*`, `figures/F_L3_*` |
+| SI: renewals, N4 nulls, lots/framework check, natural-person exclusion | | `revision_a.py` (+ `revision_a_titles.py`) | `results/revision_a/B_null_*.csv`, `A_renewal_*.csv`, `C_multilot_framework_titles.csv` |
+| SI: conditional logit by specification and subgroup | | `revision_a.py` | `results/revision_a/D_clogit_results.csv` |
+| SI: contract-level model, event study, Art. 21(f) limits, buyer size | | `revision_b.py` | `results/revision_b/B1_*.csv` … `B4_*.csv` |
+| SI: dyad continuation (logit, NB2) | | `models_analysis.py` → `make_si_tables.py` | `paper/si_tables/B_*.tex` |
+| SI: single-bid rates | | `models_analysis.py` → `make_si_tables.py` | `paper/si_tables/single_bid.tex` |
+| SI: network structure (core network figure, nulls, projections, brokerage) | | `network_analysis.py`, `network_projections.py`, `network_figures.py` | `figures/fig_N1_core_network.*`, `results/network/*` |
 
-The manuscript has six figures; `F-C2` and `F-R1` are produced for completeness and are not in the paper.
-Narrative reports with every number that could go in the paper: `results/*/*_results.md`.
+`F-C2`, `F-R1`, `fig_N2` and `fig_N3` are produced for completeness and are not in the paper. Reports with every
+number that could go in the paper: `results/*/*_results.md` (the `lockin`, `models` and `revision_a` reports were
+written by hand from the outputs; the others are generated). `results/revision_a/A_renewal_validation_labels.csv`
+is the hand-coded validation of the renewal rule (titles only). `results/revision_a/D_choice_data.csv.gz` is the
+choice-model data with integer firm and buyer codes.
 
 ## Data provenance
 
@@ -88,7 +106,9 @@ Authority (Kamu İhale Kurumu, KİK) on EKAP (<https://ekapv2.kik.gov.tr>) under
 We retrieved them with IT domain keywords (13,418 records with an identifiable winner), audited the IT scope by
 contract value, canonicalized firm names, split pooled buyer labels by province and classified product markets
 (details: `data/README.md`, `data/audit/`). Bid counts come from the published result announcements of a
-year-stratified random sample of tenders. CPI: TÜİK (sources in `data/cpi_turkey_SOURCES.txt`).
+year-stratified random sample of tenders (`bid_counts_sample.csv`) and from a second scrape of 3,400 tenders
+(`bid_counts_cp2.csv`: IKN, year, search keyword, number of bids, and whether a winner was listed; winner and
+bidder names of the raw scrape are dropped). CPI and PPI: TÜİK (sources in `data/cpi_turkey_SOURCES.txt`, `data/ppi_turkey_SOURCES.txt`).
 
 `src/build/` contains the scripts that built the dataset (`build_master_v3.py`, `rules_v3.py`,
 `manual_scope_overrides.csv`, `firm_merge_groups_v3.csv`) and the pseudonymization step (`make_release_data.py`).
@@ -103,7 +123,7 @@ In accordance with the Turkish Personal Data Protection Law (KVKK, No. 6698), su
 a natural person are replaced by stable pseudonyms (`PSEUDONYM_nnn`) in every firm-name column: 690 of 4,389 firms
 (1,113 of 13,024 contracts), including all 536 winners flagged as natural persons and, conservatively, every name
 without an explicit legal-entity form. The replacement is one-to-one, so all results are identical to those on
-the internal data: every result table of the concentration, lock-in and model steps is byte-identical
+the internal data: every result table of the concentration, lock-in, model and revision steps is byte-identical
 (apart from the rehashed `firm_id` column). The network step is seeded, but Louvain partitions and curveball
 nulls depend on node order, and pseudonyms sort differently from the original names; its outputs therefore
 differ from the internal run in the third decimal (e.g. weighted giant-component modularity 0.761 vs 0.762,

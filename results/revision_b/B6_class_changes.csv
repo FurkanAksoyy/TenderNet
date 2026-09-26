@@ -1,0 +1,8 @@
+measure,dimension,group,cpi,ppi,class_cpi,class_ppi
+HHI_value,urun_pazari,education_technology,1062.0624770910736,977.0110872372131,moderate (1000-1800),unconcentrated (<1000)
+HHI_value,sektor_v3_en,Defence,937.9377327091523,1013.7432218156766,unconcentrated (<1000),moderate (1000-1800)
+HHI_value_nomax,urun_pazari,smart_city_traffic_OT,823.1006574910746,1010.372901114404,unconcentrated (<1000),moderate (1000-1800)
+HHI_value_nomax,sektor_v3_en,Defence,1026.1172145575167,801.9580380328001,moderate (1000-1800),unconcentrated (<1000)
+HHI_value_nomax,sektor_v3_en,Justice,1633.9113920011284,1949.7891792322926,moderate (1000-1800),high (>1800)
+LOO_value_min,urun_pazari,smart_city_traffic_OT,823.1006574910737,1010.3729011144029,unconcentrated (<1000),moderate (1000-1800)
+LOO_value_min,sektor_v3_en,Justice,1633.911392001127,1949.789179232291,moderate (1000-1800),high (>1800)

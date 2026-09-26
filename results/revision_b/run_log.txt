@@ -1,0 +1,13 @@
+A sample N=4913, buyers=1126, firms=1437, mean y=0.4523
+[1] S1 full history controls (= A1): OR=2.420, clusters two-way=(1126, 1437, 3129), buyer=1126, clipped=0
+[1] S2 no prior-count controls (keeps years since first): OR=2.904, clusters two-way=(1126, 1437, 3129), buyer=1126, clipped=0
+[1] S3 no buyer-history controls: OR=2.929, clusters two-way=(1126, 1437, 3129), buyer=1126, clipped=0
+[2] (a) all buyers / with history controls: N=4913, k=71, 21b bins estimated=14
+[2] (a) all buyers / value only (no history controls): N=4913, k=68, 21b bins estimated=14
+[2] (b) health buyers / with history controls: N=1502, k=58, 21b bins estimated=14
+[2] (b) health buyers / value only (no history controls): N=1502, k=55, 21b bins estimated=14
+[2] (c) health buyers, buyer FE / with history controls: N=1502, k=546, 21b bins estimated=14
+[2] (c) health buyers, buyer FE / value only (no history controls): N=1502, k=543, 21b bins estimated=14
+[3] 21f (from Feb 2014): n=2381, <= limit 1.000; open <= limit 0.361; 21b 0.578; types {'Hizmet': 2106, 'Mal': 851}
+[4] spearman(size, excess top share)=-0.088 p=0.0418; with exceed flag 0.214
+[6] class changes: 7; robust class changes 0

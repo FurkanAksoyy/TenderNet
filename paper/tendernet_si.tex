@@ -24,24 +24,62 @@ Award records were collected from EKAP (\texttt{ekapv2.kik.gov.tr}) by searching
 
 We re-audited this set by value. All 150 contracts with the highest value were classified by hand (108 IT, 1 call-centre service, 19 mixed, 22 not IT). For the remainder, ordered title rules assign each contract to one of four scope classes: IT, IT-enabled call-centre services, ambiguous, and not IT. Works contracts are ambiguous only if they install an IT or operational-technology system, such as city security cameras, SCADA, fibre, or a data centre, and are otherwise not IT. Staffing contracts for data entry are ambiguous; bundled cleaning or catering contracts without an IT system are not IT. Random samples from every rule were inspected, and seven rule outcomes for top contracts were overridden by hand. Table~\ref{tab:scope} reports the result. The main sample consists of the IT and call-centre classes.
 
+EKAP's award list has one row per tender identifier, so tenders with several lots appear with a single winner. We found 116 main-sample titles that suggest multiple lots and no framework-agreement call-offs (the word \emph{çerçeve} appears only in the sense of ``within the framework of'').
+
 \begin{table}[h]\centering\small
 \caption{Scope classes after the value-based audit (13,024 contracts that passed the earlier count-based cleaning).}\label{tab:scope}
 \input{si_tables/scope}
 \end{table}
 
 \subsection{Firms, buyers, and markets}
-\textbf{Firms.} Names were canonicalized by upper-casing with Turkish locale, removing punctuation and whitespace, and stripping legal-form suffixes from the end of the name, subject to a minimum remaining length. Joint ventures were kept separate from their members. The merge groups of the roughly 300 largest firms were reviewed by hand. Seventy-two brand groups were confirmed, including firms that changed legal form (for example from limited to joint-stock company) or name while keeping the same brand in non-overlapping years. Three uncertain brand pairs were left unmerged. The process reduces 4,788 recorded names to 4,389 firms. About 536 winners (12.2\% of firms, 6.1\% of contracts) are natural persons, identified by a name pattern without legal-form or business words; they are pseudonymized in the released data.
+\textbf{Firms.} Names were canonicalized by upper-casing with Turkish locale, removing punctuation and whitespace, and stripping legal-form suffixes from the end of the name, subject to a minimum remaining length. Joint ventures were kept separate from their members. The merge groups of the roughly 300 largest firms were reviewed by hand. Seventy-two brand groups were confirmed, including firms that changed legal form (for example from limited to joint-stock company) or name while keeping the same brand in non-overlapping years. Three uncertain brand pairs were left unmerged. The process reduces 4,788 recorded names to 4,389 firms. By a name-pattern heuristic, 536 of these firms (302 in the main sample) are natural persons. In the released data, every winner that is a natural person or lacks an explicit legal-entity form (690 firms) is replaced by a stable pseudonym.
 
-\textbf{Buyers.} Thirty-six generic buyer labels pool units from two or more provinces, among them the provincial health directorates and hospital unions of the Ministry of Health. We split them by the province recorded for each tender (1,001 contracts), which turns 3,453 labels into 3,663 buyer nodes; six national bodies with offices in two provinces were not split. The recorded labels are used as a sensitivity check throughout.
+\textbf{Buyers.} Thirty-six generic buyer labels pool units from two or more provinces, among them the provincial health directorates and hospital unions of the Ministry of Health. We split them by the province recorded for each tender (1,001 of the 13,024 contracts; 34 labels and 732 contracts in the main sample), which turns 3,453 labels into 3,663 buyer nodes. Six national bodies with offices in two provinces were not split. The recorded labels are used as a sensitivity check throughout.
 
 \textbf{Buyer sectors.} Buyers were assigned to 11 sectors by ordered keyword rules on the buyer name. Relative to an earlier coding, 1,423 contracts changed sector, mainly because upper-casing without Turkish locale had prevented mixed-case names from matching, and because several rules matched unintended substrings.
 
-\textbf{Product markets.} Contracts were assigned to 14 product markets by ordered rules on the tender title, most specific first. In the main sample, 97\% of contracts receive a specific market.
+\textbf{Product markets.} Contracts were assigned to 14 product markets by ordered rules on the tender title, most specific first. In the main sample, 97\% of contracts receive a specific market. To validate the rules, a random sample of 300 main-sample titles (seed 7) was classified independently, without access to the rule labels. These reference labels were produced with AI assistance (Claude) and have not been checked by human coders. Agreement is 77.0\% (Cohen's $\kappa=0.74$); excluding 45 titles flagged as genuinely ambiguous, it is 82.4\% ($\kappa=0.80$). Health information systems has precision and recall of 0.99. Among classes with at least 10 reference titles, the weakest are custom software, maintenance, and education technology (F1 0.45--0.56), and the residual ``other IT'' class is not reliable. Of the 69 disagreements, 22 are clear rule errors, 16 reflect a convention choice between maintenance and the product maintained, 27 are multi-product bundles, and 4 are barely IT.
 
-\textbf{Dates, procedures, values.} Dates are tender dates joined by tender identifier (coverage 100\%, October 2010 to March 2026). Procedures are open, restricted, and the negotiated procedures of Article~21(a)--(f); the extract contains no direct procurement under Article~22. Values are deflated to 2025 lira with the annual average of the consumer price index (2003=100; 2026 from the linked monthly series).
+\textbf{Dates, procedures, values.} Dates are tender dates joined by tender identifier (coverage 100\%, October 2010 to March 2026). Procedures are open, restricted, and the negotiated procedures of Article~21(a)--(f); the extract contains no direct procurement under Article~22. Values are deflated to 2025 lira with the annual average of the consumer price index (2003=100; 2026 from the linked monthly series). With the domestic producer price index (Yİ-ÜFE) instead, count-based indices are unchanged. Seven single-variant value classifications move across the 1,000 or 1,800 boundary, and no robust classification changes.
+
+\subsection{Descriptive statistics by buyer sector}
+\begin{table}[h]\centering\small
+\caption{Buyer sectors (main sample). Value in bn 2025 TRY; procedure shares in \% of contracts.}\label{tab:sectors}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Buyer sector & Contracts & Firms & Buyers & Value & 21(b) & 21(f) & Open\\
+\midrule
+Health & 2,950 & 554 & 1,098 & 30.93 & 28.5 & 9.4 & 61.8\\
+Municipal / local & 2,688 & 1,084 & 667 & 19.93 & 2.2 & 44.1 & 53.4\\
+Other public & 1,295 & 646 & 351 & 10.88 & 2.5 & 41.1 & 54.7\\
+Education & 1,054 & 519 & 330 & 4.68 & 5.1 & 31.8 & 62.6\\
+Infrastructure / transport & 644 & 337 & 123 & 7.72 & 2.8 & 39.8 & 57.0\\
+Agriculture / environment & 395 & 231 & 98 & 4.29 & 2.3 & 31.4 & 63.5\\
+Social / finance & 303 & 156 & 42 & 5.20 & 3.6 & 39.3 & 55.4\\
+Provincial administration & 223 & 125 & 74 & 0.99 & 1.3 & 25.1 & 62.8\\
+Security / interior & 202 & 142 & 64 & 1.50 & 3.5 & 26.2 & 66.8\\
+Defence & 191 & 96 & 29 & 1.89 & 1.0 & 3.7 & 95.3\\
+Justice & 46 & 32 & 14 & 1.25 & 26.1 & 28.3 & 43.5\\
+\midrule
+All & 9,991 & 2,814 & 2,890 & 89.26 & 10.5 & 29.6 & 59.0\\
+\botrule
+\end{tabular}
+\end{table}
+
+\subsection{Article 21 of Law No.~4734}
+Translations are ours. The chapeau reads: ``The negotiated procedure may be used in the following cases.''
+\begin{itemize}
+\item[(a)] No tender was submitted in an open or restricted procedure.
+\item[(b)] Before 25 May 2018: the tender must be held urgently because of sudden and unexpected events such as natural disasters, epidemics, or a danger of loss of life or property, or of events the contracting authority could not foresee. Law No.~7144 (Art.~11, in force 25 May 2018) inserted: ``or in cases that have special features in terms of construction technique, or in which the contracting authority determines that the work must be carried out urgently to ensure structural safety or the safety of life and property''.
+\item[(c)] The tender must be held urgently because of special defence- or security-related circumstances.
+\item[(d)] The procurement requires research and development and is not subject to serial production.
+\item[(e)] The technical and financial characteristics cannot be specified with the necessary precision because the goods, services, or works are original and complex.
+\item[(f)] Purchases of goods, materials, or services whose estimated cost is below a monetary limit, updated every 1 February (for example 157,923 TRY in 2014 and 3,406,508 TRY in 2026).
+\end{itemize}
+In cases (b), (c), and (f), no notice needs to be published; at least three firms are invited to submit qualification documents and price offers. In our data all 2,957 main-sample 21(f) contracts are goods or services, and from February 2014 on, 99.96\% are below the limit in force.
 
 \section{Concentration}
-Table~\ref{tab:conc} reports supplier concentration by product market. Bootstrap intervals are bias-shifted percentile intervals (1,000 resamples of contracts within market). ``No max'' removes the market's largest contract; ``winsor.'' caps contract values at the 99th percentile of the main sample. Table~\ref{tab:within} reports medians of HHIs computed within calendar years for market-years with at least 30 contracts; the bias-corrected count index is the unbiased estimator $10{,}000\sum_i n_i(n_i-1)/[n(n-1)]$, where $n_i$ is firm $i$'s number of contracts and $n$ the market-year total.
+Table~\ref{tab:conc} reports supplier concentration by product market. Bootstrap intervals are bias-shifted percentile intervals (1,000 resamples of contracts within market). ``No max'' removes the market's largest contract; ``winsor.'' caps contract values at the 99th percentile of the main sample. Table~\ref{tab:within} reports medians of HHIs computed within calendar years for market-years with at least 30 contracts. The bias-corrected count index is the unbiased estimator $10{,}000\sum_i n_i(n_i-1)/[n(n-1)]$, where $n_i$ is firm $i$'s number of contracts and $n$ is the market-year total.
 
 \begin{table}[h]\centering\scriptsize
 \caption{Supplier concentration by product market (main sample; HHI on 0--10,000).}\label{tab:conc}
@@ -56,42 +94,121 @@ Table~\ref{tab:conc} reports supplier concentration by product market. Bootstrap
 \textbf{Decomposition.} The pooled index satisfies $H_{\text{agg}}=\sum_m w_m^2 H_m + C$, where $w_m$ is market $m$'s share and $C=\sum_i\sum_{m\neq m'} s_{im}s_{im'}w_m w_{m'}$ collects the terms of firms active in several markets. By count, $H_{\text{agg}}=38.6$, $\sum_m w_m^2 H_m=26.7$ and $C=11.9$; $\sum_m w_m^2=0.117$ and the demand-weighted mean of market HHIs is 179. By real value the corresponding figures are 148.6, 127.9 and 20.7, with a weighted mean of 1,278 (534 without the largest contract). A quarter of firms are active in more than one market; they hold 69\% of contracts.
 
 \section{Incumbency and null models}
-Definitions are given in the main text. Tables~\ref{tab:lm}--\ref{tab:ly} report incumbency by subgroup, each against the same permutation draws restricted to the subgroup, under N1 (market $\times$ year), N2 (adding buyer sector) and N3 (adding province). All subgroup tests under N1 have $p=0.001$, except where noted in the main text. Table~\ref{tab:sens} reports sensitivities.
+
+\subsection{Subgroups and sensitivities}
+Definitions are given in the main text. Tables~\ref{tab:lm}--\ref{tab:ly} report incumbency by subgroup against the same permutation draws restricted to the subgroup. The nulls are N1 (market $\times$ year), N2 (adding buyer sector), and N3 (adding buyer province instead). All subgroup tests under N1 have $p<0.001$, except for four very small groups: restricted procedure ($p=0.24$, $n=8$), Article~21(a) ($p=0.04$, $n=7$), and Article~21(d) and the year 2010 (one eligible contract each). Table~\ref{tab:sens} reports sensitivities; Figure~\ref{fig:year} shows incumbency by year.
 
 \begin{table}[h]\centering\small\caption{Incumbency by product market.}\label{tab:lm}\input{si_tables/lockin_market}\end{table}
 \begin{table}[h]\centering\small\caption{Incumbency by buyer sector.}\label{tab:ls}\input{si_tables/lockin_sector}\end{table}
 \begin{table}[h]\centering\small\caption{Incumbency by buyer type (keyword classes of buyer names).}\label{tab:lb}\input{si_tables/lockin_buyertype}\end{table}
 \begin{table}[h]\centering\small\caption{Incumbency by procedure.}\label{tab:lp}\input{si_tables/lockin_procedure}\end{table}
 \begin{table}[h]\centering\small\caption{Incumbency by year.}\label{tab:ly}\input{si_tables/lockin_year}\end{table}
-\begin{table}[h]\centering\small\caption{Sensitivity of the incumbency result (1,000 permutations each; all $p=0.001$).}\label{tab:sens}\input{si_tables/sensitivity}\end{table}
+\begin{table}[h]\centering\small\caption{Sensitivity of the incumbency result (1,000 permutations each; all $p<0.001$).}\label{tab:sens}\input{si_tables/sensitivity}\end{table}
 
-\textbf{Law 7144 and procedure.} Under N1, incumbency rose from 0.387 before 25 May 2018 to 0.492 afterwards (null difference 0.037). Among 21(b) contracts it rose from 0.540 to 0.810 (null difference 0.111), among open contracts from 0.385 to 0.476 (null difference 0.033). The difference-in-differences of 0.178 compares with a null of 0.078 ($p=0.001$; $p=0.017$ under N3). Under N3 the rise among open contracts is no longer significant ($p=0.33$).
+Further robustness checks give the following results. Excluding the 116 possible multi-lot tenders gives an observed incumbency of 0.455 (N1/N2/N3 nulls 0.062/0.109/0.209). Excluding natural-person winners gives 0.464 (0.066/0.116/0.214). The excess amounts to 1,919, 1,683, and 1,203 incumbent contracts under N1, N2, and N3.
 
-\textbf{Buyer dependence.} For the 540 buyers with at least five contracts, the share exceeding their own 95th null percentile rises with buyer size (50\% for 5--9 contracts, 63\% for 10--19, 80\% for 20 or more), which partly reflects statistical power.
+\begin{figure}[h]\centering
+\includegraphics[width=0.9\textwidth]{figures/F_L2_incumbency_by_year.pdf}
+\caption{Incumbency rate by year, observed and under null N1 (mean and 95\% interval).}\label{fig:year}
+\end{figure}
 
-\section{Models}
+\subsection{Nulls that preserve firm geography}
+A firm's home province is the province where it won most contracts. Null N4 permutes winners within market $\times$ year $\times$ winner's home province: the null mean is 0.185 (ratio 2.44, excess 1,313 contracts). Null N4b permutes within market $\times$ year $\times$ buyer province $\times$ winner's home province. In N4b, 31\% of eligible contracts are in cells with a single possible winner. Its null mean is 0.242 (ratio 1.87, excess 1,034 contracts). All $p<0.001$.
+
+\subsection{Renewals}
+Titles are normalized by Turkish-aware lower-casing, removal of diacritics, digits, month names, and about 110 generic procurement words, and stemming to five characters; similarity is the Jaccard index of the stemmed word sets. A contract is a renewal if the buyer has a contract in the same market 183--548 days earlier with similarity of at least 0.5. In a check of 60 best-match pairs drawn at random within four similarity bands (15 each), coded from the titles with AI assistance (Claude), 38 of the 42 pairs above the threshold described the same recurring service. Nine of the 18 pairs below it did so as well, so the new-need group contains some renewals. Table~\ref{tab:renew} reports results by procedure and market and alternative definitions.
+
+\begin{table}[h]\centering\small
+\caption{Incumbency of renewals and new needs: observed [N1 null; N3 null].}\label{tab:renew}
+\begin{tabular}{@{}lll@{}}
+\toprule
+ & Renewals & New needs\\
+\midrule
+All & 0.720 [0.092; 0.288] ($n$=1,743) & 0.305 [0.045; 0.163] ($n$=3,170)\\
+Article 21(b) & 0.900 [0.198; 0.427] (291) & 0.566 [0.093; 0.331] (327)\\
+Open & 0.669 [0.077; 0.267] (1,128) & 0.307 [0.045; 0.165] (1,913)\\
+Other (mainly 21(f)) & 0.735 [0.049; 0.237] (324) & 0.210 [0.026; 0.099] (930)\\
+\midrule
+Health information systems & 0.869 [0.209; 0.452] (519) & 0.607 [0.110; 0.375] (733)\\
+ERP / management software & 0.821 [0.034; 0.227] (201) & 0.233 [0.024; 0.069] (544)\\
+Software licences & 0.593 [0.048; 0.212] (241) & 0.161 [0.034; 0.091] (361)\\
+Custom software & 0.544 [0.010; 0.152] (79) & 0.134 [0.006; 0.038] (409)\\
+Maintenance / support & 0.776 [0.036; 0.138] (192) & 0.284 [0.021; 0.107] (183)\\
+Network / data centre & 0.670 [0.035; 0.184] (112) & 0.236 [0.016; 0.090] (216)\\
+Computers / peripherals & 0.436 [0.014; 0.194] (110) & 0.257 [0.010; 0.146] (171)\\
+GIS / city information & 0.828 [0.135; 0.274] (58) & 0.157 [0.071; 0.104] (172)\\
+\midrule
+Threshold 0.40 & 0.709 [--; 0.286] & 0.296 [--; 0.159]\\
+Threshold 0.67 & 0.744 [--; 0.302] & 0.329 [--; 0.168]\\
+Window 0--18 months & 0.695 [--; 0.293] & 0.268 [--; 0.143]\\
+Window 0--24 months & 0.684 [--; 0.290] & 0.250 [--; 0.135]\\
+\botrule
+\end{tabular}
+\end{table}
+
+\subsection{Buyer dependence}
+Figure~\ref{fig:buyers} shows the distribution of main-supplier shares. With per-buyer permutation $p$-values and Benjamini--Hochberg control of the false discovery rate at 5\% across the 540 buyers, 273 buyers (50.6\%) exceed their N1 null on the main-supplier share and 357 (66.1\%) on the supplier HHI; under N2 the figures are 212 (39.3\%) and 289 (53.5\%). With 1,000 permutations, no buyer can pass a Bonferroni correction. The share of buyers above their 95th null percentile (uncorrected) rises with buyer size (50\% for 5--9 contracts, 63\% for 10--19, 80\% for 20 or more). The mean excess, however, falls with size (0.24, 0.23, 0.13), so the rising share reflects the tighter null distributions of large buyers, that is, statistical power.
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.75\textwidth]{figures/F_L3_buyer_top_supplier_share.pdf}
+\caption{Distribution of the main supplier's share of each buyer's contracts (540 buyers with at least five contracts), observed and under null N1.}\label{fig:buyers}
+\end{figure}
+
+\section{Supplier choice}
+For each of the 4,913 repeat-eligible contracts, the choice set contains the winner and 30 firms sampled at random from those that won at least one contract in the same product market in the same or the previous year (149,670 rows). Table~\ref{tab:clogit} reports the main specifications with buyer-clustered standard errors (1,126 buyers); a 500-draw buyer bootstrap gives an interval of 20.7--27.9 for the preferred incumbency odds ratio. If the home province is computed from all wins, including the contract being predicted, the incumbency odds ratio is 15.2 (12.9--17.8). Excluding the home-province variable gives 29.8. In a model with interactions, renewal multiplies the incumbency odds ratio by 3.7 (2.9--4.9) and Article~21(b) by 4.6 (3.2--6.6).
+
+\begin{table}[h]\centering\small
+\caption{Conditional logit: incumbency odds ratio [buyer-clustered 95\% CI] by specification and subgroup.}\label{tab:clogit}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Specification / subgroup & Contracts & Incumbent OR\\
+\midrule
+Home province from prior wins (preferred) & 4,913 & 23.8 [20.6, 27.5]\\
+\quad Renewals & 1,743 & 56.7 [44.7, 72.0]\\
+\quad New needs & 3,170 & 13.9 [11.7, 16.6]\\
+\quad Article 21(b) & 618 & 68.0 [50.5, 91.7]\\
+\quad Open & 3,041 & 19.5 [16.5, 23.0]\\
+Home province from all wins & 4,913 & 15.2 [12.9, 17.8]\\
+\quad Renewals / new needs & & 32.7 / 8.8\\
+\quad Article 21(b) / open / other & & 52.5 / 12.8 / 10.5\\
+Without home province & 4,913 & 29.8 [26.0, 34.1]\\
+\botrule
+\end{tabular}
+\end{table}
+
+\section{Procedure and timing}
 
 \subsection{Contract-level model}
-The primary model is reported in the main text. Robustness checks (IT-only sample, broad scope, recorded buyer labels, recorded firm names, a linear trend instead of year fixed effects, excluding 2020) give interaction odds ratios between 1.76 and 2.43. Alternative break dates give odds ratios of 2.55 (25 August 2017, KHK~694; log-likelihood $-2801.1$ against $-2802.5$ for 25 May 2018), 2.10 (placebo, May 2016, $p=0.009$) and 1.57 (placebo, May 2020, $p=0.08$). The interaction is 2.64 among health buyers and 0.86 ($p=0.78$) among other buyers. A linear probability model with buyer fixed effects gives a post-2018 21(b) effect of 7.3 percentage points ($p=0.20$), against 11.9 ($p=0.009$) without buyer fixed effects.
+The 21(b) $\times$ post-2018 odds ratio is 2.42 (1.43--4.09) with the buyer-history controls and two-way clustering, and 2.42 (1.57--3.73) with buyer clustering. Without the prior-contract and prior-supplier controls it is 2.90 (1.64--5.15); without any buyer-history controls it is 2.93 (1.65--5.19). The pre-2018 marginal effect of 21(b) is between $-3.5$ and $-3.8$ percentage points and insignificant in all specifications. Further checks give interaction odds ratios between 1.76 and 2.43: an IT-only sample, broad scope, recorded buyer labels, recorded firm names, a linear trend instead of year fixed effects, and excluding 2020. Alternative break dates give 2.55 (25 August 2017, KHK~694; log-likelihood $-2801.1$ against $-2802.5$ for 25 May 2018), 2.10 (placebo, May 2016, $p=0.009$), and 1.57 (placebo, May 2020, $p=0.08$). The interaction is 2.64 among health buyers and 0.86 ($p=0.78$) among other buyers.
+
+\subsection{Event study}
+Main-text Figure~4 reports the 21(b)--open gap by year relative to 2013--17. In that period the gap does not differ across years (joint tests $p=0.19$ for all buyers and $0.20$ for health buyers). In 2018 it is 37 percentage points higher for all buyers (24--50) and 43 points higher for health buyers (23--62). From 2019 on it averages 14 points above the reference for all buyers ($p=0.003$) and 12 points for health buyers ($p=0.04$). With buyer fixed effects, health buyers show a gap averaging $-10$ points in 2013--17, positive in every year from 2018, and 24 points (10--38) above the reference from 2019 on. Among parametric shapes, a step in August 2017 combined with a declining trend fits best. A step in May 2018 fits worse by 3.4--7.8 AIC points across the three samples, and a pure trend fits about as badly as no change. Only 8 and 10 repeat-eligible 21(b) contracts fall in the windows 25 August--31 December 2017 and 1 January--24 May 2018. The years 2010--12, with little buyer history and 24 21(b) contracts, show a high gap as well. Against that base, no later year is significantly higher.
 
 \subsection{Dyad continuation}
-For each new buyer--firm pair in a product market, we ask whether the pair signs another contract in that market. Of 7,761 pairs, 4,334 have no later contract by the buyer in that market and cannot continue; the analysis uses the remaining 3,427, of which 34.6\% continue. Covariates are measured at the first contract without look-ahead. The number of later opportunities (the buyer's later contracts in the market) enters as a covariate; the offset restriction is rejected (coefficient 0.90 in Poisson pseudo-maximum likelihood, $p=0.02$; 0.88 in NB2, $p=0.006$). In NB2 the dispersion parameter is estimated ($\alpha=0.46$, SE 0.12; likelihood-ratio statistic for $\alpha=0$: 152.5). Firm size, firm generalism (prior markets) and prior distinct buyers are highly collinear ($r=0.86$ and $0.99$; VIFs above 60), so none is separately identified in the full model. Entered alone, generalism and size are both positively associated with continuation. There is no evidence that specialist firms are more likely to keep a buyer.
+For each new buyer--firm pair in a product market, we ask whether the pair signs another contract in that market. Of 7,761 pairs, 4,334 have no later contract by the buyer in that market and cannot continue. The analysis uses the remaining 3,427, of which 34.6\% continue. Covariates are measured at the first contract without look-ahead. The number of later opportunities (the buyer's later contracts in the market) enters as a covariate, because the offset restriction is rejected (coefficient 0.90 in Poisson pseudo-maximum likelihood, $p=0.02$; 0.88 in NB2, $p=0.006$). In NB2 the dispersion parameter is estimated ($\alpha=0.46$, SE 0.12; likelihood-ratio statistic for $\alpha=0$: 152.5). Firm size and prior distinct buyers are highly collinear ($r=0.99$; VIFs of 63 and 61), and generalism correlates 0.86 with size, so these variables are not separately identified in the full model. Entered alone, generalism and size are both positively associated with continuation. There is no evidence that specialist firms are more likely to keep a buyer. A first contract under 21(b) is associated with continuation (odds ratio 1.85).
 
 \begin{table}[h]\centering\small\caption{Dyad continuation, logit (full specification; product-market and year fixed effects; two-way clustered 95\% CIs).}\label{tab:blogit}\input{si_tables/B_logit}\end{table}
 \begin{table}[h]\centering\small\caption{Number of later contracts, NB2 with estimated dispersion (full specification).}\label{tab:bnb}\input{si_tables/B_nb2}\end{table}
 
 \section{Single bidding}
-Bid counts were retrieved from published result announcements for a random sample of tenders stratified by year (40 per year drawn from all retrieved tenders). Of these, 393 are in the main sample and report bid counts; none is available for 2010--2011. Rates are weighted by the inverse sampling fraction of each year, with linearized 95\% intervals. Incumbency status is defined as in the main text and is undefined when the tender is the buyer's first in the market.
+\textbf{Random sample.} Bid counts were retrieved from published result announcements for a random sample of tenders stratified by year (40 per year drawn from all retrieved tenders). Of these, 393 are in the main sample and report bid counts; none is available for 2010--2011. Rates are weighted by the inverse sampling fraction of each year, with linearized 95\% intervals. Incumbency status is undefined when the tender is the buyer's first in the market. Adjusting for procedure and year (logit, buyer-clustered, $n=208$ tenders with defined incumbency), the odds ratio of a single bid for incumbent winners is 4.44 (2.39--8.25). The single-bid rate has a weak upward trend (odds ratio 1.05 per year; $p=0.04$ unweighted, $p=0.11$ weighted). In 308 tenders with a recorded number of firms that obtained the documents, design-weighted averages are 4.0 such firms and 1.9 valid bids. In 45\% of these tenders two or more firms obtained the documents but only one valid bid was received.
 
-\begin{table}[h]\centering\small\caption{Single-bid rates (design-weighted).}\label{tab:single}\input{si_tables/single_bid}\end{table}
+\begin{table}[h]\centering\small\caption{Single-bid rates (design-weighted random sample).}\label{tab:single}\input{si_tables/single_bid}\end{table}
 
-Adjusting for procedure and year (logit, buyer-clustered, $n=208$ tenders with defined incumbency), the odds ratio of a single bid for incumbent winners is 4.44 (2.39--8.25). The single-bid rate has a weak upward trend (odds ratio 1.05 per year; $p=0.04$ unweighted, $p=0.11$ weighted). In 308 tenders with a recorded number of firms that obtained the documents, on average 4.0 firms did so and 1.9 submitted a valid bid; in 45\% of these tenders two or more firms obtained the documents but only one valid bid was received.
+\textbf{Software sample.} An interrupted enrichment run of the scraper retrieved result details for 3,400 tenders found with the first search keyword, \emph{yazılım} (software). For tenders from 2021 on, these include the number of valid bids. Joined to the main sample, 1,194 tenders have this count, about 94\% of software-titled tenders from 2021 on but only 35\% of all tenders in that period. The sample is therefore not random. Single valid bids occur in 66.7\% of incumbent-won tenders and 49.3\% of others. In a logit with procedure, year, and market fixed effects (681 tenders with defined incumbency, buyer-clustered), the incumbent odds ratio is 2.04 (1.40--2.96), and 2.65 when renewal status is added.
 
 \section{Network structure}
-\textbf{Graph.} The main-sample graph has 2,814 firms, 2,890 buyers and 7,219 weighted edges; the giant component contains 4,446 nodes (78\%). Degree distributions (number of distinct partners) are heavy-tailed. Fitted by maximum likelihood with the power-law protocol of Clauset, Shalizi and Newman (2009), firms have $\hat\alpha=2.21$, and a lognormal is not distinguishable from a power law ($R=-1.67$, $p=0.09$). For buyers ($\hat\alpha=2.06$) the lognormal fits better ($R=-6.19$, $p<0.001$).
+\textbf{Graph.} The main-sample graph has 2,814 firms, 2,890 buyers and 7,219 weighted edges, with density $8.9\times10^{-4}$. The giant component contains 4,446 nodes (78\%) and 92\% of contracts. Degree distributions (number of distinct partners) are heavy-tailed. Fitted by maximum likelihood with the protocol of Clauset, Shalizi and Newman (2009), firms have $\hat\alpha=2.21$, and a lognormal is not distinguishable from a power law ($R=-1.67$, $p=0.09$). For buyers ($\hat\alpha=2.06$) the power law is rejected by the bootstrap goodness-of-fit test, and a lognormal fits better ($R=-6.19$, $p<0.001$). Degree assortativity is $-0.17$ against $-0.04$ in the null. Bipartite clustering exceeds the null: Robins--Alexander 0.026 against 0.012, Latapy 0.31 against 0.25. Figure~\ref{fig:net} shows the core of the network.
 
-\textbf{Communities.} Over 50 Louvain runs with random seeds and node orders, weighted modularity of the giant component ranges from 0.760 to 0.765 (36--43 communities); Barber's bipartite modularity of the same partitions is practically identical. In 200 bipartite degree-preserving randomizations (curveball), the unweighted modularity of the giant component is $0.694\pm0.003$ against an observed 0.731, and the weighted modularity is $0.756\pm0.003$ against an observed 0.762. Communities align with buyer sectors (NMI 0.25; permuted labels 0.03; purity 0.65 against a largest-label baseline of 0.44) and weakly with firms' main product markets (NMI 0.13; permuted 0.04). In annual graphs, modularity exceeds its bipartite null only modestly (annual $z$ between 0.6 and 3.8), so we do not interpret yearly modularity as evidence of persistent segmentation.
+\textbf{Communities.} Over 50 Louvain runs with random seeds and node orders, weighted modularity of the giant component ranges from 0.760 to 0.764 (34--43 communities). Barber's bipartite modularity of the same partitions is practically identical. In 200 bipartite degree-preserving randomizations (curveball), the unweighted modularity of the giant component is $0.694\pm0.003$ against an observed 0.731, and the weighted modularity is $0.756\pm0.003$ against an observed 0.761. Communities align with buyer sectors (NMI 0.25; permuted labels 0.03; purity 0.64 against a largest-label baseline of 0.44), and ten communities consist of at least 91\% health buyers. They align only weakly with firms' main product markets (NMI 0.13; permuted 0.04). In annual full graphs, modularity exceeds its bipartite null only modestly (annual $z$ between 0.4 and 3.9). Within annual giant components it does not exceed the null in 16 of 17 years, so we do not interpret yearly modularity as evidence of persistent segmentation.
 
-\textbf{Projections and brokerage.} We computed exact Poisson-binomial p-values for co-occurrences under the bipartite configuration model (BiCM). With a false-discovery-rate correction over all pairs at 0.05 or 0.01, no link is validated in either projection. The data are too sparse: 94--97\% of co-occurring pairs share exactly one neighbour. A liberal variant that corrects only over co-occurring pairs retains 15,473 firm links and 42,005 buyer links, but it essentially reproduces the raw projection without hub-mediated links, so we do not treat it as a validated backbone. Disparity-filter backbones of Newman-weighted projections at $\alpha=0.05$ contain 1,077 firm links (modularity 0.74) and 2,685 buyer links (0.73), and overlap little with the liberal BiCM set (Jaccard 0.04). Across these projections and the raw projection, firm betweenness correlates with the number of product markets served, but also with the number of buyers. Controlling for size, the partial Spearman correlation is 0.12--0.15, and adding the number of markets to a size-only regression raises $R^2$ by 0.003--0.015. Brokerage thus adds little beyond firm size. The degree assortativity is $-0.17$ against $-0.04$ in the null, and bipartite clustering exceeds the null (Robins--Alexander 0.026 against 0.012; Latapy 0.31 against 0.25). In the raw buyer projection, the most connected buyer (a provincial health directorate after splitting pooled labels) shares at least one supplier with 19\% of the projection's giant component. With recorded pooled labels the corresponding figure is 45\%, which illustrates how strongly such statistics depend on buyer coding.
+\textbf{Projections and brokerage.} We computed exact Poisson-binomial $p$-values for co-occurrences under the bipartite configuration model (BiCM). With a false-discovery-rate correction over all pairs at 0.05 or 0.01, no link is validated in either projection, because the data are sparse: 94--97\% of co-occurring pairs share exactly one neighbour. A liberal variant that corrects only over co-occurring pairs retains 15,473 firm links and 42,005 buyer links. It essentially reproduces the raw projection without hub-mediated links, so we do not treat it as a validated backbone. Disparity-filter backbones of Newman-weighted projections at $\alpha=0.05$ contain 1,077 firm links (modularity 0.73) and 2,685 buyer links (0.73). They overlap little with the liberal BiCM set (Jaccard 0.04).
+
+Across these projections and the raw projection, firm betweenness correlates with the number of product markets a firm serves, but also with its number of buyers. Controlling for buyers and contracts, the partial Spearman correlation is 0.12--0.15, and adding the number of markets to a size-only regression raises $R^2$ by 0.003--0.015. Brokerage thus adds little beyond firm size. In the raw buyer projection, the most connected buyer, a provincial health directorate once pooled labels are split, shares at least one supplier with 19\% of the projection's giant component. With recorded pooled labels the figure is 45\%, which shows how strongly such statistics depend on buyer coding.
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.95\textwidth]{figures/fig_N1_core_network.pdf}
+\caption{Core of the buyer--supplier network (nodes of degree $\geq 3$, largest connected component; force-directed layout with fixed seed). Circles are firms coloured by their main product market; squares are buyers coloured by sector.}\label{fig:net}
+\end{figure}
 
 \end{document}

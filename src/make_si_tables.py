@@ -168,7 +168,7 @@ def btab(fname, exp_label):
     b = pd.read_csv(RES / "models" / fname)
     b = b[b.term.isin(TERM)]
     return "\n".join(
-        f"{TERM[r.term]} & {fmt(r.exp,2)} [{fmt(r.exp_lo,2)}, {fmt(r.exp_hi,2)}] & {r.p:.3f}\\\\" for r in b.itertuples())
+        f"{TERM[r.term]} & {fmt(r.exp,2)} [{fmt(r.exp_lo,2)}, {fmt(r.exp_hi,2)}] & {'<0.001' if r.p < 0.001 else f'{r.p:.3f}'}\\\\" for r in b.itertuples())
 
 
 for name, f, lbl in [("B_logit", "B_logit_full.csv", "OR"), ("B_nb2", "B_nb2_full.csv", "IRR"),
@@ -182,7 +182,7 @@ for name, f, lbl in [("B_logit", "B_logit_full.csv", "OR"), ("B_nb2", "B_nb2_ful
 # --- S: single bidding ---------------------------------------------------------
 d = pd.read_csv(RES / "models" / "D_single_bid_rates.csv")
 GLAB = {"all": "All tenders", "open": "Open", "21b": "Article 21(b)", "21f": "Article 21(f)", "oth_neg": "Other negotiated",
-        "incumbent winner": "Winner is incumbent", "non-incumbent winner": "Winner is new to buyer",
+        "incumbent winner": "Winner is incumbent", "non-incumbent winner": "Winner not previous supplier in market",
         "buyer first in market (undefined)": "Buyer's first contract in market",
         "pre-7144": "Before 25 May 2018", "post-7144": "After 25 May 2018"}
 rows = []

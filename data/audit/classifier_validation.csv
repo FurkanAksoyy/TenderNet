@@ -1,0 +1,304 @@
+﻿sample_idx,IKN,title,your_label,rule_label,agree,ambiguous_flag,disagreement_type
+0,2019/91770,TUZLA KART MOBİL UYGULAMA YAZILIMI ALIMI,custom_software_web_mobile,custom_software_web_mobile,True,False,
+1,2011/191177,ORACLE VERİTABANI YAZILIMININ BAKIMI VE GELİŞTİRİLMESİ,software_licences,software_licences,True,False,
+2,2012/184831,6 AY SÜRE İLE HBYS OTOMASYON HİZMET ALIMI,health_information_systems,health_information_systems,True,False,
+3,2016/75933,"Ses Hizmeti,IP PBX Santral, Faks Server Yazılım Hizmetleri Alımı",network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+4,2011/46549,Hastane Bilgi Yönetim Sistemi (HBYS) Hizmet Alımı,health_information_systems,health_information_systems,True,False,
+5,2014/25524,Nilüfer Belediyesi Yönetim Bilgi Sistemi satın,ERP_management_software,ERP_management_software,True,False,
+6,2018/672043,"HBYS PROGRAMI BAKIM , ONARIM VE TEKNİK DESTEĞİ HİZMETLERİ ALIMI",health_information_systems,health_information_systems,True,False,
+7,2022/506310,Belediyemiz Birimlerinin Yazılım Lisans ve Abonelik Hizmet Alımı İşi,software_licences,software_licences,True,False,
+8,2020/706527,Hastanemizin İhtiyacı İçin 3 Aylık (Ocak-Şubat-Mart) Hastane Bilgi Yönetim Sistemi Hizmet Alımı,health_information_systems,health_information_systems,True,False,
+9,2022/429037,"36 AYLIK SAĞLIK BİLGİ YÖNETİM SİSTEMİ BAKIM,ONARIM VE GÜNCELLEME (KİRALAMA) HİZMETİ (PACS DAHİL-270 Kullanıcılı- 3 Elemanlı) ALIMI",health_information_systems,health_information_systems,True,False,
+10,2022/15625,Bilişim teknolojileri işletme hizmet alımı işi,maintenance_support_services,maintenance_support_services,True,False,
+11,2012/83646,Erdemli Belediyesi Lisanslı Yazılım Mal Alım İşi,software_licences,software_licences,True,False,
+12,2022/1221162,Oracle Yazılımları Lisans Güncelleme Hakkı Ve İleri Düzey Teknik Destek Hizmeti,software_licences,software_licences,True,False,
+13,2016/174360,2016 Yılı; Ortak Sağlık Güvenlik Biriminden  İş Sağlığı ve Güvenliği Hizmet Alımı ve Web Tabanlı Sistem Alımı ve Kurulumu  İşi,custom_software_web_mobile,custom_software_web_mobile,True,True,
+14,2014/76948,BİLGİ GÜVENLİĞİ YÖNETİM SİSTEMİ HİZMETİ ALIMI,cybersecurity,cybersecurity,True,False,
+15,2019/429105,"Bilişim Malzemeleri, Sarf Malzemeler ve Telsiz",computers_peripherals,network_datacentre_infrastructure,False,False,ambiguous_boundary
+16,2024/740203,Coğrafi Bilgi Sistemi Tabanlı Kent Bilgi Sistemi Yazılım Hizmet Alımı,GIS_city_information,GIS_city_information,True,False,
+17,2020/310392,KVKK KAPSAMINDA ALINMASI GEREKEN ÖNLEMLER NETİCESİNDE SİBER GÜVENLİK HİZMET ALIMI,cybersecurity,cybersecurity,True,False,
+18,2024/1480174,"Sanallaştırma,Yedekleme ve Datadomain Bakım , Teknik Destek ve Güncelleme Hizmet Alımı",network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+19,2013/129185,Web Tabanlı Ölçme Değerlendirme Programı,education_technology,custom_software_web_mobile,False,True,ambiguous_boundary
+20,2014/109154,"SANALLAŞTIRMA SUNUCUSU,YAZILIMI,DEPOLAMA ÜNİTESİ,KABİNET,BİLGİSAYAR MALZEME ALIMI",network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+21,2021/72547,25 AYLIK YOĞUN BAKIM BİLGİ YÖNETİM SİSTEMİ HİZMET ALIMI,health_information_systems,health_information_systems,True,False,
+22,2015/159801,"2016 Yılı Bilgisayar Donanım, Yazılım ve Çevre Birimlerinin Parçalı Bakım- Onarım ve Teknik Destek Hizmet Alımı",maintenance_support_services,computers_peripherals,False,False,maintenance_vs_product_convention
+23,2018/179381,Elektronik Belge Yönetim Sistemi,ERP_management_software,ERP_management_software,True,False,
+24,2016/69884,MEVCUT YAZILIMLARIN GÜNCELLENMESİ VE EK LİSANS TEMİNİ HİZMET ALIMI İŞİ,software_licences,software_licences,True,False,
+25,2022/1240528,Esenler Kadın Doğum ve Çocuk Hastalıkları Hastanesi İhtiyacı Olan Hastane Bilgi Yönetim Sistemi (HBYS) Hizmet Alımı,health_information_systems,health_information_systems,True,False,
+26,2015/5695,2015 Yılı 1 Aylık (Mart) Hastane Bilgi Sistemi ve Dokümantasyon İşletmeciliği Hizmeti Alımı,health_information_systems,health_information_systems,True,False,
+27,2020/520972,"Merkezi Edinim, Envanter, Arıza ve Çağrı Yönetim Otomasyon Sistemi Yazılım Bakım, Onarım ve Teknik Destek",ERP_management_software,ERP_management_software,True,True,
+28,2013/76025,2013 YILI TEMMUZ-AĞUSTOS-EYLÜL AYLARI İÇİN 2 (İKİ) PERSONEL İLE BİRLİKTE  3 AY SÜRELİ HASTANE BİLGİ YÖNETİM SİSTEMİ HİZMET ALIMI,health_information_systems,health_information_systems,True,False,
+29,2018/88878,Kocaeli Toplu Ulaşım Bilgi Sistemi İle Nasıl Giderim Mobil Uygulaması ve Destek Hizmeti,custom_software_web_mobile,ERP_management_software,False,True,ambiguous_boundary
+30,2018/315645,MEVCUT CAD ve GIS YAZILIMLARININ GÜNCELLENMESİ ve BAKIM HİZMETİ ALIMI,GIS_city_information,GIS_city_information,True,False,
+31,2014/40488,İstanbul İl Afet ve Acil Durum Müdürlüğü Bünyesinde İstka Programı “İstanbul Afet ve Acil Durum Tehlike ve Risklerin Sayısal Olarak Belirlenmesi Projesi”  Kapsamında Uygulama Yazılımı ve Veritabanı Alımı,GIS_city_information,custom_software_web_mobile,False,True,ambiguous_boundary
+32,2010/556959,DMO Genel Müdürlüğü Merkez ve Taşra Teşkilatı ile İstanbul Basım İşletme Müdürlüğü’nde kullanılmakta olan donanımlar ile yazılımların bakım ve onarım işi,maintenance_support_services,maintenance_support_services,True,False,
+33,2012/103549,7212BTG42192- BİLGİSAYAR MALZEMELERİ VE YAZILIM,computers_peripherals,computers_peripherals,True,False,
+34,2015/85987,Personel Devam Kontrol Sistemi Yazılım ve Donanımı,physical_security_surveillance,custom_software_web_mobile,False,True,ambiguous_boundary
+35,2024/1070113,DİJİTALLEŞTİRME HİZMETİ VE YAZILIM ALIMI İŞİ,other_IT,custom_software_web_mobile,False,True,ambiguous_boundary
+36,2012/76762,HASTANE BİLGİ YÖNETİM SİSTEMİ İŞLETİMİ,health_information_systems,health_information_systems,True,False,
+37,2014/108615,Veri Tabanı Yönetim Sistemi ve İlgili Donanım,software_licences,ERP_management_software,False,True,ambiguous_boundary
+38,2018/96475,"SUNUCU, VERİ DEPOLAMA ÜNİTESİ, YAZILIM VE MUHTELİF BİLİŞİM MALZEMESİ",network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+39,2021/437005,QR OKUYUCULU TURNİKE GİRİŞ SİSTEMİ MOBİL UYGULAMASININ GELİŞTİRİLMESİ VE GÜNCELLENMESİ HİZMET ALIMI,custom_software_web_mobile,physical_security_surveillance,False,False,ambiguous_boundary
+40,2016/494308,Yunusemre Belediyesi Süreç Tabanlı Elektronik Belge Yönetim Sistemi (EBYS) Hizmet Alımı,ERP_management_software,ERP_management_software,True,False,
+41,2021/526187,YAZILIM LİSANSLARI TEMİNİ ALIMI İŞİ,software_licences,software_licences,True,False,
+42,2024/98105,12 Kalem Bilişim Malzemesi,computers_peripherals,computers_peripherals,True,False,
+43,2023/1597706,AFET BİLGİ SİSTEMİ UYGULAMALARINA ALTLIK SAĞLAYACAK VERİ HAVUZLARININ ENTEGRASYONUNUN VE SÜREKLİLİĞİNİN SAĞLANMASI İŞİ,custom_software_web_mobile,ERP_management_software,False,True,ambiguous_boundary
+44,2022/462972,"BAŞAKŞEHİRLİ MOBİL UYGULAMASI DESTEK, GELİŞTİRME, GÜNCELLEME ve VERİ YÖNETİMİ",custom_software_web_mobile,maintenance_support_services,False,False,maintenance_vs_product_convention
+45,2015/159795,YURT MÜDÜRLÜKLERİNE YURT YÖNETİM SİSTEMİ DONANIMI ALIMI,computers_peripherals,ERP_management_software,False,True,ambiguous_boundary
+46,2020/212703,"wwwekitapgovtr adlı e-kitap portalının ve e-kitap mobil uygulamasının yaptırılması ile portal ve mobil uygulamanın teslimini takip eden 2 yıl içerisinde çıkan hataların giderilmesi, yazılımın güncel ve işletime uygun tutulması amacıyla bakım desteği",custom_software_web_mobile,maintenance_support_services,False,False,maintenance_vs_product_convention
+47,2011/188367,Hastane Bilgi Yönetim Sistemi,health_information_systems,health_information_systems,True,False,
+48,2014/178386,"Web Tabanlı Otomasyon Sistemi Kapsamında Bulunan Çağrı Merkezi, Kentli Servisi ile Yazılım, Elektronik Arşiv, Bilgi İşlem ve Teknik Hizmetlerinin Yürütülmesi İşi",call_centre_helpdesk,call_centre_helpdesk,True,True,
+49,2022/542804,Hastane Bilgi Sistemi ana sunucusunun 24 aylık periyodik bakım ve onarımı İşi,maintenance_support_services,health_information_systems,False,True,maintenance_vs_product_convention
+50,2017/406036,Bilişim Malzemeleri,computers_peripherals,computers_peripherals,True,False,
+51,2023/617122,Okul Öncesi Eğitici Mobil Uygulama Yazılım Hizmeti,education_technology,education_technology,True,False,
+52,2012/174312,2013 Yılı 12 Aylık HBYS Kiralama Hizmeti Alımı İhalesi,health_information_systems,health_information_systems,True,False,
+53,2010/546463,Ç.Ü.Diş Hekimliği Fakültesi Bilişim Cihazları,computers_peripherals,other_IT,False,False,rule_clearly_wrong
+54,2021/82167,ÖĞRENCİ BİLGİ SİSTEMİ YAZILIMI ALIMI,education_technology,education_technology,True,False,
+55,2013/93627,Kamu Denetçiliği Kurumu Elektronik Belge ve E-Başvuru Yönetim Sistemi Yazılımı,ERP_management_software,ERP_management_software,True,False,
+56,2013/52242,Kent Bilgi Sistemi 7 Personel,GIS_city_information,GIS_city_information,True,False,
+57,2012/79440,Osmangazi Belediyesi Yazılım Lisansları alımı,software_licences,software_licences,True,False,
+58,2015/148023,"Mevcut CAD ve GIS Yazılımlarının Güncellenmesi, Yeni Yazılımların Eklenmesi, Yerinde Destek ve Web Tabanlı Kent Bilgi Sistemi Kurulumu Projesi",GIS_city_information,GIS_city_information,True,False,
+59,2013/79407,KÜMELENME DESTEK PROGRAMINA YÖNELİK YAZILIMI,custom_software_web_mobile,custom_software_web_mobile,True,False,
+60,2023/30990,"GÜLHANE EĞİTİM VE ARAŞTIRMA HASTANESİ 143 KALEM INŞAAT ,KIRTASİYE, TEMIZLIK, YEDEK PARÇA VE BİLİŞİM MALZEMESİ ALIMI",other_IT,computers_peripherals,False,False,title_not_really_IT_product
+61,2020/377082,Bilişim Alt Yapı ve Donanım Malzemeleri,network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+62,2025/371978,3 Kalem Bilişim Sistemi Cihazı,computers_peripherals,custom_software_web_mobile,False,False,rule_clearly_wrong
+63,2015/108619,Hastane Bilgi Yönetim Sistemi (HBYS) Hizmeti Alımı,health_information_systems,health_information_systems,True,False,
+64,2011/181927,HASTANE BİLGİ YÖNETİM SİSTEMİ HİZMETİ,health_information_systems,health_information_systems,True,False,
+65,2017/197300,Hastane Bilgi Yönetim Sistemi (HBYS) Alımı,health_information_systems,health_information_systems,True,False,
+66,2025/894638,"DOLMABAHÇE SARAYI MÜZESİ GÜVENLİK YÖNETİM SİSTEMİ MERKEZİ KURULUMU VE YILDIZ SARAYI TARİHİ ESER DEPOSU İÇİN KULLANILACAK OLAN BRÜT BETON BİNANIN DATA VE KAMERA SİSTEMLERİ ALTYAPISININ YAPILMASI
+ MAL ALIMI İŞİ (MONTAJ DAHİL)",physical_security_surveillance,physical_security_surveillance,True,False,
+67,2011/59544,Harita Yazılım Ürünü Alım İşi,GIS_city_information,GIS_city_information,True,False,
+68,2018/340540,"Bilişim Ürünlerinin Parçalı Bakım, Onarım Hizmeti ve Türkşeker Network Ağ Güvenliğinin Sağlanması İçin Güvenlik Ürünlerinin Güncellenmesi Hizmetinin Sağlanması İşi",maintenance_support_services,network_datacentre_infrastructure,False,True,maintenance_vs_product_convention
+69,2012/87038,Server(sunucu) ve yazılım donanım malzemeleri,network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+70,2019/269022,2019 YILI 6 AYLIK (01/07/2019-31/12/2019) HASTANE BİLGİ YÖNETİM SİSTEMİ (HBYS) HİZMET ALIMI,health_information_systems,health_information_systems,True,False,
+71,2016/275060,WEB TABANLI YÖNETİM BİLGİ SİSTEMİ KURULMASI HİZMET ALIMI İŞİ,ERP_management_software,ERP_management_software,True,False,
+72,2018/535961,COĞRAFİ BİLGİ SİSTEMİ YAZILIMI İÇİN LİSANS ALIMI,GIS_city_information,GIS_city_information,True,False,
+73,2022/666687,Bilişim Malzemesi Alımı,computers_peripherals,computers_peripherals,True,False,
+74,2011/168955,Hastane Bilgi Yönetim Sistemi ve Yazılım Destek Hizmeti Alımı,health_information_systems,health_information_systems,True,False,
+75,2025/2391498,"Dijital Eğitim, İçerik, Sertifika, Pazarlama, Destek ve Operasyonel Hizmetler ile CDN ve Veri Yazabilen Lms Player Yazılım Hizmeti",education_technology,education_technology,True,False,
+76,2011/434,Lisans Yazılım Kullanım,software_licences,software_licences,True,False,
+77,2018/291494,BİLGİ SİSTEMLERİ GÜVENLİĞİ KAPSAMINDA ISO27001:2013 BİLGİ GÜVENLİĞİ YÖNETİM SİSTEMİ DANIŞMANLIK HİZMETLERİ VE YAZILIM ALIMI,cybersecurity,cybersecurity,True,False,
+78,2016/159386,Kütüphane elektronik materyalleri ile diğer bilgi ve belgenin Milli Kütüphane depolama alanlarında güvenli şekilde depolanmasını ve erişime sunulmasını sağlayacak bir materyal derleme sistemi yazılım programı,custom_software_web_mobile,education_technology,False,False,ambiguous_boundary
+79,2011/200557,Hastane Bilgi Yönetim Sistemi Programı Hizmeti Alımı,health_information_systems,health_information_systems,True,False,
+80,2016/490392,AĞA BAĞLI DEPOLAMA ÜNİTESİ VE OMURGA ANAHTARLARI  YAZILIMI VE DONANIM,network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+81,2015/40098,ESKİŞEHİR EMNİYET MÜDÜRLÜĞÜ KGYS (KENT GÜVENLİK YÖNETİM SİSTEMİ) KURULUMU,physical_security_surveillance,physical_security_surveillance,True,False,
+82,2016/569424,Elmadağ Dr Hulusi ALATAŞ Devlet Hastanesi 2017 Yılı 12 Aylık Sağlık Bilgi Yönetim Sistemi Hizmet Alımı,health_information_systems,health_information_systems,True,False,
+83,2025/2407471,TRAFİK YÖNETİM SİSTEMİ MALZEMELERİ ALIMI,smart_city_traffic_OT,smart_city_traffic_OT,True,False,
+84,2021/597073,HARİTA DESTEKLİ YAZILIM PROGRAMI,GIS_city_information,GIS_city_information,True,False,
+85,2010/563371,24 AY SÜRESİNCE HBYS,health_information_systems,health_information_systems,True,False,
+86,2025/2192248,YÖNETİM PANELİ YAZILIM HİZMET ALIM İŞİ,custom_software_web_mobile,custom_software_web_mobile,True,True,
+87,2022/946568,3 Ay süreli HBYS (Hastane Bilgi Yönetim Sistemi) Hizmet Alımı,health_information_systems,health_information_systems,True,False,
+88,2021/74980,BİYOLOJİK ÇEŞİTLİLİK ÇALIŞMALARIN DENETİMİ VE DESTEKLENMESİ PROJESİ VE EKOTABAN MOBİL UYGULAMASI KAPSAMINDA TERCÜME VE UYGULAMASI PROJELERİ KAPSAMINDA 3 ORMAN MÜHENDİSİ/ORMAN EÜNDÜSTRİ MÜHENDİSİ ÇALIŞTIRILMASI,other_IT,custom_software_web_mobile,False,False,title_not_really_IT_product
+89,2017/548780,"GÖZ KAYIT ÜNİTELERİNİN DEĞİŞİMİ (13 ADET YENİ NESİL GÖZ BİOMETRİ ÇİFT GÖZ, 5 ADET NİZAMİYE İÇİN KAYIT BİLGİSAYARI, MERKEZ KONTROL İÇİN ANA SERVER BİLGİSAYARI, LASER PRİNTER, YEDEK PARÇA MONTAJ, LİSANS, YAZILIM VB İŞLEMLER DAHİL",physical_security_surveillance,software_licences,False,False,rule_clearly_wrong
+90,2023/812972,VERİ MASKELEME VE ŞİFRELEME YAZILIMI,cybersecurity,custom_software_web_mobile,False,False,rule_clearly_wrong
+91,2013/38711,"2013 YILI KENT BİLGİ SİSTEMİ YAZILIMLARI YILLI BAKIM, DESTEK VE GELİŞTİRME",GIS_city_information,GIS_city_information,True,False,
+92,2025/2060934,"Bilgi İşlem Bakım, Onarım, Yazılım Geliştirme ve Destek Hizmeti Alımı",maintenance_support_services,maintenance_support_services,True,False,
+93,2023/1362867,Güvenlik Cihaz Lisansları ve Yazılım Lisansları Yenilemeleri,cybersecurity,software_licences,False,True,ambiguous_boundary
+94,2017/309759,Elektronik Belge Yönetimi ve Doküman Arşiv Sistemi Yazılım,ERP_management_software,ERP_management_software,True,False,
+95,2011/97866,Açık ve Uzaktan Eğitim Fakültesine  Eğitim Portal Yazılım Hizmeti,education_technology,education_technology,True,False,
+96,2021/684908,"İnsan Kaynakları Yönetim Sistemi Üzerinde Yeni Modüllerin Geliştirilmesi, Dış Kurumlarla Entegrasyonun Sağlanması ile Bakım ve Destek Hizmet Alımı",ERP_management_software,ERP_management_software,True,False,
+97,2020/485382,Lisans Alımı ve Yazılım Güvencesi Hizmet Alımı,software_licences,software_licences,True,False,
+98,2011/47384,Güvenlik Sistemi Güncellemesi ve Log Yönetim Sistemi Kurulması,cybersecurity,cybersecurity,True,False,
+99,2021/224968,Yoğun Bakım Bilgi Yönetim Sistemi,health_information_systems,health_information_systems,True,False,
+100,2021/154397,204 KALEM KIRTASİYE VE BİLİŞİM MALZEMELERİ,computers_peripherals,computers_peripherals,True,False,
+101,2011/168882,"Gümrük İdareleri Bilişim Sistemleri Donanım ve Altyapı Temini,Kurulumu 
+ve İlave Data Ucu",network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+102,2010/553957,Hastane Bilgi Yönetim Sistemi Hizmet Alımı,health_information_systems,health_information_systems,True,False,
+103,2014/118658,VATANDAŞ İLİŞKİLERİ YÖNETİM SİSTEMİ PROJESİ HİZMET ALIMI,ERP_management_software,ERP_management_software,True,True,
+104,2024/567454,ANTİVİRÜS ve VERİ KAYBI ÖNLEME (DLP) YAZILIMI LİSANS ALIM İŞİ,cybersecurity,cybersecurity,True,False,
+105,2011/49623,VERİ DEPOLAMA MODERNİZASYONU VE SANALLAŞTIRMA PROJESİ KAPSAMINDA YAZILIM VE MALZEME,network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+106,2014/151071,Yazılım ve Lisans Alımı,software_licences,software_licences,True,False,
+107,2025/1613182,2026 Yılı İçin Hastane Bilgi Yönetimi Sistemi (HBYS)  Hizmet Alımı,health_information_systems,health_information_systems,True,False,
+108,2022/952924,ÜNİVERSİTEMİZDE KULLANILMAK ÜZERE BİLİŞİM MALZEMESİ ALIMI,computers_peripherals,computers_peripherals,True,False,
+109,2026/147257,Güvenlik Uygulamaları Cihaz ve Yazılım Lisansları Yenilemeleri Mal Alımı,cybersecurity,software_licences,False,False,ambiguous_boundary
+110,2013/106597,16 AY SÜRELİ İL SAĞLIK BİLGİ YÖNETİM SİSTEMİ,health_information_systems,health_information_systems,True,False,
+111,2018/103842,KOCASİNAN BELEDİYESİ HİZMETLERİNDE KULLANILMAK ÜZERE VERİ TABANI LİSANS ALINMASI,software_licences,software_licences,True,False,
+112,2022/1281546,2023 YILI HBYS ( HASTANE BİLGİ YÖNETİM VE OTOMASYON SİSTEMİ ) HİZMET ALIMI,health_information_systems,health_information_systems,True,False,
+113,2023/690930,SİSTEM VE SİBER TEHDİT İSTİHBARAT YAZILIM LİSANSI,cybersecurity,cybersecurity,True,False,
+114,2011/96392,Bilgi Teknolojileri Sistemine Bakım – Onarım ve Teknik Destek Hizmeti Alımı İşi,maintenance_support_services,maintenance_support_services,True,False,
+115,2015/76393,Kent Güvenliği - Kameraları (KEG-GAM) Yönetim Sistemi,physical_security_surveillance,physical_security_surveillance,True,False,
+116,2019/233915,Hastane Bilgi Yönetim Sistemi (HBYS)Hizmet Alımı,health_information_systems,health_information_systems,True,False,
+117,2013/64642,PROJE BAZLI İŞLERDE YAZILIM HİZMETİ ALIMI,custom_software_web_mobile,custom_software_web_mobile,True,False,
+118,2013/173553,SANALLAŞTIRMA LİSANSI VE YEDEKLEME YAZILIMI,software_licences,software_licences,True,True,
+119,2013/121356,Kamulaştırma Dijital Arşiv Yönetim Sistemi Yazılımı ve Geliştirilmesi Danışmanlık,ERP_management_software,ERP_management_software,True,True,
+120,2023/921562,WEB TABANLI İMAR BİLGİ SİSTEMİ HİZMETİ ALIMI,GIS_city_information,GIS_city_information,True,False,
+121,2022/955629,"İMAR PLANLARINDA TANIMLANMIŞ OLAN YENİ YOL AKSLARININ OLUŞTURULMASI, NUMARATAJ VERİLERİNİN KONTROLÜ VE TÜM YOLLARIN KAPLAMA BİLGİLERİNİN İŞLENMESİ VE BUNA GÖRE CBS YAZILIMININ DÜZENLENMESİ HİZMET ALIMI İŞİ",GIS_city_information,GIS_city_information,True,False,
+122,2019/598075,İNTERNET GÜVENLİK DONANIMLARI VE YAZILIMLARI,cybersecurity,network_datacentre_infrastructure,False,False,rule_clearly_wrong
+123,2022/495124,İstanbul Emniyet Müdürlüğü Kent Güvenlik Yönetim Sistemi (KGYS) Malzeme Alımı,physical_security_surveillance,physical_security_surveillance,True,False,
+124,2020/101600,Iğdır İl Emniyet Müdürlüğü ve İlçeleri Kent Güvenlik Yönetim Sistemi Projesi Cihaz Tamir ve Değişim Garantili Bakım ve Onarım İşi,physical_security_surveillance,physical_security_surveillance,True,False,
+125,2013/55589,Rize Kent Güvenlik Yönetim Sistemi İçin Parçasız Bakım ve Onarım Hizmeti Alımı İşi,physical_security_surveillance,physical_security_surveillance,True,False,
+126,2022/233263,6698 Sayılı Kişisel Verileri Koruma Kanunu Gereği Veri Kaybını/sızıntısını Önleme (DLP) Amaçlı Yazılım Alım İşi,cybersecurity,cybersecurity,True,False,
+127,2014/3830,İdarede Mevcut Microsoft Ürünlerinin Yazılım Güvencelerinin Sürelerinin Uzatılması ve Yeni Lisansların Temini,software_licences,software_licences,True,False,
+128,2011/208686,HASTANE BİLGİ SİSTEMLERİ (HBYS)YAZILIM VE TEKNİK DESTEK PERSONELİ,health_information_systems,health_information_systems,True,False,
+129,2016/212176,3 Kalem Dijital Konferans ve Videowall  Sistemi ve Yazılım,other_IT,custom_software_web_mobile,False,False,rule_clearly_wrong
+130,2017/567770,YAZILIM ALIMI,other_IT,custom_software_web_mobile,False,True,ambiguous_boundary
+131,2011/20489,Garanti ve Satış Sonrası Yeterlilik Belge İşlemleri Uygulama Yazılım Programı Bakım Hizmeti Alımı,custom_software_web_mobile,maintenance_support_services,False,True,maintenance_vs_product_convention
+132,2015/178707,"SAP TRM Uygulaması Lisans Güncelleme, Bakım, Destek ve BASIS Teknik Destek Hizmeti Alımı",ERP_management_software,ERP_management_software,True,True,
+133,2024/1046929,Çankırı İl Sağlık Müdürlüğüne bağlı Sağlık Tesislerimiz için SBYS/HBYS/YBBYS (Sağlık Bilgi Yönetim Sistemi/Hastane  Bilgi Yönetim Sistemi ve Yoğun Bakım Bilgi Yönetim Sistemi),health_information_systems,health_information_systems,True,False,
+134,2020/295667,Hastane Bilgi Yönetim Sistemi (HBYS) Hizmet Alımı,health_information_systems,health_information_systems,True,False,
+135,2011/44546,"Sulusaray İlçe Hastanesi 8 Ay Elemansız HBYS, LBYS VE VTYS Hizmet Alımı",health_information_systems,health_information_systems,True,False,
+136,2020/179410,2 KISIM MOBİL CİHAZ YÖNETİM VE AĞ TABANLI DOSYA TİPİ ÇEVİRİCİ YAZILIM LİSANS KİRALAMASI,software_licences,software_licences,True,False,
+137,2014/93015,"Yazıcı, Kart Okuyucu ve Yazılım",computers_peripherals,computers_peripherals,True,False,
+138,2025/1906763,Tunceli Valiliği İl Basın ve Halkla İlişkiler Müdürlüğünde Kullanılmak Üzere 31 Kalem Bilişim Malzemesi Alım İşi,computers_peripherals,computers_peripherals,True,False,
+139,2014/40823,Eğitim Yönetim Sistemi Yazılım Geliştirme Destek Hizmeti Ve Eğitim Portalı Sanal Sunucu Hizmeti,education_technology,network_datacentre_infrastructure,False,False,rule_clearly_wrong
+140,2025/73470,COĞRAFİ BİLGİ SİSTEMİ UYGULAMALARI SATIN ALIMI,GIS_city_information,GIS_city_information,True,False,
+141,2012/168432,INTERNET VE E-POSTA FİLTRELEME YAZILIMLARI TEMİNİ,cybersecurity,custom_software_web_mobile,False,False,rule_clearly_wrong
+142,2018/360312,HASTANE BİLGİ YÖNETİM SİSTEMİ ( HBYS ),health_information_systems,health_information_systems,True,False,
+143,2025/1293490,Müdürlüğümüze Bağlı Afyonkarahisar Devlet Hastanesinde bulunan Sistem Odası İçin Bilişim Sistemleri Donanım ve Bileşen Alımı (Montaj Dahil)),network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+144,2017/225513,"Sosyal Hizmetler, Simurg, Eyüp Sempozyumu Web Sitesi Yazılımı, Tasarım ve İçerik Yönetim Sistemi ve Destek",custom_software_web_mobile,ERP_management_software,False,False,rule_clearly_wrong
+145,2013/46258,Elektronik Belge Yönetim Sistemi Bakım ve Yazılım Destek,ERP_management_software,ERP_management_software,True,False,
+146,2010/553624,"2011-2012 YILARA YAYGIN TEKNİK SERVİS BAKIM-ONARIM VE BİLGİSAYAR TEKNİK DESTEK HİZMET ALIMI
+78 KİŞİ İLE 22 AYLIK",maintenance_support_services,maintenance_support_services,True,False,
+147,2014/3700,EKS SERVİS VE YAZILIM HİZMETİ ALIMI,smart_city_traffic_OT,custom_software_web_mobile,False,True,ambiguous_boundary
+148,2012/149743,"Teşekkülümüz Merkez Ünitelerinin, 24 ay süreli Bilgisayar Donanımları Bakım-Onarım, İletişim ve İşletim Sistemi Yazılımları, Güvenlik Yazılım ve Donanımları için yerinde Sistem Destek ve Teknik Servis Hizmetleri",maintenance_support_services,computers_peripherals,False,False,maintenance_vs_product_convention
+149,2011/4477,BİLGİ GÜVENLİK YAZILIM VE DONANIMLARI İLE GÜNCELLEMELERİ,cybersecurity,maintenance_support_services,False,False,ambiguous_boundary
+150,2025/2030080,BİLGİ İŞLEM DAİRESİ BAŞKANLIĞI BİLGİ İŞLEM ŞUBE MÜDÜRLÜĞÜNE ADOBE CREATIVE CLOUD YAZILIM ALIMI,software_licences,software_licences,True,False,
+151,2017/272685,SOSYAL MEDYA YAZILIM DESTEK HİZMET ALIM İŞİ,custom_software_web_mobile,maintenance_support_services,False,False,maintenance_vs_product_convention
+152,2025/357626,3 AYLIK HASTANE BİLGİ YÖNETİM SİSTEMİ HİZMETİ ALIMI (01/04/2025-30/06/2025 TARİHLERİ ARASI),health_information_systems,health_information_systems,True,False,
+153,2012/61023,Web Tabanlı Yazılımlara Geçiş Projesi Kapsamında Tarım ve Personel Yazılımı,custom_software_web_mobile,custom_software_web_mobile,True,True,
+154,2011/67200,Yurt Yönetim Sistemi Yazılımı ve Kurulumu,ERP_management_software,ERP_management_software,True,True,
+155,2019/240909,HASTANE BİLGİ YÖNETİM SİSTEMİ (HBYS) HİZMETİ ALIMI İHALESİ,health_information_systems,health_information_systems,True,False,
+156,2021/408696,"Görev Yönetim Sistemi Donanım, Yazılım ve Personel Devam Kontrol sistemleri",ERP_management_software,ERP_management_software,True,True,
+157,2017/203775,"ENTEGRE KENT BİLGİ SİSTEMİ KURULMASI AMAÇLI COĞRAFİ BİLGİ SİSTEMİ YAZILIM KÜTÜPHANESİ ve UYGULAMALARININ GELİŞTİRİLMESİ, BELEDİYE YÖNETİM BİLGİ SİSTEMİ UYGULAMA YAZILIMLARI, EBYS, DİGİTAL ARŞİV VE VERİ ENTEGRASYONU",GIS_city_information,GIS_city_information,True,False,
+158,2024/553777,"2024-2025 Yılı (01/07/2024-30/06/2025) tarihleri arası Hastane Bilgi Yönetim Sistemi (HBYS), Hastane Web Modülleri ve Radyoloji Görüntü Arşivleme Sistemi (PACS) Yazılım, Teknik Destek, İşletme, Bakım, Onarım",health_information_systems,health_information_systems,True,False,
+159,2017/89926,Vmware Vcenter Server Standard For Vsphere-Vmware Vsphere With Operations Management Enterprise-Veeam Backup And Replication Enterprise Lisans Güncelleme Hizmet Alımı,software_licences,software_licences,True,False,
+160,2013/93211,"Müdürlüğümüz ve bağlı Sağlık Kuruluşları için HBYS+LBYS, FATURALANDIRMA, İNSAN KAYNAKLARI, KETEM VE GEBE TAKİP SİSTEMİ MODÜLÜ",health_information_systems,health_information_systems,True,False,
+161,2015/165956,"Dokunmatik ekran sistemlerinin, geniş ekran monitörlerin ve gerekli yazılımların temini",computers_peripherals,computers_peripherals,True,False,
+162,2012/124686,GÜVENLİ UYGULAMA GELİŞTİRME KONTROL YAZILIMI ALIMI,cybersecurity,custom_software_web_mobile,False,False,rule_clearly_wrong
+163,2025/2282161,"2026 YILI MEVCUT İŞLETİM SİSTEMLERİ VE DONANIMLARIN BAKIM, ONARIM VE TEKNİK DESTEK HİZMETLERİ ALIMI",maintenance_support_services,maintenance_support_services,True,False,
+164,2020/460716,"Ağ Ürünleri Bakım, Onarım ve Teknik Destek Hizmet Alımı",network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+165,2025/879941,VGM BİLİŞİM ALTYAPISINI İYİLEŞTİRME İŞİ,network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+166,2014/76698,"36 AYLIK HASTANE BİLGİ YÖNETİM SİSTEMİ, BAKIM ONARIM VE GÜNCELLEME (KİRALAMA) HİZMETİ ALIMI",health_information_systems,health_information_systems,True,False,
+167,2023/750204,"28 Aylık Hastane Bilgi Yönetim Sistemi (HBYS) Kiralama, Bakım, Onarım ve Destek Hizmet Alımı",health_information_systems,health_information_systems,True,False,
+168,2021/217864,"BİLGİ İŞLEM DAİRESİ BAŞKANLIĞI BİLGİ İŞLEM ŞUBE MÜDÜRLÜĞÜNE HİZMET MASASI YÖNETİMİ, KULLANICI UZAKTAN DESTEK VE YAZILIM İZLEME YAZILIMI ALIMI",call_centre_helpdesk,custom_software_web_mobile,False,False,rule_clearly_wrong
+169,2016/373314,ŞİŞLİ BELEDİYESİ COĞRAFİ BİLGİ SİSTEMİ ALTYAPISININ KURULMASI İŞİ,GIS_city_information,GIS_city_information,True,False,
+170,2016/253005,66 Adet Adobe Acrobat Professional İle 2 Adet Adobe Captivate Yazılım Lisansı Temini,software_licences,software_licences,True,False,
+171,2013/86893,ANTİVİRÜS YAZILIMI GÜNCELLEMESİ VE REPLİKASYON YAZILIM ALIMI,cybersecurity,cybersecurity,True,False,
+172,2015/4936,"Müdürlüğünüze Bağlı Spor Tesisleri ve Diğer Tesislere Turnike, Yazılım ve Sarf Malzemesi Alımı İşi",physical_security_surveillance,physical_security_surveillance,True,True,
+173,2025/1790736,12 AYLIK DİŞ HEKİMLİĞİ BİLGİ SİSTEMİ HİZMET ALIMI,health_information_systems,ERP_management_software,False,False,rule_clearly_wrong
+174,2016/504010,"Kurum bünyesinde kurulu olan Elektronik Belge Yönetim Sisteminin yazılım versiyon güncelleme, teknik destek ve bakım",ERP_management_software,ERP_management_software,True,False,
+175,2023/1138966,36 Aylık Hastane Yönetim Bilgi Sistemi (HBYS) Hizmet Alımı İşi,health_information_systems,health_information_systems,True,False,
+176,2012/77708,OFFİCE YAZILIMI VE İŞLETİM SİSTEMİ ALIMI,software_licences,software_licences,True,False,
+177,2020/497654,HVBS KAYNAKLAR YÖNETİM SİSTEMİ SUNUCU VE YAN DONANIMLARI,network_datacentre_infrastructure,network_datacentre_infrastructure,True,True,
+178,2017/550183,BİLİŞİM DONANIMLARI PARÇALI BAKIM ve DESTEK,maintenance_support_services,maintenance_support_services,True,False,
+179,2014/70502,HBYS HİZMETİ  (2 AYLIK  TEMMUZ-AĞUSTOS),health_information_systems,health_information_systems,True,False,
+180,2019/93021,Bilişim malzemeleri,computers_peripherals,computers_peripherals,True,False,
+181,2016/124107,SİNOP İL EMNİYET MÜDÜRLÜĞÜ KENT GÜVENLİK YÖNETİM SİSTEMİ 1 YILLIK BAKIM ONARIM İŞİ,physical_security_surveillance,physical_security_surveillance,True,False,
+182,2014/92914,6 Personel İle HBYS ve PACS Sistemi,health_information_systems,health_information_systems,True,False,
+183,2015/182770,2016 yılı 11 ay süre ile HBYS ve PACS Sistemi Hizmeti Alımı,health_information_systems,health_information_systems,True,False,
+184,2025/87344,"HARİTA DESTEKLİ TALEP ŞİKAYET YÖNETİM YAZILIMI GÜNCELLEME, SAHA YÖNETİM YAZILIMI VE ÇAĞRI MERKEZİ YAZILIMI ALIMI",call_centre_helpdesk,call_centre_helpdesk,True,True,
+185,2018/331005,Yazılım Bakımı,maintenance_support_services,maintenance_support_services,True,False,
+186,2013/34698,"6 AYLIK HASTANE BİLGİ YÖNETİM SİSTEMİ DEVAMI, GELİŞTİRİLMESİ, GÜNCELLENMESİ, BAKIM-ONARIM VE TEKNİK DESTEĞİN SAĞLANMASI HİZMETİ ALIMI",health_information_systems,health_information_systems,True,False,
+187,2017/183287,BİLİŞİM MALZEMESİ,computers_peripherals,computers_peripherals,True,False,
+188,2020/31541,HBYS HİZMET ALIMI,health_information_systems,health_information_systems,True,False,
+189,2017/79015,"Elektronik Belge Yönetim Sistemi (EBYS) Ve Akıllı Sicil Düzenleme Modülü (ASDM)                  Yazılım Sistemleri Alımı, Kurulumu ve Mevcut Sisteme Entegrasyonunun Sağlanması",ERP_management_software,ERP_management_software,True,False,
+190,2013/160866,"Halk Sağlığı Müdürlüğü ve bağlı birimleri ile İlçe Devlet Hastaneleri 24 aylık Yönetim Bilgi Sistemi (Hbys,Lbys,BilgYönSist)",health_information_systems,health_information_systems,True,False,
+191,2018/669807,2019 2019 YILI HBYS/KARAR DESTEK SİSTEMİ HİZMET ALIMI(12 AY) 1 PERSONEL,health_information_systems,health_information_systems,True,False,
+192,2022/1101760,ORACLE YAZILIM VE DONANIM ÜRÜNLERİ İÇİN İLERİ DÜZEY TEKNİK DESTEK,software_licences,software_licences,True,True,
+193,2022/876836,Sağlık Bilgi Yönetim Sistemi Hizmet Alım İşi 12 Ay Süreli,health_information_systems,health_information_systems,True,False,
+194,2014/86099,RESMİ WEB SİTESİ İLE BALIKESİR KENT PORTALI TASARIM VE YAZILIM İŞİ,custom_software_web_mobile,custom_software_web_mobile,True,False,
+195,2021/609053,36 Aylık Sağlık  Bilgi Yönetim Sistemi  Hizmeti Alım İhalesi,health_information_systems,health_information_systems,True,False,
+196,2020/740480,SUNUCU VE BİLGİSAYAR SİSTEMLERİ TEKNİK DESTEK HİZMET ALIM İŞİ,maintenance_support_services,network_datacentre_infrastructure,False,False,maintenance_vs_product_convention
+197,2013/190047,HASTANE BİLGİ YÖNETİM SİSTEMİ İLE GÖRÜNTÜ ARŞİVLEME (PACS) SİSTEMİ (2 KISIM),health_information_systems,health_information_systems,True,False,
+198,2019/681380,Endüstriyel Kontrol Sistemleri(EKS) ve Kurumsal Bilişim Sistemlerinin tamamı için Güvenlik Analizi ve Testlerinin yaptırılması işi,cybersecurity,custom_software_web_mobile,False,False,rule_clearly_wrong
+199,2011/188960,EĞİL İLÇE DEVLET HASTANESİNE  BİLGİ YÖNETİMİ SİSTEMLERİNİN (HBYS) İŞLETİLMESİNE YÖNELİK PERSONEL HİZMET ALIMI,health_information_systems,health_information_systems,True,False,
+200,2016/349498,Muhtarlara Yönelik Muhtarlık Bilgi Sistemi Konulu Eğitim ve Organizasyonu Hizmet Alım İşi,other_IT,ERP_management_software,False,True,title_not_really_IT_product
+201,2013/57057,Gemi Bilgi Sistemi (GEBİS) Malzemeleri,other_IT,ERP_management_software,False,False,rule_clearly_wrong
+202,2014/35524,Lisans ve Yazılım,software_licences,software_licences,True,False,
+203,2013/171245,"SUNUCU, VERİ DEPOLAMA ÜNİTESİ VE SANALLAŞTIRMA YAZILIMI MAL ALIM İŞİ",network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+204,2023/1113889,İşletim Sistemi Ve Yazılım Lisansları Güncelleme,software_licences,software_licences,True,False,
+205,2023/620257,Blokzincir Tabanlı Sistemler Kullanılarak GBS Veri Tabanı Süreçlerinin Verimliliğin Artırılması Çalıştayı Hizmet Alımı,other_IT,custom_software_web_mobile,False,False,title_not_really_IT_product
+206,2011/84435,HASTANE BİLGİ YÖNETİM SİSTEMİNİN İŞLETİLMESİ,health_information_systems,health_information_systems,True,False,
+207,2016/43245,PLAKA TANIMA VE YÖNETİM SİSTEMİ,smart_city_traffic_OT,physical_security_surveillance,False,True,ambiguous_boundary
+208,2021/125167,KARS İL MERKEZİ VE İLÇELERİNDE KULLANILMAKTA OLAN KENT GÜVENLİK YÖNETİM SİSTEMİ KGYS İLE İLGİLİ BAKIM VE ONARIM İŞİ,physical_security_surveillance,physical_security_surveillance,True,False,
+209,2022/1271744,"İNTERNET GÜVENLİK CİHAZI, İNTERNET GÜVENLİK KAYIT CİHAZI, YAZILIM ve LİSANS ALIMI",cybersecurity,software_licences,False,False,rule_clearly_wrong
+210,2017/74428,KÜLTÜR MERKEZLERİ BİLET SATIŞ SİSTEMİ YAZILIMI,custom_software_web_mobile,custom_software_web_mobile,True,False,
+211,2016/246335,"Yönetim Bilgi Sistemi Yazılım Modülleri Alımı, Kurulumu ve Mevcut Sisteme Entegrasyonunun Sağlanması",ERP_management_software,ERP_management_software,True,False,
+212,2011/186678,BİLİŞİM TEKNOLOJİLERİ ALANINA BİLGİSAYAR VE DİĞER DONANIMLARININ ALIMI,computers_peripherals,other_IT,False,False,rule_clearly_wrong
+213,2017/286101,"MEB ÖLÇME, DEĞERLENDİRME VE YERLEŞTİRME HİZMETLERİ DAİRE BAŞKANLIĞI DEĞERLENDİRME BİRİMİNDE KULLANILMAKTA OLAN SINAV UYGULAMA VE DEĞERLENDİRME YAZILIMI 2017 YILI İÇİN 6 AYLIK GELİŞTİRME VE GÜNCELLEME",education_technology,education_technology,True,False,
+214,2019/242106,Kurumsal Kaynak Planlama Bilgi Sistemi Projesi (KKPBSP) Alınması Hizmeti,ERP_management_software,ERP_management_software,True,False,
+215,2013/78329,"36 AY SÜRE İLE HASTANE BİLGİ YÖNETİM SİSTEMİ ve BİLGİSAYAR DONANIM, YAZILIM DESTEK PERSONELİ HİZMET ALIMI",health_information_systems,health_information_systems,True,False,
+216,2011/9925,TCDD Genel Müdürlük  ile 2. Bölge Müdürlüğünde  kullanılmakta olan Elektronik Doküman Yönetim Sistemi ve  Arşiv Sistemi  (EDYS) yazılımının  10 (on) aylık  her türlü  bakım ve destek hizmet alımı,ERP_management_software,ERP_management_software,True,False,
+217,2023/1196834,2024 Yılı Hastane Bilgi Yönetim Sistemi 3 Personel ile 12 Aylık,health_information_systems,health_information_systems,True,False,
+218,2021/649145,"İstanbul Kent Güvenlik Yönetim Sistemi Sunucu, Kamera Kayıt Depolama Üniteleri, İletişim Cihazları, Ağ güvenlik Cihazları, Sanallaştırma Platformları, Veritabanları ve Yedekleme Sistemleri Bakım, Teknik Destek Hizmet Alımı",physical_security_surveillance,physical_security_surveillance,True,True,
+219,2017/655324,2018 YILI 3 AYLIK HBYS HİZMET ALIMI,health_information_systems,health_information_systems,True,False,
+220,2023/708524,Yunusemre Belediye Başkanlığı Bilişim Lisansları ve Lisans Yenileme Hizmet Alımı,software_licences,software_licences,True,False,
+221,2024/763969,"Aktif Ağ Cihazları Donanım, Yazılım ve Lisans",network_datacentre_infrastructure,software_licences,False,False,rule_clearly_wrong
+222,2016/5038,"3 Aylık (MART-NİSAN-MAYIS) Hastane Bilgi Yönetim Sistemi Yazılımları ve PACS (Görüntü arşivleme ve iletişim Sistemi), RBS (Röntgen Bilgi Sistemi)",health_information_systems,health_information_systems,True,False,
+223,2020/92317,Kent Güvenlik Yönetim Sistemi  ve Plaka Tanıma Sistemleri Kurulum - Modernizasyon ve Genişleme Projesi,physical_security_surveillance,physical_security_surveillance,True,False,
+224,2025/470490,Bilişim Malzemeleri Alımı İşi,computers_peripherals,computers_peripherals,True,False,
+225,2014/163327,2015-2016-2017 Yılları (36 Ay) Hastane Bilgi Sistemi Kiralama Hizmeti Alımı,health_information_systems,health_information_systems,True,False,
+226,2024/1128834,HARİTA DESTEKLİ ÇAĞRI MERKEZİ TALEP ŞİKAYET YÖNETİMİ SOSYAL MEDYA TAKİBİ ANKET YÖNETİMİ TAKVİM YÖNETİMİ ENVANTER VE PROJE YÖNETİM YAZILIMI,call_centre_helpdesk,call_centre_helpdesk,True,True,
+227,2018/340937,Coğrafi Bilgi sistemi Yazılımının Yenilenmesi,GIS_city_information,GIS_city_information,True,False,
+228,2020/625181,Yazılım Geliştirilmesi ve Güncellenmesi Danışmanlık,custom_software_web_mobile,maintenance_support_services,False,False,maintenance_vs_product_convention
+229,2014/132306,"İZMİR BÜYÜKŞEHİR BELEDİYESİ'NE AİT RESMİ WEB SİTESİ, BELEDİYE TARAFINDAN YÖNETİLEN DİĞER WEB SİTELERİ, KENT PORTALI, KİOSK YAZILIMI GELİŞTİRİLMESİ, BAKIMI VE DESTEK",custom_software_web_mobile,computers_peripherals,False,False,rule_clearly_wrong
+230,2016/545918,"BİLGİSAYAR DONANIMI, AĞ ALTYAPISI VE YAZILIM SİSTEMLERİ YILLIK BAKIM, ONARIM 1 YILLIK HİZMET ALIMI İŞİ",maintenance_support_services,network_datacentre_infrastructure,False,False,maintenance_vs_product_convention
+231,2012/23431,Yazılım Lisansları,software_licences,software_licences,True,False,
+232,2016/420576,TBB Yazılım Destek Hizmeti Alım İşi,maintenance_support_services,maintenance_support_services,True,False,
+233,2013/119476,"MICROSOFT LİSANS, RAPORLAMA YAZILIMI VE ANTİVİRÜS YAZILIMI ALIMI",software_licences,cybersecurity,False,False,ambiguous_boundary
+234,2020/626381,İL VE İLÇE SAĞLIK MÜDÜRLÜKLERİ VE BAĞLI SAĞLIK TESİSLERİMİZ İÇİN ANTİVİRÜS YAZILIMI LİSANS HİZMET ALIM İŞİ,cybersecurity,cybersecurity,True,False,
+235,2019/252258,Yazılım Lisansı Kiralanması,software_licences,software_licences,True,False,
+236,2016/331432,Kurumsal Eğitim Yönetimi Planlama Sitemi ve OSCE yazılımı,education_technology,custom_software_web_mobile,False,False,rule_clearly_wrong
+237,2019/725358,GÜVENLİK DUVARI (FIREWALL) SİSTEMİ VE 5651 LOGLAMA YAZILIMI,cybersecurity,cybersecurity,True,False,
+238,2025/2120286,2 KALEM BİLİŞİM MALZEMESİ ALIMI İHALESİ,computers_peripherals,computers_peripherals,True,False,
+239,2020/371403,Dijital fuarcılık yazılımı alımı işi,custom_software_web_mobile,custom_software_web_mobile,True,False,
+240,2018/232603,MUHTELİF BİLİŞİM MALZEMELERİ ALIMI İŞİ,computers_peripherals,computers_peripherals,True,False,
+241,2020/160715,"ISBN/ISSN/ISMN/Derleme Programı İle Materyal Sağlama Ve Satın Alma Bilgi Sistemi Programının Bakımı, Güncellenmesi ve Hizmet Desteği İşi",custom_software_web_mobile,ERP_management_software,False,True,ambiguous_boundary
+242,2020/568096,MÜDÜRLÜĞÜMÜZE BAĞLI TEKİRDAĞ AĞIZ VE DİŞ SAĞLIĞI HASTANESİ İLE ÇORLU VE ÇERKEZKÖY AĞIZ VE DİŞ SAĞLIĞI MERKEZLERİ İÇİN 36 AY SÜREYLE HBYS/SBYS HİZMETİ ALIMI,health_information_systems,health_information_systems,True,False,
+243,2016/16652,ELEKTRONİK BELGE YÖNETİM SİSTEMİNİ TSE 13298 STANDARTLARINA GÖRE KURUMUMUZDA DEVREYE ALINMASI İŞİ,ERP_management_software,ERP_management_software,True,False,
+244,2020/333938,YAZILIM LİSANSI KİRALANMASI,software_licences,software_licences,True,False,
+245,2019/604614,BERGAMA NECLA-MİTHAT ÖZTÜRE DEVLET HASTANESİ VE KINIK DEVLET HASTANESİ 2020 YILI İLK 3 AYLIK HASTANE BİLGİ YÖNETİM SİSTEMİ (HBYS) VE PACS (RADYOLOJİK GÖRÜNTÜ YÖNETİM SİSTEMİ) İLE ELEKTRONİK ORTAMDA YÜRÜTÜLMESİ HİZMETİ ALIMI,health_information_systems,health_information_systems,True,False,
+246,2021/180646,KIRŞEHİR MERKEZ VE 6 İLÇESİNDE KENT GÜVENLİK YÖNETİM SİSTEMİ PROJESİ CİHAZ TAMİR VE DEĞİŞİM GARANTİLİ 1 YILLIK PERİYODİK BAKIM VE ONARIM HİZMET ALIM İŞİ,physical_security_surveillance,physical_security_surveillance,True,False,
+247,2023/381030,MUHTELİF PROJELERDE KULLANILMAK ÜZERE BİLİŞİM MALZEMESİ ALIMI İŞİ,computers_peripherals,computers_peripherals,True,False,
+248,2013/38491,"İl Afet Bilgi Sistemi Altyapısı Oluşturulması İçin Gerekli Yazılım, Donanım, Eğitim ve Kurulum Hizmeti",GIS_city_information,network_datacentre_infrastructure,False,True,ambiguous_boundary
+249,2016/118795,"IP Telefon Makinesi,PRI Kartı Ve Yazılım Mal Alım İşi",network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+250,2017/188294,HASTANE BİLGİ YÖNETİM SİSTEMİ HİZMETİ (HBYS) ALIMI,health_information_systems,health_information_systems,True,False,
+251,2017/430787,Kütüphane Otomasyon Sistemi Alımı,ERP_management_software,education_technology,False,True,ambiguous_boundary
+252,2012/191184,2 Personel ile Hastane Bilgi Yönetim Sistemi (HBYS) Veri Tabanı Yönetim Sistemi (VTYS) Yazılımı Hizmet Alımı,health_information_systems,health_information_systems,True,False,
+253,2021/413122,Oracle VTYS Ürün Güncelleme-Bakım-İleri Düzey Teknik Destek ile Veri Tabanı Makineleri (Exadata) ve Yedekleme Ünitesi (ZFS) Parça Dahil Donanım Bakımı,software_licences,software_licences,True,True,
+254,2014/145136,"VERİ TABANI SUNUCUSU, KURULUMU, İŞLETİM SİSTEMİNİN YÜKLENMESİ, CLUSTER ALTYAPISININ HAZIRLANMASI, VERİ TABANI VE CLUSTER KURULUMU",network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+255,2018/588548,Oracle Yazılımları Lisans Güncelleme Hakkı ve İleri Düzey Teknik Destek Hizmeti,software_licences,software_licences,True,False,
+256,2015/27039,"TC Orman ve Su İşleri Bakanlığı Merkez Teşkilatı Bilgisayar, Yazıcı ve Tarayıcılarının Periyodik Parçasız Bakım, Onarım ve Teknik Destek Hizmet Alımı",maintenance_support_services,computers_peripherals,False,False,maintenance_vs_product_convention
+257,2011/99184,"El Terminalı, Termal Yazıcı ve Yazılım Alımı",computers_peripherals,computers_peripherals,True,False,
+258,2013/118636,BİLGİ MERKEZİ MODERNİZASYON PROJESİ GELENEKSEL KÜTÜPHANE YAZILIMI HİZMET ALIMI,ERP_management_software,education_technology,False,True,ambiguous_boundary
+259,2019/409141,BİLİŞİM ALT YAPI MALZEMELERİ ALIMI VE MONTAJLANMASI,network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+260,2018/441805,İletişim Yönetim Sistemi,other_IT,ERP_management_software,False,True,ambiguous_boundary
+261,2020/550547,BİLİŞİM TEKNOLOJİSİ ATÖLYESİ ALIMI 38 KALEM MALZEME ALIMI,education_technology,other_IT,False,True,ambiguous_boundary
+262,2017/566690,ÇORLU BELEDİYESİ WEB TABANLI COĞRAFİ BİLGİ SİSTEMİ UYGULAMA YAZILIMI VE ENTEGRASYON ÇALIŞMALARI HİZMET ALIMI,GIS_city_information,GIS_city_information,True,False,
+263,2019/239182,Üniversitemiz birimlerinde kullanılmak üzere Microsoft yazılımının 1 yıllığına Lisans Anlaşması Alımı,software_licences,software_licences,True,False,
+264,2016/379843,Bilgi Güvenliği ve Adli Bilişim Hizmeti Alımı İşi,cybersecurity,cybersecurity,True,False,
+265,2025/1340589,MERKEZİ KİMLİK ERİŞİM VE AYRICALIKLI HESAP YÖNETİMİ YAZILIM (PAM-NAC-WAF) ALIMI İŞİ,cybersecurity,cybersecurity,True,False,
+266,2019/622196,2020 YILI 6 AYLIK (01.01.2020 -30.06.2020) HASTANE BİLGİ YÖNETİM SİSTEMİ (HBYS) HİZMET ALIMI,health_information_systems,health_information_systems,True,False,
+267,2018/494298,WEB TABANLI COĞRAFİ YÖNETİM BİLGİ SİSTEMİ YAZILIMI HİZMET ALIM İŞİ,GIS_city_information,ERP_management_software,False,False,rule_clearly_wrong
+268,2025/1607492,Kurumsal Web ve Mobil Yazılım Alımı İşi,custom_software_web_mobile,custom_software_web_mobile,True,False,
+269,2015/61455,ELEKTRONİK BELGE YÖNETİM SİSTEMİ (EBYS),ERP_management_software,ERP_management_software,True,False,
+270,2022/48043,"Sunucu Bakım, Onarım ve Teknik Destek Hizmet Alımı",maintenance_support_services,network_datacentre_infrastructure,False,False,maintenance_vs_product_convention
+271,2025/2084852,2026 YILI SAYFA BAŞI BASKI HİZMETİ İLE BASKI YÖNETİM YAZILIMI LİSANS YENİLEME VE DESTEK HİZMETİ ALIMI,computers_peripherals,software_licences,False,False,ambiguous_boundary
+272,2017/566519,Hastane Bilgi Yönetim Sistemi (HBYS) Hizmet Alımı,health_information_systems,health_information_systems,True,False,
+273,2013/50579,Çukurova Belediyesi Yazılım Lisansları Alımı,software_licences,software_licences,True,False,
+274,2011/170004,HBYS( 3 personel  ile Hastane  Bilgi Yönetim Sistemi Kullanım İşi),health_information_systems,health_information_systems,True,False,
+275,2016/84085,BİLİŞİM SİSTEMLERİ TAŞIMA,maintenance_support_services,custom_software_web_mobile,False,True,maintenance_vs_product_convention
+276,2016/193760,BİLGİSAYAR YAZILIM LİSANSI ALIMI,software_licences,software_licences,True,False,
+277,2013/111551,Tümas Sistem Güncellemesi Donanım Yazılım ve Hizmet Alımı,other_IT,maintenance_support_services,False,True,maintenance_vs_product_convention
+278,2019/48616,Müdürlüğümüze Bağlı Sağlık Tesisleri için Laboratuvar Bilgi Yönetim Sistemi (LBYS) Hizmet Alımı,health_information_systems,health_information_systems,True,False,
+279,2011/171492,"2012-2013 Mali Yılları 24 Aylık 2 Teknik Elemanlı 36 Terminalli Bilgisayar Donanımında Kullanılmak Üzere Tam Otomasyon (HBYS+VTYS) PACS ile Uygulama Sunucusu (Server), Teknik Servis, Eğitim, Bakım, Kullanım ve Destek",health_information_systems,health_information_systems,True,False,
+280,2014/110728,Birlik Genel Sekreterliğimize Bağlı Sağlık Tesislerine Hastane Bilgi Yönetim Sistemi ( HBYS ) Yazılım Geliştirme ve Danışmanlık Hizmet Alımı,health_information_systems,health_information_systems,True,False,
+281,2019/586527,"SİSTEM GÜVENLİK YAZILIM LİSANSI, SUNUCU SİSTEMLERİ GARANTİ DESTEK VE SANALLAŞTIRMA YAZILIM LİSANSLARI, BİLGİSAYAR VE SUNUCU ANTİVİRÜS YAZILIM LİSANSLARI GÜNCELLEME İŞİ",software_licences,cybersecurity,False,False,ambiguous_boundary
+282,2022/161986,47 KALEM MUHTELİF KIRTASİYE VE BİLİŞİM SARF MALZEMESİ,computers_peripherals,other_IT,False,False,rule_clearly_wrong
+283,2018/695190,E- Kampüs Otomasyon Sistemi Bakım ve Onarımı,education_technology,ERP_management_software,False,False,ambiguous_boundary
+284,2022/1122314,2023 Yılı 12 Aylık Hastane Bilgi Yönetim Sistemi (HBYS),health_information_systems,health_information_systems,True,False,
+285,2015/135086,"ÇEVRE VE ŞEHİRCİLİK BAKANLIĞI COĞRAFİ BİLGİ SİSTEMLERİ GENL MÜDÜRLÜĞÜ ENTEGRE ÇEVRE BİLGİ SİSTEMİ UYGULAMA GELİŞTİRME, KİMLİK YÖNETİMİ, TEKNİK DESTEK VE EĞİTİM İŞLERİ",GIS_city_information,GIS_city_information,True,False,
+286,2012/38072,ELEKTORNİK BELGE YÖNETİM SİSTEMİ YAZILIMI ALIMI İŞİ,ERP_management_software,ERP_management_software,True,False,
+287,2012/143617,MİCROSOFT YAZILIM LİSANSLARININ ALINMASI,software_licences,software_licences,True,False,
+288,2021/702472,12 AY SÜRELİ HASTANE BİLGİ YÖNETİM SİSTEMİ (HBYS) HİZMETİ,health_information_systems,health_information_systems,True,False,
+289,2021/85042,COĞRAFİ BİLGİ SİSTEMİ SUNUCU VE MASAÜSTÜ UYGULAMA ALIM İŞİ,GIS_city_information,GIS_city_information,True,False,
+290,2023/931133,2 Adet Disk Ünitesinin (3par Storage) Teknik Destek ve Bakımı Hizmeti,network_datacentre_infrastructure,network_datacentre_infrastructure,True,False,
+291,2017/507307,Başkanlığımız tanıtım işlerinde kullanılmak üzere 2 adet LED ekran ve buna bağlı donanım ile yazılımın satın alınması işi,computers_peripherals,computers_peripherals,True,True,
+292,2020/668988,Türkiye Belediyeler Birliği Kurumsal Web Sitesinin Yeniden Yapılması Yazılım ve Tasarım Hizmet Alım İşi,custom_software_web_mobile,custom_software_web_mobile,True,False,
+293,2014/45407,ORACLE VERİTABANI YÖNETİM SİSTEMLERİ LİSANSI,software_licences,software_licences,True,False,
+294,2020/13063,"SİSTEM,DONANIM,BAKIM, SUNUCU YAZILIMI GÜNCELLEME VE TEKNİK DESTEK",maintenance_support_services,network_datacentre_infrastructure,False,False,maintenance_vs_product_convention
+295,2025/884881,"1 ADET SUNUCU, KİŞİSEL TİP BİLGİSAYAR SİSTEMLERİ VE PAKET YAZILIMLARI (KURUMSAL SİSTEM YAZILIMLARI) LİSANS GÜNCELLEMESİ",software_licences,software_licences,True,True,
+296,2025/535267,6 Kalem Lisans ve Yazılım Güvencesi Üyelik Anlaşması Lisans Alımı,software_licences,software_licences,True,False,
+297,2021/166550,"ÇEVRİMİÇİ PROJE ONAY, DAĞITIM BAĞLANTI VE ÖN MÜŞTERİ HİZMETLERİ YAZILIMLARI YÖNETİM SİSTEM YAZILIMI",ERP_management_software,ERP_management_software,True,True,
+298,2017/642157,PLC OTOMASYON SİSTEMİ GÜNCELLEME VE TEKNİK SERVİS BAKIM HİZMETİ,smart_city_traffic_OT,ERP_management_software,False,False,rule_clearly_wrong
+299,2018/529300,İZMİR BÜYÜKŞEHİR BELEDİYESİ BİRİMLERİNCE (EŞREFPAŞA BELEDİYE HASTANESİ DE DAHİL ) KULLANILMAKTA OLAN YAZILIMLAR İÇİN YAZILIM GELİŞTİRME VE DESTEK,custom_software_web_mobile,custom_software_web_mobile,True,False,

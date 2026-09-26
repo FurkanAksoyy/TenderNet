@@ -1,0 +1,161 @@
+{
+  "sample": {
+    "contracts": 9991,
+    "eligible": 4913,
+    "unique_ikn": 9991,
+    "rows_per_ikn_max": 1
+  },
+  "firm_home": {
+    "firms": 2814,
+    "share_contracts_buyer_il_eq_home": 0.6698028225402862
+  },
+  "renewal_counts": {
+    "renewal": {
+      "new need": 3170,
+      "renewal": 1743
+    },
+    "renewal_t040": {
+      "new need": 3052,
+      "renewal": 1861
+    },
+    "renewal_t067": {
+      "new need": 3458,
+      "renewal": 1455
+    },
+    "renewal_0_18m": {
+      "new need": 2793,
+      "renewal": 2120
+    },
+    "renewal_0_24m": {
+      "new need": 2621,
+      "renewal": 2292
+    },
+    "renewal4": {
+      "D no similar-title prior": 2117,
+      "A renewal (similar title 6-18 m earlier)": 1743,
+      "C similar title only > 18 m earlier": 676,
+      "B similar title only < 6 m earlier": 377
+    }
+  },
+  "gap_prev_eligible_median": 356.0,
+  "lots": {
+    "multi_lot": 116,
+    "multi_lot_eligible": 63,
+    "framework": 0,
+    "cerceve_word_any": 7,
+    "multi_lot_by_market": {
+      "software_licences": 20,
+      "custom_software_web_mobile": 19,
+      "health_information_systems": 18,
+      "computers_peripherals": 14,
+      "network_datacentre_infrastructure": 12,
+      "cybersecurity": 8,
+      "maintenance_support_services": 6,
+      "ERP_management_software": 5,
+      "physical_security_surveillance": 4,
+      "GIS_city_information": 4,
+      "other_IT": 4,
+      "education_technology": 2
+    }
+  },
+  "N3_cells": {
+    "cells": 3705,
+    "eligible_in_single_winner_cells": 0.16832892326480764
+  },
+  "N4_home_cells": {
+    "cells": 2522,
+    "eligible_in_single_winner_cells": 0.14064726236515368
+  },
+  "N4b_prov_home_cells": {
+    "cells": 4814,
+    "eligible_in_single_winner_cells": 0.31345410136372887
+  },
+  "choice": {
+    "contracts": 4913,
+    "rows": 149670,
+    "mean_set": 30.46407490331773,
+    "sets_lt_31": 423,
+    "chosen_inc_rate": 0.4522694891105231,
+    "alt_inc_rate": 0.014230745318015709,
+    "means_by_chosen": {
+      "inc_same_market": {
+        "0": 0.014230745318015709,
+        "1": 0.4522694891105231
+      },
+      "inc_other_market": {
+        "0": 0.00752986038671705,
+        "1": 0.14308976185629962
+      },
+      "same_home_province": {
+        "0": 0.2077481572566439,
+        "1": 0.7201302666395278
+      },
+      "log_wins_market_12m": {
+        "0": 0.5940871466438656,
+        "1": 0.7651539480641006
+      },
+      "log_total_prior_wins": {
+        "0": 1.6738022233214236,
+        "1": 2.0780408154433827
+      },
+      "log_prior_wins_same_sector": {
+        "0": 0.8881726053960269,
+        "1": 1.657172078145191
+      }
+    }
+  },
+  "statsmodels_check_coef": {
+    "inc_same_market": 2.719269326644305,
+    "inc_other_market": 1.1806893060035015,
+    "same_home_province": 2.727821451266348,
+    "log_wins_market_12m": -0.13909792272618665,
+    "log_total_prior_wins": -0.5193982383330136,
+    "log_prior_wins_same_sector": 0.8216089251029147
+  },
+  "cp2": {
+    "records": 3400,
+    "unique_ikn": 3400,
+    "keyword": {
+      "yazılım": 3400
+    },
+    "with_winner": 1219,
+    "with_bidcount": 1219,
+    "bidcount_by_year": {
+      "2021": 235,
+      "2022": 266,
+      "2023": 210,
+      "2024": 219,
+      "2025": 244,
+      "2026": 45
+    },
+    "year_all": {
+      "2013": 192,
+      "2014": 322,
+      "2015": 307,
+      "2016": 289,
+      "2017": 293,
+      "2018": 234,
+      "2019": 211,
+      "2020": 262,
+      "2021": 302,
+      "2022": 267,
+      "2023": 212,
+      "2024": 219,
+      "2025": 245,
+      "2026": 45
+    },
+    "joined_main": 3289,
+    "main_2021plus": 3441,
+    "main_2021plus_kw_yazilim": 1266,
+    "joined_main_with_bidcount": 1194,
+    "joined_bid_by_keyword": {
+      "yazılım": 1194
+    },
+    "share_of_main_2021plus": 0.3469921534437663,
+    "validation_vs_teklif_ornek": {
+      "n": 59,
+      "equal_valid": 1.0,
+      "equal_total": 0.847457627118644
+    }
+  }
+}

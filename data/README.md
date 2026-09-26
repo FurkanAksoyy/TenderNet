@@ -9,12 +9,15 @@ the analysis scripts deflate them to 2025 TRY with `cpi_turkey.csv`.
 | `contracts_v3.csv` | 13,024 | one row per awarded contract (tender IKN); the analysis file |
 | `firm_name_map_v3.csv` | 4,788 | recorded name → v2 canonical → v3 canonical firm, merge type, flags (pseudonymized like the contracts) |
 | `bid_counts_sample.csv` | 680 | year-stratified random sample of tenders (40 per year, seed 42) with bid counts from EKAP result announcements |
+| `bid_counts_cp2.csv` | 3,400 | bid counts from a second EKAP scrape (keyword `yazılım`, mostly 2021+): IKN, year, search keyword, number of bids (`teklif_veren_sayisi`, 0 = not reported), `has_winner`; winner and bidder names removed |
+| `ppi_turkey_yiufe.csv` | 18 | TÜİK domestic PPI (Yİ-ÜFE, 2003=100), monthly and annual averages 2009–2026 (deflator robustness only); source in `ppi_turkey_SOURCES.txt` |
 | `cpi_turkey.csv` | 16 | TÜİK CPI (2003=100), annual averages 2010–2025, with World Bank cross-check |
 | `cpi_turkey_2026_monthly.csv` | 8 | TÜİK CPI 2026 (2025=100) linked to 2003=100; 2026 uses the mean of available months |
 | `cpi_turkey_SOURCES.txt` | – | exact sources and linking of the CPI series |
 | `audit/top150_value_review.csv` | 150 | hand review of the 150 largest contracts by value (scope label, override flag) |
 | `audit/scope_rule_samples.csv` | – | 5 random contracts per scope rule, for audit |
 | `audit/product_market_confusion_sample.csv` | – | 6 random contracts per product market, for audit |
+| `audit/classifier_validation.csv`, `.md` | – | hand validation of the product-market title classifier (titles only) |
 | `audit/build_log_v3.txt` | – | full log of the build (every count, merge and rule table), pseudonymized |
 
 ## Provenance
