@@ -204,6 +204,35 @@ Benjamini, Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Board%
+}{%
+Board%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+Board2011}
+\APACinsertmetastar {%
+Board2011}%
+\begin{APACrefauthors}%
+Board, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Relational Contracts and the Value of Loyalty}
+  {Relational contracts and the value of loyalty}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Economic Review}{101}{7}{3349--3367,}
+\newblock
+\begin{APACrefDOI} \doi{10.1257/aer.101.7.3349} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Borenstein%
 , MacKie-Mason%
 \BCBL {}\ \BBA {} Netz%
@@ -262,6 +291,74 @@ Bu{\u{g}}ra, A.%
   politics, religion and business}.
 \newblock
 \APACaddressPublisher{Cheltenham}{Edward Elgar}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Butler%
+, Carbone%
+, Conzo%
+\BCBL {}\ \BBA {} Spagnolo%
+}{%
+Butler%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+Butler2020}
+\APACinsertmetastar {%
+Butler2020}%
+\begin{APACrefauthors}%
+Butler, J.V.%
+, Carbone, E.%
+, Conzo, P.%
+\BCBL {} Spagnolo, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Past Performance and Entry in Procurement: An
+  Experimental Investigation} {Past performance and entry in procurement: An
+  experimental investigation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Economic Behavior \&
+  Organization}{173}{}{179--195,}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jebo.2020.02.019} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Calzolari%
+\ \BBA {} Spagnolo%
+}{%
+Calzolari%
+\ \BBA {} Spagnolo%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+CalzolariSpagnolo}
+\APACinsertmetastar {%
+CalzolariSpagnolo}%
+\begin{APACrefauthors}%
+Calzolari, G.%
+\BCBT {}\ \BBA {} Spagnolo, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+\APACrefbtitle {Relational Contracts and Competitive Screening} {Relational
+  contracts and competitive screening}\ \APACbVolEdTR {}{CEPR Discussion Paper\
+  \BNUM\ 7434}.
+\newblock
+\APACaddressInstitution{London}{Centre for Economic Policy Research}.
+\newblock
+\begin{APACrefURL} {https://cepr.org/publications/dp7434} \end{APACrefURL}
+\newblock
+\APACrefnote{No journal version located}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -420,6 +517,40 @@ De~Silva, D.G.%
 \APACjournalVolNumPages{The Journal of Industrial Economics}{51}{3}{295--316,}
 \newblock
 \begin{APACrefDOI} \doi{10.1111/1467-6451.00202} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dub{\'e}%
+, Hitsch%
+\BCBL {}\ \BBA {} Rossi%
+}{%
+Dub{\'e}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Dube2010}
+\APACinsertmetastar {%
+Dube2010}%
+\begin{APACrefauthors}%
+Dub{\'e}, J\BHBI P.%
+, Hitsch, G.J.%
+\BCBL {} Rossi, P.E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {State Dependence and Alternative Explanations for
+  Consumer Inertia} {State dependence and alternative explanations for consumer
+  inertia}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The RAND Journal of Economics}{41}{3}{417--445,}
+\newblock
+\begin{APACrefDOI} \doi{10.1111/j.1756-2171.2010.00106.x} \end{APACrefDOI}
 \newblock
 
 \newblock
@@ -856,6 +987,36 @@ G{\"u}rakar, E.{\c{C}}.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Heckman%
+}{%
+Heckman%
+}{%
+{\protect \APACyear {1981}}%
+}]{%
+Heckman1981}
+\APACinsertmetastar {%
+Heckman1981}%
+\begin{APACrefauthors}%
+Heckman, J.J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1981}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Heterogeneity and State Dependence} {Heterogeneity and
+  state dependence}.{\BBCQ}
+\newblock
+ S.~Rosen\ (\BED), \APACrefbtitle {Studies in Labor Markets} {Studies in labor
+  markets}\ (\BPGS\ 91--140).
+\newblock
+\APACaddressPublisher{Chicago}{University of Chicago Press}.
+\newblock
+\begin{APACrefURL}
+  {https://www.nber.org/books-and-chapters/studies-labor-markets/heterogeneity-and-state-dependence}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Hirschman%
 }{%
 Hirschman%
@@ -908,6 +1069,39 @@ Jofre-Bonet, M.%
 \APACjournalVolNumPages{Econometrica}{71}{5}{1443--1489,}
 \newblock
 \begin{APACrefDOI} \doi{10.1111/1468-0262.00455} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kang%
+\ \BBA {} Miller%
+}{%
+Kang%
+\ \BBA {} Miller%
+}{%
+{\protect \APACyear {2022}}%
+}]{%
+KangMiller2022}
+\APACinsertmetastar {%
+KangMiller2022}%
+\begin{APACrefauthors}%
+Kang, K.%
+\BCBT {}\ \BBA {} Miller, R.A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Winning by Default: Why is There So Little Competition
+  in Government Procurement?} {Winning by default: Why is there so little
+  competition in government procurement?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Review of Economic Studies}{89}{3}{1495--1556,}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/restud/rdab051} \end{APACrefDOI}
 \newblock
 
 \newblock
@@ -1277,6 +1471,36 @@ Shapiro, C.%
   {Information rules: A strategic guide to the network economy}.
 \newblock
 \APACaddressPublisher{Boston, MA}{Harvard Business School Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shcherbakov%
+}{%
+Shcherbakov%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+Shcherbakov2016}
+\APACinsertmetastar {%
+Shcherbakov2016}%
+\begin{APACrefauthors}%
+Shcherbakov, O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Measuring Consumer Switching Costs in the Television
+  Industry} {Measuring consumer switching costs in the television
+  industry}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The RAND Journal of Economics}{47}{2}{366--393,}
+\newblock
+\begin{APACrefDOI} \doi{10.1111/1756-2171.12131} \end{APACrefDOI}
+\newblock
+
+\newblock
+
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

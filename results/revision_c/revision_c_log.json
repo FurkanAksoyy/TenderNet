@@ -1,0 +1,350 @@
+{
+  "sample": {
+    "contracts": 9991,
+    "eligible": 4913,
+    "incumbency": 0.4522694891105231
+  },
+  "pool_diag_24m": {
+    "eligible": 4913,
+    "winner_in_pool": 3013,
+    "entrant_share": 0.3867290860981071,
+    "entrant_share_among_incumbent_wins": 0.06525652565256523,
+    "entrant_share_among_nonincumbent_wins": 0.6521739130434783,
+    "incumbency_all": 0.4522694891105231,
+    "incumbency_kept": 0.6893461666113508,
+    "pool_size_median": 70.0,
+    "pool_size_mean": 72.58966008548748,
+    "pool_size_p10_p90": [
+      33.0,
+      124.0
+    ],
+    "share_contracts_any_incumbent_in_pool": 0.8748219010787706,
+    "share_incumbents_in_pool": 0.6469869324057536,
+    "share_contracts_last_supplier_in_pool": 0.8583350295135355,
+    "share_contracts_all_incumbents_in_pool": 0.6000407083248525
+  },
+  "pool_diag_12m": {
+    "eligible": 4913,
+    "winner_in_pool": 2456,
+    "entrant_share": 0.5001017708121311,
+    "entrant_share_among_incumbent_wins": 0.24077407740774082,
+    "entrant_share_among_nonincumbent_wins": 0.7142326272761055,
+    "incumbency_all": 0.4522694891105231,
+    "incumbency_kept": 0.6868892508143323,
+    "pool_size_median": 40.0,
+    "pool_size_mean": 43.642784449419906,
+    "pool_size_p10_p90": [
+      22.0,
+      73.0
+    ],
+    "share_contracts_any_incumbent_in_pool": 0.7201302666395278,
+    "share_incumbents_in_pool": 0.46808310613894893,
+    "share_contracts_last_supplier_in_pool": 0.6867494402605333,
+    "share_contracts_all_incumbents_in_pool": 0.4331365764298799
+  },
+  "entrant_share_by_renewal": {
+    "new need": 0.4873817034700315,
+    "renewal": 0.20367183017785429
+  },
+  "entrant_share_by_proc": {
+    "21(b)": 0.14401294498381878,
+    "open": 0.3827688260440645,
+    "other": 0.5159489633173844
+  },
+  "T1b_entrant_flag": {
+    "rows_entrant": 1900,
+    "entrant_flag_chosen_share": 1.0,
+    "note": "entrant==1 only for chosen rows -> perfect separation; not estimable"
+  },
+  "broad_pool_diag": {
+    "entrant_share": 0.25401994707917774,
+    "pool_size_median": 617.0
+  },
+  "T2b_last_minus_earlier_poolall": {
+    "diff": 0.5591537722930449,
+    "ratio_OR": 1.7491916593732246,
+    "lo": 1.4304235389184377,
+    "hi": 2.1389968621002375,
+    "p": 5.108847852495888e-08
+  },
+  "T2_descr_poolall": {
+    "chosen_share_incumbent": 0.6893461666113508,
+    "chosen_share_future_only": 0.07799535346830401,
+    "alt_share_incumbent": 0.012256611594953863,
+    "alt_share_future_only": 0.0034677242561332883,
+    "chosen_share_inc_last": 0.5628941254563558,
+    "chosen_share_inc_earlier": 0.12645204115499503,
+    "alt_share_inc_last": 0.005570281204535943,
+    "alt_share_inc_earlier": 0.006686330390417921,
+    "contracts_with_earlier_incumbent_alt": 1034
+  },
+  "T2_win_rate_by_status": {
+    "alternatives": {
+      "future supplier only": 931,
+      "incumbent: earlier (not last)": 1723,
+      "incumbent: last": 2814,
+      "other pool firm": 198253
+    },
+    "wins": {
+      "future supplier only": 235,
+      "incumbent: earlier (not last)": 381,
+      "incumbent: last": 1696,
+      "other pool firm": 701
+    },
+    "P_win_per_alternative": {
+      "future supplier only": 0.25241675617615467,
+      "incumbent: earlier (not last)": 0.2211259431224608,
+      "incumbent: last": 0.6027007818052594,
+      "other pool firm": 0.0035358859638946194
+    }
+  },
+  "T2_placebo_sim_summary": {
+    "OR_incumbent": {
+      "mean": 56.6262892613411,
+      "p2_5": 51.36306286291797,
+      "p97_5": 62.748906431547795
+    },
+    "OR_future_only": {
+      "mean": 19.83192406785149,
+      "p2_5": 16.112418913333897,
+      "p97_5": 24.459285597504664
+    },
+    "OR_inc_last": {
+      "mean": 42.33991323337419,
+      "p2_5": 38.01799675154589,
+      "p97_5": 46.35073922105973
+    },
+    "OR_inc_earlier": {
+      "mean": 42.24017925638273,
+      "p2_5": 36.41462058568304,
+      "p97_5": 47.83942120850577
+    },
+    "sim_incumbency_kept": {
+      "mean": 0.6651211417192167,
+      "p2_5": 0.6533272485894458,
+      "p97_5": 0.675962495851311
+    },
+    "sim_chosen_future_only": {
+      "mean": 0.06259541984732825,
+      "p2_5": 0.05509459010952539,
+      "p97_5": 0.06837039495519416
+    }
+  },
+  "N4prior_home": {
+    "share_no_prior_win_all": 0.2824542087879091,
+    "share_no_prior_win_eligible": 0.19377162629757785,
+    "share_eligible_home_eq_buyer_prov": 0.4915530225931203
+  },
+  "T4_exclusivity_desc": {
+    "strict": {
+      "eligible_flagged": 514,
+      "share_eligible": 0.10462039487075107,
+      "share_renewals_flagged": 0.13884107860011474,
+      "share_newneeds_flagged": 0.08580441640378549,
+      "inc_flagged": 0.48638132295719844,
+      "inc_remaining": 0.44828370084110025
+    },
+    "broad": {
+      "eligible_flagged": 2161,
+      "share_eligible": 0.4398534500305312,
+      "share_renewals_flagged": 0.5427423981640849,
+      "share_newneeds_flagged": 0.3832807570977918,
+      "inc_flagged": 0.4752429430819065,
+      "inc_remaining": 0.4342296511627907
+    }
+  },
+  "T4_brand_hits_top": {
+    "hbys": 134,
+    "oracle": 113,
+    "microsoft": 111,
+    "sap": 23,
+    "pacs": 20,
+    "ybbys": 19,
+    "ebys": 17,
+    "kbs": 17,
+    "ibm": 15,
+    "dell": 14,
+    "kurumsal lisans": 11,
+    "adobe": 9,
+    "autocad": 7,
+    "uyap": 5,
+    "symantec": 5
+  },
+  "T5_random_sample": {
+    "n": 208,
+    "clusters": 159,
+    "renewals": 84,
+    "incumbents": 95,
+    "valid_missing": 0
+  },
+  "T5_cp2_corr": {
+    "n": 681,
+    "P_renewal_given_inc": 0.551440329218107,
+    "P_renewal_given_noninc": 0.1324200913242009,
+    "corr_inc_renewal": 0.4461389565765839
+  },
+  "T5_random_corr": {
+    "P_renewal_given_inc": 0.5894736842105263,
+    "P_renewal_given_noninc": 0.24778761061946902
+  },
+  "T6_triple": {
+    "logit_two-way": {
+      "triple": {
+        "coef": 1.006131765748344,
+        "OR": 2.735000902206631,
+        "lo": 0.786723361277329,
+        "hi": 9.508081624684616,
+        "p": 0.11349760895153954
+      },
+      "int_nonhealth": {
+        "coef": -0.11592781539808505,
+        "OR": 0.8905395042169998,
+        "lo": 0.3094093609614946,
+        "hi": 2.5631435523043367,
+        "p": 0.8298199541791687
+      },
+      "int_health": {
+        "coef": 0.8902039503502589,
+        "OR": 2.4356263474841406,
+        "lo": 1.363591605349401,
+        "hi": 4.350478311311453,
+        "p": 0.0026310212358744284
+      }
+    },
+    "logit_buyer": {
+      "triple": {
+        "coef": 1.006131765748344,
+        "OR": 2.735000902206631,
+        "lo": 0.8044303353983823,
+        "hi": 9.298791462615112,
+        "p": 0.10708131877250286
+      },
+      "int_nonhealth": {
+        "coef": -0.11592781539808505,
+        "OR": 0.8905395042169998,
+        "lo": 0.30250713202718466,
+        "hi": 2.6216261522713182,
+        "p": 0.8333230529202107
+      },
+      "int_health": {
+        "coef": 0.8902039503502589,
+        "OR": 2.4356263474841406,
+        "lo": 1.4031638653099414,
+        "hi": 4.227785400708398,
+        "p": 0.001556799562639551
+      }
+    },
+    "AME_pp health: post-pre change in 21(b)-open AME": {
+      "pp": 11.82686711401733,
+      "lo": 0.6278506547069546,
+      "hi": 23.025883573327707,
+      "p": 0.038463254122099416
+    },
+    "AME_pp non-health: post-pre change in 21(b)-open AME": {
+      "pp": -2.122962612293511,
+      "lo": -19.793457972242958,
+      "hi": 15.547532747655938,
+      "p": 0.813838023978028
+    },
+    "AME_pp difference health - non-health": {
+      "pp": 13.949829726310842,
+      "lo": -7.613109749456534,
+      "hi": 35.51276920207822,
+      "p": 0.2048002855965061
+    },
+    "LPM_triple_pp": {
+      "pp": 10.38036846853646,
+      "lo": -10.570258703890383,
+      "hi": 31.330995640963305,
+      "p": 0.33148973421978134
+    },
+    "N": 4913,
+    "health_n": 1502,
+    "cells": [
+      {
+        "health": 0.0,
+        "post7144": 0,
+        "proc": "21b",
+        "size": 35,
+        "mean": 0.22857142857142856
+      },
+      {
+        "health": 0.0,
+        "post7144": 0,
+        "proc": "open",
+        "size": 876,
+        "mean": 0.3515981735159817
+      },
+      {
+        "health": 0.0,
+        "post7144": 0,
+        "proc": "oth_neg",
+        "size": 455,
+        "mean": 0.31648351648351647
+      },
+      {
+        "health": 0.0,
+        "post7144": 1,
+        "proc": "21b",
+        "size": 49,
+        "mean": 0.24489795918367346
+      },
+      {
+        "health": 0.0,
+        "post7144": 1,
+        "proc": "open",
+        "size": 1309,
+        "mean": 0.39113827349121466
+      },
+      {
+        "health": 0.0,
+        "post7144": 1,
+        "proc": "oth_neg",
+        "size": 687,
+        "mean": 0.3435225618631732
+      },
+      {
+        "health": 1.0,
+        "post7144": 0,
+        "proc": "21b",
+        "size": 163,
+        "mean": 0.6073619631901841
+      },
+      {
+        "health": 1.0,
+        "post7144": 0,
+        "proc": "open",
+        "size": 285,
+        "mean": 0.4807017543859649
+      },
+      {
+        "health": 1.0,
+        "post7144": 0,
+        "proc": "oth_neg",
+        "size": 65,
+        "mean": 0.49230769230769234
+      },
+      {
+        "health": 1.0,
+        "post7144": 1,
+        "proc": "21b",
+        "size": 371,
+        "mean": 0.8840970350404312
+      },
+      {
+        "health": 1.0,
+        "post7144": 1,
+        "proc": "open",
+        "size": 579,
+        "mean": 0.6666666666666666
+      },
+      {
+        "health": 1.0,
+        "post7144": 1,
+        "proc": "oth_neg",
+        "size": 39,
+        "mean": 0.5128205128205128
+      }
+    ]
+  }
+}

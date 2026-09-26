@@ -1,0 +1,19 @@
+sample,outcome,renewal,inc_status,n,rate
+random,single_total,new need,incumbent winner,39,0.6153846153846154
+random,single_total,new need,non-incumbent winner,85,0.3764705882352941
+random,single_total,renewal,incumbent winner,56,0.7678571428571429
+random,single_total,renewal,non-incumbent winner,28,0.25
+random,single_total,new need,all,124,0.45161290322580644
+random,single_total,renewal,all,84,0.5952380952380952
+random,single_valid,new need,incumbent winner,39,0.717948717948718
+random,single_valid,new need,non-incumbent winner,85,0.5529411764705883
+random,single_valid,renewal,incumbent winner,56,0.8214285714285714
+random,single_valid,renewal,non-incumbent winner,28,0.35714285714285715
+random,single_valid,new need,all,124,0.6048387096774194
+random,single_valid,renewal,all,84,0.6666666666666666
+cp2,single_valid,new need,incumbent winner,109,0.6880733944954128
+cp2,single_valid,new need,non-incumbent winner,380,0.5236842105263158
+cp2,single_valid,renewal,incumbent winner,134,0.6492537313432836
+cp2,single_valid,renewal,non-incumbent winner,58,0.29310344827586204
+cp2,single_valid,new need,all,489,0.5603271983640081
+cp2,single_valid,renewal,all,192,0.5416666666666666

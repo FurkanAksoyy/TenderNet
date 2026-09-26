@@ -12,3 +12,4 @@ numba==0.65.1
 llvmlite==0.47.0
 fa2_modified==0.4
 matplotlib==3.11.0
+openpyxl==3.1.5   # only for src/make_human_coding_sheets.py

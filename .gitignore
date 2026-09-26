@@ -26,3 +26,5 @@ raw/
 # OS
 .DS_Store
 Thumbs.db
+human_coding/
+*.xlsx

@@ -28,6 +28,13 @@ def get():
     sb = pd.read_csv(ra / "F_single_bid_logit.csv")
     sb = sb[sb.model.str.startswith("M1 ") & (sb.variable == "incumbent")].iloc[0]
     bo = pd.read_csv(ra / "B_null_overall.csv").set_index(["sample", "null"])
+    rc = RES / "revision_c"
+    k = pd.read_csv(rc / "C1_C2_clogit_results.csv").set_index(["model", "variable"])
+    main_ = ("T1 24m pool=all: main", "incumbent")
+    fut = "T2a 24m pool=all: main + future_supplier_only"
+    lve = "T2b 24m pool=all: last vs earlier"
+    sim = pd.read_csv(rc / "C2_placebo_simulation.csv").OR_future_only
+    n4 = pd.read_csv(rc / "C3_N4prior_overall.csv").set_index("null")
     rev = [
         ("Renewals among repeat-eligible contracts", 1743, g.loc[("N1", "renewal"), "n_eligible"], 0),
         ("Repeat-eligible contracts", 4913, g.loc[("N1", "renewal"), "n_eligible"] + g.loc[("N1", "new need"), "n_eligible"], 0),
@@ -36,11 +43,23 @@ def get():
         ("Incumbency, new needs, observed", 0.305, g.loc[("N3", "new need"), "obs"], 0.0005),
         ("Incumbency, new needs, N3 null", 0.163, g.loc[("N3", "new need"), "null_mean"], 0.0015),
         ("Incumbency null N3 (province) mean", 0.21, bo.loc[("main", "N3"), "null_mean"], 0.005),
-        ("Cond. logit incumbent OR (home from prior wins)", 23.8, c.loc[cm, "OR"], 0.05),
-        ("  ... 95% CI lower", 20.6, c.loc[cm, "OR_lo"], 0.05),
-        ("  ... 95% CI upper", 27.5, c.loc[cm, "OR_hi"], 0.05),
         ("Event study 21(b)-open, 2018 vs 2013-17 (pp)", 37, e.loc["2018", "vs_1317_pp"], 0.5),
         ("cp2 single-bid logit, incumbent OR", 2.04, sb.OR, 0.005),
+        ("Choice model (24m, all pre-t firms): incumbent OR", 42.3, k.loc[main_, "OR"], 0.05),
+        ("  ... 95% CI lower", 36.4, k.loc[main_, "OR_lo"], 0.05),
+        ("  ... 95% CI upper", 49.2, k.loc[main_, "OR_hi"], 0.05),
+        ("  ... contracts", 3013, k.loc[main_, "n_contracts"], 0),
+        ("Placebo: future-supplier-only OR", 54.4, k.loc[(fut, "future_supplier_only"), "OR"], 0.05),
+        ("  ... 95% CI lower", 42.2, k.loc[(fut, "future_supplier_only"), "OR_lo"], 0.05),
+        ("  ... 95% CI upper", 70.1, k.loc[(fut, "future_supplier_only"), "OR_hi"], 0.05),
+        ("Placebo model: past-incumbent OR", 63.7, k.loc[(fut, "incumbent"), "OR"], 0.05),
+        ("Simulated future-only OR, mean (100 sims)", 19.8, sim.mean(), 0.05),
+        ("  ... 2.5th percentile", 16.1, sim.quantile(0.025), 0.05),
+        ("  ... 97.5th percentile", 24.5, sim.quantile(0.975), 0.05),
+        ("Last supplier OR", 45.8, k.loc[(lve, "inc_last"), "OR"], 0.05),
+        ("Earlier supplier OR", 26.2, k.loc[(lve, "inc_earlier"), "OR"], 0.05),
+        ("N4 null (home from prior wins) mean", 0.173, n4.loc["N4_home_prior", "null_mean"], 0.0015),
+        ("N4b null (province x home from prior wins) mean", 0.264, n4.loc["N4b_prov_home_prior", "null_mean"], 0.0015),
     ]
     return [
         # (label, paper value, reproduced value, absolute tolerance)
@@ -58,11 +77,11 @@ def get():
 
 def main():
     bad = 0
-    print(f"{'quantity':50s} {'paper':>8s} {'reproduced':>12s}  status")
+    print(f"{'quantity':52s} {'paper':>8s} {'reproduced':>12s}  status")
     for lab, paper, val, tol in get():
         ok = abs(float(val) - paper) <= tol
         bad += not ok
-        print(f"{lab:50s} {paper:>8} {float(val):>12.4f}  {'OK' if ok else 'MISMATCH'}")
+        print(f"{lab:52s} {paper:>8} {float(val):>12.4f}  {'OK' if ok else 'MISMATCH'}")
     sys.exit(1 if bad else 0)
 
 

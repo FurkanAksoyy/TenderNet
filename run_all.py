@@ -29,6 +29,7 @@ STEPS = [
     ("models_figures", "models_figures.py", False),      # F-R1, F-R2
     ("revision_a", "revision_a.py", False),              # renewals, N4 nulls, conditional logit, BH, cp2 single bid; F-A1 (~6 min)
     ("revision_b", "revision_b.py", False),              # 21(b) logit variants, event study F-B1, descriptives, PPI robustness
+    ("revision_c", "revision_c.py", False),              # leakage-free choice model (24-month pools), future-supplier placebo + simulation, N4 nulls, exclusivity, single-bid renewal controls
     ("network", "network_analysis.py", True),            # curveball nulls, Louvain stability (~30 min)
     ("network_projections", "network_projections.py", False),  # BiCM projections, brokerage (~3 min)
     ("network_figures", "network_figures.py", False),    # fig_N1_core_network

@@ -2,7 +2,7 @@
 
 Data and code for
 
-> Aksoy, F. and Şimşek, A. (2026). **Unconcentrated markets, captive buyers: incumbency in Türkiye's public IT
+> Aksoy, F. and Şimşek, A. (2026). **Unconcentrated markets, persistent ties: incumbency in Türkiye's public IT
 > procurement.** Manuscript prepared for submission to the *Journal of Industrial and Business Economics* (JIBE, Springer).
 
 We study 9,991 awarded information-technology contracts published on Türkiye's e-procurement platform EKAP
@@ -11,9 +11,11 @@ market, yet buyers return to incumbent suppliers far more often than market stru
 repeat-eligible contracts go to an incumbent, against 6.2% under a permutation null within product market and year
 and 20.7% under a null that also fixes the province. About a third of these contracts (1,743 of 4,913) are annual
 re-tenders of the same service; they carry most of the excess (72.0% vs 28.8% under the province null), but new
-needs still exceed their null (30.5% vs 16.3%). In a conditional-logit supplier-choice model with firm-activity and
-home-province controls, prior supply to the buyer multiplies a firm's odds of winning by about 24 (OR 23.8,
-95% CI 20.6–27.5). Incumbency is highest in health IT and under Article 21(b) negotiated procedures, where the
+needs still exceed their null (30.5% vs 16.3%). In a conditional-logit supplier-choice model among firms active in the
+market in the 24 months before each tender, prior supply to the buyer raises a firm's odds of winning about 40-fold
+(OR 42.3, 95% CI 36.4–49.2; 3,013 contracts). A future-supplier placebo (OR 54.4 for firms that supply the buyer
+only later, against 19.8 expected under pure state dependence) indicates that much of the persistence reflects
+stable buyer–firm matching, with state dependence clearest in renewals. Incumbency is highest in health IT and under Article 21(b) negotiated procedures, where the
 21(b)–open gap jumped by 37 percentage points in 2018 relative to 2013–17, and incumbent-won tenders attract single
 bids more often (OR 2.04).
 
@@ -55,7 +57,7 @@ paper and fails if any differs. All random procedures use fixed seeds (42 and se
 scripts), so results are exactly reproducible.
 
 Pipeline order: `concentration_v3.py` → `lockin_analysis.py` → `models_analysis.py` → `models_report.py` →
-`models_figures.py` → `revision_a.py` → `revision_b.py` → `network_analysis.py` (slow) → `network_projections.py` → `network_figures.py` →
+`models_figures.py` → `revision_a.py` → `revision_b.py` → `revision_c.py` → `network_analysis.py` (slow) → `network_projections.py` → `network_figures.py` →
 `make_si_tables.py` → `check_headlines.py`. `results/network/fig_N1_hub_labels.csv` is a hand-made input (short
 hub labels for Figure 6), not an output.
 
@@ -73,7 +75,7 @@ count), `src/abstract_count.py` (abstract word count), `src/merge_bib.py` (rebui
 | Table 1 | main-sample descriptives | `concentration_v3.py`, `lockin_analysis.py` | `results/concentration/concentration_results.md`, `results/lockin/lockin_log.json` |
 | Table 2 | product markets (contracts, firms, buyers, value, procedure shares) | `revision_b.py` | `results/revision_b/B5_descriptives.csv` |
 | Table 3 | incumbency vs nulls N1–N3, N4 (home province), renewals / new needs | `lockin_analysis.py`, `revision_a.py` | `results/lockin/null_overall.csv`, `results/revision_a/B_null_overall.csv`, `B_null_by_group.csv` |
-| Table 4 | conditional logit of supplier choice | `revision_a.py` | `results/revision_a/D_clogit_results.csv` |
+| Table 4 | conditional logit of supplier choice (24-month pre-tender pools), future-supplier placebo, last vs earlier supplier | `revision_c.py` | `results/revision_c/C1_C2_clogit_results.csv`, `C2_placebo_simulation.csv` |
 | Figure 1 | supplier HHI by product market | `concentration_v3.py` | `figures/F-C1_concentration_by_market.*`, `results/concentration/supplier_hhi_by_market.csv` |
 | Figure 2 | incumbency by product market | `lockin_analysis.py` | `figures/F_L1_incumbency_by_market.*`, `results/lockin/null_by_group.csv` |
 | Figure 3 | incumbency by days since previous contract, renewals vs new needs | `revision_a.py` | `figures/F-A1_incumbency_by_gap_renewal.*`, `results/revision_a/A_fig_A1_data.csv` |
@@ -82,12 +84,16 @@ count), `src/abstract_count.py` (abstract word count), `src/merge_bib.py` (rebui
 | text | 21(b) × post-2018 logit (OR 2.42) and variants | `models_analysis.py`, `revision_b.py` | `results/models/A1_logit_incumbency.csv`, `results/revision_b/B1_controls_clustering.csv` |
 | text | single bids in the larger cp2 sample (OR 2.04) | `revision_a.py` | `results/revision_a/F_single_bid_logit.csv`, `F_single_bid_rates.csv` |
 | text | buyer-level tests with Benjamini–Hochberg | `revision_a.py` | `results/revision_a/E_buyer_BH.csv` |
+| Table 3 / text | nulls N4, N4b with home province from prior wins | `revision_c.py` | `results/revision_c/C3_N4prior_overall.csv`, `C3_N4prior_by_renewal.csv` |
+| text | single bids with renewal controls; 21(b) × post × health triple interaction | `revision_c.py` | `results/revision_c/C5_single_bid_*.csv`, `revision_c_log.json` |
 | SI: scope classes | | `make_si_tables.py` | `paper/si_tables/scope.tex` |
 | SI: buyer sectors | | `revision_b.py` | `results/revision_b/B5_descriptives.csv` |
 | SI: concentration, within-year HHI, PPI deflator | | `concentration_v3.py`, `revision_b.py` → `make_si_tables.py` | `paper/si_tables/concentration.tex`, `within_year.tex`, `results/revision_b/B6_hhi_cpi_vs_ppi.csv` |
 | SI: incumbency by market / sector / buyer type / procedure / year, sensitivity; figures incumbency by year and buyers' top-supplier share | | `lockin_analysis.py` → `make_si_tables.py` | `paper/si_tables/lockin_*.tex`, `sensitivity.tex`, `figures/F_L2_*`, `figures/F_L3_*` |
 | SI: renewals, N4 nulls, lots/framework check, natural-person exclusion | | `revision_a.py` (+ `revision_a_titles.py`) | `results/revision_a/B_null_*.csv`, `A_renewal_*.csv`, `C_multilot_framework_titles.csv` |
-| SI: conditional logit by specification and subgroup | | `revision_a.py` | `results/revision_a/D_clogit_results.csv` |
+| SI: supplier choice and state dependence (pool sizes, 12/24-month windows, subgroups, placebo, simulation) | | `revision_c.py` | `results/revision_c/C1_*.csv`, `C2_*.csv` |
+| SI: named-product licences and maintenance (exclusivity flags) | | `revision_c.py` | `results/revision_c/C4_exclusivity_nulls.csv`, `C4_strict_flagged_titles.csv` |
+| SI (superseded model, kept for transparency) | first choice model with sampled alternatives | `revision_a.py` | `results/revision_a/D_clogit_results.csv` |
 | SI: contract-level model, event study, Art. 21(f) limits, buyer size | | `revision_b.py` | `results/revision_b/B1_*.csv` … `B4_*.csv` |
 | SI: dyad continuation (logit, NB2) | | `models_analysis.py` → `make_si_tables.py` | `paper/si_tables/B_*.tex` |
 | SI: single-bid rates | | `models_analysis.py` → `make_si_tables.py` | `paper/si_tables/single_bid.tex` |
@@ -96,8 +102,10 @@ count), `src/abstract_count.py` (abstract word count), `src/merge_bib.py` (rebui
 `F-C2`, `F-R1`, `fig_N2` and `fig_N3` are produced for completeness and are not in the paper. Reports with every
 number that could go in the paper: `results/*/*_results.md` (the `lockin`, `models` and `revision_a` reports were
 written by hand from the outputs; the others are generated). `results/revision_a/A_renewal_validation_labels.csv`
-is the hand-coded validation of the renewal rule (titles only). `results/revision_a/D_choice_data.csv.gz` is the
-choice-model data with integer firm and buyer codes.
+is the hand-coded validation of the renewal rule (titles only). `results/revision_a/D_choice_data.csv.gz` and
+`results/revision_c/C1_choice_data_24m_poolall.csv.gz` are choice-model data with integer codes only (the latter
+without firm codes). `src/make_human_coding_sheets.py` writes Excel sheets for human validation coding into
+`human_coding/` (not tracked; needs `openpyxl`).
 
 ## Data provenance
 
@@ -143,7 +151,7 @@ Details: `data/README.md`.
 
 Please cite the paper and this package (see `CITATION.cff`):
 
-> Aksoy, F. and Şimşek, A. (2026). TenderNet v1.0.0: data and code for "Unconcentrated markets, captive buyers:
+> Aksoy, F. and Şimşek, A. (2026). TenderNet v1.0.0: data and code for "Unconcentrated markets, persistent ties:
 > incumbency in Türkiye's public IT procurement" (Version 1.0.0) [Software and data]. Zenodo.
 > https://doi.org/10.5281/zenodo.XXXXXXX
 

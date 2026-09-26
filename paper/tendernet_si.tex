@@ -9,7 +9,7 @@
 \renewcommand{\thefigure}{S\arabic{figure}}
 \renewcommand{\thesection}{S\arabic{section}}
 
-\title{\textbf{Supplementary Information}\\[4pt]\large Unconcentrated markets, captive buyers: incumbency in Türkiye's public IT procurement}
+\title{\textbf{Supplementary Information}\\[4pt]\large Unconcentrated markets, persistent ties: incumbency in Türkiye's public IT procurement}
 \author{Furkan Aksoy \and Arda Şimşek\\[2pt]\small Department of Software Engineering, Maltepe University, Istanbul, Türkiye}
 \date{}
 
@@ -113,7 +113,10 @@ Further robustness checks give the following results. Excluding the 116 possible
 \end{figure}
 
 \subsection{Nulls that preserve firm geography}
-A firm's home province is the province where it won most contracts. Null N4 permutes winners within market $\times$ year $\times$ winner's home province: the null mean is 0.185 (ratio 2.44, excess 1,313 contracts). Null N4b permutes within market $\times$ year $\times$ buyer province $\times$ winner's home province. In N4b, 31\% of eligible contracts are in cells with a single possible winner. Its null mean is 0.242 (ratio 1.87, excess 1,034 contracts). All $p<0.001$.
+A firm's home province is the province where it won most contracts before the tender; firms without earlier wins form their own category. Null N4 permutes winners within market $\times$ year $\times$ winner's home province: the null mean is 0.173 (ratio 2.61, excess 1,370 contracts). Null N4b permutes within market $\times$ year $\times$ buyer province $\times$ winner's home province: the null mean is 0.264 (ratio 1.71, excess 923 contracts). Under N4b, 38.5\% of eligible contracts are in cells with a single possible winner, which makes it very conservative. Renewals have an incumbency of 0.720 against an N4b null of 0.391, new needs 0.305 against 0.195 (all $p<0.001$). A version with home provinces computed from all wins, including the contract itself, gives null means of 0.185 (N4) and 0.242 (N4b).
+
+\subsection{Named-product licences and maintenance}
+Titles that indicate licence renewal, maintenance, support, or updates of a named product (for example hospital information systems, Oracle, Microsoft) account for 10.5\% of repeat-eligible contracts. Their incumbency (0.486) is close to that of other contracts (0.448). Excluding them, renewals have an incumbency of 0.723 against an N3 null of 0.296 (2.44 times), and new needs 0.306 against 0.163 (1.88 times). Excluding all titles with any licence, maintenance, support, or update wording (44\% of eligible contracts) leaves ratios of 2.07 and 1.77.
 
 \subsection{Renewals}
 Titles are normalized by Turkish-aware lower-casing, removal of diacritics, digits, month names, and about 110 generic procurement words, and stemming to five characters; similarity is the Jaccard index of the stemmed word sets. A contract is a renewal if the buyer has a contract in the same market 183--548 days earlier with similarity of at least 0.5. In a check of 60 best-match pairs drawn at random within four similarity bands (15 each), coded from the titles with AI assistance (Claude), 38 of the 42 pairs above the threshold described the same recurring service. Nine of the 18 pairs below it did so as well, so the new-need group contains some renewals. Table~\ref{tab:renew} reports results by procedure and market and alternative definitions.
@@ -154,32 +157,40 @@ Figure~\ref{fig:buyers} shows the distribution of main-supplier shares. With per
 \caption{Distribution of the main supplier's share of each buyer's contracts (540 buyers with at least five contracts), observed and under null N1.}\label{fig:buyers}
 \end{figure}
 
-\section{Supplier choice}
-For each of the 4,913 repeat-eligible contracts, the choice set contains the winner and 30 firms sampled at random from those that won at least one contract in the same product market in the same or the previous year (149,670 rows). Table~\ref{tab:clogit} reports the main specifications with buyer-clustered standard errors (1,126 buyers); a 500-draw buyer bootstrap gives an interval of 20.7--27.9 for the preferred incumbency odds ratio. If the home province is computed from all wins, including the contract being predicted, the incumbency odds ratio is 15.2 (12.9--17.8). Excluding the home-province variable gives 29.8. In a model with interactions, renewal multiplies the incumbency odds ratio by 3.7 (2.9--4.9) and Article~21(b) by 4.6 (3.2--6.6).
+\section{Supplier choice and state dependence}
+\textbf{Choice sets.} For each repeat-eligible contract, the alternatives are the firms that won at least one contract in the same product market in the 24 months strictly before the tender date; covariates use only information before the tender. In 38.7\% of the 4,913 repeat-eligible contracts the winner is not in this set (an entrant to the market or returning after more than 24 months): 65\% of non-incumbent wins, 20\% of renewals, 49\% of new needs, and 52\% of 21(f) contracts. The main model uses the remaining 3,013 contracts (909 buyers). At least one of the buyer's incumbents is in the choice set in 87.5\% of these contracts, and the most recent supplier in 85.8\%. An earlier version of the choice sets included firms whose only wins came after the tender. That produced an artificial ``no prior wins'' effect and is not used.
+
+\textbf{Estimates.} Table~\ref{tab:clogit} reports the incumbent odds ratio across specifications. Adding entrant winners back to their choice sets gives a lower bound of 21.5 (18.5--25.0), because an entrant indicator cannot be estimated (it is one only for chosen alternatives). With a pool that includes firms active in any market, the incumbent odds ratio is 31.9 and firms new to the market have an odds ratio of 0.23.
 
 \begin{table}[h]\centering\small
-\caption{Conditional logit: incumbency odds ratio [buyer-clustered 95\% CI] by specification and subgroup.}\label{tab:clogit}
+\caption{Conditional logit: incumbent odds ratio [buyer-clustered 95\% CI].}\label{tab:clogit}
 \begin{tabular}{@{}lrr@{}}
 \toprule
-Specification / subgroup & Contracts & Incumbent OR\\
+Specification & Contracts & Incumbent OR\\
 \midrule
-Home province from prior wins (preferred) & 4,913 & 23.8 [20.6, 27.5]\\
-\quad Renewals & 1,743 & 56.7 [44.7, 72.0]\\
-\quad New needs & 3,170 & 13.9 [11.7, 16.6]\\
-\quad Article 21(b) & 618 & 68.0 [50.5, 91.7]\\
-\quad Open & 3,041 & 19.5 [16.5, 23.0]\\
-Home province from all wins & 4,913 & 15.2 [12.9, 17.8]\\
-\quad Renewals / new needs & & 32.7 / 8.8\\
-\quad Article 21(b) / open / other & & 52.5 / 12.8 / 10.5\\
-Without home province & 4,913 & 29.8 [26.0, 34.1]\\
+24-month pool, all active firms (main) & 3,013 & 42.3 [36.4, 49.2]\\
+24-month pool, 30 random alternatives & 3,013 & 41.8 [35.8, 48.8]\\
+24-month pool, 10 random alternatives & 3,013 & 44.5 [36.3, 54.5]\\
+12-month pool, all active firms & 2,456 & 39.8 [33.8, 46.9]\\
+\quad Renewals & 1,388 & 140.7 [107.0, 185.1]\\
+\quad New needs & 1,625 & 21.0 [17.6, 24.9]\\
+\quad Article 21(b) & 529 & 95.8 [69.4, 132.3]\\
+\quad Open & 1,877 & 33.7 [28.1, 40.5]\\
+\quad Other procedures (mainly 21(f)) & 607 & 43.7 [32.3, 59.1]\\
+Entrant winners added (30 alternatives; lower bound) & 4,913 & 21.5 [18.5, 25.0]\\
+\quad Renewals / new needs & & 48.1 / 13.0\\
 \botrule
 \end{tabular}
 \end{table}
 
+\textbf{Future-supplier placebo.} We add an indicator for firms that supply the buyer in the market after the tender date but had not before. In the main specification its odds ratio is 54.4 (42.2--70.1), next to 63.7 for past suppliers; restricting to tenders up to 2023, to limit right-censoring of future ties, gives 52.4. The design inflates the future coefficient even without heterogeneity, because winning the current tender makes the winner an incumbent for later tenders. We therefore simulated 100 data sets with state dependence only. Winners of the 3,013 contracts are re-drawn in chronological order from the fitted main model, with incumbency recomputed from the simulated history. All other covariates keep their observed values, and entrant and first contracts keep their observed winners. The placebo model is then re-estimated on each simulated data set. The simulated future-supplier odds ratio is 19.8 (16.1--24.5), far below the observed 54.4, so persistent buyer--firm matching accounts for a substantial part of the incumbency effect. The comparison of past and future suppliers differs by type of purchase. For renewals the odds ratios are 258 and 128, for new needs 30 and 40.
+
+\textbf{Recency.} Separating the buyer's most recent supplier in the market from earlier suppliers gives odds ratios of 45.8 (39.6--52.9) and 26.2 (20.7--33.1). The ratio is 1.75 (1.43--2.14, $p<0.001$), similar within renewals (147.6 and 84.4) and new needs (22.7 and 14.2). Controlling for the number of past wins with the buyer, the odds ratios are 27.5 and 16.3. In the state-dependence simulation the ratio is about 1.0, so the recency pattern is not an artefact of the design.
+
 \section{Procedure and timing}
 
 \subsection{Contract-level model}
-The 21(b) $\times$ post-2018 odds ratio is 2.42 (1.43--4.09) with the buyer-history controls and two-way clustering, and 2.42 (1.57--3.73) with buyer clustering. Without the prior-contract and prior-supplier controls it is 2.90 (1.64--5.15); without any buyer-history controls it is 2.93 (1.65--5.19). The pre-2018 marginal effect of 21(b) is between $-3.5$ and $-3.8$ percentage points and insignificant in all specifications. Further checks give interaction odds ratios between 1.76 and 2.43: an IT-only sample, broad scope, recorded buyer labels, recorded firm names, a linear trend instead of year fixed effects, and excluding 2020. Alternative break dates give 2.55 (25 August 2017, KHK~694; log-likelihood $-2801.1$ against $-2802.5$ for 25 May 2018), 2.10 (placebo, May 2016, $p=0.009$), and 1.57 (placebo, May 2020, $p=0.08$). The interaction is 2.64 among health buyers and 0.86 ($p=0.78$) among other buyers.
+The 21(b) $\times$ post-2018 odds ratio is 2.42 (1.43--4.09) with the buyer-history controls and two-way clustering, and 2.42 (1.57--3.73) with buyer clustering. Without the prior-contract and prior-supplier controls it is 2.90 (1.64--5.15); without any buyer-history controls it is 2.93 (1.65--5.19). The pre-2018 marginal effect of 21(b) is between $-3.5$ and $-3.8$ percentage points and insignificant in all specifications. Further checks give interaction odds ratios between 1.76 and 2.43: an IT-only sample, broad scope, recorded buyer labels, recorded firm names, a linear trend instead of year fixed effects, and excluding 2020. Alternative break dates give 2.55 (25 August 2017, KHK~694; log-likelihood $-2801.1$ against $-2802.5$ for 25 May 2018), 2.10 (placebo, May 2016, $p=0.009$), and 1.57 (placebo, May 2020, $p=0.08$). The interaction is 2.64 among health buyers and 0.86 ($p=0.78$) among other buyers. In a model with a triple interaction (two-way clustered), the post-2018 21(b) interaction is 2.44 ($p=0.003$) for health buyers and 0.89 for others. The difference is not significant (odds ratio 2.74, 95\% CI 0.79--9.51, $p=0.11$; in percentage points $+13.9$, $-7.6$ to 35.5), because only 84 non-health 21(b) contracts are repeat-eligible. Under Article~21(f), 34.6\% of repeat-eligible contracts go to an incumbent, against 13.1\% under N3 and 3.3\% under N1.
 
 \subsection{Event study}
 Main-text Figure~4 reports the 21(b)--open gap by year relative to 2013--17. In that period the gap does not differ across years (joint tests $p=0.19$ for all buyers and $0.20$ for health buyers). In 2018 it is 37 percentage points higher for all buyers (24--50) and 43 points higher for health buyers (23--62). From 2019 on it averages 14 points above the reference for all buyers ($p=0.003$) and 12 points for health buyers ($p=0.04$). With buyer fixed effects, health buyers show a gap averaging $-10$ points in 2013--17, positive in every year from 2018, and 24 points (10--38) above the reference from 2019 on. Among parametric shapes, a step in August 2017 combined with a declining trend fits best. A step in May 2018 fits worse by 3.4--7.8 AIC points across the three samples, and a pure trend fits about as badly as no change. Only 8 and 10 repeat-eligible 21(b) contracts fall in the windows 25 August--31 December 2017 and 1 January--24 May 2018. The years 2010--12, with little buyer history and 24 21(b) contracts, show a high gap as well. Against that base, no later year is significantly higher.
@@ -191,11 +202,11 @@ For each new buyer--firm pair in a product market, we ask whether the pair signs
 \begin{table}[h]\centering\small\caption{Number of later contracts, NB2 with estimated dispersion (full specification).}\label{tab:bnb}\input{si_tables/B_nb2}\end{table}
 
 \section{Single bidding}
-\textbf{Random sample.} Bid counts were retrieved from published result announcements for a random sample of tenders stratified by year (40 per year drawn from all retrieved tenders). Of these, 393 are in the main sample and report bid counts; none is available for 2010--2011. Rates are weighted by the inverse sampling fraction of each year, with linearized 95\% intervals. Incumbency status is undefined when the tender is the buyer's first in the market. Adjusting for procedure and year (logit, buyer-clustered, $n=208$ tenders with defined incumbency), the odds ratio of a single bid for incumbent winners is 4.44 (2.39--8.25). The single-bid rate has a weak upward trend (odds ratio 1.05 per year; $p=0.04$ unweighted, $p=0.11$ weighted). In 308 tenders with a recorded number of firms that obtained the documents, design-weighted averages are 4.0 such firms and 1.9 valid bids. In 45\% of these tenders two or more firms obtained the documents but only one valid bid was received.
+\textbf{Random sample.} Bid counts were retrieved from published result announcements for a random sample of tenders stratified by year (40 per year drawn from all retrieved tenders). Of these, 393 are in the main sample and report bid counts; none is available for 2010--2011. Rates are weighted by the inverse sampling fraction of each year, with linearized 95\% intervals. Incumbency status is undefined when the tender is the buyer's first in the market. Adjusting for procedure and year (logit, buyer-clustered, $n=208$ tenders with defined incumbency), the odds ratio of a single bid for incumbent winners is 4.44 (2.39--8.25). Adding renewal status as a control gives odds ratios of 3.62 for a single bid and 2.95 for a single valid bid (2.63 without the renewal control). The single-bid rate has a weak upward trend (odds ratio 1.05 per year; $p=0.04$ unweighted, $p=0.11$ weighted). In 308 tenders with a recorded number of firms that obtained the documents, design-weighted averages are 4.0 such firms and 1.9 valid bids. In 45\% of these tenders two or more firms obtained the documents but only one valid bid was received.
 
 \begin{table}[h]\centering\small\caption{Single-bid rates (design-weighted random sample).}\label{tab:single}\input{si_tables/single_bid}\end{table}
 
-\textbf{Software sample.} An interrupted enrichment run of the scraper retrieved result details for 3,400 tenders found with the first search keyword, \emph{yazılım} (software). For tenders from 2021 on, these include the number of valid bids. Joined to the main sample, 1,194 tenders have this count, about 94\% of software-titled tenders from 2021 on but only 35\% of all tenders in that period. The sample is therefore not random. Single valid bids occur in 66.7\% of incumbent-won tenders and 49.3\% of others. In a logit with procedure, year, and market fixed effects (681 tenders with defined incumbency, buyer-clustered), the incumbent odds ratio is 2.04 (1.40--2.96), and 2.65 when renewal status is added.
+\textbf{Software sample.} An interrupted enrichment run of the scraper retrieved result details for 3,400 tenders found with the first search keyword, \emph{yazılım} (software). For tenders from 2021 on, these include the number of valid bids. Joined to the main sample, 1,194 tenders have this count, about 94\% of software-titled tenders from 2021 on but only 35\% of all tenders in that period. The sample is therefore not random. Single valid bids occur in 66.7\% of incumbent-won tenders and 49.3\% of others. In a logit with procedure, year, and market fixed effects (681 tenders with defined incumbency, buyer-clustered), the incumbent odds ratio is 2.04 (1.40--2.96), and 2.68 when renewal status is added (renewal odds ratio 0.52). Controlling for renewal raises the incumbent effect because renewals are much more common among incumbent winners (55\% against 13\%), and renewals won by newcomers are the most contested tenders (29\% single valid bids, against 52\% for new needs won by newcomers).
 
 \section{Network structure}
 \textbf{Graph.} The main-sample graph has 2,814 firms, 2,890 buyers and 7,219 weighted edges, with density $8.9\times10^{-4}$. The giant component contains 4,446 nodes (78\%) and 92\% of contracts. Degree distributions (number of distinct partners) are heavy-tailed. Fitted by maximum likelihood with the protocol of Clauset, Shalizi and Newman (2009), firms have $\hat\alpha=2.21$, and a lognormal is not distinguishable from a power law ($R=-1.67$, $p=0.09$). For buyers ($\hat\alpha=2.06$) the power law is rejected by the bootstrap goodness-of-fit test, and a lognormal fits better ($R=-6.19$, $p<0.001$). Degree assortativity is $-0.17$ against $-0.04$ in the null. Bipartite clustering exceeds the null: Robins--Alexander 0.026 against 0.012, Latapy 0.31 against 0.25. Figure~\ref{fig:net} shows the core of the network.

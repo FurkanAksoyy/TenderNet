@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software or data, please cite it as below."
-title: "TenderNet: data and code for 'Unconcentrated markets, captive buyers: incumbency in Türkiye's public IT procurement'"
+title: "TenderNet: data and code for 'Unconcentrated markets, persistent ties: incumbency in Türkiye's public IT procurement'"
 version: 1.0.0
 date-released: 2026-09-26
 license: MIT
@@ -19,7 +19,9 @@ abstract: >-
   Code and derived data (9,991 EKAP IT contracts, 2010-2026). Supplier HHIs are low, but 45% of
   repeat-eligible contracts go to an incumbent versus 21% under a province-level permutation null;
   renewals (about one third) carry most of the excess, new needs still exceed their null, and prior
-  supply multiplies a firm's odds of winning by about 24 in a conditional-logit choice model.
+  supply raises a firm's odds of winning about 40-fold among firms active before each tender; a
+  future-supplier placebo indicates that much of the persistence reflects stable buyer-firm matching,
+  with state dependence clearest in renewals.
 keywords:
   - public procurement
   - incumbency
@@ -30,7 +32,7 @@ keywords:
   - EKAP
 preferred-citation:
   type: article
-  title: "Unconcentrated markets, captive buyers: incumbency in Türkiye's public IT procurement"
+  title: "Unconcentrated markets, persistent ties: incumbency in Türkiye's public IT procurement"
   authors:
     - family-names: Aksoy
       given-names: Furkan
