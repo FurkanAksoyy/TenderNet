@@ -1,8 +1,8 @@
-# TenderNet unreleased revision of v1.0.1 — reproducibility package
+# TenderNet v1.1.0 — reproducibility package
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22994070.svg)](https://doi.org/10.5281/zenodo.22994070)
 
-**Status (27 September 2026):** this repository contains the revised manuscript, code, derived data and results following v1.0.1. Both authors have approved the revised manuscript for submission. Independent human classification validation remains outstanding and is disclosed. This revision has not been deposited as a new Zenodo release; the DOI above identifies the unchanged v1.0.1 archive. Use the exact Git commit URL to identify the revised GitHub snapshot.
+**Status (27 September 2026):** v1.1.0 contains the revised manuscript, code, derived data and results. Both authors have approved the manuscript for submission; independent human classification validation remains outstanding and is disclosed. The exact release is https://github.com/FurkanAksoyy/TenderNet/releases/tag/v1.1.0. The DOI above is the version-spanning Zenodo concept DOI; cite the record explicitly labelled v1.1.0 for this revision. The previous v1.0.1 archive has the version-specific DOI 10.5281/zenodo.22997485.
 
 
 Data and code for
