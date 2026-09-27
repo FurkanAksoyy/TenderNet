@@ -40,6 +40,12 @@ PATCHES = [
     (r"journal={European Journal on Criminal Policy and Research}, volume={22}, pages={369--397}, year={2016}}",
      r"journal={European Journal on Criminal Policy and Research}, volume={22}, number={3}, pages={369--397}, year={2016}," "\n"
      r"  doi={10.1007/s10610-016-9308-z}}"),
+    (r"journal={International Journal of Data Science and Analytics}, volume={12}, pages={45--60}, year={2021}}",
+     r"journal={International Journal of Data Science and Analytics}, volume={12}, pages={45--60}, year={2021}," "\n"
+     r"  doi={10.1007/s41060-019-00204-1}}"),
+    (r"journal={Scientific Reports}, volume={9}, pages={10818}, year={2019}}",
+     r"journal={Scientific Reports}, volume={9}, pages={10818}, year={2019}," "\n"
+     r"  doi={10.1038/s41598-019-47198-1}}"),
 ]
 for a, b in PATCHES:
     assert a in text, a

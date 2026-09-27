@@ -22,7 +22,7 @@ MARKET_LABEL = {
     "physical_security_surveillance": "Physical security / surveillance",
     "GIS_city_information": "GIS / city information",
     "cybersecurity": "Cybersecurity",
-    "smart_city_traffic_OT": "Smart city / traffic / OT",
+    "smart_city_traffic_OT": "Smart city / traffic",
     "education_technology": "Education technology",
     "call_centre_helpdesk": "Call centre / help desk",
     "other_IT": "Other IT",
