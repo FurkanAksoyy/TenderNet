@@ -24,4 +24,4 @@ Sincerely,
 
 Furkan Aksoy (corresponding author), on behalf of both authors
 Department of Software Engineering, Maltepe University, Istanbul, Türkiye
-furkan78177@gmail.com · ORCID 0009-0000-0228-8202
+furkanaksoy178@gmail.com · ORCID 0009-0000-0228-8202
