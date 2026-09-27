@@ -1,5 +1,7 @@
 # TenderNet v1.0.0 — reproducibility package
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22994070.svg)](https://doi.org/10.5281/zenodo.22994070)
+
 Data and code for
 
 > Aksoy, F. and Şimşek, A. (2026). **Unconcentrated markets, persistent ties: incumbency in Türkiye's public IT
@@ -161,7 +163,7 @@ Please cite the paper and this package (see `CITATION.cff`):
 
 > Aksoy, F. and Şimşek, A. (2026). TenderNet v1.0.0: data and code for "Unconcentrated markets, persistent ties:
 > incumbency in Türkiye's public IT procurement" (Version 1.0.0) [Software and data]. Zenodo.
-> https://doi.org/10.5281/zenodo.XXXXXXX
+> https://doi.org/10.5281/zenodo.22994070
 
 Contact: Furkan Aksoy (corresponding author), Department of Software Engineering, Maltepe University, Istanbul,
 ORCID [0009-0000-0228-8202](https://orcid.org/0009-0000-0228-8202). Arda Şimşek, ORCID
