@@ -23,7 +23,7 @@ def key(entry):
 
 old = [e for e in entries(OLD.read_text(encoding="utf-8")) if key(e).lower() not in DROP_OLD]
 new = entries(NEW.read_text(encoding="utf-8"))
-for extra in ["refs_revision.bib", "refs_revision2.bib"]:
+for extra in ["refs_revision.bib", "refs_revision2.bib", "refs_revision3.bib"]:
     path = ROOT / "paper" / "bib_src" / extra
     if path.exists():
         known = {key(e).lower() for e in new}

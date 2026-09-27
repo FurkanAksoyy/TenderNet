@@ -1,7 +1,7 @@
 """Run the full TenderNet v3 analysis pipeline in the correct order.
 
-    python run_all.py               # everything (about 40 min on a laptop; network nulls take ~30 min)
-    python run_all.py --skip-slow   # skip the network null models (~30 min); reuse the committed results/network files
+    python run_all.py               # everything (about 2 h on a laptop; revision_d ~76 min, network nulls ~30 min)
+    python run_all.py --skip-slow   # skip slow steps (revision_d, network nulls); reuse their committed results
     python run_all.py --only lockin models   # run selected steps (see STEPS)
 
 Inputs:  data/contracts_v3.csv, data/cpi_turkey*.csv, data/ppi_turkey_yiufe.csv,
@@ -30,6 +30,9 @@ STEPS = [
     ("revision_a", "revision_a.py", False),              # renewals, N4 nulls, conditional logit, BH, cp2 single bid; F-A1 (~6 min)
     ("revision_b", "revision_b.py", False),              # 21(b) logit variants, event study F-B1, descriptives, PPI robustness
     ("revision_c", "revision_c.py", False),              # leakage-free choice model (24-month pools), future-supplier placebo + simulation, N4 nulls, exclusivity, single-bid renewal controls
+    ("revision_d", "revision_d.py", True),               # three simulated worlds (state dependence vs heterogeneity), F-D1, F-L1b (~76 min)
+    ("price", "price_analysis.py", False),               # discounts in the 144-tender estimated-cost sample
+    ("coder_agreement", "coder_agreement.py", False),    # agreement of blind AI coders with the rules and earlier labels
     ("network", "network_analysis.py", True),            # curveball nulls, Louvain stability (~30 min)
     ("network_projections", "network_projections.py", False),  # BiCM projections, brokerage (~3 min)
     ("network_figures", "network_figures.py", False),    # fig_N1_core_network
@@ -41,7 +44,7 @@ STEPS = [
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--skip-slow", action="store_true",
-                    help="skip network_analysis.py (null models); later steps reuse committed results/network files")
+                    help="skip slow steps (revision_d.py, network_analysis.py); later steps reuse their committed outputs")
     ap.add_argument("--only", nargs="+", choices=[s[0] for s in STEPS], help="run only these steps")
     a = ap.parse_args()
 

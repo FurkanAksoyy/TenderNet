@@ -18,6 +18,8 @@ the analysis scripts deflate them to 2025 TRY with `cpi_turkey.csv`.
 | `audit/scope_rule_samples.csv` | – | 5 random contracts per scope rule, for audit |
 | `audit/product_market_confusion_sample.csv` | – | 6 random contracts per product market, for audit |
 | `audit/classifier_validation.csv`, `.md` | – | hand validation of the product-market title classifier (titles only) |
+| `ekap_detail_sample.csv` | 144 | estimated cost, contract value, bids and OKAS codes from EKAP tender-detail pages for a random 75/75 sample of incumbent/other repeat-eligible contracts; values as displayed (Turkish number format); no names — see `docs/estimated_cost_collection.md` |
+| `audit/ai_coding/` | – | blind inputs (`blind_*_input.csv`) and labels of two independent AI coders (`coderA_*`, `coderB_*`) for 300 product-market titles and 60 renewal pairs |
 | `audit/build_log_v3.txt` | – | full log of the build (every count, merge and rule table), pseudonymized |
 
 ## Provenance

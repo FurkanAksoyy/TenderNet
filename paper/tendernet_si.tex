@@ -38,7 +38,7 @@ EKAP's award list has one row per tender identifier, so tenders with several lot
 
 \textbf{Buyer sectors.} Buyers were assigned to 11 sectors by ordered keyword rules on the buyer name. Relative to an earlier coding, 1,423 contracts changed sector, mainly because upper-casing without Turkish locale had prevented mixed-case names from matching, and because several rules matched unintended substrings.
 
-\textbf{Product markets.} Contracts were assigned to 14 product markets by ordered rules on the tender title, most specific first. In the main sample, 97\% of contracts receive a specific market. To validate the rules, a random sample of 300 main-sample titles (seed 7) was classified independently, without access to the rule labels. These reference labels were produced with AI assistance (Claude) and have not been checked by human coders. Agreement is 77.0\% (Cohen's $\kappa=0.74$); excluding 45 titles flagged as genuinely ambiguous, it is 82.4\% ($\kappa=0.80$). Health information systems has precision and recall of 0.99. Among classes with at least 10 reference titles, the weakest are custom software, maintenance, and education technology (F1 0.45--0.56), and the residual ``other IT'' class is not reliable. Of the 69 disagreements, 22 are clear rule errors, 16 reflect a convention choice between maintenance and the product maintained, 27 are multi-product bundles, and 4 are barely IT.
+\textbf{Product markets.} Contracts were assigned to 14 product markets by ordered rules on the tender title, most specific first; in the main sample, 97\% receive a specific market. To validate the rules, a random sample of 300 main-sample titles (seed 7) was labelled by three AI coders working blind to the rules: an earlier check and two independent coders based on different language models, each seeing only the titles and a codebook. The two independent coders agree on 88.7\% of titles ($\kappa=0.87$), and each agrees with the earlier check on 90--92\% ($\kappa=0.89$--0.91). The rules agree with the independent coders on 73--75\% of titles ($\kappa=0.70$--0.72), and with their joint label on 79.3\% of the 266 titles where the two coders agree. Against that joint label, health information systems has precision 1.00 and recall 0.99, GIS 1.00 and 0.94, and software licences 0.80 and 0.97. The weakest classes are custom software (0.48 and 0.56), maintenance (0.60 and 0.41), and the residual ``other IT'' class. The labels are AI-produced and have not been checked by human coders; blind coding sheets for two human coders are part of the replication material.
 
 \textbf{Dates, procedures, values.} Dates are tender dates joined by tender identifier (coverage 100\%, October 2010 to March 2026). Procedures are open, restricted, and the negotiated procedures of Article~21(a)--(f); the extract contains no direct procurement under Article~22. Values are deflated to 2025 lira with the annual average of the consumer price index (2003=100; 2026 from the linked monthly series). With the domestic producer price index (Yİ-ÜFE) instead, count-based indices are unchanged. Seven single-variant value classifications move across the 1,000 or 1,800 boundary, and no robust classification changes.
 
@@ -119,7 +119,7 @@ A firm's home province is the province where it won most contracts before the te
 Titles that indicate licence renewal, maintenance, support, or updates of a named product (for example hospital information systems, Oracle, Microsoft) account for 10.5\% of repeat-eligible contracts. Their incumbency (0.486) is close to that of other contracts (0.448). Excluding them, renewals have an incumbency of 0.723 against an N3 null of 0.296 (2.44 times), and new needs 0.306 against 0.163 (1.88 times). Excluding all titles with any licence, maintenance, support, or update wording (44\% of eligible contracts) leaves ratios of 2.07 and 1.77.
 
 \subsection{Renewals}
-Titles are normalized by Turkish-aware lower-casing, removal of diacritics, digits, month names, and about 110 generic procurement words, and stemming to five characters; similarity is the Jaccard index of the stemmed word sets. A contract is a renewal if the buyer has a contract in the same market 183--548 days earlier with similarity of at least 0.5. In a check of 60 best-match pairs drawn at random within four similarity bands (15 each), coded from the titles with AI assistance (Claude), 38 of the 42 pairs above the threshold described the same recurring service. Nine of the 18 pairs below it did so as well, so the new-need group contains some renewals. Table~\ref{tab:renew} reports results by procedure and market and alternative definitions.
+Titles are normalized by Turkish-aware lower-casing, removal of diacritics, digits, month names, and about 110 generic procurement words, and stemming to five characters; similarity is the Jaccard index of the stemmed word sets. A contract is a renewal if the buyer has a contract in the same market 183--548 days earlier with similarity of at least 0.5. Sixty best-match pairs, drawn at random within four similarity bands (15 each), were coded blind by the same AI coders. Of the 42 pairs above the threshold, 35--40 were judged the same recurring service (depending on the coder), but so were 6--10 of the 18 pairs below it. Agreement between the rule and the coders is moderate ($\kappa=0.40$--0.45), and between the two independent coders $\kappa=0.63$. The rule is thus precise but misses renewals whose titles were reworded, so the new-need group contains some renewals. Table~\ref{tab:renew} reports results by procedure and market and alternative definitions.
 
 \begin{table}[h]\centering\small
 \caption{Incumbency of renewals and new needs: observed [N1 null; N3 null].}\label{tab:renew}
@@ -185,7 +185,53 @@ Entrant winners added (30 alternatives; lower bound) & 4,913 & 21.5 [18.5, 25.0]
 
 \textbf{Future-supplier placebo.} We add an indicator for firms that supply the buyer in the market after the tender date but had not before. In the main specification its odds ratio is 54.4 (42.2--70.1), next to 63.7 for past suppliers; restricting to tenders up to 2023, to limit right-censoring of future ties, gives 52.4. The design inflates the future coefficient even without heterogeneity, because winning the current tender makes the winner an incumbent for later tenders. We therefore simulated 100 data sets with state dependence only. Winners of the 3,013 contracts are re-drawn in chronological order from the fitted main model, with incumbency recomputed from the simulated history. All other covariates keep their observed values, and entrant and first contracts keep their observed winners. The placebo model is then re-estimated on each simulated data set. The simulated future-supplier odds ratio is 19.8 (16.1--24.5), far below the observed 54.4, so persistent buyer--firm matching accounts for a substantial part of the incumbency effect. The comparison of past and future suppliers differs by type of purchase. For renewals the odds ratios are 258 and 128, for new needs 30 and 40.
 
-\textbf{Recency.} Separating the buyer's most recent supplier in the market from earlier suppliers gives odds ratios of 45.8 (39.6--52.9) and 26.2 (20.7--33.1). The ratio is 1.75 (1.43--2.14, $p<0.001$), similar within renewals (147.6 and 84.4) and new needs (22.7 and 14.2). Controlling for the number of past wins with the buyer, the odds ratios are 27.5 and 16.3. In the state-dependence simulation the ratio is about 1.0, so the recency pattern is not an artefact of the design.
+\textbf{Firm-level versus dyadic heterogeneity.} Adding the firm's future wins in the same market from other buyers (odds ratio 1.40 per log unit) reduces the future-supplier odds ratio from 54.4 to 42.0 (32.3--54.5), and adding past wins from other buyers as well gives 41.5; for renewals it falls from 128 to 96 and for new needs from 40 to 31. Counting only future ties formed more than 30, 90, 180, or 365 days after the tender gives 56.1, 55.3, 52.7, and 48.7 (35.5 at 365 days with the firm controls).
+
+\subsection{Simulated worlds}
+\textbf{State dependence only.} Winners of the 3,013 contracts are re-drawn in chronological order from the fitted model, with incumbency recomputed from the simulated history; entrant and first contracts keep their observed winners. With all other covariates held at observed values the future-supplier odds ratio is 19.8 (16.1--24.5); with every covariate recomputed from the simulated history it is 24.2 (20.0--28.9); with coefficients drawn from their estimated distribution 19.8 (15.3--25.8). Table~\ref{tab:grid} shows the dependence on the incumbency coefficient. The coefficient that reproduces the observed share of incumbent winners (0.689) is 3.93 (odds ratio 51) and gives a future-supplier odds ratio of 21.9 (17.9--26.5); no value reproduces both the share and the observed future-supplier odds ratio.
+
+\begin{table}[h]\centering\small
+\caption{State-dependence world: moments by incumbency coefficient (other coefficients at fitted values; 100 replications).}\label{tab:grid}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+$\beta_{\text{inc}}$ (odds ratio) & Share of incumbent winners & Future-supplier OR [95\%] & Past/future ratio & Last/earlier ratio\\
+\midrule
+2.745 (15.6) & 0.510 & 10.0 [7.8, 12.3] & 2.02 & 1.01\\
+3.245 (25.7) & 0.590 & 14.3 [11.4, 17.9] & 2.36 & 0.99\\
+3.745 (42.3), fitted & 0.665 & 19.8 [16.1, 24.5] & 2.88 & 1.01\\
+3.93 (51), calibrated & 0.691 & 21.9 [17.9, 26.5] & 3.19 & 1.00\\
+4.245 (69.8) & 0.730 & 26.6 [20.2, 33.7] & 3.62 & 1.00\\
+4.745 (115.0) & 0.782 & 35.1 [27.8, 45.1] & 4.56 & 1.01\\
+\midrule
+Observed & 0.689 & 54.4 [42.2, 70.1] & 1.17 & 1.75\\
+\botrule
+\end{tabular}
+\end{table}
+
+\textbf{Heterogeneity only.} The incumbency coefficient is set to zero, and a persistent buyer--firm random intercept with standard deviation $\sigma$ is calibrated to the observed share of incumbent winners ($\sigma=2.92$ overall, 4.44 for renewals, 2.47 for new needs). This world also reproduces incumbency among all repeat-eligible contracts (0.457 against 0.452). Table~\ref{tab:worlds} compares the three worlds; Figure~4 of the main text plots them.
+
+\begin{table}[h]\centering\small
+\caption{Observed moments (95\% CI) and simulated worlds (mean [2.5--97.5\%], 100 replications).}\label{tab:worlds}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+Sample & Moment & Observed & State dependence only & Heterogeneity only\\
+\midrule
+All & Future-supplier OR & 54.4 (42.2--70.1) & 19.8 [16.1, 24.5] & 40.5 [30.6, 51.5]\\
+ & Past/future ratio & 1.17 (0.95--1.44) & 2.88 [2.48, 3.37] & 1.82 [1.45, 2.22]\\
+ & Last/earlier ratio & 1.75 (1.43--2.14) & 1.01 [0.85, 1.17] & 2.29 [1.92, 2.60]\\
+Renewals & Future-supplier OR & 128 (83--197) & 23.6 [14.1, 38.4] & 341 [207, 504]\\
+ & Past/future ratio & 2.02 (1.43--2.85) & 8.18 [5.29, 12.24] & 1.14 [0.84, 1.51]\\
+ & Last/earlier ratio & 1.75 (1.34--2.29) & 1.01 [0.83, 1.24] & 2.99 [2.33, 3.60]\\
+New needs & Future-supplier OR & 39.9 (28.8--55.2) & 7.2 [5.4, 9.5] & 21.7 [15.7, 28.3]\\
+ & Past/future ratio & 0.76 (0.57--1.01) & 3.44 [2.62, 4.22] & 1.39 [1.04, 1.82]\\
+ & Last/earlier ratio & 1.60 (1.21--2.11) & 1.00 [0.79, 1.22] & 1.63 [1.30, 2.02]\\
+\botrule
+\end{tabular}
+\end{table}
+
+The observed past/future ratio is below the state-dependence world in every sample (all $z=-6.6$, renewals $-4.9$, new needs $-7.9$; no simulated replication reaches the observed value). Against the heterogeneity world it is lower overall ($z=-2.9$) and for new needs ($-2.8$) but higher for renewals ($+2.5$). Heterogeneity alone produces a recency ratio above one, because a displaced supplier has revealed a worse match, so the last-versus-earlier contrast (1.69, 95\% CI 1.38--2.07, with a control for the number of past wins with the buyer) does not discriminate between the mechanisms.
+
+\textbf{Intermediate worlds.} Fixing the incumbency coefficient at 0, 1, 2, or 3 and recalibrating $\sigma$ each time (50 replications), renewals fit between coefficients 2 and 3 (odds ratios 7--20): future-supplier odds ratio 183 and 125, past/future ratio 1.83 and 2.55, recency 2.35 and 2.00, against observed 128, 2.02, and 1.75. New needs fit best with no state dependence; their future-supplier odds ratio exceeds even the heterogeneity world, which suggests forward-looking ties such as multi-stage projects, or misspecification. The pooled sample fits no single combination because it mixes the two groups.
 
 \section{Procedure and timing}
 
@@ -193,7 +239,12 @@ Entrant winners added (30 alternatives; lower bound) & 4,913 & 21.5 [18.5, 25.0]
 The 21(b) $\times$ post-2018 odds ratio is 2.42 (1.43--4.09) with the buyer-history controls and two-way clustering, and 2.42 (1.57--3.73) with buyer clustering. Without the prior-contract and prior-supplier controls it is 2.90 (1.64--5.15); without any buyer-history controls it is 2.93 (1.65--5.19). The pre-2018 marginal effect of 21(b) is between $-3.5$ and $-3.8$ percentage points and insignificant in all specifications. Further checks give interaction odds ratios between 1.76 and 2.43: an IT-only sample, broad scope, recorded buyer labels, recorded firm names, a linear trend instead of year fixed effects, and excluding 2020. Alternative break dates give 2.55 (25 August 2017, KHK~694; log-likelihood $-2801.1$ against $-2802.5$ for 25 May 2018), 2.10 (placebo, May 2016, $p=0.009$), and 1.57 (placebo, May 2020, $p=0.08$). The interaction is 2.64 among health buyers and 0.86 ($p=0.78$) among other buyers. In a model with a triple interaction (two-way clustered), the post-2018 21(b) interaction is 2.44 ($p=0.003$) for health buyers and 0.89 for others. The difference is not significant (odds ratio 2.74, 95\% CI 0.79--9.51, $p=0.11$; in percentage points $+13.9$, $-7.6$ to 35.5), because only 84 non-health 21(b) contracts are repeat-eligible. Under Article~21(f), 34.6\% of repeat-eligible contracts go to an incumbent, against 13.1\% under N3 and 3.3\% under N1.
 
 \subsection{Event study}
-Main-text Figure~4 reports the 21(b)--open gap by year relative to 2013--17. In that period the gap does not differ across years (joint tests $p=0.19$ for all buyers and $0.20$ for health buyers). In 2018 it is 37 percentage points higher for all buyers (24--50) and 43 points higher for health buyers (23--62). From 2019 on it averages 14 points above the reference for all buyers ($p=0.003$) and 12 points for health buyers ($p=0.04$). With buyer fixed effects, health buyers show a gap averaging $-10$ points in 2013--17, positive in every year from 2018, and 24 points (10--38) above the reference from 2019 on. Among parametric shapes, a step in August 2017 combined with a declining trend fits best. A step in May 2018 fits worse by 3.4--7.8 AIC points across the three samples, and a pure trend fits about as badly as no change. Only 8 and 10 repeat-eligible 21(b) contracts fall in the windows 25 August--31 December 2017 and 1 January--24 May 2018. The years 2010--12, with little buyer history and 24 21(b) contracts, show a high gap as well. Against that base, no later year is significantly higher.
+Figure~\ref{fig:event} reports the 21(b)--open gap by year relative to 2013--17. In that period the gap does not differ across years (joint tests $p=0.19$ for all buyers and $0.20$ for health buyers). In 2018 it is 37 percentage points higher for all buyers (24--50) and 43 points higher for health buyers (23--62). From 2019 on it averages 14 points above the reference for all buyers ($p=0.003$) and 12 points for health buyers ($p=0.04$). With buyer fixed effects, health buyers show a gap averaging $-10$ points in 2013--17, positive in every year from 2018, and 24 points (10--38) above the reference from 2019 on. Among parametric shapes, a step in August 2017 combined with a declining trend fits best. A step in May 2018 fits worse by 3.4--7.8 AIC points across the three samples, and a pure trend fits about as badly as no change. Only 8 and 10 repeat-eligible 21(b) contracts fall in the windows 25 August--31 December 2017 and 1 January--24 May 2018. The years 2010--12, with little buyer history and 24 21(b) contracts, show a high gap as well. Against that base, no later year is significantly higher.
+
+\begin{figure}[h]\centering
+\includegraphics[width=\textwidth]{figures/F-B1_event_study_21b.pdf}
+\caption{Difference in the probability that an incumbent wins between Article~21(b) and open tenders, by year. Linear probability models with product-market, year, and buyer-sector fixed effects (buyer fixed effects in panel c), log value, and buyer-history controls; two-way clustered 95\% intervals. Horizontal bars: 2013--17 reference mean. Dotted and dashed lines: KHK 694 (25 August 2017) and Law 7144 (25 May 2018).}\label{fig:event}
+\end{figure}
 
 \subsection{Dyad continuation}
 For each new buyer--firm pair in a product market, we ask whether the pair signs another contract in that market. Of 7,761 pairs, 4,334 have no later contract by the buyer in that market and cannot continue. The analysis uses the remaining 3,427, of which 34.6\% continue. Covariates are measured at the first contract without look-ahead. The number of later opportunities (the buyer's later contracts in the market) enters as a covariate, because the offset restriction is rejected (coefficient 0.90 in Poisson pseudo-maximum likelihood, $p=0.02$; 0.88 in NB2, $p=0.006$). In NB2 the dispersion parameter is estimated ($\alpha=0.46$, SE 0.12; likelihood-ratio statistic for $\alpha=0$: 152.5). Firm size and prior distinct buyers are highly collinear ($r=0.99$; VIFs of 63 and 61), and generalism correlates 0.86 with size, so these variables are not separately identified in the full model. Entered alone, generalism and size are both positively associated with continuation. There is no evidence that specialist firms are more likely to keep a buyer. A first contract under 21(b) is associated with continuation (odds ratio 1.85).
@@ -207,6 +258,31 @@ For each new buyer--firm pair in a product market, we ask whether the pair signs
 \begin{table}[h]\centering\small\caption{Single-bid rates (design-weighted random sample).}\label{tab:single}\input{si_tables/single_bid}\end{table}
 
 \textbf{Software sample.} An interrupted enrichment run of the scraper retrieved result details for 3,400 tenders found with the first search keyword, \emph{yazılım} (software). For tenders from 2021 on, these include the number of valid bids. Joined to the main sample, 1,194 tenders have this count, about 94\% of software-titled tenders from 2021 on but only 35\% of all tenders in that period. The sample is therefore not random. Single valid bids occur in 66.7\% of incumbent-won tenders and 49.3\% of others. In a logit with procedure, year, and market fixed effects (681 tenders with defined incumbency, buyer-clustered), the incumbent odds ratio is 2.04 (1.40--2.96), and 2.68 when renewal status is added (renewal odds ratio 0.52). Controlling for renewal raises the incumbent effect because renewals are much more common among incumbent winners (55\% against 13\%), and renewals won by newcomers are the most contested tenders (29\% single valid bids, against 52\% for new needs won by newcomers).
+
+\section{Estimated costs and discounts}
+\textbf{Sample.} From the 4,913 repeat-eligible contracts, 75 won by incumbents and 75 by other firms were drawn at random (seed 11). An AI agent opened each tender's detail page on EKAP in the authors' ordinary browser session, at a pace of roughly one tender per 40 seconds with pauses when the site slowed. It recorded the estimated cost, contract value, highest and lowest bids, product codes, and bid counts, without names, and its input list did not show incumbency. It did not interact with any verification widget. It collected 144 tenders before the site displayed a human-verification check, at which point collection stopped. One contract was in US dollars; 143 have both values in lira. EKAP contract values match our records within 1\% for 99.3\% of matched tenders.
+
+\textbf{Discounts.} The discount is $1-\text{contract value}/\text{estimated cost}$. It averages 14.2\% (median 10.4\%, range $-9.9\%$ to 84.6\%).
+
+\begin{table}[h]\centering\small
+\caption{Discount on the estimated cost by winner type.}\label{tab:disc}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Group & $n$ & Mean & Median & Zero discount\\
+\midrule
+Incumbent winner & 73 & 0.121 & 0.089 & 0.082\\
+Other winner & 70 & 0.165 & 0.112 & 0.043\\
+Renewal, incumbent & 46 & 0.120 & 0.087 & 0.043\\
+Renewal, other & 9 & 0.156 & 0.019 & 0.000\\
+New need, incumbent & 27 & 0.123 & 0.101 & 0.148\\
+New need, other & 61 & 0.166 & 0.132 & 0.049\\
+\botrule
+\end{tabular}
+\end{table}
+
+In OLS with robust standard errors, the incumbent coefficient is $-0.044$ (SE 0.027, $p=0.11$) without controls, $-0.060$ (0.038, $p=0.11$) with renewal, procedure, log value, and year, and $-0.050$ (0.041, $p=0.22$) with product-market fixed effects as well. Bid counts on the detail pages are available mainly for recent tenders (68 of 144); in that small subsample incumbent-won tenders have 1.8 valid bids on average against 1.3 for others, the opposite of the pattern in the larger bid samples, and we do not interpret it.
+
+\textbf{Product codes.} Among the 143 tenders, the first listed OKAS (CPV) code is in division 72 (IT services) for most software markets and 48 (software packages) or 50 (repair and maintenance) for licence and maintenance contracts. Division-level codes do not discriminate between our product markets, which are finer.
 
 \section{Network structure}
 \textbf{Graph.} The main-sample graph has 2,814 firms, 2,890 buyers and 7,219 weighted edges, with density $8.9\times10^{-4}$. The giant component contains 4,446 nodes (78\%) and 92\% of contracts. Degree distributions (number of distinct partners) are heavy-tailed. Fitted by maximum likelihood with the protocol of Clauset, Shalizi and Newman (2009), firms have $\hat\alpha=2.21$, and a lognormal is not distinguishable from a power law ($R=-1.67$, $p=0.09$). For buyers ($\hat\alpha=2.06$) the power law is rejected by the bootstrap goodness-of-fit test, and a lognormal fits better ($R=-6.19$, $p<0.001$). Degree assortativity is $-0.17$ against $-0.04$ in the null. Bipartite clustering exceeds the null: Robins--Alexander 0.026 against 0.012, Latapy 0.31 against 0.25. Figure~\ref{fig:net} shows the core of the network.

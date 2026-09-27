@@ -35,6 +35,14 @@ def get():
     lve = "T2b 24m pool=all: last vs earlier"
     sim = pd.read_csv(rc / "C2_placebo_simulation.csv").OR_future_only
     n4 = pd.read_csv(rc / "C3_N4prior_overall.csv").set_index("null")
+    import re
+    import statsmodels.formula.api as smf
+    pr = pd.read_csv(RES / "price" / "price_sample_analysis.csv")
+    ols = smf.ols("discount ~ incumbent_win", pr).fit(cov_type="HC1")
+    ca = (RES / "coder_agreement" / "coder_agreement_results.md").read_text(encoding="utf-8")
+    kappa = float(re.search(r"\| coderA \| coderB \| \d+ \| [0-9.]+ \| ([0-9.]+) \|", ca).group(1))  # first table = markets
+    w = pd.read_csv(RES / "revision_d" / "D3_three_worlds.csv")
+    w = w[(w["sample"] == "all") & (w.moment == "OR_future_only")].set_index("world")
     rev = [
         ("Renewals among repeat-eligible contracts", 1743, g.loc[("N1", "renewal"), "n_eligible"], 0),
         ("Repeat-eligible contracts", 4913, g.loc[("N1", "renewal"), "n_eligible"] + g.loc[("N1", "new need"), "n_eligible"], 0),
@@ -60,6 +68,13 @@ def get():
         ("Earlier supplier OR", 26.2, k.loc[(lve, "inc_earlier"), "OR"], 0.05),
         ("N4 null (home from prior wins) mean", 0.173, n4.loc["N4_home_prior", "null_mean"], 0.0015),
         ("N4b null (province x home from prior wins) mean", 0.264, n4.loc["N4b_prov_home_prior", "null_mean"], 0.0015),
+        ("Price sample: mean discount, incumbent winner", 0.121, pr[pr.incumbent_win == 1].discount.mean(), 0.0005),
+        ("Price sample: mean discount, other winner", 0.165, pr[pr.incumbent_win == 0].discount.mean(), 0.0005),
+        ("Price sample: n", 143, len(pr), 0),
+        ("Price sample: OLS incumbent coefficient", -0.044, ols.params["incumbent_win"], 0.0005),
+        ("AI coders A vs B, product markets: kappa", 0.873, kappa, 0.0005),
+        ("Three worlds: future-only OR, state dependence", 19.8, w.loc["state dependence", "center"], 0.05),
+        ("Three worlds: future-only OR, heterogeneity", 40.5, w.loc["heterogeneity", "center"], 0.05),
     ]
     return [
         # (label, paper value, reproduced value, absolute tolerance)

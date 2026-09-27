@@ -170,6 +170,38 @@ Bandiera, O.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Ba\'{r}anek%
+\ \BBA {} Titl%
+}{%
+Ba\'{r}anek%
+\ \BBA {} Titl%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+BaranekTitl2024}
+\APACinsertmetastar {%
+BaranekTitl2024}%
+\begin{APACrefauthors}%
+Ba\'{r}anek, B.%
+\BCBT {}\ \BBA {} Titl, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Cost of Favoritism in Public Procurement} {The cost
+  of favoritism in public procurement}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Law and Economics}{67}{2}{445--477,}
+\newblock
+\begin{APACrefDOI} \doi{10.1086/727793} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Benjamini%
 \ \BBA {} Hochberg%
 }{%
@@ -197,6 +229,40 @@ Benjamini, Y.%
   (Methodological)}{57}{1}{289--300,}
 \newblock
 \begin{APACrefDOI} \doi{10.1111/j.2517-6161.1995.tb02031.x} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Best%
+, Hjort%
+\BCBL {}\ \BBA {} Szakonyi%
+}{%
+Best%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+BestHjortSzakonyi2023}
+\APACinsertmetastar {%
+BestHjortSzakonyi2023}%
+\begin{APACrefauthors}%
+Best, M.C.%
+, Hjort, J.%
+\BCBL {} Szakonyi, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Individuals and Organizations as Sources of State
+  Effectiveness} {Individuals and organizations as sources of state
+  effectiveness}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Economic Review}{113}{8}{2121--2167,}
+\newblock
+\begin{APACrefDOI} \doi{10.1257/aer.20191598} \end{APACrefDOI}
 \newblock
 
 \newblock
@@ -455,6 +521,47 @@ Coviello, D.%
 \APACjournalVolNumPages{Management Science}{64}{2}{715--738,}
 \newblock
 \begin{APACrefDOI} \doi{10.1287/mnsc.2016.2628} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Decarolis%
+, Fisman%
+, Pinotti%
+\BCBL {}\ \BBA {} Vannutelli%
+}{%
+Decarolis%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+DecarolisFismanPinottiVannutelli}
+\APACinsertmetastar {%
+DecarolisFismanPinottiVannutelli}%
+\begin{APACrefauthors}%
+Decarolis, F.%
+, Fisman, R.%
+, Pinotti, P.%
+\BCBL {} Vannutelli, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Rules, Discretion, and Corruption in Procurement:
+  Evidence from Italian Government Contracting} {Rules, discretion, and
+  corruption in procurement: Evidence from italian government
+  contracting}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Political Economy
+  Microeconomics}{3}{2}{213--254,}
+\newblock
+\begin{APACrefDOI} \doi{10.1086/732654} \end{APACrefDOI}
+\newblock
+\APACrefnote{Published version of NBER Working Paper 28209 (2020); cite the
+  journal version.}
 \newblock
 
 \newblock
@@ -898,37 +1005,6 @@ Greenstein, S.M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Greenstein%
-}{%
-Greenstein%
-}{%
-{\protect \APACyear {1995}}%
-}]{%
-Greenstein1995}
-\APACinsertmetastar {%
-Greenstein1995}%
-\begin{APACrefauthors}%
-Greenstein, S.M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1995}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Sole-Sourcing versus Competitive Bidding: {US}
-  Government Agencies' Procedural Choices for Mainframe Computer Procurement}
-  {Sole-sourcing versus competitive bidding: {US} government agencies'
-  procedural choices for mainframe computer procurement}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{The Journal of Industrial Economics}{43}{2}{125--140,}
-\newblock
-\begin{APACrefDOI} \doi{10.2307/2950477} \end{APACrefDOI}
-\newblock
-
-\newblock
-
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 G{\"u}rakar%
 }{%
 G{\"u}rakar%
@@ -1017,6 +1093,41 @@ Heckman, J.J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Heckman%
+\ \BBA {} Borjas%
+}{%
+Heckman%
+\ \BBA {} Borjas%
+}{%
+{\protect \APACyear {1980}}%
+}]{%
+HeckmanBorjas1980}
+\APACinsertmetastar {%
+HeckmanBorjas1980}%
+\begin{APACrefauthors}%
+Heckman, J.J.%
+\BCBT {}\ \BBA {} Borjas, G.J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1980}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Does Unemployment Cause Future Unemployment?
+  Definitions, Questions and Answers from a Continuous Time Model of
+  Heterogeneity and State Dependence} {Does unemployment cause future
+  unemployment? definitions, questions and answers from a continuous time model
+  of heterogeneity and state dependence}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Economica}{47}{187}{247--283,}
+\newblock
+\begin{APACrefDOI} \doi{10.2307/2553150} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Hirschman%
 }{%
 Hirschman%
@@ -1037,6 +1148,40 @@ Hirschman, A.O.%
   index}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{American Economic Review}{54}{5}{761--762,}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hyytinen%
+, Lundberg%
+\BCBL {}\ \BBA {} Toivanen%
+}{%
+Hyytinen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+Hyytinen2018}
+\APACinsertmetastar {%
+Hyytinen2018}%
+\begin{APACrefauthors}%
+Hyytinen, A.%
+, Lundberg, S.%
+\BCBL {} Toivanen, O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Design of Public Procurement Auctions: Evidence from
+  Cleaning Contracts} {Design of public procurement auctions: Evidence from
+  cleaning contracts}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{RAND Journal of Economics}{49}{2}{398--426,}
+\newblock
+\begin{APACrefDOI} \doi{10.1111/1756-2171.12232} \end{APACrefDOI}
 \newblock
 
 \newblock
@@ -1102,6 +1247,37 @@ Kang, K.%
 \APACjournalVolNumPages{The Review of Economic Studies}{89}{3}{1495--1556,}
 \newblock
 \begin{APACrefDOI} \doi{10.1093/restud/rdab051} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Keane%
+}{%
+Keane%
+}{%
+{\protect \APACyear {1997}}%
+}]{%
+Keane1997}
+\APACinsertmetastar {%
+Keane1997}%
+\begin{APACrefauthors}%
+Keane, M.P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Modeling Heterogeneity and State Dependence in Consumer
+  Choice Behavior} {Modeling heterogeneity and state dependence in consumer
+  choice behavior}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Business \& Economic
+  Statistics}{15}{3}{310--327,}
+\newblock
+\begin{APACrefDOI} \doi{10.1080/07350015.1997.10524709} \end{APACrefDOI}
 \newblock
 
 \newblock
@@ -1410,6 +1586,35 @@ Rhoades, S.A.%
   herfindahl--hirschman index}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Federal Reserve Bulletin}{79}{}{188--189,}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Saini%
+}{%
+Saini%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+Saini2012}
+\APACinsertmetastar {%
+Saini2012}%
+\begin{APACrefauthors}%
+Saini, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Endogenous Asymmetry in a Dynamic Procurement Auction}
+  {Endogenous asymmetry in a dynamic procurement auction}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{RAND Journal of Economics}{43}{4}{726--760,}
+\newblock
+\begin{APACrefDOI} \doi{10.1111/1756-2171.12006} \end{APACrefDOI}
 \newblock
 
 \newblock
