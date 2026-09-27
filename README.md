@@ -146,7 +146,7 @@ the internal data: every result table of the concentration, lock-in, model and r
 nulls depend on node order, and pseudonyms sort differently from the original names; its outputs therefore
 differ from the internal run in the third decimal (e.g. weighted giant-component modularity 0.761 vs 0.762,
 34–43 vs 36–43 communities across 50 Louvain runs). All network numbers in the main text are unchanged at
-the reported precision. The committed `results/network/` files come from the released data.
+the reported precision. The committed `results/network/` files come from the released data. The simulated-worlds step (`revision_d.py`, ~77 min) was also re-run on the released data; its result tables are numerically identical to the internal run.
 Legal-entity and public-buyer names are kept. Please do not attempt to re-identify pseudonymized suppliers.
 Details: `data/README.md`.
 
