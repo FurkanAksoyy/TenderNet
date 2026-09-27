@@ -1,0 +1,10 @@
+{
+  "main_n": 9991,
+  "unknown_currency_excluded": 845,
+  "explicit_currency_n": 9146,
+  "unknown_real_value_share": 0.052666908061670625,
+  "corrected_top150_new_scope_reviews_needed": 1,
+  "screen_is_new_manual_validation": false,
+  "regression_history": "all main observations retained; exclusion affects estimation rows only",
+  "regression_specification": "linear probability sensitivity with A1 controls; buyer and winning-firm two-way clustered covariance"
+}

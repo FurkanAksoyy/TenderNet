@@ -1,0 +1,10 @@
+{
+  "fits": 12,
+  "diagnostic_rows": 24,
+  "all_pass": true,
+  "maximum_score_per_contract": 2.8393628246465446e-16,
+  "maximum_newton_correction": 1.0590789966571974e-15,
+  "maximum_information_condition": 42.82866679568167,
+  "maximum_refit_difference": 8.881784197001252e-16,
+  "scope": "Saved and refitted observed models only; no bootstrap or simulation-fit guarantee."
+}

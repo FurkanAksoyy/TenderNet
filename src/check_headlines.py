@@ -1,4 +1,7 @@
-"""Check that the regenerated results reproduce the headline numbers reported in the paper.
+"""Compare regenerated results with manually transcribed manuscript checkpoints.
+
+This does not parse the manuscript or validate every statement. PDF/source review
+is required separately. Expected monetary values reflect the TCMB-normalized revision.
 
     python src/check_headlines.py      (exit code 1 if any value is outside its tolerance)
 """
@@ -43,6 +46,10 @@ def get():
     kappa = float(re.search(r"\| coderA \| coderB \| \d+ \| [0-9.]+ \| ([0-9.]+) \|", ca).group(1))  # first table = markets
     w = pd.read_csv(RES / "revision_d" / "D3_three_worlds.csv")
     w = w[(w["sample"] == "all") & (w.moment == "OR_future_only")].set_index("world")
+    lag = pd.read_csv(RES / "revision_d" / "D4_firm_controls_lags.csv").set_index(["model", "variable"])
+    horizon = pd.read_csv(RES / "revision_e_horizons" / "symmetric_contrasts.csv").set_index("sample")
+    annual = pd.read_csv(RES / "concentration" / "within_year_hhi_summary.csv")
+    init = pd.read_csv(RES / "revision_e_initial_conditions" / "summary.csv").set_index(["scenario", "metric"])
     rev = [
         ("Renewals among repeat-eligible contracts", 1743, g.loc[("N1", "renewal"), "n_eligible"], 0),
         ("Repeat-eligible contracts", 4913, g.loc[("N1", "renewal"), "n_eligible"] + g.loc[("N1", "new need"), "n_eligible"], 0),
@@ -75,6 +82,16 @@ def get():
         ("AI coders A vs B, product markets: kappa", 0.873, kappa, 0.0005),
         ("Three worlds: future-only OR, state dependence", 19.8, w.loc["state dependence", "center"], 0.05),
         ("Three worlds: future-only OR, heterogeneity", 40.5, w.loc["heterogeneity", "center"], 0.05),
+        ("First future >365 days: OR", 46.6, lag.loc[("T4 lag all | future win > t+365d", "fut_gt365"), "OR"], 0.05),
+        ("First future >365 days: firm-control OR", 33.6, lag.loc[("T4 lag all | future win > t+365d + firm controls", "fut_gt365"), "OR"], 0.05),
+        ("Equal 730d windows: modeled contracts", 2508, horizon.loc["all", "n_contracts"], 0),
+        ("Equal 730d windows: past/future ratio", 0.98, horizon.loc["all", "ratio"], 0.005),
+        ("Equal 730d windows: recurring ratio", 1.68, horizon.loc["recurring", "ratio"], 0.005),
+        ("Annual category median value HHI >1000", 6, ((annual.market != "ALL (aggregate)") & (annual.HHI_value_med > 1000)).sum(), 0),
+        ("Initialization, all-fixed: past/future ratio", 1.60, init.loc[("legacy_all_fixed", "past_future_ratio"), "mean"], 0.005),
+        ("Initialization, early-only: past/future ratio", 2.06, init.loc[("pre_first_simulated", "past_future_ratio"), "mean"], 0.005),
+        ("Initialization, no shift: incumbent share", 0.348, init.loc[("no_tilt", "share_chosen_incumbent"), "mean"], 0.0005),
+        ("Initialization, no shift: grid ceiling sigma", 10.0, init.loc[("no_tilt", "share_chosen_incumbent"), "sigma"], 0),
     ]
     return [
         # (label, paper value, reproduced value, absolute tolerance)
@@ -82,7 +99,7 @@ def get():
         ("Incumbency rate, null N1 mean", 0.062, o.loc[("main_N1", "incumbency"), "null_mean"], 0.0015),
         ("Repeat dyads, observed", 1377, o.loc[("main_N1", "repeat_dyads"), "obs"], 0),
         ("Supplier HHI pooled, count", 38.6, m.loc["ALL (aggregate)", "HHI_count"], 0.05),
-        ("Supplier HHI pooled, real value", 148.6, m.loc["ALL (aggregate)", "HHI_value"], 0.05),
+        ("Supplier HHI pooled, real value", 147.2, m.loc["ALL (aggregate)", "HHI_value"], 0.05),
         ("HHI health information systems, value", 831, m.loc["health_information_systems", "HHI_value"], 0.5),
         ("Logit OR 21(b) x post-2018", 2.42, a.loc["p21b_x_post", "exp"], 0.005),
         ("Single-bid rate, incumbent winner (bid sample)", 0.712, d.loc["incumbent winner", "rate_w"], 0.0005),

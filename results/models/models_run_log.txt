@@ -7,23 +7,23 @@ A incumbent-win rate: 0.4523
 A VIF (core only): [{'term': 'p_21b', 'VIF': 3.16}, {'term': 'p_oth_neg', 'VIF': 1.2}, {'term': 'log_real_value', 'VIF': 1.17}, {'term': 'log_prior_suppliers', 'VIF': 2.88}, {'term': 'log_prior_contracts', 'VIF': 2.95}, {'term': 'years_since_first', 'VIF': 1.73}, {'term': 'post7144', 'VIF': 1.37}, {'term': 'p21b_x_post', 'VIF': 3.3}]
 A corr(log prior suppliers, log prior contracts) = 0.783
   model                 term          subset     ame      se      lo      hi       p
-0    A1                p_21b             all  0.0691  0.0276  0.0151  0.1232  0.0122
-1    A1            p_oth_neg             all -0.0271  0.0220 -0.0702  0.0161  0.2192
-2    A1             post7144             all  0.0337  0.0532 -0.0705  0.1380  0.5260
-3    A1       log_real_value             all -0.0053  0.0070 -0.0191  0.0084  0.4490
-4    A1  log_prior_suppliers             all -0.1768  0.0274 -0.2305 -0.1231  0.0000
+0    A1                p_21b             all  0.0690  0.0276  0.0150  0.1231  0.0123
+1    A1            p_oth_neg             all -0.0272  0.0221 -0.0704  0.0160  0.2174
+2    A1             post7144             all  0.0337  0.0532 -0.0705  0.1380  0.5259
+3    A1       log_real_value             all -0.0054  0.0071 -0.0193  0.0084  0.4418
+4    A1  log_prior_suppliers             all -0.1767  0.0274 -0.2304 -0.1231  0.0000
 5    A1  log_prior_contracts             all  0.2860  0.0199  0.2470  0.3250  0.0000
 6    A1    years_since_first             all -0.0236  0.0034 -0.0303 -0.0169  0.0000
-7    A1                p_21b        pre-7144 -0.0377  0.0442 -0.1244  0.0489  0.3935
-8    A1                p_21b       post-7144  0.1353  0.0324  0.0719  0.1988  0.0000
-9    A1                p_21b  post minus pre  0.1730  0.0518  0.0715  0.2745  0.0008
+7    A1                p_21b        pre-7144 -0.0379  0.0442 -0.1245  0.0488  0.3916
+8    A1                p_21b       post-7144  0.1352  0.0324  0.0718  0.1987  0.0000
+9    A1                p_21b  post minus pre  0.1731  0.0518  0.0716  0.2746  0.0008
   period procedure  mean_pred_incumbent_win
-0    pre      open                 0.399186
-1    pre       21b                 0.361467
-2    pre   oth_neg                 0.371233
-3   post      open                 0.485137
-4   post       21b                 0.620441
-5   post   oth_neg                 0.458619
+0    pre      open                 0.399240
+1    pre       21b                 0.361368
+2    pre   oth_neg                 0.371153
+3   post      open                 0.485177
+4   post       21b                 0.620422
+5   post   oth_neg                 0.458529
    post7144     proc      mean  size
 0         0      21b  0.540404   198
 1         0     open  0.383290  1161
@@ -37,19 +37,19 @@ A corr(log prior suppliers, log prior contracts) = 0.783
   [R excl. health-sector buyers] N=3411, clusters=(637, 1249, 2315), clipped eig=0, converged=True, McFadden R2=0.1161
   [R health-sector buyers only] N=1502, clusters=(489, 243, 814), clipped eig=2, converged=True, McFadden R2=0.1963
   [R break at KHK 694 instead of 7144] N=4913, clusters=(1126, 1437, 3129), clipped eig=0, converged=True, McFadden R2=0.1720
-  [R placebo break 2016-05-25] N=4913, clusters=(1126, 1437, 3129), clipped eig=0, converged=True, McFadden R2=0.1705
+  [R placebo break 2016-05-25] N=4913, clusters=(1126, 1437, 3129), clipped eig=0, converged=True, McFadden R2=0.1706
   [R placebo break 2020-05-25] N=4913, clusters=(1126, 1437, 3129), clipped eig=0, converged=True, McFadden R2=0.1700
   [R excl. 2020 (COVID emergency year)] N=4503, clusters=(1110, 1373, 2974), clipped eig=0, converged=True, McFadden R2=0.1604
   [R it_only (no call centre)] N=4908, clusters=(1125, 1436, 3126), clipped eig=0, converged=True, McFadden R2=0.1719
   [R main+gray] N=5623, clusters=(1298, 1769, 3673), clipped eig=1, converged=True, McFadden R2=0.1607
   [R buyer=recorded kurum] N=5147, clusters=(1046, 1483, 3129), clipped eig=0, converged=True, McFadden R2=0.1930
   [R firm=original firma] N=4913, clusters=(1126, 1604, 3318), clipped eig=0, converged=True, McFadden R2=0.1480
-  [A5 LPM buyer FE] N=4913 (singleton buyers contribute nothing: 450), buyers=1126, clusters=(1126, 1437, 3129), within-R2=0.1016, clipped eig=0
+  [A5 LPM buyer FE] N=4913 (singleton buyers contribute nothing: 450), buyers=1126, clusters=(1126, 1437, 3129), within-R2=0.1017, clipped eig=0
 
 B: dyads 7761; with zero later buyer-market opportunities: 4334
 B estimation dyads (opportunities>0): 3427; later_any mean 0.3455; later_n mean 0.648, var 1.823, max 13
 B year counts: {2010: 41, 2011: 218, 2012: 248, 2013: 312, 2014: 303, 2015: 263, 2016: 238, 2017: 280, 2018: 257, 2019: 207, 2020: 228, 2021: 263, 2022: 218, 2023: 151, 2024: 119, 2025: 78, 2026: 3}
-B VIF: [{'term': 'p_21b', 'VIF': 1.16}, {'term': 'p_oth_neg', 'VIF': 1.18}, {'term': 'log_real_value', 'VIF': 1.14}, {'term': 'log_firm_prior_contracts', 'VIF': 63.32}, {'term': 'log_firm_prior_markets', 'VIF': 4.21}, {'term': 'log_firm_prior_buyers', 'VIF': 60.54}, {'term': 'log_buyer_prior_contracts', 'VIF': 1.14}, {'term': 'log_opp', 'VIF': 1.03}]
+B VIF: [{'term': 'p_21b', 'VIF': 1.16}, {'term': 'p_oth_neg', 'VIF': 1.18}, {'term': 'log_real_value', 'VIF': 1.15}, {'term': 'log_firm_prior_contracts', 'VIF': 63.32}, {'term': 'log_firm_prior_markets', 'VIF': 4.21}, {'term': 'log_firm_prior_buyers', 'VIF': 60.54}, {'term': 'log_buyer_prior_contracts', 'VIF': 1.14}, {'term': 'log_opp', 'VIF': 1.03}]
 B corr:
                            log_firm_prior_contracts  log_firm_prior_markets  log_firm_prior_buyers  log_buyer_prior_contracts  log_opp
 log_firm_prior_contracts                      1.000                   0.858                  0.992                     -0.129   -0.018
@@ -59,77 +59,77 @@ log_buyer_prior_contracts                    -0.129                   0.015     
 log_opp                                      -0.018                   0.004                 -0.021                      0.155    1.000
   [B logit full] N=3427, clusters=(1475, 1126, 3192), clipped eig=0, converged=True, McFadden R2=0.1358
   [B PPML full] N=3427, clusters=(1475, 1126, 3192), pseudoR2=0.2579, conv=True
-  [B NB2 full] N=3427, alpha=0.4592 (SE 0.1154), pseudoR2=0.1457, conv=True, LL=-3176.85 vs Poisson LL=-3253.09
+  [B NB2 full] N=3427, alpha=0.4591 (SE 0.1154), pseudoR2=0.1457, conv=True, LL=-3176.86 vs Poisson LL=-3253.10
   [B logit size_generalism] N=3427, clusters=(1475, 1126, 3192), clipped eig=0, converged=True, McFadden R2=0.1352
   [B PPML size_generalism] N=3427, clusters=(1475, 1126, 3192), pseudoR2=0.2575, conv=True
-  [B NB2 size_generalism] N=3427, alpha=0.4619 (SE 0.1165), pseudoR2=0.1453, conv=True, LL=-3178.48 vs Poisson LL=-3254.99
+  [B NB2 size_generalism] N=3427, alpha=0.4618 (SE 0.1164), pseudoR2=0.1453, conv=True, LL=-3178.49 vs Poisson LL=-3254.99
   [B logit generalism_only] N=3427, clusters=(1475, 1126, 3192), clipped eig=0, converged=True, McFadden R2=0.1344
   [B PPML generalism_only] N=3427, clusters=(1475, 1126, 3192), pseudoR2=0.2566, conv=True
-  [B NB2 generalism_only] N=3427, alpha=0.4677 (SE 0.1161), pseudoR2=0.1449, conv=True, LL=-3179.92 vs Poisson LL=-3258.55
+  [B NB2 generalism_only] N=3427, alpha=0.4677 (SE 0.1161), pseudoR2=0.1449, conv=True, LL=-3179.92 vs Poisson LL=-3258.56
   [B logit size_only] N=3427, clusters=(1475, 1126, 3192), clipped eig=0, converged=True, McFadden R2=0.1347
   [B PPML size_only] N=3427, clusters=(1475, 1126, 3192), pseudoR2=0.2567, conv=True
-  [B NB2 size_only] N=3427, alpha=0.4655 (SE 0.1163), pseudoR2=0.1446, conv=True, LL=-3180.97 vs Poisson LL=-3258.40
-Overdispersion: Cameron-Trivedi alpha_hat=0.2759, t=7.94, p=2.78e-15; LR(alpha=0)=152.49, p(boundary)=2.48e-35; Pearson dispersion=1.276
+  [B NB2 size_only] N=3427, alpha=0.4654 (SE 0.1163), pseudoR2=0.1446, conv=True, LL=-3180.98 vs Poisson LL=-3258.40
+Overdispersion: Cameron-Trivedi alpha_hat=0.2759, t=7.94, p=2.81e-15; LR(alpha=0)=152.48, p(boundary)=2.49e-35; Pearson dispersion=1.276
 Offset test ppml: b(log_opp)=0.9020 SE=0.0420; H0 b=1: z=-2.33, p=1.98e-02
-Offset test nb2: b(log_opp)=0.8838 SE=0.0422; H0 b=1: z=-2.75, p=5.91e-03
+Offset test nb2: b(log_opp)=0.8838 SE=0.0422; H0 b=1: z=-2.75, p=5.93e-03
                       model                       term subset     ame      se      lo      hi       p
-0              B_logit_full                      p_21b    all  0.1213  0.0318  0.0591  0.1836  0.0001
-1              B_logit_full                  p_oth_neg    all  0.0435  0.0194  0.0054  0.0816  0.0254
-2              B_logit_full             log_real_value    all  0.0041  0.0069 -0.0094  0.0176  0.5517
+0              B_logit_full                      p_21b    all  0.1212  0.0318  0.0590  0.1835  0.0001
+1              B_logit_full                  p_oth_neg    all  0.0432  0.0195  0.0051  0.0814  0.0262
+2              B_logit_full             log_real_value    all  0.0039  0.0069 -0.0097  0.0174  0.5762
 3              B_logit_full   log_firm_prior_contracts    all  0.0858  0.0467 -0.0056  0.1773  0.0658
-4              B_logit_full     log_firm_prior_markets    all  0.0337  0.0314 -0.0278  0.0953  0.2829
-5              B_logit_full      log_firm_prior_buyers    all -0.0704  0.0493 -0.1669  0.0262  0.1534
-6              B_logit_full  log_buyer_prior_contracts    all -0.0504  0.0094 -0.0689 -0.0320  0.0000
-7              B_logit_full                    log_opp    all  0.1195  0.0109  0.0982  0.1409  0.0000
-8   B_logit_size_generalism                      p_21b    all  0.1239  0.0317  0.0618  0.1861  0.0001
-9   B_logit_size_generalism                  p_oth_neg    all  0.0440  0.0194  0.0060  0.0820  0.0231
-10  B_logit_size_generalism             log_real_value    all  0.0042  0.0069 -0.0094  0.0178  0.5438
-11  B_logit_size_generalism   log_firm_prior_contracts    all  0.0229  0.0179 -0.0123  0.0580  0.2019
-12  B_logit_size_generalism     log_firm_prior_markets    all  0.0340  0.0323 -0.0293  0.0972  0.2924
+4              B_logit_full     log_firm_prior_markets    all  0.0338  0.0314 -0.0278  0.0954  0.2821
+5              B_logit_full      log_firm_prior_buyers    all -0.0703  0.0493 -0.1669  0.0262  0.1535
+6              B_logit_full  log_buyer_prior_contracts    all -0.0504  0.0094 -0.0689 -0.0319  0.0000
+7              B_logit_full                    log_opp    all  0.1196  0.0109  0.0982  0.1409  0.0000
+8   B_logit_size_generalism                      p_21b    all  0.1239  0.0317  0.0617  0.1860  0.0001
+9   B_logit_size_generalism                  p_oth_neg    all  0.0438  0.0194  0.0058  0.0818  0.0239
+10  B_logit_size_generalism             log_real_value    all  0.0040  0.0069 -0.0096  0.0175  0.5670
+11  B_logit_size_generalism   log_firm_prior_contracts    all  0.0229  0.0179 -0.0123  0.0580  0.2020
+12  B_logit_size_generalism     log_firm_prior_markets    all  0.0340  0.0323 -0.0292  0.0973  0.2916
 13  B_logit_size_generalism  log_buyer_prior_contracts    all -0.0508  0.0094 -0.0692 -0.0324  0.0000
 14  B_logit_size_generalism                    log_opp    all  0.1208  0.0109  0.0995  0.1421  0.0000
-15  B_logit_generalism_only                      p_21b    all  0.1250  0.0321  0.0622  0.1879  0.0001
-16  B_logit_generalism_only                  p_oth_neg    all  0.0434  0.0194  0.0053  0.0815  0.0256
-17  B_logit_generalism_only             log_real_value    all  0.0043  0.0070 -0.0094  0.0179  0.5406
-18  B_logit_generalism_only     log_firm_prior_markets    all  0.0719  0.0125  0.0474  0.0964  0.0000
-19  B_logit_generalism_only  log_buyer_prior_contracts    all -0.0535  0.0091 -0.0714 -0.0356  0.0000
-20  B_logit_generalism_only                    log_opp    all  0.1215  0.0108  0.1003  0.1427  0.0000
-21        B_logit_size_only                      p_21b    all  0.1225  0.0317  0.0604  0.1845  0.0001
-22        B_logit_size_only                  p_oth_neg    all  0.0429  0.0194  0.0048  0.0809  0.0273
-23        B_logit_size_only             log_real_value    all  0.0046  0.0070 -0.0090  0.0182  0.5089
-24        B_logit_size_only   log_firm_prior_contracts    all  0.0386  0.0071  0.0247  0.0525  0.0000
+15  B_logit_generalism_only                      p_21b    all  0.1249  0.0321  0.0621  0.1878  0.0001
+16  B_logit_generalism_only                  p_oth_neg    all  0.0432  0.0194  0.0051  0.0813  0.0264
+17  B_logit_generalism_only             log_real_value    all  0.0040  0.0070 -0.0096  0.0177  0.5624
+18  B_logit_generalism_only     log_firm_prior_markets    all  0.0720  0.0125  0.0475  0.0965  0.0000
+19  B_logit_generalism_only  log_buyer_prior_contracts    all -0.0535  0.0091 -0.0714 -0.0355  0.0000
+20  B_logit_generalism_only                    log_opp    all  0.1215  0.0108  0.1003  0.1428  0.0000
+21        B_logit_size_only                      p_21b    all  0.1224  0.0317  0.0603  0.1844  0.0001
+22        B_logit_size_only                  p_oth_neg    all  0.0426  0.0194  0.0046  0.0807  0.0281
+23        B_logit_size_only             log_real_value    all  0.0044  0.0070 -0.0093  0.0180  0.5316
+24        B_logit_size_only   log_firm_prior_contracts    all  0.0386  0.0071  0.0247  0.0526  0.0000
 25        B_logit_size_only  log_buyer_prior_contracts    all -0.0493  0.0091 -0.0670 -0.0315  0.0000
 26        B_logit_size_only                    log_opp    all  0.1203  0.0107  0.0993  0.1413  0.0000
 
 C: 21(b) share by dyad status
 largest contract: IKN 2025/1250982, usul open, status first, real value 7.539 bn 2025 TRY
                                           scope  status     n  n_21b  share_21b_count  value_bn_2025TRY  value_21b_bn  share_21b_value
-0                                 all contracts   first  7769    601           0.0774           69.8896        4.9477           0.0708
-1                                 all contracts  repeat  2222    447           0.2012           19.3717        1.2180           0.0629
-2  buyer has prior history in market (A sample)   first  2691    171           0.0635           27.1175        2.6945           0.0994
-3  buyer has prior history in market (A sample)  repeat  2222    447           0.2012           19.3717        1.2180           0.0629
-4                   all, excl. largest contract   first  7768    601           0.0774           62.3506        4.9477           0.0794
-5                   all, excl. largest contract  repeat  2222    447           0.2012           19.3717        1.2180           0.0629
+0                                 all contracts   first  7769    601           0.0774           70.3363        4.9635           0.0706
+1                                 all contracts  repeat  2222    447           0.2012           19.4033        1.2180           0.0628
+2  buyer has prior history in market (A sample)   first  2691    171           0.0635           27.2053        2.7103           0.0996
+3  buyer has prior history in market (A sample)  repeat  2222    447           0.2012           19.4033        1.2180           0.0628
+4                   all, excl. largest contract   first  7768    601           0.0774           62.7973        4.9635           0.0790
+5                   all, excl. largest contract  repeat  2222    447           0.2012           19.4033        1.2180           0.0628
                                                                             test    estimate        se             p     N            clusters
 0                                                        naive chi2 (count), all  280.777479       NaN  5.083593e-63  9991                 NaN
 1                               LPM diff repeat-first, count, all, cluster=buyer    0.123811  0.016063  1.277099e-14  9991                2890
 2                                LPM diff repeat-first, count, all, cluster=dyad    0.123811  0.014352  6.294735e-18  9991                7761
 3                          LPM diff repeat-first, count, all, two-way buyer+firm    0.123811  0.030765  5.710803e-05  9991  (2890, 2814, 7219)
-4                      LPM diff repeat-first, value-weighted, all, cluster=buyer   -0.007917  0.015409  6.073834e-01  9991                2890
-5                       LPM diff repeat-first, value-weighted, all, cluster=dyad   -0.007917  0.015463  6.086570e-01  9991                7761
-6                 LPM diff repeat-first, value-weighted, all, two-way buyer+firm   -0.007917  0.017030  6.420159e-01  9991  (2890, 2814, 7219)
+4                      LPM diff repeat-first, value-weighted, all, cluster=buyer   -0.007794  0.015330  6.111764e-01  9991                2890
+5                       LPM diff repeat-first, value-weighted, all, cluster=dyad   -0.007794  0.015377  6.122663e-01  9991                7761
+6                 LPM diff repeat-first, value-weighted, all, two-way buyer+firm   -0.007794  0.016958  6.458179e-01  9991  (2890, 2814, 7219)
 7                          LPM diff repeat-first, count, A sample, cluster=buyer    0.137625  0.016205  2.016199e-17  4913                1126
 8                           LPM diff repeat-first, count, A sample, cluster=dyad    0.137625  0.015051  6.036071e-20  4913                3365
 9                     LPM diff repeat-first, count, A sample, two-way buyer+firm    0.137625  0.032777  2.682631e-05  4913  (1126, 1437, 3129)
-10                LPM diff repeat-first, value-weighted, A sample, cluster=buyer   -0.036489  0.026297  1.652643e-01  4913                1126
-11                 LPM diff repeat-first, value-weighted, A sample, cluster=dyad   -0.036489  0.026432  1.674322e-01  4913                3365
-12           LPM diff repeat-first, value-weighted, A sample, two-way buyer+firm   -0.036489  0.026847  1.740976e-01  4913  (1126, 1437, 3129)
+10                LPM diff repeat-first, value-weighted, A sample, cluster=buyer   -0.036849  0.026221  1.599294e-01  4913                1126
+11                 LPM diff repeat-first, value-weighted, A sample, cluster=dyad   -0.036849  0.026355  1.620546e-01  4913                3365
+12           LPM diff repeat-first, value-weighted, A sample, two-way buyer+firm   -0.036849  0.026776  1.687598e-01  4913  (1126, 1437, 3129)
 13                LPM diff repeat-first, count, all excl. largest, cluster=buyer    0.123801  0.016062  1.282701e-14  9990                2890
 14                 LPM diff repeat-first, count, all excl. largest, cluster=dyad    0.123801  0.014351  6.332244e-18  9990                7760
 15           LPM diff repeat-first, count, all excl. largest, two-way buyer+firm    0.123801  0.030764  5.716632e-05  9990  (2890, 2813, 7218)
-16       LPM diff repeat-first, value-weighted, all excl. largest, cluster=buyer   -0.016477  0.014252  2.476244e-01  9990                2890
-17        LPM diff repeat-first, value-weighted, all excl. largest, cluster=dyad   -0.016477  0.014462  2.545768e-01  9990                7760
-18  LPM diff repeat-first, value-weighted, all excl. largest, two-way buyer+firm   -0.016477  0.015924  3.007812e-01  9990  (2890, 2813, 7218)
+16       LPM diff repeat-first, value-weighted, all excl. largest, cluster=buyer   -0.016266  0.014190  2.516844e-01  9990                2890
+17        LPM diff repeat-first, value-weighted, all excl. largest, cluster=dyad   -0.016266  0.014390  2.583320e-01  9990                7760
+18  LPM diff repeat-first, value-weighted, all excl. largest, two-way buyer+firm   -0.016266  0.015868  3.053266e-01  9990  (2890, 2813, 7218)
 19                  LPM diff, count, all, + year/market/sector FE, cluster=buyer    0.048441  0.009477  3.198773e-07  9991                2890
 20                       LPM diff, count, all, buyer FE + year FE, cluster=buyer    0.011602  0.008208  1.575001e-01  9991                2890
    post7144 dyad_status     n  share_21b

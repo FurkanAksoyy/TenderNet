@@ -36,7 +36,7 @@ def load(sample="main", firm_col="firma_v3", buyer_col="kurum_il_split"):
     d["date"] = pd.to_datetime(d.tarih_v3)
     d["year"] = d.yil_v3.astype(int)
     f, _ = cpi_factors()
-    d["real_value"] = d.bedel_num * d.year.map(f)
+    d["real_value"] = d.bedel_try * d.year.map(f)
     d["log_real_value"] = np.log(d.real_value)
     d["firm"] = d[firm_col]
     d["buyer"] = d[buyer_col]

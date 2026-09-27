@@ -1,10 +1,10 @@
 """TenderNet v3 - market concentration analysis (topic: concentration).
 
 Supplier-side HHI/CR4 by count and real value (2025 TRY), aggregate / product
-market (urun_pazari) / buyer sector (sektor_v3); influence diagnostics
+category (urun_pazari) / buyer sector (sektor_v3); influence diagnostics
 (without largest contract, leave-one-contract-out, winsorised), bootstrap CIs,
-within-year HHI, buyer-side HHI, aggregate-vs-within decomposition, US 2023
-Merger Guidelines classification, count-vs-value firm rankings, sensitivities.
+within-year HHI, buyer-side HHI, aggregate-vs-within decomposition, historical 1,000 reference and 2023 1,800
+HHI descriptive screens, count-vs-value firm rankings, sensitivities.
 
 Run:  python src/concentration_v3.py
 """
@@ -26,7 +26,7 @@ FIG.mkdir(parents=True, exist_ok=True)
 SEED = 42
 NBOOT = 1000
 MIN_YEAR_N = 30
-HI, MOD = 1800, 1000          # 2023 US Merger Guidelines thresholds
+HI, MOD = 1800, 1000          # 1,800: 2023 guideline; 1,000: historical 1992 reference
 OI = ["#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7", "#000000"]
 
 # --------------------------------------------------------------------------- data
@@ -44,7 +44,7 @@ def load():
         d[c] = d[c].astype(str).str.lower().eq("true")
     cpi, n26 = cpi_table()
     d["defl"] = d.yil_v3.map(lambda y: cpi[2025] / cpi[y])
-    d["real"] = d.bedel_num * d["defl"]
+    d["real"] = d.bedel_try * d["defl"]
     d["is_mhrs"] = d.ihale_adi.str.contains("MHRS", case=False, na=False) & (d.scope_v3 == "IT_service_callcentre")
     return d, cpi, n26
 
@@ -124,7 +124,7 @@ def group_stats(g, firm, cap, rng, boot=True):
     return r
 
 def classify(h):
-    return "high (>1800)" if h > HI else ("moderate (1000-1800)" if h >= MOD else "unconcentrated (<1000)")
+    return "above1800 (>1800)" if h > HI else ("between1000and1800 (1000-1800)" if h >= MOD else "below1000 (<1000)")
 
 def by_group(df, col, firm, cap, rng, boot=True, extra_all=True):
     rows = []
@@ -266,12 +266,12 @@ def main():
     rk.to_csv(RES / "count_vs_value_rankings.csv", index=False)
 
     # ---- 7. sensitivities (no bootstrap)
-    d["real_nominal"] = d.bedel_num
+    d["real_nominal"] = d.bedel_try
     variants = {
         "main (firma_v3, real)": (d[d.in_scope_main], "firma_v3", "real"),
         "firm = original firma": (d[d.in_scope_main], "firma", "real"),
         "include gray (broad)": (d[d.in_scope_broad], "firma_v3", "real"),
-        "nominal TRY": (d[d.in_scope_main], "firma_v3", "bedel_num"),
+        "nominal TRY": (d[d.in_scope_main], "firma_v3", "bedel_try"),
         "IT only (excl. call centre/MHRS)": (d[d.in_scope_main & (d.scope_v3 == "IT")], "firma_v3", "real"),
     }
     sens = []
@@ -302,7 +302,7 @@ PRETTY = {
     "cybersecurity": "Cybersecurity", "physical_security_surveillance": "Physical security / surveillance",
     "other_IT": "Other IT", "education_technology": "Education technology",
     "smart_city_traffic_OT": "Smart city / traffic OT", "call_centre_helpdesk": "Call centre / help-desk",
-    "ALL (aggregate)": "All markets pooled"}
+    "ALL (aggregate)": "All categories pooled"}
 
 def style():
     plt.rcParams.update({"font.family": "sans-serif", "font.sans-serif": ["Arial", "DejaVu Sans"],
@@ -388,9 +388,10 @@ def write_report(d, main_, cpi, n26, cap, mk, se, wys, by, dec, rk, sens):
     A("# TenderNet v3 - Market concentration (topic: `concentration`)\n")
     A(f"Script: `src/concentration_v3.py`. Sample: main (`in_scope_main`), N = {len(main_):,} contracts, "
       f"{main_.firma_v3.nunique():,} firms (`firma_v3`), {main_.kurum_il_split.nunique():,} buyers (`kurum_il_split`). "
+      "Nominal TRY uses explicit contract currencies and cached TCMB tender-date midpoint FX proxies; unlabelled currencies are assumed TRY (see currency fields and data/fx_cache_tcmb/README.md). "
       f"Real values in 2025 TRY using TÜİK CPI annual averages (2026 deflated with the mean of the {n26} available linked "
       f"2026 monthly values = {cpi[2026]:,.1f}; 2025 = {cpi[2025]:,.1f}). Total real value = {main_.real.sum()/1e9:,.2f} bn 2025-TRY "
-      f"(nominal {main_.bedel_num.sum()/1e9:,.2f} bn). HHI on 0-10,000 scale; CR4 in %. Bootstrap: {NBOOT} resamples of contracts "
+      f"(nominal {main_.bedel_try.sum()/1e9:,.2f} bn). HHI on 0-10,000 scale; CR4 in %. Bootstrap: {NBOOT} resamples of contracts "
       f"within each market, seed {SEED}, bias-shifted percentile 95% CIs (percentile interval minus the bootstrap bias, mean(boot)−estimate, clipped to [0, 10,000]; raw percentile bounds and bias are in the CSV). Winsorised variant caps each contract's real value at the "
       f"main-sample 99th percentile ({cap/1e6:,.1f} m 2025-TRY). LOO = leave-one-contract-out (all contracts, exact).\n")
     mh = main_[main_.is_mhrs].iloc[0]
@@ -404,17 +405,17 @@ def write_report(d, main_, cpi, n26, cap, mk, se, wys, by, dec, rk, sens):
     rob_hi = mm[mm.min_across_variants > HI]
     rob_mod = mm[(mm.min_across_variants >= MOD) & (mm.min_across_variants <= HI)]
     A("## Bottom line\n")
-    A(f"- **Pooled market is unconcentrated by every measure**: aggregate supplier HHI = {f0(a.HHI_count)} (count), "
+    A(f"- **Pooled procurement mix falls below the reference lines by every measure**: aggregate supplier HHI = {f0(a.HHI_count)} (count), "
       f"{f0(a.HHI_value)} (real value), {f0(a.HHI_value_nomax)} (value without MHRS contract). "
       "This pooled number is mechanically diluted (section 4) and should not be read as evidence of competition.")
-    A(f"- **Robustly concentrated product markets (HHI above threshold under count AND real value AND value-without-largest AND worst-case leave-one-out AND winsorised value):** "
+    A(f"- **Robustly concentrated product categories (HHI above threshold under count AND real value AND value-without-largest AND worst-case leave-one-out AND winsorised value):** "
       + (", ".join(f"{PRETTY[g]} (min {f0(x)})" for g, x in zip(rob_hi.group, rob_hi.min_across_variants)) or "none")
       + " at >1,800; " + (", ".join(f"{PRETTY[g]} (min {f0(x)})" for g, x in zip(rob_mod.group, rob_mod.min_across_variants)) or "none")
       + " at 1,000-1,800.")
     rest = mm[mm.min_across_variants < MOD]
     cmax = mm.loc[mm.HHI_count.idxmax()]
-    A(f"- All {len(rest)} product markets fall below 1,000 on at least one variant, and the failing variant is always the **count** HHI: "
-      f"the highest count HHI is {f0(cmax.HHI_count)} ({PRETTY[cmax.group]}, n={cmax.n_contracts}); no market reaches 1,000 by count "
+    A(f"- All {len(rest)} product categories fall below 1,000 on at least one variant, and the failing variant is always the **count** HHI: "
+      f"the highest count HHI is {f0(cmax.HHI_count)} ({PRETTY[cmax.group]}, n={cmax.n_contracts}); no category reaches 1,000 by count "
       "(bias-shifted upper CI bounds: " + ", ".join(f"{PRETTY[g]} {f0(h)}" for g, h in zip(mm.group, mm.HHI_count_hi) if h >= 500) + ").")
     vonly = mm[mm.HHI_value >= MOD]
     A("- Markets that cross 1,000 on raw real-value HHI: " + "; ".join(
@@ -437,17 +438,17 @@ def write_report(d, main_, cpi, n26, cap, mk, se, wys, by, dec, rk, sens):
       "Median within-year value HHI is ≥1,000 in "
       + ", ".join(PRETTY[m] for m in wys[(wys.market != 'ALL (aggregate)') & (wys.HHI_value_med >= MOD)].market)
       + "; this value measure carries the same small-n upward bias (no simple correction exists for value shares), so it is an upper bound. "
-      "Summary: many firms win in every market, value is skewed toward a few large contracts, and the supply side is at most moderately concentrated when measured within a year by value.")
+      "Within-year category HHIs describe the distribution of recorded awards; they do not identify competitive conduct or economic market boundaries.")
     A("- Conclusion for the paper: **no product market is robustly concentrated under count AND value AND leave-one-out**. "
       "Any dependence story must therefore rest on relational/buyer-level measures (lock-in), not on market-level HHI.")
-    A("- Thresholds are from the 2023 US Merger Guidelines (HHI >1,800 highly concentrated; 1,000-1,800 moderately). "
-      "They are merger-screening presumptions, not conduct or harm thresholds, and our 'markets' are title-based product categories pooled over "
+    A("- The 1,000 HHI line is a historical 1992 guideline reference; the 2023 US Merger Guidelines use >1,800 as the high-concentration threshold. "
+      "These reference lines are descriptive here, not merger presumptions or conduct/harm thresholds, and our 'markets' are title-based product categories pooled over "
       "15 years and all of Türkiye, not antitrust relevant markets. Treat the classification as descriptive.\n")
 
     # ---------- table 1
-    A("## 1. Supplier-side concentration by product market (urun_pazari)\n")
+    A("## 1. Supplier-side concentration by product category (urun_pazari)\n")
     A("Table 1a. HHI with bootstrap 95% CIs.\n")
-    A("| market | N | firms | HHI count [95% CI] | HHI count (unbiased) | CR4 count | HHI value [95% CI] | CR4 value | HHI value w/o largest [95% CI] | CR4 w/o largest | largest contract % of value |")
+    A("| category | N | firms | HHI count [95% CI] | HHI count (unbiased) | CR4 count | HHI value [95% CI] | CR4 value | HHI value w/o largest [95% CI] | CR4 w/o largest | largest contract % of value |")
     A("|---|---|---|---|---|---|---|---|---|---|---|")
     for _, r in mk.iterrows():
         A(f"| {PRETTY.get(r.group, r.group)} | {r.n_contracts:,} | {r.n_firms:,} | {ci(r,'count')} | {f0(r.HHI_count_unbiased)} | {f1(r.CR4_count)} | "
@@ -457,7 +458,7 @@ def write_report(d, main_, cpi, n26, cap, mk, se, wys, by, dec, rk, sens):
       "For value HHI in small, heavy-tailed markets (call centre, smart city, education technology, other IT) the bootstrap distribution is "
       "dominated by whether the one or two giant contracts are drawn; those CIs are very wide and mean 'poorly identified', not a precise range.\n")
     A("Table 1b. Influence and classification.\n")
-    A("| market | HHI value | LOO min | LOO max | max abs LOO change (value) | max abs LOO change (count) | HHI winsorised [95% CI] | class count | class value | class w/o largest | class LOO-min | class winsorised | **robust class (min of all)** |")
+    A("| category | HHI value | LOO min | LOO max | max abs LOO change (value) | max abs LOO change (count) | HHI winsorised [95% CI] | class count | class value | class w/o largest | class LOO-min | class winsorised | **robust class (min of all)** |")
     A("|---|---|---|---|---|---|---|---|---|---|---|---|---|")
     for _, r in mk.iterrows():
         A(f"| {PRETTY.get(r.group, r.group)} | {f0(r.HHI_value)} | {f0(r.LOO_value_min)} | {f0(r.LOO_value_max)} | {f0(r.LOO_value_maxabs_change)} | "
@@ -477,7 +478,7 @@ def write_report(d, main_, cpi, n26, cap, mk, se, wys, by, dec, rk, sens):
     # ---------- within-year
     A(f"## 2. Within-year HHI (market-years with ≥{MIN_YEAR_N} contracts)\n")
     A("Within a single year the CPI deflator is constant, so real-value and nominal-value HHI are identical.\n")
-    A("| market | years | HHI count median [IQR] | HHI count unbiased, median | HHI value median [IQR] | HHI value w/o largest, median | years value HHI >1,800 | years value-w/o-largest HHI ≥1,000 | years count HHI >1,800 |")
+    A("| category | years | HHI count median [IQR] | HHI count unbiased, median | HHI value median [IQR] | HHI value w/o largest, median | years value HHI >1,800 | years value-w/o-largest HHI ≥1,000 | years count HHI >1,800 |")
     A("|---|---|---|---|---|---|---|---|---|")
     for _, r in wys.sort_values("HHI_count_med").iterrows():
         A(f"| {PRETTY.get(r.market, r.market)} | {r.n_years} | {f0(r.HHI_count_med)} [{f0(r.HHI_count_q1)}-{f0(r.HHI_count_q3)}] | {f0(r.HHI_count_unb_med)} | "
@@ -488,7 +489,7 @@ def write_report(d, main_, cpi, n26, cap, mk, se, wys, by, dec, rk, sens):
     # ---------- buyer-side
     A("## 3. Buyer-side (demand) concentration\n")
     A("Buyer = `kurum_il_split` (primary); last two columns use recorded `kurum`.\n")
-    A("| market | N | buyers | HHI count | CR4 count | HHI value | CR4 value | HHI value w/o largest | HHI count (kurum) | HHI value (kurum) |")
+    A("| category | N | buyers | HHI count | CR4 count | HHI value | CR4 value | HHI value w/o largest | HHI count (kurum) | HHI value (kurum) |")
     A("|---|---|---|---|---|---|---|---|---|---|")
     for _, r in by.iterrows():
         A(f"| {PRETTY.get(r.group, r.group)} | {r.n_contracts:,} | {r.n_buyers:,} | {f0(r.HHI_count)} | {f1(r.CR4_count)} | {f0(r.HHI_value)} | "
@@ -525,7 +526,7 @@ def write_report(d, main_, cpi, n26, cap, mk, se, wys, by, dec, rk, sens):
     vnames = list(dict.fromkeys(sens.variant))
     for metric in ["HHI_count", "HHI_value", "HHI_value_nomax", "LOO_value_min"]:
         A(f"**{metric}**\n")
-        A("| market | " + " | ".join(vnames) + " |")
+        A("| category | " + " | ".join(vnames) + " |")
         A("|---|" + "---|" * len(vnames))
         for g in [x for x in mk.group]:
             if g not in piv.index:
@@ -535,7 +536,7 @@ def write_report(d, main_, cpi, n26, cap, mk, se, wys, by, dec, rk, sens):
     A("Robust class under each sensitivity (min of count, value, value w/o largest, LOO-min, winsorised):\n")
     sens2 = sens.copy()
     sens2["minv"] = sens2[["HHI_count", "HHI_value", "HHI_value_nomax", "LOO_value_min", "HHI_value_wins"]].min(axis=1)
-    A("| market | " + " | ".join(vnames) + " |")
+    A("| category | " + " | ".join(vnames) + " |")
     A("|---|" + "---|" * len(vnames))
     pv = sens2.pivot_table(index="group", columns="variant", values="minv", aggfunc="first")
     for g in mk.group:
@@ -547,7 +548,7 @@ def write_report(d, main_, cpi, n26, cap, mk, se, wys, by, dec, rk, sens):
     for p in sorted(RES.glob("*.csv")):
         A(f"- `results/concentration/{p.name}`")
     A("- `figures/F-C1_concentration_by_market.png/.pdf` - dot plot: count HHI, real-value HHI, value HHI without largest contract, bootstrap 95% CIs, thresholds 1,000/1,800 (log x).")
-    A("- `figures/F-C2_within_year_hhi.png/.pdf` - within-year HHI by market (box + strip; count left, real value right).")
+    A("- `figures/F-C2_within_year_hhi.png/.pdf` - within-year HHI by category (box + strip; count left, real value right).")
     (RES / "concentration_results.md").write_text("\n".join(L), encoding="utf-8")
 
 

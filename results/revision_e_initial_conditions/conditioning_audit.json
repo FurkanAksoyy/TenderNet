@@ -1,0 +1,25 @@
+{
+  "total_contracts": 9991,
+  "simulated_contracts": 3013,
+  "fixed_contracts": 6978,
+  "fixed_before_buyer_start": 1984,
+  "pair_count": 121129,
+  "candidate_rows": 203721,
+  "note": "Pooled simulations: no opposite-subgroup contracts are frozen separately. Observed alternative pools and all excluded awards remain fixed.",
+  "legacy_all_fixed": {
+    "tilted_pairs": 6436,
+    "candidate_row_share": 0.024832982363133894,
+    "observed_winner_row_share": 0.6342515765018254
+  },
+  "no_tilt": {
+    "tilted_pairs": 0,
+    "candidate_row_share": 0.0,
+    "observed_winner_row_share": 0.0
+  },
+  "pre_first_simulated": {
+    "tilted_pairs": 1886,
+    "candidate_row_share": 0.013940634495216497,
+    "observed_winner_row_share": 0.46764022568868235
+  },
+  "legacy_only_after_start_pairs": 4550
+}

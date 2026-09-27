@@ -1,0 +1,7 @@
+{
+  "stale_calibration_ignored": true,
+  "fake_simulation_calls": 14,
+  "fresh_zero_sigma_share": 0.0,
+  "status": "matched_within_0.01",
+  "note": "Synthetic regression check only; not a scientific scenario."
+}

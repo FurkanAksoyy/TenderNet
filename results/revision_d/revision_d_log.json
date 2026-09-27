@@ -1634,14 +1634,14 @@
       "model": "T4 all | D + both",
       "variable": "log_past_wins_market_other_buyers",
       "OR": 0.7875972463119778,
-      "OR_lo": 0.7109301059856884,
-      "OR_hi": 0.8725322182525459
+      "OR_lo": 0.7109301059856885,
+      "OR_hi": 0.8725322182525457
     },
     {
       "model": "T4 all | E + both + log future wins any market/buyer",
       "variable": "incumbent",
       "OR": 63.749845373338225,
-      "OR_lo": 53.949621703052365,
+      "OR_lo": 53.949621703052394,
       "OR_hi": 75.33032960812398
     },
     {
@@ -1655,15 +1655,15 @@
       "model": "T4 all | E + both + log future wins any market/buyer",
       "variable": "log_future_wins_market_other_buyers",
       "OR": 1.0254126929219631,
-      "OR_lo": 0.9220761518296154,
+      "OR_lo": 0.9220761518296156,
       "OR_hi": 1.1403301004142732
     },
     {
       "model": "T4 all | E + both + log future wins any market/buyer",
       "variable": "log_past_wins_market_other_buyers",
       "OR": 0.9786386994490806,
-      "OR_lo": 0.867610652170307,
-      "OR_hi": 1.103874994692193
+      "OR_lo": 0.8676106521703069,
+      "OR_hi": 1.1038749946921933
     },
     {
       "model": "T4 all | F + future_other_market_only",
@@ -1682,9 +1682,9 @@
     {
       "model": "T4 all | G + both + future_other_market_only",
       "variable": "incumbent",
-      "OR": 62.97886572894227,
-      "OR_lo": 53.470553993106684,
-      "OR_hi": 74.17797707903813
+      "OR": 62.97886572894221,
+      "OR_lo": 53.47055399310664,
+      "OR_hi": 74.17797707903807
     },
     {
       "model": "T4 all | G + both + future_other_market_only",
@@ -1704,8 +1704,8 @@
       "model": "T4 all | G + both + future_other_market_only",
       "variable": "log_past_wins_market_other_buyers",
       "OR": 0.8037697376411359,
-      "OR_lo": 0.7240313497776116,
-      "OR_hi": 0.8922898039513556
+      "OR_lo": 0.724031349777612,
+      "OR_hi": 0.8922898039513554
     },
     {
       "model": "T4 lag all | future win > t+0d",
@@ -1746,176 +1746,176 @@
       "model": "T4 lag all | future win > t+0d + firm controls",
       "variable": "log_past_wins_market_other_buyers",
       "OR": 0.7875972463119778,
-      "OR_lo": 0.7109301059856884,
-      "OR_hi": 0.8725322182525459
+      "OR_lo": 0.7109301059856885,
+      "OR_hi": 0.8725322182525457
     },
     {
       "model": "T4 lag all | future win > t+30d",
       "variable": "incumbent",
-      "OR": 63.69487531624243,
-      "OR_lo": 53.87472783123715,
-      "OR_hi": 75.30501414801311
+      "OR": 63.652371134833764,
+      "OR_lo": 53.83844720757536,
+      "OR_hi": 75.25522300941351
     },
     {
       "model": "T4 lag all | future win > t+30d",
       "variable": "fut_gt30",
-      "OR": 56.08859238877805,
-      "OR_lo": 43.53477711496684,
-      "OR_hi": 72.26246244115836
+      "OR": 56.56563380599614,
+      "OR_lo": 43.79607848755907,
+      "OR_hi": 73.05838875010163
     },
     {
       "model": "T4 lag all | future win > t+30d + firm controls",
       "variable": "incumbent",
-      "OR": 61.14494776063758,
-      "OR_lo": 51.74407939886942,
-      "OR_hi": 72.25376661610463
+      "OR": 61.11546938193781,
+      "OR_lo": 51.719215855319966,
+      "OR_hi": 72.21881724238047
     },
     {
       "model": "T4 lag all | future win > t+30d + firm controls",
       "variable": "fut_gt30",
-      "OR": 42.50064921664256,
-      "OR_lo": 32.76417206485251,
-      "OR_hi": 55.13049987226131
+      "OR": 42.68147507302195,
+      "OR_lo": 32.798913672680925,
+      "OR_hi": 55.54172716172431
     },
     {
       "model": "T4 lag all | future win > t+30d + firm controls",
       "variable": "log_future_wins_market_other_buyers",
-      "OR": 1.4266976333008208,
-      "OR_lo": 1.3333090673568107,
-      "OR_hi": 1.5266273864778621
+      "OR": 1.4258419115978371,
+      "OR_lo": 1.3321626169089826,
+      "OR_hi": 1.5261088481721572
     },
     {
       "model": "T4 lag all | future win > t+30d + firm controls",
       "variable": "log_past_wins_market_other_buyers",
-      "OR": 0.7868908544154857,
-      "OR_lo": 0.7101635496607879,
-      "OR_hi": 0.8719079105911516
+      "OR": 0.7873349131152964,
+      "OR_lo": 0.710583682381551,
+      "OR_hi": 0.8723761617106981
     },
     {
       "model": "T4 lag all | future win > t+90d",
       "variable": "incumbent",
-      "OR": 63.705360437900495,
-      "OR_lo": 53.88388836837053,
-      "OR_hi": 75.31700238071635
+      "OR": 63.69077557800881,
+      "OR_lo": 53.870954892405365,
+      "OR_hi": 75.30059383261762
     },
     {
       "model": "T4 lag all | future win > t+90d",
       "variable": "fut_gt90",
-      "OR": 55.30640941074318,
-      "OR_lo": 42.62999352552154,
-      "OR_hi": 71.75227272970409
+      "OR": 56.783022391776434,
+      "OR_lo": 43.39621978810951,
+      "OR_hi": 74.29936634315877
     },
     {
       "model": "T4 lag all | future win > t+90d + firm controls",
       "variable": "incumbent",
-      "OR": 61.17115091107068,
-      "OR_lo": 51.76513463479256,
-      "OR_hi": 72.2862932779848
+      "OR": 61.158488899042624,
+      "OR_lo": 51.75644139263775,
+      "OR_hi": 72.26850733494167
     },
     {
       "model": "T4 lag all | future win > t+90d + firm controls",
       "variable": "fut_gt90",
-      "OR": 41.60837705791305,
-      "OR_lo": 31.855835955643865,
-      "OR_hi": 54.34662093953746
+      "OR": 42.48587283481677,
+      "OR_lo": 32.19737875341575,
+      "OR_hi": 56.061998225390546
     },
     {
       "model": "T4 lag all | future win > t+90d + firm controls",
       "variable": "log_future_wins_market_other_buyers",
-      "OR": 1.4289936265379435,
-      "OR_lo": 1.3359074794796748,
-      "OR_hi": 1.5285660242589665
+      "OR": 1.4272983156280468,
+      "OR_lo": 1.3338342712033442,
+      "OR_hi": 1.5273115452017725
     },
     {
       "model": "T4 lag all | future win > t+90d + firm controls",
       "variable": "log_past_wins_market_other_buyers",
-      "OR": 0.7875404282223463,
-      "OR_lo": 0.7109459703673388,
-      "OR_hi": 0.8723868647348476
+      "OR": 0.7876114165561774,
+      "OR_lo": 0.7108507391165527,
+      "OR_hi": 0.8726610374782454
     },
     {
       "model": "T4 lag all | future win > t+180d",
       "variable": "incumbent",
-      "OR": 63.68763488627209,
-      "OR_lo": 53.86398533417378,
-      "OR_hi": 75.30290995445
+      "OR": 63.70211849365705,
+      "OR_lo": 53.875275398159495,
+      "OR_hi": 75.32137646796242
     },
     {
       "model": "T4 lag all | future win > t+180d",
       "variable": "fut_gt180",
-      "OR": 52.73488538241335,
-      "OR_lo": 40.42136821615495,
-      "OR_hi": 68.79945580824806
+      "OR": 53.49728185738404,
+      "OR_lo": 40.46164783565884,
+      "OR_hi": 70.7326399002007
     },
     {
       "model": "T4 lag all | future win > t+180d + firm controls",
       "variable": "incumbent",
-      "OR": 61.19253465520961,
-      "OR_lo": 51.78114492690706,
-      "OR_hi": 72.31447475359433
+      "OR": 61.21286831014949,
+      "OR_lo": 51.79847939488548,
+      "OR_hi": 72.33832518886025
     },
     {
       "model": "T4 lag all | future win > t+180d + firm controls",
       "variable": "fut_gt180",
-      "OR": 39.5657767504741,
-      "OR_lo": 30.099535876441198,
-      "OR_hi": 52.00913051598346
+      "OR": 39.722440023319876,
+      "OR_lo": 29.791675535439293,
+      "OR_hi": 52.96352800060725
     },
     {
       "model": "T4 lag all | future win > t+180d + firm controls",
       "variable": "log_future_wins_market_other_buyers",
-      "OR": 1.4322255259736159,
-      "OR_lo": 1.3393854800551452,
-      "OR_hi": 1.5315008172000981
+      "OR": 1.4321202348322,
+      "OR_lo": 1.3389299879892513,
+      "OR_hi": 1.5317965729454557
     },
     {
       "model": "T4 lag all | future win > t+180d + firm controls",
       "variable": "log_past_wins_market_other_buyers",
-      "OR": 0.788454412773272,
-      "OR_lo": 0.7118846270843251,
-      "OR_hi": 0.8732599881637948
+      "OR": 0.7877727867833594,
+      "OR_lo": 0.7112725710624915,
+      "OR_hi": 0.8725009073095499
     },
     {
       "model": "T4 lag all | future win > t+365d",
       "variable": "incumbent",
-      "OR": 63.74887957533736,
-      "OR_lo": 53.906291219502805,
-      "OR_hi": 75.3885966772015
+      "OR": 63.784342927236324,
+      "OR_lo": 53.926385091922945,
+      "OR_hi": 75.4443746919845
     },
     {
       "model": "T4 lag all | future win > t+365d",
       "variable": "fut_gt365",
-      "OR": 48.6537878752504,
-      "OR_lo": 37.02607450390092,
-      "OR_hi": 63.93308246491169
+      "OR": 46.638024535142755,
+      "OR_lo": 34.3311011001303,
+      "OR_hi": 63.35670173224716
     },
     {
       "model": "T4 lag all | future win > t+365d + firm controls",
       "variable": "incumbent",
-      "OR": 61.3290095733025,
-      "OR_lo": 51.87047103306255,
-      "OR_hi": 72.51230498456029
+      "OR": 61.353794406174764,
+      "OR_lo": 51.8858514984238,
+      "OR_hi": 72.54941336270664
     },
     {
       "model": "T4 lag all | future win > t+365d + firm controls",
       "variable": "fut_gt365",
-      "OR": 35.53927400035833,
-      "OR_lo": 26.83482505235903,
-      "OR_hi": 47.06719697289448
+      "OR": 33.575308203944,
+      "OR_lo": 24.47341099810914,
+      "OR_hi": 46.06228862322976
     },
     {
       "model": "T4 lag all | future win > t+365d + firm controls",
       "variable": "log_future_wins_market_other_buyers",
-      "OR": 1.4387638357562387,
-      "OR_lo": 1.3463337700489038,
-      "OR_hi": 1.5375395174146256
+      "OR": 1.4401245087582437,
+      "OR_lo": 1.348637138669499,
+      "OR_hi": 1.537818098923363
     },
     {
       "model": "T4 lag all | future win > t+365d + firm controls",
       "variable": "log_past_wins_market_other_buyers",
-      "OR": 0.7874291526219296,
-      "OR_lo": 0.711264805719389,
-      "OR_hi": 0.8717494038971366
+      "OR": 0.78673338095207,
+      "OR_lo": 0.7108333720151249,
+      "OR_hi": 0.870737696163068
     },
     {
       "model": "T4 renewals | A baseline: main + future_only",
@@ -1949,15 +1949,15 @@
       "model": "T4 renewals | D + both",
       "variable": "log_future_wins_market_other_buyers",
       "OR": 1.318210258734851,
-      "OR_lo": 1.171590269537273,
+      "OR_lo": 1.1715902695372729,
       "OR_hi": 1.4831791722887129
     },
     {
       "model": "T4 renewals | D + both",
       "variable": "log_past_wins_market_other_buyers",
-      "OR": 0.7141719016659317,
-      "OR_lo": 0.6112971557351337,
-      "OR_hi": 0.8343593624540384
+      "OR": 0.7141719016659316,
+      "OR_lo": 0.6112971557351335,
+      "OR_hi": 0.8343593624540383
     },
     {
       "model": "T4 lag renewals | future win > t+0d",
@@ -1991,64 +1991,64 @@
       "model": "T4 lag renewals | future win > t+0d + firm controls",
       "variable": "log_future_wins_market_other_buyers",
       "OR": 1.318210258734851,
-      "OR_lo": 1.171590269537273,
+      "OR_lo": 1.1715902695372729,
       "OR_hi": 1.4831791722887129
     },
     {
       "model": "T4 lag renewals | future win > t+0d + firm controls",
       "variable": "log_past_wins_market_other_buyers",
-      "OR": 0.7141719016659317,
-      "OR_lo": 0.6112971557351337,
-      "OR_hi": 0.8343593624540384
+      "OR": 0.7141719016659316,
+      "OR_lo": 0.6112971557351335,
+      "OR_hi": 0.8343593624540383
     },
     {
       "model": "T4 lag renewals | future win > t+365d",
       "variable": "incumbent",
-      "OR": 257.8206200924014,
-      "OR_lo": 188.2568617807274,
-      "OR_hi": 353.08923943634613
+      "OR": 258.3500525390264,
+      "OR_lo": 188.53166803771163,
+      "OR_hi": 354.0240763878824
     },
     {
       "model": "T4 lag renewals | future win > t+365d",
       "variable": "fut_gt365",
-      "OR": 108.7333273026739,
-      "OR_lo": 68.08107565661444,
-      "OR_hi": 173.65966022544396
+      "OR": 99.24578863380762,
+      "OR_lo": 60.376453216199096,
+      "OR_hi": 163.13854221075246
     },
     {
       "model": "T4 lag renewals | future win > t+365d + firm controls",
       "variable": "incumbent",
-      "OR": 231.1809689395268,
-      "OR_lo": 169.62395607793212,
-      "OR_hi": 315.0771956719593
+      "OR": 231.36682667798019,
+      "OR_lo": 169.76075335125375,
+      "OR_hi": 315.3297062500529
     },
     {
       "model": "T4 lag renewals | future win > t+365d + firm controls",
       "variable": "fut_gt365",
-      "OR": 77.65163003825512,
-      "OR_lo": 46.407155122061745,
-      "OR_hi": 129.93202517453
+      "OR": 68.83563899459398,
+      "OR_lo": 40.35013314710554,
+      "OR_hi": 117.43072020405377
     },
     {
       "model": "T4 lag renewals | future win > t+365d + firm controls",
       "variable": "log_future_wins_market_other_buyers",
-      "OR": 1.3325178846691073,
-      "OR_lo": 1.1857810293072124,
-      "OR_hi": 1.4974129869495563
+      "OR": 1.3379593875935387,
+      "OR_lo": 1.191632487379959,
+      "OR_hi": 1.50225454727711
     },
     {
       "model": "T4 lag renewals | future win > t+365d + firm controls",
       "variable": "log_past_wins_market_other_buyers",
-      "OR": 0.712654808382731,
-      "OR_lo": 0.6106261500003596,
-      "OR_hi": 0.8317312907590478
+      "OR": 0.7087363541310043,
+      "OR_lo": 0.6076236448030932,
+      "OR_hi": 0.8266749063553743
     },
     {
       "model": "T4 new needs | A baseline: main + future_only",
       "variable": "incumbent",
       "OR": 30.32983448582583,
-      "OR_lo": 25.05882113235533,
-      "OR_hi": 36.70958242923244
+      "OR_lo": 25.05882113235532,
+      "OR_hi": 36.709582429232455
     },
     {
       "model": "T4 new needs | A baseline: main + future_only",
@@ -2060,9 +2060,9 @@
     {
       "model": "T4 new needs | D + both",
       "variable": "incumbent",
-      "OR": 30.238936002573578,
-      "OR_lo": 24.915332771699337,
-      "OR_hi": 36.70002158696333
+      "OR": 30.238936002573592,
+      "OR_lo": 24.915332771699347,
+      "OR_hi": 36.700021586963345
     },
     {
       "model": "T4 new needs | D + both",
@@ -2076,21 +2076,21 @@
       "variable": "log_future_wins_market_other_buyers",
       "OR": 1.474878794686318,
       "OR_lo": 1.357463464405539,
-      "OR_hi": 1.6024500961195003
+      "OR_hi": 1.6024500961195007
     },
     {
       "model": "T4 new needs | D + both",
       "variable": "log_past_wins_market_other_buyers",
-      "OR": 0.9419854088861404,
-      "OR_lo": 0.8198553232563739,
-      "OR_hi": 1.082308652982806
+      "OR": 0.9419854088861402,
+      "OR_lo": 0.8198553232563737,
+      "OR_hi": 1.0823086529828063
     },
     {
       "model": "T4 lag new needs | future win > t+0d",
       "variable": "incumbent",
       "OR": 30.32983448582583,
-      "OR_lo": 25.05882113235533,
-      "OR_hi": 36.70958242923244
+      "OR_lo": 25.05882113235532,
+      "OR_hi": 36.709582429232455
     },
     {
       "model": "T4 lag new needs | future win > t+0d",
@@ -2102,9 +2102,9 @@
     {
       "model": "T4 lag new needs | future win > t+0d + firm controls",
       "variable": "incumbent",
-      "OR": 30.238936002573578,
-      "OR_lo": 24.915332771699337,
-      "OR_hi": 36.70002158696333
+      "OR": 30.238936002573592,
+      "OR_lo": 24.915332771699347,
+      "OR_hi": 36.700021586963345
     },
     {
       "model": "T4 lag new needs | future win > t+0d + firm controls",
@@ -2118,56 +2118,56 @@
       "variable": "log_future_wins_market_other_buyers",
       "OR": 1.474878794686318,
       "OR_lo": 1.357463464405539,
-      "OR_hi": 1.6024500961195003
+      "OR_hi": 1.6024500961195007
     },
     {
       "model": "T4 lag new needs | future win > t+0d + firm controls",
       "variable": "log_past_wins_market_other_buyers",
-      "OR": 0.9419854088861404,
-      "OR_lo": 0.8198553232563739,
-      "OR_hi": 1.082308652982806
+      "OR": 0.9419854088861402,
+      "OR_lo": 0.8198553232563737,
+      "OR_hi": 1.0823086529828063
     },
     {
       "model": "T4 lag new needs | future win > t+365d",
       "variable": "incumbent",
-      "OR": 30.351875432920107,
-      "OR_lo": 25.068353225475125,
-      "OR_hi": 36.74897724671098
+      "OR": 30.35626954141998,
+      "OR_lo": 25.069571822809234,
+      "OR_hi": 36.757831644851805
     },
     {
       "model": "T4 lag new needs | future win > t+365d",
       "variable": "fut_gt365",
-      "OR": 36.774420194853526,
-      "OR_lo": 26.12937156797978,
-      "OR_hi": 51.75623826808361
+      "OR": 35.76580456905363,
+      "OR_lo": 24.540453002233086,
+      "OR_hi": 52.125882776301474
     },
     {
       "model": "T4 lag new needs | future win > t+365d + firm controls",
       "variable": "incumbent",
-      "OR": 30.301866703372966,
-      "OR_lo": 24.951247641229582,
-      "OR_hi": 36.79988828260993
+      "OR": 30.306758781850046,
+      "OR_lo": 24.95430939884949,
+      "OR_hi": 36.807254938643666
     },
     {
       "model": "T4 lag new needs | future win > t+365d + firm controls",
       "variable": "fut_gt365",
-      "OR": 27.2078952729887,
-      "OR_lo": 19.30239088341455,
-      "OR_hi": 38.351185076351996
+      "OR": 26.22705194705142,
+      "OR_lo": 17.90097593208945,
+      "OR_hi": 38.42574038660499
     },
     {
       "model": "T4 lag new needs | future win > t+365d + firm controls",
       "variable": "log_future_wins_market_other_buyers",
-      "OR": 1.4828862369356794,
-      "OR_lo": 1.3656089605236754,
-      "OR_hi": 1.610235180977444
+      "OR": 1.483067580823737,
+      "OR_lo": 1.365989239788525,
+      "OR_hi": 1.6101806553255755
     },
     {
       "model": "T4 lag new needs | future win > t+365d + firm controls",
       "variable": "log_past_wins_market_other_buyers",
-      "OR": 0.9414725020530883,
-      "OR_lo": 0.8198408017172998,
-      "OR_hi": 1.0811494991045145
+      "OR": 0.9421009941192935,
+      "OR_lo": 0.8205829583962931,
+      "OR_hi": 1.0816143255706325
     }
   ],
   "T4_lag_counts": {
@@ -2176,20 +2176,20 @@
       "alts": 931
     },
     "30": {
-      "chosen": 0.07633587786259542,
-      "alts": 903
+      "chosen": 0.07534019249917026,
+      "alts": 889
     },
     "90": {
-      "chosen": 0.07268503153003651,
-      "alts": 870
+      "chosen": 0.07036176568204447,
+      "alts": 838
     },
     "180": {
-      "chosen": 0.06770660471291072,
-      "alts": 831
+      "chosen": 0.06272817789578493,
+      "alts": 779
     },
     "365": {
-      "chosen": 0.054762694988383674,
-      "alts": 713
+      "chosen": 0.04513773647527381,
+      "alts": 626
     }
   },
   "T5_recency": [

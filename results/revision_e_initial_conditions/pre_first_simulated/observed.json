@@ -1,0 +1,12 @@
+{
+  "OR_incumbent_main": 42.30883859853278,
+  "OR_incumbent_plac": 63.693030676663795,
+  "OR_future_only": 54.38802893370581,
+  "past_future_ratio": 1.1710854746050818,
+  "OR_inc_last": 45.75839151544446,
+  "OR_inc_earlier": 26.159735710059774,
+  "last_earlier_ratio": 1.7491916593732246,
+  "share_chosen_incumbent": 0.6893461666113508,
+  "share_chosen_future_only": 0.07799535346830401,
+  "share_chosen_last": 0.5628941254563558
+}

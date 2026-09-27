@@ -8,9 +8,9 @@ Logit, FE = year (2010 pooled into 2011), product market, buyer sector; also log
 
 | specification | SE | OR 21(b)×post [95% CI] | p | AME pre (pp) | AME post (pp) | post − pre (pp) | p (post−pre) |
 |---|---|---:|---:|---:|---:|---:|---:|
-| S1 full history controls (= A1) | two-way (buyer, firm) | 2.42 [1.43, 4.09] | <0.001 | -3.8 [-12.4, 4.9] | 13.5 [7.2, 19.9] | 17.3 [7.2, 27.5] | <0.001 |
+| S1 full history controls (= A1) | two-way (buyer, firm) | 2.42 [1.43, 4.09] | <0.001 | -3.8 [-12.5, 4.9] | 13.5 [7.2, 19.9] | 17.3 [7.2, 27.5] | <0.001 |
 | S1 full history controls (= A1) | buyer only | 2.42 [1.57, 3.73] | <0.001 | -3.8 [-11.1, 3.5] | 13.5 [8.0, 19.0] | 17.3 [8.8, 25.8] | <0.001 |
-| S2 no prior-count controls (keeps years since first) | two-way (buyer, firm) | 2.90 [1.64, 5.15] | <0.001 | -3.5 [-13.0, 5.9] | 19.5 [12.3, 26.7] | 23.0 [11.5, 34.5] | <0.001 |
+| S2 no prior-count controls (keeps years since first) | two-way (buyer, firm) | 2.90 [1.64, 5.15] | <0.001 | -3.5 [-13.0, 6.0] | 19.5 [12.3, 26.7] | 23.0 [11.5, 34.5] | <0.001 |
 | S2 no prior-count controls (keeps years since first) | buyer only | 2.90 [1.92, 4.39] | <0.001 | -3.5 [-10.5, 3.5] | 19.5 [13.4, 25.5] | 23.0 [14.4, 31.5] | <0.001 |
 | S3 no buyer-history controls | two-way (buyer, firm) | 2.93 [1.65, 5.19] | <0.001 | -3.6 [-13.0, 5.9] | 19.6 [12.4, 26.8] | 23.2 [11.7, 34.6] | <0.001 |
 | S3 no buyer-history controls | buyer only | 2.93 [1.94, 4.41] | <0.001 | -3.6 [-10.5, 3.4] | 19.6 [13.5, 25.7] | 23.2 [14.7, 31.6] | <0.001 |
@@ -26,18 +26,18 @@ LPM on sample A: P(incumbent win) = Σ_t δ_t·21(b)·1[bin t] + Σ_t θ_t·othe
 | bin | contracts | 21(b) | raw inc. 21(b) | raw inc. open | δ (pp) [95% CI] | δ − mean δ(2013–17) (pp) [95% CI] | δ − δ(2010–12) (pp) [95% CI] |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 2010–12 | 242 | 24 | 0.58 | 0.28 | 16.0 [-4.2, 36.2] | 23.2 [2.7, 43.7] | base |
-| 2013 | 234 | 40 | 0.55 | 0.40 | -7.6 [-26.6, 11.4] | -0.3 [-18.3, 17.6] | -23.5 [-51.7, 4.6] |
-| 2014 | 295 | 27 | 0.44 | 0.43 | -18.3 [-40.9, 4.4] | -11.0 [-29.6, 7.6] | -34.2 [-61.1, -7.4] |
+| 2013 | 234 | 40 | 0.55 | 0.40 | -7.6 [-26.6, 11.4] | -0.3 [-18.3, 17.6] | -23.6 [-51.7, 4.6] |
+| 2014 | 295 | 27 | 0.44 | 0.43 | -18.3 [-41.0, 4.4] | -11.0 [-29.6, 7.6] | -34.3 [-61.2, -7.4] |
 | 2015 | 310 | 34 | 0.62 | 0.38 | 2.8 [-16.4, 21.9] | 10.0 [-4.9, 24.9] | -13.2 [-38.7, 12.3] |
-| 2016 | 320 | 31 | 0.48 | 0.45 | -15.2 [-32.1, 1.7] | -8.0 [-24.8, 8.9] | -31.2 [-58.2, -4.1] |
+| 2016 | 320 | 31 | 0.48 | 0.45 | -15.2 [-32.2, 1.7] | -8.0 [-24.8, 8.9] | -31.2 [-58.3, -4.1] |
 | 2017 | 363 | 32 | 0.50 | 0.37 | 2.1 [-13.1, 17.3] | 9.3 [-4.0, 22.7] | -13.9 [-37.4, 9.6] |
 | 2018 | 345 | 54 | 0.83 | 0.36 | 30.1 [19.5, 40.7] | 37.3 [24.4, 50.2] | 14.1 [-7.5, 35.7] |
-| 2019 | 307 | 49 | 0.82 | 0.51 | 2.0 [-11.3, 15.3] | 9.2 [-8.1, 26.6] | -14.0 [-38.9, 11.0] |
-| 2020 | 410 | 85 | 0.84 | 0.44 | 14.8 [6.6, 23.1] | 22.1 [11.6, 32.5] | -1.2 [-22.2, 19.9] |
-| 2021 | 462 | 73 | 0.74 | 0.41 | 4.5 [-8.6, 17.7] | 11.8 [-3.4, 27.0] | -11.4 [-34.6, 11.7] |
+| 2019 | 307 | 49 | 0.82 | 0.51 | 2.0 [-11.3, 15.3] | 9.3 [-8.1, 26.6] | -14.0 [-38.9, 11.0] |
+| 2020 | 410 | 85 | 0.84 | 0.44 | 14.8 [6.6, 23.1] | 22.1 [11.6, 32.6] | -1.2 [-22.2, 19.9] |
+| 2021 | 462 | 73 | 0.74 | 0.41 | 4.5 [-8.6, 17.6] | 11.8 [-3.4, 27.0] | -11.4 [-34.6, 11.7] |
 | 2022 | 463 | 53 | 0.91 | 0.50 | 5.8 [-2.6, 14.2] | 13.1 [1.6, 24.6] | -10.2 [-31.5, 11.2] |
 | 2023 | 413 | 46 | 0.83 | 0.49 | 7.4 [-4.7, 19.4] | 14.6 [0.4, 28.9] | -8.6 [-30.9, 13.7] |
-| 2024 | 350 | 19 | 0.79 | 0.59 | -8.9 [-24.6, 6.9] | -1.6 [-19.0, 15.7] | -24.8 [-49.5, -0.2] |
+| 2024 | 350 | 19 | 0.79 | 0.59 | -8.9 [-24.6, 6.8] | -1.6 [-18.9, 15.7] | -24.8 [-49.5, -0.2] |
 | 2025–26 | 399 | 51 | 0.71 | 0.43 | 10.9 [-2.2, 24.0] | 18.1 [4.7, 31.5] | -5.1 [-28.4, 18.2] |
 
 Wald tests (two-way V): all bins equal: χ²(13)=63.1, p=<0.001; 2013–17 bins equal: χ²(4)=6.1, p=0.191; post bins (>=2019) equal: χ²(7)=12.4, p=0.088; mean post(>=2019) = mean 2013–17: χ²(1)=8.5, p=0.003 (difference 13.8 pp, SE 4.7); mean 2018 = mean 2013–17: χ²(1)=32.0, p=<0.001 (difference 37.3 pp, SE 6.6); mean 2010–12 = mean 2013–17: χ²(1)=4.9, p=0.026 (difference 23.2 pp, SE 10.5).
@@ -53,18 +53,18 @@ Parametric shapes for the 21(b) − open difference (same controls; ΔAIC relati
 | trend + step 2018-05-25 | 3.4 | 20.9 [0.008] | -1.4 [0.123] |
 | step 2018-05-25 (Law 7144) | 3.7 | 11.7 [0.011] |  |
 | unrestricted year bins | 6.4 |  |  |
-| step 2016-01-01 | 7.0 | 10.3 [0.070] |  |
+| step 2016-01-01 | 7.0 | 10.3 [0.069] |  |
 | step 2015-01-01 | 7.1 | 11.5 [0.056] |  |
 | linear trend | 9.4 |  | 0.8 [0.154] |
 | constant | 9.5 |  |  |
 | step 2020-01-01 | 10.4 | 4.2 [0.287] |  |
-| step 2019-01-01 | 10.5 | 4.1 [0.329] |  |
-| step 2014-01-01 | 11.0 | 4.5 [0.524] |  |
+| step 2019-01-01 | 10.5 | 4.1 [0.328] |  |
+| step 2014-01-01 | 11.0 | 4.5 [0.523] |  |
 | step 2013-01-01 | 11.0 | -6.7 [0.515] |  |
-| step 2021-01-01 | 11.3 | -1.6 [0.678] |  |
-| step 2024-01-01 | 11.4 | -1.4 [0.779] |  |
+| step 2021-01-01 | 11.4 | -1.6 [0.678] |  |
+| step 2024-01-01 | 11.4 | -1.4 [0.780] |  |
 | step 2022-01-01 | 11.5 | 0.2 [0.945] |  |
-| step 2023-01-01 | 11.5 | -0.0 [0.997] |  |
+| step 2023-01-01 | 11.5 | -0.0 [0.998] |  |
 
 ### (b) health buyers
 
@@ -261,11 +261,11 @@ Without history controls (log value only) the δ_t are in `B2_event_study.csv` (
 
 Monetary limits for 21(f) (goods/services, TRY, valid 1 Feb–31 Jan) were read from KİK's annual comparison sheets (dosyalar.kik.gov.tr/yardim/dokumanlar/<year>_Esik_Degerler_Parasal_Limitler_Karsilastirma.pdf): 2014: 157,923, 2015: 167,966, 2016: 177,556, 2017: 195,205, 2018: 225,403, 2019: 301,228, 2020: 323,398, 2021: 404,732, 2022: 728,072, 2023: 1,439,543, 2024: 2,076,108, 2025: 2,668,214, 2026: 3,406,508. Sheets before 2014 were not available at that URL pattern.
 
-Main-sample 21(f) contracts tendered from 1 Feb 2014: 2,381; contract amount ≤ the 21(f) limit in force: **99.96%** (1 above; contract amount can differ from the approximate cost that the limit applies to). For comparison, 36.1% of open and 57.8% of 21(b) contracts are below the same limit. EKAP tender type of 21(f) contracts: {'Hizmet': 2106, 'Mal': 851}.
+Main-sample 21(f) contracts tendered from 1 Feb 2014: 2,381; contract amount ≤ the 21(f) limit in force: **99.96%** (1 above; contract amount can differ from the approximate cost that the limit applies to). For comparison, 36.0% of open and 57.8% of 21(b) contracts are below the same limit. EKAP tender type of 21(f) contracts: {'Hizmet': 2106, 'Mal': 851}.
 
 | year | 21(f) contracts | share ≤ limit | median value / limit | 95th pct value / limit |
 |---|---:|---:|---:|---:|
-| 2014 | 224 | 100.0% | 0.78 | 0.98 |
+| 2014 | 224 | 100.0% | 0.79 | 0.98 |
 | 2015 | 203 | 99.5% | 0.83 | 0.98 |
 | 2016 | 228 | 100.0% | 0.82 | 0.98 |
 | 2017 | 246 | 100.0% | 0.82 | 0.98 |
@@ -315,65 +315,65 @@ Real value in bn 2025 TRY (CPI). Shares are % of contracts. The single largest c
 | group | contracts | firms | buyers | value (bn 2025 TRY) | % 21(b) | % 21(f) | % open |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | product market: Health information systems | 2,189 | 205 | 935 | 19.48 | 34.7 | 9.4 | 56.0 |
-| product market: ERP / management software | 1,515 | 599 | 770 | 11.14 | 4.5 | 47.1 | 47.5 |
-| product market: Custom software / web / mobile | 1,117 | 734 | 625 | 7.04 | 2.9 | 43.2 | 53.6 |
-| product market: Software licences | 1,047 | 375 | 445 | 7.68 | 1.8 | 23.4 | 74.8 |
-| product market: Network / data-centre infra. | 748 | 390 | 420 | 7.43 | 5.9 | 25.0 | 68.2 |
-| product market: Computers / peripherals | 696 | 467 | 415 | 2.85 | 3.9 | 27.7 | 68.1 |
-| product market: Maintenance / support services | 626 | 297 | 251 | 8.23 | 3.5 | 33.2 | 62.3 |
+| product market: ERP / management software | 1,515 | 599 | 770 | 11.23 | 4.5 | 47.1 | 47.5 |
+| product market: Custom software / web / mobile | 1,117 | 734 | 625 | 7.07 | 2.9 | 43.2 | 53.6 |
+| product market: Software licences | 1,047 | 375 | 445 | 7.78 | 1.8 | 23.4 | 74.8 |
+| product market: Network / data-centre infra. | 748 | 390 | 420 | 7.44 | 5.9 | 25.0 | 68.2 |
+| product market: Computers / peripherals | 696 | 467 | 415 | 2.87 | 3.9 | 27.7 | 68.1 |
+| product market: Maintenance / support services | 626 | 297 | 251 | 8.33 | 3.5 | 33.2 | 62.3 |
 | product market: GIS / city information | 553 | 203 | 320 | 4.75 | 2.2 | 41.4 | 54.8 |
 | product market: Cybersecurity | 390 | 194 | 229 | 3.25 | 5.4 | 33.1 | 60.0 |
 | product market: Physical security / surveillance | 385 | 222 | 203 | 2.29 | 1.8 | 23.1 | 63.6 |
-| product market: Other IT | 277 | 215 | 165 | 1.82 | 5.4 | 27.8 | 66.1 |
+| product market: Other IT | 277 | 215 | 165 | 1.83 | 5.4 | 27.8 | 66.1 |
 | product market: Education technology | 205 | 128 | 124 | 1.87 | 5.4 | 50.2 | 44.4 |
-| product market: Smart city / traffic OT | 169 | 106 | 111 | 3.44 | 4.1 | 34.3 | 60.9 |
-| product market: Call centre / help-desk | 74 | 46 | 55 | 7.99 | 5.4 | 51.4 | 43.2 |
+| product market: Smart city / traffic OT | 169 | 106 | 111 | 3.55 | 4.1 | 34.3 | 60.9 |
+| product market: Call centre / help-desk | 74 | 46 | 55 | 8.00 | 5.4 | 51.4 | 43.2 |
 | buyer sector: Health | 2,950 | 554 | 1,098 | 30.93 | 28.5 | 9.4 | 61.8 |
-| buyer sector: Municipal/Local | 2,688 | 1,084 | 667 | 19.93 | 2.2 | 44.1 | 53.4 |
-| buyer sector: Other public | 1,295 | 646 | 351 | 10.88 | 2.5 | 41.1 | 54.7 |
+| buyer sector: Municipal/Local | 2,688 | 1,084 | 667 | 20.09 | 2.2 | 44.1 | 53.4 |
+| buyer sector: Other public | 1,295 | 646 | 351 | 11.03 | 2.5 | 41.1 | 54.7 |
 | buyer sector: Education | 1,054 | 519 | 330 | 4.68 | 5.1 | 31.8 | 62.6 |
-| buyer sector: Infrastructure/Transport | 644 | 337 | 123 | 7.72 | 2.8 | 39.8 | 57.0 |
-| buyer sector: Agriculture/Environment | 395 | 231 | 98 | 4.29 | 2.3 | 31.4 | 63.5 |
-| buyer sector: Social/Finance | 303 | 156 | 42 | 5.20 | 3.6 | 39.3 | 55.4 |
+| buyer sector: Infrastructure/Transport | 644 | 337 | 123 | 7.75 | 2.8 | 39.8 | 57.0 |
+| buyer sector: Agriculture/Environment | 395 | 231 | 98 | 4.30 | 2.3 | 31.4 | 63.5 |
+| buyer sector: Social/Finance | 303 | 156 | 42 | 5.31 | 3.6 | 39.3 | 55.4 |
 | buyer sector: Provincial admin | 223 | 125 | 74 | 0.99 | 1.3 | 25.1 | 62.8 |
-| buyer sector: Security/Interior | 202 | 142 | 64 | 1.50 | 3.5 | 26.2 | 66.8 |
+| buyer sector: Security/Interior | 202 | 142 | 64 | 1.52 | 3.5 | 26.2 | 66.8 |
 | buyer sector: Defence | 191 | 96 | 29 | 1.89 | 1.0 | 3.7 | 95.3 |
 | buyer sector: Justice | 46 | 32 | 14 | 1.25 | 26.1 | 28.3 | 43.5 |
-| total: All | 9,991 | 2,814 | 2,890 | 89.26 | 10.5 | 29.6 | 59.0 |
+| total: All | 9,991 | 2,814 | 2,890 | 89.74 | 10.5 | 29.6 | 59.0 |
 
 LaTeX rows (columns: group & contracts & firms & buyers & value & %21(b) & %21(f) & %open):
 
 ```latex
 % --- by product market
 Health information systems & 2,189 & 205 & 935 & 19.48 & 34.7 & 9.4 & 56.0 \\
-ERP / management software & 1,515 & 599 & 770 & 11.14 & 4.5 & 47.1 & 47.5 \\
-Custom software / web / mobile & 1,117 & 734 & 625 & 7.04 & 2.9 & 43.2 & 53.6 \\
-Software licences & 1,047 & 375 & 445 & 7.68 & 1.8 & 23.4 & 74.8 \\
-Network / data-centre infra. & 748 & 390 & 420 & 7.43 & 5.9 & 25.0 & 68.2 \\
-Computers / peripherals & 696 & 467 & 415 & 2.85 & 3.9 & 27.7 & 68.1 \\
-Maintenance / support services & 626 & 297 & 251 & 8.23 & 3.5 & 33.2 & 62.3 \\
+ERP / management software & 1,515 & 599 & 770 & 11.23 & 4.5 & 47.1 & 47.5 \\
+Custom software / web / mobile & 1,117 & 734 & 625 & 7.07 & 2.9 & 43.2 & 53.6 \\
+Software licences & 1,047 & 375 & 445 & 7.78 & 1.8 & 23.4 & 74.8 \\
+Network / data-centre infra. & 748 & 390 & 420 & 7.44 & 5.9 & 25.0 & 68.2 \\
+Computers / peripherals & 696 & 467 & 415 & 2.87 & 3.9 & 27.7 & 68.1 \\
+Maintenance / support services & 626 & 297 & 251 & 8.33 & 3.5 & 33.2 & 62.3 \\
 GIS / city information & 553 & 203 & 320 & 4.75 & 2.2 & 41.4 & 54.8 \\
 Cybersecurity & 390 & 194 & 229 & 3.25 & 5.4 & 33.1 & 60.0 \\
 Physical security / surveillance & 385 & 222 & 203 & 2.29 & 1.8 & 23.1 & 63.6 \\
-Other IT & 277 & 215 & 165 & 1.82 & 5.4 & 27.8 & 66.1 \\
+Other IT & 277 & 215 & 165 & 1.83 & 5.4 & 27.8 & 66.1 \\
 Education technology & 205 & 128 & 124 & 1.87 & 5.4 & 50.2 & 44.4 \\
-Smart city / traffic OT & 169 & 106 & 111 & 3.44 & 4.1 & 34.3 & 60.9 \\
-Call centre / help-desk & 74 & 46 & 55 & 7.99 & 5.4 & 51.4 & 43.2 \\
+Smart city / traffic OT & 169 & 106 & 111 & 3.55 & 4.1 & 34.3 & 60.9 \\
+Call centre / help-desk & 74 & 46 & 55 & 8.00 & 5.4 & 51.4 & 43.2 \\
 \midrule
 % --- by buyer sector
 Health & 2,950 & 554 & 1,098 & 30.93 & 28.5 & 9.4 & 61.8 \\
-Municipal/Local & 2,688 & 1,084 & 667 & 19.93 & 2.2 & 44.1 & 53.4 \\
-Other public & 1,295 & 646 & 351 & 10.88 & 2.5 & 41.1 & 54.7 \\
+Municipal/Local & 2,688 & 1,084 & 667 & 20.09 & 2.2 & 44.1 & 53.4 \\
+Other public & 1,295 & 646 & 351 & 11.03 & 2.5 & 41.1 & 54.7 \\
 Education & 1,054 & 519 & 330 & 4.68 & 5.1 & 31.8 & 62.6 \\
-Infrastructure/Transport & 644 & 337 & 123 & 7.72 & 2.8 & 39.8 & 57.0 \\
-Agriculture/Environment & 395 & 231 & 98 & 4.29 & 2.3 & 31.4 & 63.5 \\
-Social/Finance & 303 & 156 & 42 & 5.20 & 3.6 & 39.3 & 55.4 \\
+Infrastructure/Transport & 644 & 337 & 123 & 7.75 & 2.8 & 39.8 & 57.0 \\
+Agriculture/Environment & 395 & 231 & 98 & 4.30 & 2.3 & 31.4 & 63.5 \\
+Social/Finance & 303 & 156 & 42 & 5.31 & 3.6 & 39.3 & 55.4 \\
 Provincial admin & 223 & 125 & 74 & 0.99 & 1.3 & 25.1 & 62.8 \\
-Security/Interior & 202 & 142 & 64 & 1.50 & 3.5 & 26.2 & 66.8 \\
+Security/Interior & 202 & 142 & 64 & 1.52 & 3.5 & 26.2 & 66.8 \\
 Defence & 191 & 96 & 29 & 1.89 & 1.0 & 3.7 & 95.3 \\
 Justice & 46 & 32 & 14 & 1.25 & 26.1 & 28.3 & 43.5 \\
 \midrule
-All & 9,991 & 2,814 & 2,890 & 89.26 & 10.5 & 29.6 & 59.0 \\
+All & 9,991 & 2,814 & 2,890 & 89.74 & 10.5 & 29.6 & 59.0 \\
 ```
 
 ## 6. Deflator robustness: PPI (Yİ-ÜFE) vs CPI
@@ -384,20 +384,20 @@ Count-based HHI is unchanged by construction. Value-based HHI (main sample, `fir
 
 | group | HHI value CPI | HHI value PPI | HHI value excl. largest CPI / PPI | winsorised CPI / PPI | class (value) CPI → PPI |
 |---|---:|---:|---:|---:|---|
-| All markets pooled | 149 | 126 | 92 / 87 | 87 / 84 | unconcentrated (<1000) |
-| ERP / management software | 132 | 143 | 120 / 129 | 96 / 96 | unconcentrated (<1000) |
-| GIS / city information | 408 | 435 | 385 / 408 | 347 / 350 | unconcentrated (<1000) |
-| Call centre / help-desk | 8,908 | 8,917 | 1,685 / 1,354 | 1,391 / 1,280 | high (>1800) |
-| Computers / peripherals | 170 | 188 | 146 / 174 | 155 / 160 | unconcentrated (<1000) |
-| Custom software / web / mobile | 264 | 283 | 176 / 154 | 110 / 108 | unconcentrated (<1000) |
-| Cybersecurity | 476 | 451 | 442 / 430 | 340 / 354 | unconcentrated (<1000) |
-| Education technology | 1,062 | 977 | 752 / 694 | 537 / 503 | **moderate (1000-1800) → unconcentrated (<1000)** |
-| Health information systems | 831 | 795 | 868 / 837 | 811 / 794 | unconcentrated (<1000) |
-| Maintenance / support services | 301 | 266 | 303 / 271 | 296 / 270 | unconcentrated (<1000) |
-| Network / data-centre infra. | 281 | 253 | 234 / 218 | 226 / 219 | unconcentrated (<1000) |
-| Other IT | 767 | 801 | 603 / 683 | 296 / 293 | unconcentrated (<1000) |
+| All markets pooled | 147 | 125 | 91 / 86 | 87 / 84 | unconcentrated (<1000) |
+| ERP / management software | 131 | 142 | 119 / 128 | 96 / 96 | unconcentrated (<1000) |
+| GIS / city information | 408 | 435 | 385 / 408 | 347 / 351 | unconcentrated (<1000) |
+| Call centre / help-desk | 8,893 | 8,896 | 1,639 / 1,303 | 1,366 / 1,247 | high (>1800) |
+| Computers / peripherals | 169 | 187 | 145 / 173 | 155 / 160 | unconcentrated (<1000) |
+| Custom software / web / mobile | 262 | 280 | 175 / 152 | 110 / 108 | unconcentrated (<1000) |
+| Cybersecurity | 476 | 450 | 441 / 429 | 341 / 354 | unconcentrated (<1000) |
+| Education technology | 1,062 | 977 | 752 / 694 | 539 / 506 | **moderate (1000-1800) → unconcentrated (<1000)** |
+| Health information systems | 831 | 795 | 868 / 837 | 812 / 795 | unconcentrated (<1000) |
+| Maintenance / support services | 299 | 265 | 300 / 271 | 295 / 270 | unconcentrated (<1000) |
+| Network / data-centre infra. | 280 | 252 | 233 / 218 | 226 / 219 | unconcentrated (<1000) |
+| Other IT | 757 | 790 | 594 / 672 | 294 / 292 | unconcentrated (<1000) |
 | Physical security / surveillance | 212 | 218 | 208 / 208 | 210 / 208 | unconcentrated (<1000) |
-| Smart city / traffic OT | 2,580 | 2,634 | 823 / 1,010 | 568 / 615 | high (>1800) |
-| Software licences | 275 | 276 | 276 / 282 | 270 / 276 | unconcentrated (<1000) |
+| Smart city / traffic OT | 2,448 | 2,463 | 813 / 982 | 581 / 627 | high (>1800) |
+| Software licences | 274 | 274 | 275 / 280 | 269 / 274 | unconcentrated (<1000) |
 
-Largest absolute change across product markets: HHI value 85, excl. largest 332 points. Classification changes (2023 US Merger Guidelines bands; any of value / excl. largest / winsorised / min-LOO, markets and sectors): **7**: education_technology HHI_value 1062→977 (moderate (1000-1800) → unconcentrated (<1000)); Defence HHI_value 938→1014 (unconcentrated (<1000) → moderate (1000-1800)); smart_city_traffic_OT HHI_value_nomax 823→1010 (unconcentrated (<1000) → moderate (1000-1800)); Defence HHI_value_nomax 1026→802 (moderate (1000-1800) → unconcentrated (<1000)); Justice HHI_value_nomax 1634→1950 (moderate (1000-1800) → high (>1800)); smart_city_traffic_OT LOO_value_min 823→1010 (unconcentrated (<1000) → moderate (1000-1800)); Justice LOO_value_min 1634→1950 (moderate (1000-1800) → high (>1800)). Robust (minimum-across-variants) class changes: 0. CSV: `B6_hhi_cpi_vs_ppi.csv`, `B6_class_changes.csv`.
+Largest absolute change across product markets: HHI value 85, excl. largest 336 points. Classification changes (2023 US Merger Guidelines bands; any of value / excl. largest / winsorised / min-LOO, markets and sectors): **5**: education_technology HHI_value 1062→977 (moderate (1000-1800) → unconcentrated (<1000)); Defence HHI_value 938→1014 (unconcentrated (<1000) → moderate (1000-1800)); Defence HHI_value_nomax 1026→802 (moderate (1000-1800) → unconcentrated (<1000)); Justice HHI_value_nomax 1634→1950 (moderate (1000-1800) → high (>1800)); Justice LOO_value_min 1634→1950 (moderate (1000-1800) → high (>1800)). Robust (minimum-across-variants) class changes: 0. CSV: `B6_hhi_cpi_vs_ppi.csv`, `B6_class_changes.csv`.

@@ -1,20 +1,22 @@
 **To:** The Editors, *Journal of Industrial and Business Economics*
 
-**Re:** Submission of the original article "Unconcentrated markets, persistent ties: incumbency in Türkiye's public IT procurement"
+**Date:** 27 September 2026
+
+**Re:** Original article, “Dispersed awards, persistent ties: evidence from Türkiye's public IT procurement”
 
 Dear Editors,
 
-We submit the above manuscript for consideration as an original article in the *Journal of Industrial and Business Economics*. The manuscript has not been published and is not under consideration elsewhere, and both authors have approved the submission.
+We submit this manuscript for consideration as an original article in the *Journal of Industrial and Business Economics*.
 
-**Question.** Market-level concentration indices are the usual first screen for competition problems in public procurement. We ask how much buyer–supplier persistence such a screen misses, and how much of that persistence reflects switching costs rather than stable heterogeneity between buyers and firms.
+The paper asks how observed supplier concentration and buyer–supplier continuity complement one another in monitoring public IT procurement. We examine 9,991 contracts retrieved from Türkiye's EKAP platform between October 2010 and March 2026. Full-period contract counts are dispersed across suppliers, while annual value concentration is higher in several categories. Among contracts with a previous purchase by the same buyer in the category, 45% go to a previous supplier—1.7 times the rate under our most restrictive assignment benchmark. The excess persists under coarser categories, category-free buyer histories, and later evaluation windows. Title-defined recurring purchases account for most of the excess, without establishing legal contract renewal.
 
-**Findings.** We use 9,991 awarded IT contracts from Türkiye's e-procurement platform EKAP (2010–2026). Supply is unconcentrated in every product market. Yet 45% of contracts from buyers with earlier purchases in the same market go to an incumbent, 1.7 times the rate under the most conservative permutation null, which holds market size, timing, specialization and the geography of both parties fixed. About a third of these contracts renew recurring services and carry most of the excess.
+The paper builds on procurement-network analyses published in JIBE by Fountoukidis et al. (2023) and Pliatsidis (2024), and explicitly positions its contribution against Fountoukidis et al.'s September 2026 study predicting future buyer–supplier ties. Our addition is transaction-level comparison with increasingly constrained assignment nulls, recurrence-specific diagnostics, and documented classification and history sensitivity. This speaks to the journal's interest in industrial organization, competitive dynamics, and the digital transformation of purchasing.
 
-We model who wins among firms active before each tender, and use a lead–lag placebo benchmarked against simulated worlds of pure state dependence and pure heterogeneity. The results show that persistence is dominated by stable buyer–firm heterogeneity. A state-dependence component consistent with switching costs appears only in renewals. Incumbent wins coincide with more single bidding and, in a sample of tenders with estimated costs, with smaller discounts, although the discount difference is imprecise.
+Conditional-logit estimates show strong associations with both past and future ties. We use simulations to examine the assumptions behind their interpretation. Because future ties are outcomes and benchmark initialization depends on observed histories, these exercises do not identify switching costs or decompose persistence into causal mechanisms. Single bidding is more common among incumbent-won tenders; estimated-cost discounts in a small sample are lower but imprecisely estimated. We make no allegation of misconduct or claim of identified welfare effects.
 
-**Fit with the journal.** The paper speaks to industrial-organization questions central to the journal: market definition and concentration, switching costs and aftermarkets, state dependence versus heterogeneity, and the regulation of public procurement. It builds on the network-based analyses of procurement concentration published in this journal by Fountoukidis et al. (2023) and Pliatsidis (2024). It moves from network structure to the persistence of ties and decomposes that persistence.
+The revision documents keyword-sample coverage limits, foreign-currency conversion before deflation, and classification uncertainty. Two AI models provided blind agreement checks; these are explicitly distinguished from human validation, which remains outstanding under the supplied prospective protocol. The baseline code and derived data are available through GitHub and the existing Zenodo archive; the manuscript does not represent the local revision as a newly deposited archival release. Natural persons are pseudonymized, and substantive AI assistance is disclosed.
 
-**Transparency.** All source records are public administrative data. We audited the keyword-defined scope by contract value and resolved firm-name variants, and we report all value-based results with and without the largest contract. We validated the title-based classifications with independent blind coders. Code and derived data are openly archived, with natural persons pseudonymized. AI assistance is disclosed in detail in the manuscript. We make no allegation of misconduct: the paper discusses both benign and non-benign readings of persistent heterogeneity and does not claim welfare effects it cannot establish.
+Both authors have approved this version of the manuscript and its submission to the journal.
 
 Thank you for considering our work.
 

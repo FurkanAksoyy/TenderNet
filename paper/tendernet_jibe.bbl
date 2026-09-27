@@ -397,6 +397,38 @@ Butler, J.V.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Calderon%
+, Reichart%
+\BCBL {}\ \BBA {} Dror%
+}{%
+Calderon%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+Calderon2025}
+\APACinsertmetastar {%
+Calderon2025}%
+\begin{APACrefauthors}%
+Calderon, N.%
+, Reichart, R.%
+\BCBL {} Dror, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Alternative Annotator Test for {LLM}-as-a-Judge: How
+  to Statistically Justify Replacing Human Annotators with {LLM}s} {The
+  alternative annotator test for {LLM}-as-a-judge: How to statistically justify
+  replacing human annotators with {LLM}s}.{\BBCQ}
+\newblock
+ \APACrefbtitle {Proceedings of the 63rd Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)} {Proceedings of the 63rd
+  annual meeting of the association for computational linguistics (volume 1:
+  Long papers)}\ (\BPGS\ 16051--16081).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Calzolari%
 \ \BBA {} Spagnolo%
 }{%
@@ -423,8 +455,6 @@ Calzolari, G.%
 \APACaddressInstitution{London}{Centre for Economic Policy Research}.
 \newblock
 \begin{APACrefURL} {https://cepr.org/publications/dp7434} \end{APACrefURL}
-\newblock
-\APACrefnote{No journal version located}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -560,9 +590,6 @@ Decarolis, F.%
 \newblock
 \begin{APACrefDOI} \doi{10.1086/732654} \end{APACrefDOI}
 \newblock
-\APACrefnote{Published version of NBER Working Paper 28209 (2020); cite the
-  journal version.}
-\newblock
 
 \newblock
 
@@ -692,9 +719,35 @@ EC2013AgainstLockin}%
 \begin{APACrefURL}
   {https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52013DC0455}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{European Commission}%
+}{%
+{European Commission}%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+ECMarketDefinition2024}
+\APACinsertmetastar {%
+ECMarketDefinition2024}%
+\begin{APACrefauthors}%
+{European Commission}%
+\end{APACrefauthors}%
+\unskip\
 \newblock
-\APACrefnote{Accompanied by SWD(2013) 224 final, ``Guide for the procurement of
-  standards-based ICT -- Elements of good practice''}
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {Commission Notice on the definition of the relevant market for
+  the purposes of {Union} competition law.} {Commission notice on the
+  definition of the relevant market for the purposes of {Union} competition
+  law.}
+\newblock
+\APAChowpublished {Official Journal of the European Union, C/2024/1645}.
+\newblock
+\begin{APACrefURL}
+  {https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52024XC01645}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -824,10 +877,6 @@ Fazekas, M.%
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.dib.2024.110412} \end{APACrefDOI}
 \newblock
-\APACrefnote{Defines the buyer spending concentration indicator
-  (corr\_spending\_concentration): supplier's share of a buyer's total awarded
-  amount}
-\newblock
 
 \newblock
 
@@ -910,7 +959,7 @@ I.~Fountoukidis%
 I.~Fountoukidis%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2026}}%
-}]{%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
 Fountoukidis2026}
 \APACinsertmetastar {%
 Fountoukidis2026}%
@@ -922,7 +971,7 @@ Fountoukidis, I.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2026}{}{}.
+\APACrefYearMonthDay{2026{\protect \BCnt {2}}}{}{}.
 \newblock
 \APACrefbtitle {A Multi-Layered Diagnostic Framework for Public Procurement
   Markets: Linking Market Structure, Relational Patterns, and Institutional
@@ -935,6 +984,43 @@ Fountoukidis, I.%
 \APACaddressPublisher{}{Zenodo}.
 \newblock
 \APACrefnote{Preprint}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+I.~Fountoukidis%
+, Dafli%
+, Antoniou%
+\BCBL {}\ \BBA {} Varsakelis%
+}{%
+I.~Fountoukidis%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2026}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+FountoukidisPredictability2026}
+\APACinsertmetastar {%
+FountoukidisPredictability2026}%
+\begin{APACrefauthors}%
+Fountoukidis, I.%
+, Dafli, E.%
+, Antoniou, I.E.%
+\BCBL {} Varsakelis, N.C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2026{\protect \BCnt {1}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {How predictable are public procurement awards? Network
+  evidence from {EU} above-threshold contracts} {How predictable are public
+  procurement awards? network evidence from {EU} above-threshold
+  contracts}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Public Procurement}{}{}{1--29,}
+\newblock
+\begin{APACrefDOI} \doi{10.1108/JOPP-03-2026-0063} \end{APACrefDOI}
+\newblock
+
+\newblock
+
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1189,6 +1275,40 @@ Hyytinen, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Iossa%
+\ \BBA {} Waterson%
+}{%
+Iossa%
+\ \BBA {} Waterson%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+IossaWaterson2019}
+\APACinsertmetastar {%
+IossaWaterson2019}%
+\begin{APACrefauthors}%
+Iossa, E.%
+\BCBT {}\ \BBA {} Waterson, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Maintaining competition in recurrent procurement
+  contracts: A case study on the {London} bus market} {Maintaining competition
+  in recurrent procurement contracts: A case study on the {London} bus
+  market}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Transport Policy}{75}{}{141--149,}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.tranpol.2017.02.012} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Jofre-Bonet%
 \ \BBA {} Pesendorfer%
 }{%
@@ -1377,6 +1497,36 @@ Li, T.%
 \APACjournalVolNumPages{The Review of Economic Studies}{76}{4}{1397--1429,}
 \newblock
 \begin{APACrefDOI} \doi{10.1111/j.1467-937X.2009.00558.x} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+MacKay%
+}{%
+MacKay%
+}{%
+{\protect \APACyear {2022}}%
+}]{%
+MacKay2022}
+\APACinsertmetastar {%
+MacKay2022}%
+\begin{APACrefauthors}%
+MacKay, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Contract Duration and the Costs of Market Transactions}
+  {Contract duration and the costs of market transactions}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Economic Journal:
+  Microeconomics}{14}{3}{164--212,}
+\newblock
+\begin{APACrefDOI} \doi{10.1257/mic.20200128} \end{APACrefDOI}
 \newblock
 
 \newblock
@@ -1645,8 +1795,6 @@ Shapiro, C.%
 \newblock
 \begin{APACrefURL} {https://www.jstor.org/stable/40843290} \end{APACrefURL}
 \newblock
-\APACrefnote{No DOI registered; JSTOR stable URL}
-\newblock
 
 \newblock
 
@@ -1676,36 +1824,6 @@ Shapiro, C.%
   {Information rules: A strategic guide to the network economy}.
 \newblock
 \APACaddressPublisher{Boston, MA}{Harvard Business School Press}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Shcherbakov%
-}{%
-Shcherbakov%
-}{%
-{\protect \APACyear {2016}}%
-}]{%
-Shcherbakov2016}
-\APACinsertmetastar {%
-Shcherbakov2016}%
-\begin{APACrefauthors}%
-Shcherbakov, O.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2016}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Measuring Consumer Switching Costs in the Television
-  Industry} {Measuring consumer switching costs in the television
-  industry}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{The RAND Journal of Economics}{47}{2}{366--393,}
-\newblock
-\begin{APACrefDOI} \doi{10.1111/1756-2171.12131} \end{APACrefDOI}
-\newblock
-
-\newblock
-
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1741,6 +1859,29 @@ Szucs, F.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Train%
+}{%
+Train%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Train2009}
+\APACinsertmetastar {%
+Train2009}%
+\begin{APACrefauthors}%
+Train, K.E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2009}.
+\newblock
+\APACrefbtitle {Discrete Choice Methods with Simulation} {Discrete choice
+  methods with simulation}\ (\PrintOrdinal{2}\ \BEd).
+\newblock
+\APACaddressPublisher{}{Cambridge University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {U.S. Department of Justice and Federal Trade Commission}%
 }{%
 {U.S. Department of Justice and Federal Trade Commission}%
@@ -1761,10 +1902,6 @@ HMG1992}%
 \newblock
 \APAChowpublished
   {\url{https://www.justice.gov/archives/atr/1992-merger-guidelines}}.
-\newblock
-\APACrefnote{Section 1.51: HHI below 1,000 unconcentrated; 1,000--1,800
-  moderately concentrated; above 1,800 highly concentrated. Revised 1997
-  (Section 4) with thresholds unchanged}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1820,6 +1957,8 @@ Wachs, J.%
 \APACjournalVolNumPages{International Journal of Data Science and
   Analytics}{12}{}{45--60,}
 \newblock
+\begin{APACrefDOI} \doi{10.1007/s41060-019-00204-1} \end{APACrefDOI}
+\newblock
 
 \newblock
 
@@ -1850,6 +1989,39 @@ Wachs, J.%
   markets}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Scientific Reports}{9}{}{10818,}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/s41598-019-47198-1} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wooldridge%
+}{%
+Wooldridge%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+Wooldridge2005}
+\APACinsertmetastar {%
+Wooldridge2005}%
+\begin{APACrefauthors}%
+Wooldridge, J.M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Simple solutions to the initial conditions problem in
+  dynamic, nonlinear panel data models with unobserved heterogeneity} {Simple
+  solutions to the initial conditions problem in dynamic, nonlinear panel data
+  models with unobserved heterogeneity}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Applied Econometrics}{20}{1}{39--54,}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/jae.770} \end{APACrefDOI}
 \newblock
 
 \newblock

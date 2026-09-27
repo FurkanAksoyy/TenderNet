@@ -338,8 +338,8 @@ lim = pd.DataFrame(LIM21F, columns=["from", "limit_TRY"]); lim["from"] = pd.to_d
 f = d[d.usul_v3 == "negotiated_21f"].copy()
 f = f[f.date >= lim["from"].min()].sort_values("date")
 f = pd.merge_asof(f, lim.sort_values("from"), left_on="date", right_on="from")
-f["le_limit"] = f.bedel_num <= f.limit_TRY
-f["ratio"] = f.bedel_num / f.limit_TRY
+f["le_limit"] = f.bedel_try <= f.limit_TRY
+f["ratio"] = f.bedel_try / f.limit_TRY
 L21F = f.groupby(f.date.dt.year).agg(n=("le_limit", "size"), share_le_limit=("le_limit", "mean"),
                                      median_ratio=("ratio", "median"), p95_ratio=("ratio", lambda s: s.quantile(.95)),
                                      max_ratio=("ratio", "max")).reset_index().rename(columns={"date": "year"})
@@ -348,8 +348,8 @@ tot21f = dict(n=len(f), share=f.le_limit.mean(), n_over=int((~f.le_limit).sum())
 # comparison: other procedures below the same limit
 o = d[(d.date >= lim["from"].min())].sort_values("date")
 o = pd.merge_asof(o, lim.sort_values("from"), left_on="date", right_on="from")
-share_open_le = (o[o.usul_v3 == "open"].bedel_num <= o[o.usul_v3 == "open"].limit_TRY).mean()
-share_21b_le = (o[o.usul_v3 == "negotiated_21b"].bedel_num <= o[o.usul_v3 == "negotiated_21b"].limit_TRY).mean()
+share_open_le = (o[o.usul_v3 == "open"].bedel_try <= o[o.usul_v3 == "open"].limit_TRY).mean()
+share_21b_le = (o[o.usul_v3 == "negotiated_21b"].bedel_try <= o[o.usul_v3 == "negotiated_21b"].limit_TRY).mean()
 ftype = d[d.usul_v3 == "negotiated_21f"].ihale_turu.value_counts().to_dict()
 log(f"[3] 21f (from Feb 2014): n={tot21f['n']}, <= limit {tot21f['share']:.3f}; open <= limit {share_open_le:.3f}; 21b {share_21b_le:.3f}; types {ftype}")
 
@@ -414,7 +414,7 @@ PPI = dict(zip(ppi.year, ppi.ppi_annual_avg))
 dd6, cpi, _ = C3.load()
 main6 = dd6[dd6.in_scope_main].copy()
 main6["real_cpi"] = main6.real
-main6["real_ppi"] = main6.bedel_num * main6.yil_v3.map(lambda y: PPI[2025] / PPI[y])
+main6["real_ppi"] = main6.bedel_try * main6.yil_v3.map(lambda y: PPI[2025] / PPI[y])
 rng = np.random.default_rng(42)
 out6 = []
 for defl in ["cpi", "ppi"]:

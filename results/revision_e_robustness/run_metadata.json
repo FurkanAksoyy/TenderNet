@@ -1,0 +1,26 @@
+{
+  "permutations": 1000,
+  "seed": 20260927,
+  "analysis_columns": [
+    "IKN",
+    "tarih_v3",
+    "yil_v3",
+    "kurum_il_split",
+    "firma_v3",
+    "urun_pazari",
+    "il",
+    "in_scope_main"
+  ],
+  "analysis_columns_sha256": "ca9de14f841fda221cc336ad986518515647d4bc3674dca0e770b765ab795d88",
+  "variants": [
+    "baseline",
+    "merged_software_services",
+    "category_free_buyer",
+    "health_only",
+    "evaluate_2013_onward",
+    "evaluate_2015_onward",
+    "exclude_other_IT"
+  ],
+  "BLAS_threads": 1,
+  "source": "data/contracts_v3.csv"
+}

@@ -1,7 +1,7 @@
 {
   "upload_type": "software",
-  "title": "TenderNet v1.0.1: data and code for \"Unconcentrated markets, persistent ties: incumbency in Türkiye's public IT procurement\"",
-  "version": "1.0.1",
+  "title": "TenderNet: data and code for Dispersed awards, persistent ties: evidence from Türkiye's public IT procurement (unreleased revision)",
+  "version": "1.0.1-unreleased-revision",
   "license": "mit",
   "access_right": "open",
   "creators": [
@@ -18,24 +18,14 @@
   ],
   "keywords": [
     "public procurement",
+    "buyer-supplier relationships",
     "incumbency",
-    "vendor lock-in",
-    "market concentration",
-    "Herfindahl-Hirschman index",
-    "bipartite networks",
-    "permutation null model",
-    "Article 21(b)",
-    "Law 4734",
+    "award concentration",
+    "permutation benchmarks",
     "EKAP",
-    "Türkiye",
-    "IT procurement",
-    "renewals",
-    "conditional logit",
-    "event study",
-    "state dependence",
-    "placebo"
+    "Türkiye"
   ],
-  "description": "<p>Reproducibility package (code, derived data, data dictionary, paper sources) for <em>Unconcentrated markets, persistent ties: incumbency in Türkiye's public IT procurement</em> (F. Aksoy, A. Şimşek).</p><p>The data are 9,991 awarded IT contracts (main sample; 13,024 audited records in total) published on Türkiye's e-procurement platform EKAP between 2010 and 2026, linking 2,814 firms to 2,890 public buyers. Count-based supplier HHIs are below 1,000 in every product market, and value-based HHIs exceed 1,000 only in three small markets dominated by single contracts. Buyers nevertheless return to incumbents far more often than market structure implies: 45% of repeat-eligible contracts go to an incumbent, against 21% under a permutation null that fixes each buyer's demand and each firm's wins within product market, year and province (6% within market and year only). About a third of these contracts are annual re-tenders of the same service and carry most of the excess, but new needs still exceed their null (31% vs 16%). In a conditional-logit supplier-choice model, prior supply to the buyer raises a firm's odds of winning about 40-fold among firms active before each tender; a future-supplier placebo indicates that much of the persistence reflects stable buyer-firm matching, with state dependence clearest in renewals. Incumbency is highest in health information systems and under negotiated procedures without publication (Art. 21(b), Law 4734), where it jumped in 2017-18, and incumbent-won tenders attract single bids more often.</p><p>Code is released under the MIT License. The derived data (data/) are released under CC BY 4.0; the underlying records are public records published by the Public Procurement Authority (KİK) on EKAP under Law 4734. Names of natural persons are pseudonymized (KVKK, Law 6698).</p>",
+  "description": "<p>Unreleased revision of archived TenderNet v1.0.1. No new archival deposition is asserted. Code, derived data and sources support Dispersed awards, persistent ties: evidence from Türkiye's public IT procurement (F. Aksoy, A. Şimşek).</p><p>The keyword-defined main sample contains 9,991 awards. Observed repeat purchasing exceeds specified permutation benchmarks under alternative category and history definitions. Concentration depends on weighting and time period. Conditional award associations and simulations do not identify switching costs or causal mechanisms. Currency conversion, provenance, classification uncertainty and human-validation requirements are documented.</p><p>Code: MIT; derived data: CC BY 4.0. Natural-person winners are pseudonymized. Underlying public records originate from KİK/EKAP.</p>",
   "notes": "Derived data in data/ are licensed CC-BY-4.0 (see data/LICENSE); code is MIT. Underlying records: Kamu İhale Kurumu (KİK), EKAP, https://ekapv2.kik.gov.tr.",
   "related_identifiers": [],
   "language": "eng"

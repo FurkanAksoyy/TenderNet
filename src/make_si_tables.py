@@ -26,7 +26,7 @@ MARKET_LABEL = {
     "education_technology": "Education technology",
     "call_centre_helpdesk": "Call centre / help desk",
     "other_IT": "Other IT",
-    "ALL (aggregate)": "All markets pooled",
+    "ALL (aggregate)": "All categories pooled",
 }
 
 
@@ -55,7 +55,7 @@ def write(name, body):
 
 # --- S: scope classes -------------------------------------------------------
 m = pd.read_csv(ROOT / "data" / "contracts_v3.csv", low_memory=False)
-g = m.groupby("scope_v3").agg(n=("scope_v3", "size"), v=("bedel_num", "sum"))
+g = m.groupby("scope_v3").agg(n=("scope_v3", "size"), v=("bedel_try", "sum"))
 g["share_v"] = 100 * g["v"] / g["v"].sum()
 order = ["IT", "IT_service_callcentre", "gray", "nonIT"]
 names = {"IT": "IT", "IT_service_callcentre": "IT-enabled call-centre services",
@@ -85,7 +85,7 @@ for _, r in c.iterrows():
         f"{fmt(r['HHI_value_nomax'])} & {fmt(r['HHI_value_wins'])} & {fmt(r['CR4_value'],0)}\\\\")
 write("concentration", r"""\begin{tabular}{@{}lrrrrrrr@{}}
 \toprule
-Product market & Contracts & Firms & HHI count [95\% CI] & HHI value [95\% CI] & Value, no max & Value, winsor. & CR4 value (\%)\\
+Product category & Contracts & Firms & HHI count [95\% CI] & HHI value [95\% CI] & Value, no max & Value, winsor. & CR4 value (\%)\\
 \midrule
 """ + "\n".join(rows) + r"""
 \botrule
@@ -120,7 +120,7 @@ HEAD = r"""\begin{tabular}{@{}lrrrrr@{}}
 \midrule
 """
 TAIL = "\n\\botrule\n\\end{tabular}"
-write("lockin_market", HEAD % "Product market" + group_table("market") + TAIL)
+write("lockin_market", HEAD % "Product category" + group_table("market") + TAIL)
 write("lockin_sector", HEAD % "Buyer sector" + group_table("sector") + TAIL)
 write("lockin_buyertype", HEAD % "Buyer type" + group_table("buyer_type") + TAIL)
 write("lockin_procedure", HEAD % "Procedure" + group_table("procedure_fine") + TAIL)
@@ -203,7 +203,7 @@ rows = "\n".join(
     for r in w.itertuples())
 write("within_year", r"""\begin{tabular}{@{}lrrrrr@{}}
 \toprule
-Product market & Years & Count HHI & Count HHI, bias-corr. & Value HHI & Value HHI, no max\\
+Product category & Years & Count HHI & Count HHI, bias-corr. & Value HHI & Value HHI, no max\\
 \midrule
 """ + rows + TAIL)
 print("written to", OUT)

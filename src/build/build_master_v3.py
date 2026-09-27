@@ -15,7 +15,7 @@ Inputs (place them under <repo>/raw/, which is git-ignored):
   src/build/manual_scope_overrides.csv    manual IT-scope decisions (top-150-by-value review)
   src/build/firm_merge_groups_v3.csv      manual firm merges on top of v2
 Outputs (raw/internal/, contain names -- never commit):
-  master_v3.csv, firm_name_map_v3.csv, top150_value_review.csv, scope_rule_samples.csv,
+  master_v3.csv, firm_name_map_v3.csv, corrected_top150_value_screen.csv, scope_rule_samples.csv,
   product_market_confusion_sample.csv, build_log_v3.txt
 The public data/contracts_v3.csv is then made by src/build/make_release_data.py.
 Run:  python src/build/build_master_v3.py
@@ -33,6 +33,9 @@ RAW = ROOT / "raw"                                   # non-public raw scrape (gi
 SRC, OUT = ROOT / "src" / "build", ROOT / "raw" / "internal"
 OUT.mkdir(parents=True, exist_ok=True)
 sys.path.insert(0, str(SRC))
+sys.path.insert(0, str(ROOT / "src"))
+from currency_values import normalize_frame
+from normalize_currency import verify_rates
 import rules_v3 as R  # noqa: E402
 
 LOG = open(OUT / "build_log_v3.txt", "w", encoding="utf-8")
@@ -64,6 +67,12 @@ log(f"old tarih_dt: missing {bad_dt.isna().sum():,} ({bad_dt.isna().mean():.1%})
     f"(dayfirst parsing swapped month/day on ISO strings)")
 log("NOTE: ihale_tarihi = tender (auction) date from EKAP, not contract-signature date.")
 df["tarih_v3"] = df["tarih_v3"].dt.strftime("%Y-%m-%d")
+
+# Use the same cached, verified nominal TRY valuation as the public analysis.
+fx_rates = pd.read_csv(ROOT / "data" / "fx_rates_tcmb.csv")
+verify_rates(fx_rates)
+df = normalize_frame(df, fx_rates)
+log("Currency: nominal TRY proxy; unlabelled amounts assumed TRY. Raw bedel/bedel_num preserved.")
 
 # ================================================================== 6. PROCEDURE
 pr = df["ihale_usulu"].map(R.procedure_v3)
@@ -121,14 +130,14 @@ df["in_scope_main"] = df["scope_v3"].isin(["IT", "IT_service_callcentre"])     #
 df["in_scope_broad"] = df["scope_v3"].isin(["IT", "IT_service_callcentre", "gray"])
 
 hdr("IT SCOPE v3 (scope_v3)")
-tot_v = df["bedel_num"].sum()
-g = df.groupby("scope_v3").agg(contracts=("IKN", "size"), value_TRY=("bedel_num", "sum"))
+tot_v = df["bedel_try"].sum()
+g = df.groupby("scope_v3").agg(contracts=("IKN", "size"), value_TRY=("bedel_try", "sum"))
 g["share_contracts"] = g["contracts"] / N0; g["share_value"] = g["value_TRY"] / tot_v
 g["value_bnTRY"] = g["value_TRY"] / 1e9
 log(g[["contracts", "share_contracts", "value_bnTRY", "share_value"]].to_string(float_format=lambda x: f"{x:,.3f}"))
 log(f"TOTAL {N0:,} contracts, {tot_v/1e9:,.2f} bn TRY (nominal)")
 log("\nBy rule reason:")
-log(df.groupby(["scope_v3", "scope_reason"]).agg(n=("IKN", "size"), bnTRY=("bedel_num", lambda x: x.sum() / 1e9))
+log(df.groupby(["scope_v3", "scope_reason"]).agg(n=("IKN", "size"), bnTRY=("bedel_try", lambda x: x.sum() / 1e9))
     .to_string(float_format=lambda x: f"{x:,.3f}"))
 log("\nScope by original scraping keyword (shows EKAP substring noise: 'erp' hit YavERPaşa/sERPici, "
     "'teknik destek' hit facility staffing):")
@@ -136,27 +145,30 @@ log(pd.crosstab(df["kaynak_keyword"], df["scope_v3"], margins=True).to_string())
 log(f"\nIhale türü 'Yapım' (works): {int((df['ihale_turu'] == 'Yapım').sum())} contracts -> "
     + str(df[df['ihale_turu'] == 'Yapım']['scope_v3'].value_counts().to_dict()))
 
-top20 = df[df["scope_v3"] == "nonIT"].sort_values("bedel_num", ascending=False).head(20)
+top20 = df[df["scope_v3"] == "nonIT"].sort_values("bedel_try", ascending=False).head(20)
 log("\nTOP-20 non-IT removals by value:")
 for _, r in top20.iterrows():
-    log(f"  {r.bedel_num/1e6:8.1f} mn | {r.firma[:34]:34} | {r.scope_reason[:28]:28} | {str(r.ihale_adi)[:95]}")
+    log(f"  {r.bedel_try/1e6:8.1f} mn | {r.firma[:34]:34} | {r.scope_reason[:28]:28} | {str(r.ihale_adi)[:95]}")
 
-# top-150 by value review table (manual verification record)
-top150 = df.sort_values("bedel_num", ascending=False).head(150).copy()
+# Corrected top-150 screen: historical hand-review membership is provenance only.
+# Newly entering records must not inherit an automatic hand-verification claim.
+top150 = df.sort_values("bedel_try", ascending=False).head(150).copy()
 top150["rank"] = range(1, 151)
-top150["manual_label"] = top150["scope_v3"].map({"IT": "IT", "nonIT": "non-IT", "gray": "mixed",
+top150["provisional_scope_label"] = top150["scope_v3"].map({"IT": "IT", "nonIT": "non-IT", "gray": "mixed",
                                                    "IT_service_callcentre": "IT-services (call centre)"})
-top150["verified_by_hand"] = True
-top150[["rank", "IKN", "bedel_num", "firma", "kurum", "ihale_turu", "ihale_adi", "scope_v3", "scope_reason",
-        "manual_label", "scope_manual_override", "verified_by_hand"]].to_csv(
-    OUT / "top150_value_review.csv", index=False, encoding="utf-8-sig")
-t150 = top150.groupby("manual_label").agg(n=("IKN", "size"), bn=("bedel_num", lambda x: x.sum() / 1e9))
-log("\nTop-150 by value, hand-verified labels:\n" + t150.to_string())
+legacy_review = pd.read_csv(ROOT / "data" / "audit" / "top150_value_review.csv")
+top150["legacy_scope_review_recorded"] = top150.IKN.isin(legacy_review.IKN)
+top150["new_scope_review_required"] = ~top150.legacy_scope_review_recorded
+top150[["rank", "IKN", "bedel_num", "bedel_currency", "bedel_currency_status", "bedel_try", "firma", "kurum", "ihale_turu", "ihale_adi", "scope_v3", "scope_reason",
+        "provisional_scope_label", "scope_manual_override", "legacy_scope_review_recorded", "new_scope_review_required"]].to_csv(
+    OUT / "corrected_top150_value_screen.csv", index=False, encoding="utf-8-sig")
+t150 = top150.groupby("provisional_scope_label").agg(n=("IKN", "size"), bn=("bedel_try", lambda x: x.sum() / 1e9))
+log("\nTop-150 by corrected TRY proxy, provisional scope screen (see review flags):\n" + t150.to_string())
 
 # random audit sample per rule reason (for manual spot checks)
 samp = (df.groupby("scope_reason", group_keys=False)
         .apply(lambda x: x.sample(min(len(x), 5), random_state=42)))
-samp[["scope_v3", "scope_reason", "IKN", "bedel_num", "ihale_turu", "kaynak_keyword", "ihale_adi"]].to_csv(
+samp[["scope_v3", "scope_reason", "IKN", "bedel_try", "ihale_turu", "kaynak_keyword", "ihale_adi"]].to_csv(
     OUT / "scope_rule_samples.csv", index=False, encoding="utf-8-sig")
 
 # ================================================================== 2b. PRODUCT MARKET
@@ -164,8 +176,8 @@ df["urun_pazari"] = df["_T"].map(R.classify_product)
 df.loc[df["scope_v3"] == "nonIT", "urun_pazari"] = "not_IT"
 hdr("PRODUCT MARKET (urun_pazari; rule-based on ihale_adi; nonIT rows = 'not_IT')")
 it = df[df["scope_v3"] != "nonIT"]
-pm = it.groupby("urun_pazari").agg(contracts=("IKN", "size"), value_bn=("bedel_num", lambda x: x.sum() / 1e9))
-pm["share_contracts"] = pm["contracts"] / len(it); pm["share_value"] = pm["value_bn"] * 1e9 / it["bedel_num"].sum()
+pm = it.groupby("urun_pazari").agg(contracts=("IKN", "size"), value_bn=("bedel_try", lambda x: x.sum() / 1e9))
+pm["share_contracts"] = pm["contracts"] / len(it); pm["share_value"] = pm["value_bn"] * 1e9 / it["bedel_try"].sum()
 log(pm.sort_values("contracts", ascending=False).to_string(float_format=lambda x: f"{x:,.3f}"))
 cov = 1 - (it["urun_pazari"] == "other_IT").mean()
 log(f"coverage (in-scope rows assigned to a specific market, not other_IT): {cov:.1%}")
@@ -263,7 +275,9 @@ new_cols = ["ihale_turu", "kaynak_keyword", "tarih_v3", "yil_v3", "usul_v3", "us
             "scope_manual_override", "callcentre_flag", "it_staffing_flag", "in_scope_core", "in_scope_main",
             "in_scope_broad", "urun_pazari", "firma_v2", "firma_v3", "firm_merge_v3", "is_natural_person",
             "contains_natural_person", "firm_id", "firma_release"]
-out = df[orig_cols + new_cols]
+currency_cols = ["bedel_amount_original", "bedel_currency", "bedel_currency_status", "bedel_fx_try_per_unit",
+                 "bedel_fx_date", "bedel_valuation_method", "bedel_try"]
+out = df[orig_cols + new_cols + currency_cols]
 assert len(out) == N0 and out["IKN"].is_unique
 out.to_csv(OUT / "master_v3.csv", index=False, encoding="utf-8-sig")
 hdr(f"WROTE master_v3.csv: {len(out):,} rows x {out.shape[1]} cols")
@@ -272,6 +286,6 @@ hdr(f"WROTE master_v3.csv: {len(out):,} rows x {out.shape[1]} cols")
 for lab, m in [("core IT", df["in_scope_core"]), ("main (IT+callcentre)", df["in_scope_main"]),
                ("broad (+gray)", df["in_scope_broad"])]:
     s = df[m]
-    log(f"  {lab:22} contracts {len(s):6,} | value {s['bedel_num'].sum()/1e9:6.2f} bn | firms_v3 "
+    log(f"  {lab:22} contracts {len(s):6,} | value {s['bedel_try'].sum()/1e9:6.2f} bn | firms_v3 "
         f"{s['firma_v3'].nunique():5,} | buyers {s['kurum'].nunique():5,} (split {s['kurum_il_split'].nunique():5,})")
 LOG.close()

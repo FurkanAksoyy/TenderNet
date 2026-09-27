@@ -45,11 +45,15 @@ for c in ["n_dokuman_indiren", "n_teklif_veren", "n_gecerli_teklif"]:
 h = pd.read_csv(ROOT / "results" / "models" / "contracts_with_history.csv")
 h["IKN"] = h["IKN"].astype(str)
 ren = pd.read_csv(ROOT / "results" / "revision_a" / "A_renewal_flags.csv", usecols=["IKN", "renewal"])
-m = pd.read_csv(ROOT / "data" / "contracts_v3.csv", usecols=["IKN", "bedel_num", "urun_pazari"], low_memory=False).drop_duplicates("IKN")
+m = pd.read_csv(ROOT / "data" / "contracts_v3.csv", usecols=["IKN", "bedel_amount_original", "bedel_currency", "bedel_currency_status", "urun_pazari"], low_memory=False).drop_duplicates("IKN")
 x = d.merge(h, on="IKN", how="left").merge(ren, on="IKN", how="left").merge(m, on="IKN", how="left")
 x = x[x["para_birimi"].fillna("TRY").str.upper().isin(["TRY", "TL", ""])]
 x["discount"] = 1 - x["sozlesme_bedeli_n"] / x["yaklasik_maliyet_n"]
-x["value_match"] = (x["sozlesme_bedeli_n"] / x["bedel_num"]).round(3)
+# Compare original amounts only when the currencies agree; a converted TRY
+# proxy must never be compared with a nominal foreign-currency source amount.
+x["detail_currency_assumed"] = x["para_birimi"].isna() | x["para_birimi"].fillna("").str.strip().eq("")
+x["detail_currency"] = x["para_birimi"].fillna("TRY").str.strip().str.upper().replace({"TL": "TRY", "": "TRY"})
+x["value_match"] = (x["sozlesme_bedeli_n"] / x["bedel_amount_original"]).where(x["detail_currency"].eq(x["bedel_currency"]))
 x["single_valid"] = (x["n_gecerli_teklif"] == 1).astype(float).where(x["n_gecerli_teklif"].notna())
 x["renew"] = (x["renewal"] == "renewal").astype(int)
 x["proc"] = np.where(x["usul_v3"].eq("negotiated_21b"), "21b", np.where(x["usul_v3"].eq("open"), "open", "other"))
@@ -58,7 +62,7 @@ v = x[x["discount"].notna() & x["discount"].between(-0.5, 1)].copy()
 L = ["# Price (discount) analysis — EKAP detail sample", "",
      f"Collected OK: {len(d)}; with estimated cost and contract value in TRY: {x['discount'].notna().sum()}; "
      f"used (discount in [-0.5, 1]): {len(v)}.",
-     f"Contract value on EKAP equals our recorded value (ratio within 1%): {((x['value_match'] - 1).abs() <= 0.01).mean():.3f} of matched rows.", ""]
+     f"Contract value on EKAP equals our recorded value (ratio within 1%): {((x.loc[x.value_match.notna(), 'value_match'] - 1).abs() <= 0.01).mean():.3f} of rows with comparable original amounts and currencies; missing currency labels are explicitly assumed TRY.", ""]
 L += ["## Discount by incumbency", "", "| group | n | mean discount | median | share with zero discount |", "|---|---|---|---|---|"]
 for name, g in [("incumbent winner", v[v.incumbent_win == 1]), ("other winner", v[v.incumbent_win == 0])]:
     L.append(f"| {name} | {len(g)} | {g.discount.mean():.3f} | {g.discount.median():.3f} | {(g.discount.abs() < 0.005).mean():.3f} |")

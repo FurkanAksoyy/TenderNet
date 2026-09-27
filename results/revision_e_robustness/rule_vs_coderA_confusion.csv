@@ -1,0 +1,15 @@
+urun_pazari,ERP_management_software,GIS_city_information,call_centre_helpdesk,computers_peripherals,custom_software_web_mobile,cybersecurity,education_technology,health_information_systems,maintenance_support_services,network_datacentre_infrastructure,other_IT,physical_security_surveillance,smart_city_traffic_OT,software_licences
+ERP_management_software,22,1,1,1,3,0,1,1,0,1,3,0,2,0
+GIS_city_information,0,17,0,0,0,0,0,0,0,0,0,0,0,0
+call_centre_helpdesk,0,0,3,0,0,0,0,0,0,0,0,0,0,0
+computers_peripherals,0,0,0,18,1,0,0,0,3,0,0,0,0,0
+custom_software_web_mobile,1,0,1,2,11,4,2,0,0,0,7,0,1,0
+cybersecurity,0,0,0,0,0,13,0,0,0,0,0,0,0,1
+education_technology,0,0,0,0,1,0,5,0,0,0,2,0,0,0
+health_information_systems,0,0,0,0,0,0,0,69,0,0,0,0,0,0
+maintenance_support_services,0,0,0,0,4,1,0,0,9,0,2,0,0,0
+network_datacentre_infrastructure,0,0,0,1,1,1,1,0,8,15,0,0,0,0
+other_IT,0,0,0,3,0,0,1,0,0,0,0,0,0,0
+physical_security_surveillance,0,0,0,0,1,0,0,0,0,0,0,12,1,0
+smart_city_traffic_OT,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+software_licences,0,0,0,1,0,4,0,0,3,2,0,1,0,29

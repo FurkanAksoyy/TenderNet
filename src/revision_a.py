@@ -406,16 +406,16 @@ def fig_a1(gr):
         n = s.n_eligible.values; p = s.obs.values
         lo = p - 1.96 * np.sqrt(p * (1 - p) / np.maximum(n, 1)); hi = p + 1.96 * np.sqrt(p * (1 - p) / np.maximum(n, 1))
         ax.errorbar(x[ok] + off, p[ok], yerr=[p[ok] - lo[ok], hi[ok] - p[ok]], fmt=mk + "-", color=col, ms=4,
-                    lw=1.2, capsize=2, label=f"{ren.capitalize()}: observed")
+                    lw=1.2, capsize=2, label=f"{dict(renewal='Recurring').get(ren, 'Other purchase')}: observed")
         ax.plot(x[ok] + off, s.null_mean_N3.values[ok], mk, mfc="white", color=col, ms=4, ls=":", lw=1,
-                label=f"{ren.capitalize()}: null N3 mean")
-        ax2.bar(x + off, s.n_eligible.fillna(0).values, width=0.24, color=col, label=ren.capitalize())
+                label=f"{dict(renewal='Recurring').get(ren, 'Other purchase')}: null N3 mean")
+        ax2.bar(x + off, s.n_eligible.fillna(0).values, width=0.24, color=col, label={"renewal": "Recurring", "new need": "Other purchase"}[ren])
     ax.set_ylabel("Incumbency rate")
     ax.set_ylim(0, 1)
     ax.legend(frameon=False, ncol=2, loc="upper right", fontsize=7)
     ax2.set_ylabel("Contracts")
     ax2.set_xticks(x); ax2.set_xticklabels(labs)
-    ax2.set_xlabel("Days since the buyer's previous contract in the same product market")
+    ax2.set_xlabel("Days since the buyer's previous contract in the same product category")
     ax2.grid(axis="x", visible=False); ax.grid(axis="x", visible=False)
     fig.align_ylabels([ax, ax2])
     for ext in ("png", "pdf"):

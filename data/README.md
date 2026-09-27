@@ -1,8 +1,8 @@
 # TenderNet v3 data — data dictionary
 
 All files are UTF-8 CSV (with BOM; read with `encoding="utf-8-sig"`), comma-separated, `.` as decimal
-separator, booleans written as `True`/`False`. **All monetary values are in nominal Turkish lira (TRY)**;
-the analysis scripts deflate them to 2025 TRY with `cpi_turkey.csv`.
+separator, booleans written as `True`/`False`. Raw monetary fields retain their original currencies: **`bedel_num` is not a common-currency TRY measure**. The corrected `bedel_try` is nominal TRY (with explicit exchange-rate and missing-label assumptions); analysis scripts deflate it to 2025 TRY. This working dataset belongs to an unreleased revision of archived v1.0.1.
+
 
 | file | rows | content |
 |---|---|---|
@@ -14,7 +14,7 @@ the analysis scripts deflate them to 2025 TRY with `cpi_turkey.csv`.
 | `cpi_turkey.csv` | 16 | TÜİK CPI (2003=100), annual averages 2010–2025, with World Bank cross-check |
 | `cpi_turkey_2026_monthly.csv` | 8 | TÜİK CPI 2026 (2025=100) linked to 2003=100; 2026 uses the mean of available months |
 | `cpi_turkey_SOURCES.txt` | – | exact sources and linking of the CPI series |
-| `audit/top150_value_review.csv` | 150 | hand review of the 150 largest contracts by value (scope label, override flag) |
+| `audit/top150_value_review.csv` | 150 | historical scope review of the top 150 by legacy mixed-currency numeric amount; preserved, not corrected nominal-TRY ranking |
 | `audit/scope_rule_samples.csv` | – | 5 random contracts per scope rule, for audit |
 | `audit/product_market_confusion_sample.csv` | – | 6 random contracts per product market, for audit |
 | `audit/classifier_validation.csv`, `.md` | – | hand validation of the product-market title classifier (titles only) |
@@ -74,13 +74,29 @@ Original scrape columns (Turkish names, as on EKAP):
 | `tarih_dt` | date | **corrupt** (month/day swapped, 63.5% missing) — do not use; kept for transparency |
 | `yil` | int | tender year |
 | `bedel` | str | contract amount as displayed on EKAP (`"2.500.000,00 TRY"`) |
-| `bedel_num` | float | contract amount, **nominal TRY** |
+| `bedel_num` | float | legacy parsed original amount; mixed currencies, retained unchanged; **do not use as TRY** |
 | `ihale_usulu` | str | procedure as displayed (Açık, Pazarlık (MD 21 B), Belli İstekliler Arasında, ...) |
 | `il` | str | province of the tender (81 provinces) |
 | `ihale_durumu` | str | tender status at scraping time |
 | `ihale_adi` | str | tender title (free text) |
 | `hard_nonIT` | bool | v1 cleaning flag (all False here) |
 | `gri_yonetim` | bool | v1 flag for ambiguous "yönetim sistemi" titles |
+
+Currency columns added by the unreleased correction:
+
+| column | type | description |
+|---|---|---|
+| `bedel_amount_original` | float | amount parsed from preserved `bedel`, before conversion |
+| `bedel_currency` | str | `TRY`, `USD` or `EUR`; TRY includes explicitly flagged assumptions |
+| `bedel_currency_status` | str | `explicit` means labelled in raw text; `unspecified_assumed_TRY` means no currency label, not verification |
+| `bedel_fx_try_per_unit` | float | TCMB indicative buying/selling midpoint per unit for USD/EUR; 1 for TRY |
+| `bedel_fx_date` | date | actual TCMB quotation date (blank for TRY) |
+| `bedel_valuation_method` | str | explicit/assumed TRY, same-day FX proxy, or prior-business-day FX proxy |
+| `bedel_try` | float | original amount times rate: nominal TRY valuation proxy; monetary analyses use this field |
+
+There are 57 USD and 19 EUR rows (main sample: 54 USD, 13 EUR). Currency is unspecified for 1,291 rows (845 main), assumed TRY. The date is the tender date, not the payment date. `fx_rates_tcmb.csv` records 146 USD/EUR rate rows for 73 required dates, with URLs, payload SHA-256, buying/selling/unit and actual rate date. `fx_cache_tcmb/` supplies the 73 source XML files. Offline normalization verifies hashes and fails closed on unsupported explicit currencies or absent/invalid rates. The sole prior-day fallback is 2014-10-28 to 2014-10-27. See `docs/currency_normalization.md`.
+
+`results/revision_e_currency/corrected_top150_value_screen.csv` ranks the released data by nominal TRY. `legacy_scope_review_recorded` indicates membership in the historical review; `new_scope_review_required` identifies the one newly entering record. `currency_independently_reverified=False` prevents treating parsing or archived review membership as an award-price verification. The separate `ai_assisted_official_scope_check` and source URL record an official tender-notice scope/identity check of the one entrant; it is not human validation. Existing manual scope labels are retained, not revalidated by this calculation.
 
 Columns added by the v3 build:
 
@@ -168,8 +184,7 @@ Missing counts mean the result announcement did not report them (no data for 201
 
 - Scope and product market are classified from titles only; bundled tenders and generic
   "yönetim/otomasyon sistemi" titles are uncertain (about 500 gray rows are verified only by sampling).
-- Values are nominal TRY as reported on EKAP. One contract (MHRS call centre, 2025, 7.54 bn TRY) is 16.6% of
-  all value; the paper reports value measures with and without it (`callcentre_flag`).
+- Values mix explicit currencies and missing labels in the raw source. Corrected `bedel_try` uses a tender-date FX proxy and assumes missing labels are TRY; the 845-record main-sample exclusion sensitivity is reported separately. The large MHRS call-centre contract motivates largest-contract exclusions.
 - Firm canonicalization is heuristic plus hand review of the ~300 largest firms; successor merges
   assume brand continuity. Joint ventures are separate firms.
 - The natural-person flags are heuristic; pseudonymization rule 2 is conservative, so some pseudonymized

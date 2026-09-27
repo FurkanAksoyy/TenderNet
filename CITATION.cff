@@ -1,8 +1,7 @@
 cff-version: 1.2.0
-message: "If you use this software or data, please cite it as below."
-title: "TenderNet: data and code for 'Unconcentrated markets, persistent ties: incumbency in Türkiye's public IT procurement'"
-version: 1.0.1
-date-released: 2026-09-26
+message: "This is an unreleased revision of archived v1.0.1. Identify the checkout commit when citing this revision; the archive reference below identifies v1.0.1 only."
+title: "TenderNet: data and code for 'Dispersed awards, persistent ties: evidence from Türkiye's public IT procurement'"
+version: 1.0.1-unreleased-revision
 license: MIT
 type: software
 authors:
@@ -16,12 +15,14 @@ authors:
     orcid: "https://orcid.org/0009-0000-7969-6351"
     affiliation: Maltepe University
 abstract: >-
-  Code and derived data (9,991 EKAP IT contracts, 2010-2026). Supplier HHIs are low, but 45% of
-  repeat-eligible contracts go to an incumbent versus 21% under a province-level permutation null;
-  renewals (about one third) carry most of the excess, new needs still exceed their null, and prior
-  supply raises a firm's odds of winning about 40-fold among firms active before each tender; a
-  future-supplier placebo indicates that much of the persistence reflects stable buyer-firm matching,
-  with state dependence clearest in renewals.
+  Unreleased revision of data and code for 9,991 EKAP IT contracts (2010-2026).
+  Award concentration is measured within title-based product categories, not
+  antitrust relevant markets. Repeat-eligible awards show incumbent persistence
+  relative to permutation benchmarks. Prior supply is associated with winning in
+  a conditional choice model; future-supplier placebos caution against attributing
+  these associations to a causal effect or identifying mechanism shares. Currency
+  corrections use cached TCMB tender-date valuation proxies and explicitly flag
+  missing currency labels assumed to be TRY.
 keywords:
   - public procurement
   - incumbency
@@ -32,7 +33,7 @@ keywords:
   - EKAP
 preferred-citation:
   type: article
-  title: "Unconcentrated markets, persistent ties: incumbency in Türkiye's public IT procurement"
+  title: "Dispersed awards, persistent ties: evidence from Türkiye's public IT procurement"
   authors:
     - family-names: Aksoy
       given-names: Furkan
@@ -43,4 +44,14 @@ preferred-citation:
   status: in-preparation
   year: 2026
 repository-code: "https://github.com/FurkanAksoyy/TenderNet"
-doi: "10.5281/zenodo.22994070"
+references:
+  - type: software
+    title: "TenderNet archived reproducibility package"
+    version: 1.0.1
+    date-released: 2026-09-26
+    doi: "10.5281/zenodo.22994070"
+    authors:
+      - family-names: Aksoy
+        given-names: Furkan
+      - family-names: Şimşek
+        given-names: Arda

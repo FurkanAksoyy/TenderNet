@@ -1,0 +1,46 @@
+{
+  "source_files": [
+    {
+      "path": "03_SCRAPER/ekap_v3.py",
+      "sha256": "4d4c6779f732ba6b4b0ae21b098f9e38e5c59813a19a3e3e5a09bcc9d95afbde"
+    },
+    {
+      "path": "03_SCRAPER/ekap_v3_cp1.json",
+      "sha256": "65a551f7e042a210898f38ac93fb19387c0fa2db09578bc41412ccfaaeb6ff37"
+    },
+    {
+      "path": "03_SCRAPER/ekap_v3_cp2.json",
+      "sha256": "438b4c58ad7dd4859763862b8f6c2867a8c4becf99726c969e7e3ace64fc0f53"
+    },
+    {
+      "path": "02_VERI/ekap_v8_kazandi_edge.csv",
+      "sha256": "8e857f062b84221545c7597825c5df890f87f6972c5903f2c2e8606f3116a9fe"
+    },
+    {
+      "path": "06_YENI_ANALIZ/master_sozlesmeler.csv",
+      "sha256": "9240440b698f2d7005ad8b892eeccad6d5b0548684aad5a8a3fa23921f6aa90a"
+    },
+    {
+      "path": "06_YENI_ANALIZ/master_sozlesmeler_temiz.csv",
+      "sha256": "46c9c7340c560f5a3357096ab4c78177fb20d2c96c2830bb5c307eb2ed41e9f6"
+    }
+  ],
+  "checkpoint_unique_n": 20171,
+  "winner_n": 13418,
+  "cleaned_n": 13024,
+  "public_n": 13024,
+  "main_n": 9991,
+  "cp1_min_tender_date": "2010-09-17",
+  "cp1_max_tender_date": "2026-04-03",
+  "source_code_keywords_n": 48,
+  "cp1_contributing_keywords_n": 31,
+  "winner_source_type_counts": {
+    "html_regex": 13418
+  },
+  "extraction_timestamp": null,
+  "executed_query_start": null,
+  "executed_query_end": null,
+  "query_status": "settings documented from current source; executed runtime settings unrecorded",
+  "membership_checks": "winner edges == winner master; public == cleaned; public subset winner subset cp1; all unique IKN; public keywords match cp1",
+  "private_rows_exported": false
+}

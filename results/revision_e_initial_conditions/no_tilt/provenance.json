@@ -1,0 +1,37 @@
+{
+  "arguments": {
+    "reps": 100,
+    "cal_reps": 20,
+    "scenarios": [
+      "no_tilt"
+    ],
+    "benchmark": false,
+    "output": "11_REPO\\results\\revision_e_initial_conditions\\no_tilt"
+  },
+  "seed": 9272026,
+  "target_share": 0.6893461666113508,
+  "fitted_coefficients": [
+    3.7449960145450785,
+    0.7754801359868753,
+    1.04829279617218,
+    0.6382925217332711,
+    -0.09282499945832004,
+    0.5799400439977237
+  ],
+  "generating_coefficients": [
+    0.0,
+    0.7754801359868753,
+    1.04829279617218,
+    0.6382925217332711,
+    -0.09282499945832004,
+    0.5799400439977237
+  ],
+  "covariates_recomputed": true,
+  "observed_pools_fixed": true,
+  "note": "No tilt or shifted normal initialization is an assumption, not a posterior correction. Conditional replication quantiles are not parameter confidence intervals.",
+  "source_sha256": {
+    "revision_c.py": "99f70efe33c4f86ac309f567884f68802eadb073201fea5e5bc4b1c7c45937ab",
+    "revision_d.py": "78b621fff4f3969a14e052b69de2ad239de2b486637f066fc7ae88e225399404",
+    "revision_e_initial_conditions.py": "7d7892a680e4e784405b5c226305888e208524dae6404630dff0508fd9005f07"
+  }
+}

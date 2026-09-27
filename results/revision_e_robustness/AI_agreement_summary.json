@@ -1,0 +1,11 @@
+{
+  "available": true,
+  "sample_n": 300,
+  "complete_n": 300,
+  "common_n": 266,
+  "disagreement_n": 34,
+  "rule_agreement_coderA": 0.7466666666666667,
+  "rule_agreement_coderB": 0.73,
+  "rule_agreement_AI_common": 0.793233082706767,
+  "interpretation": "AI agreement audit, not human accuracy; consensus conditions on easier/agreed cases."
+}

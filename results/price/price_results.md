@@ -1,7 +1,7 @@
 # Price (discount) analysis — EKAP detail sample
 
 Collected OK: 144; with estimated cost and contract value in TRY: 143; used (discount in [-0.5, 1]): 143.
-Contract value on EKAP equals our recorded value (ratio within 1%): 0.993 of matched rows.
+Contract value on EKAP equals our recorded value (ratio within 1%): 0.993 of rows with comparable original amounts and currencies; missing currency labels are explicitly assumed TRY.
 
 ## Discount by incumbency
 

@@ -1,0 +1,8 @@
+{
+  "horizon_days": 730,
+  "original_modeled_contracts": 3013,
+  "bounded_contracts": 2508,
+  "minimum_day": 277,
+  "maximum_day": 5920,
+  "note": "Both windows exclude same-day awards, include the 730-day endpoints, and are wholly within the observed extract. A future-only pair has no award in the preceding 730 days; it may have older awards. Controls retain full observed history. Equal observation windows do not solve omitted pre-extract history, selection into recent-winner pools, or causal identification."
+}
